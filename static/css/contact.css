@@ -42,3 +42,8 @@
    The original JPEG is unchanged; the fade inherits the page light token. */
 .contact-photo-c5 img{filter:brightness(1.04) contrast(.94) saturate(.8)}
 .contact-photo-c5::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 66%,color-mix(in srgb,var(--bg-light) 16%,transparent) 78%,var(--bg-light) 100%);pointer-events:none}
+
+/* Individual Contact PDF: native 417.844px artwork on the 1367px canvas. */
+@media(min-width:1101px){
+ .contact-flower-c5{width:30.5665cqw;left:-5.3293cqw;top:39.6073cqw}
+}

@@ -171,3 +171,8 @@
  .page-lessons .lessons-method-left p { padding-right:18px; }
  .page-lessons .lessons-online .online-description { width:95%; }
 }
+
+/* Individual Lessons PDF: retain the native footer rotation and proportions. */
+@media(min-width:1101px){
+ .lessons-art-layer .lessons-art-footer{width:25.5495cqw;left:-3.3441cqw}
+}

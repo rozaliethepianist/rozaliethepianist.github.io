@@ -288,7 +288,7 @@
       { anchor: '#offers', x: -4.646, y: -19.522, width: 32.29, angle: 0, opacity: .31 },
       { anchor: '#audience', x: -12.409, y: -21.8, width: 26.624, angle: -39.768, opacity: .31 },
       { anchor: '#story', x: -9.8565, y: -12.6638, width: 27.6073, angle: 21.0637, opacity: .31 },
-      { x: -3.8458, bottom: -17.126, width: 25.944, angle: 0, opacity: .23 }
+      { anchor: '.adviser-opinion h2', x: -3.8458, y: -7.5287, width: 25.944, angle: 0, opacity: .23 }
     ];
     pieces.forEach((piece, index) => { const img = document.createElement('img');img.src = ['/static/image/optimized/adviser-current-0-882d3ffa6ccc.webp','/static/image/optimized/adviser-current-1-716e1098fb45.webp','/static/image/optimized/adviser-current-2-e9b4120717c7.webp','/static/image/optimized/adviser-current-3-b5db5fb982aa.webp'][index];img.alt = '';layer.append(img);piece.image = img; });
     document.body.append(layer);

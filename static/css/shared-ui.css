@@ -384,3 +384,22 @@ body.page-about .about-media-grid figure { width:100%;max-width:500px;justify-se
  body.page-lessons .lessons-opinion::before,body.page-dutch .adviser-opinion::before,
  body.page-dutch .adviser-reviews-title::before,body.page-lessons .site-footer::before,body.page-dutch .site-footer::before { content:none; }
 }
+
+/* Overlap adjoining background paints so fractional raster rows cannot expose
+   the dark canvas. The diagonal endpoints retain their original 13deg line. */
+:root { --background-paint-overlap: 2px; }
+@media(min-width:1101px) {
+ body:is(.page-lessons,.page-dutch) .page-plane::before {
+  top:calc(var(--ending-top,100%) - var(--background-paint-overlap));
+  clip-path:polygon(0 0,calc(var(--ending-x-start,60.31%) - .461736px) 0,var(--ending-x-end,72%) 100%,0 100%);
+ }
+ body:is(.page-lessons,.page-dutch) .page-plane > main::before {
+  mask-image:linear-gradient(to bottom,#000 0 calc(var(--ending-top,100%) + var(--background-paint-overlap)),transparent calc(var(--ending-top,100%) + var(--background-paint-overlap)));
+ }
+}
+body.page-dutch .adviser-reviews-grid { background:#f8fafc; }
+
+@media(max-width:1100px) {
+ body.page-dutch .adviser-reviews-title { background:#f8fafc; }
+ body.page-dutch .adviser-reviews-title::before { background:#f8fafc; }
+}
