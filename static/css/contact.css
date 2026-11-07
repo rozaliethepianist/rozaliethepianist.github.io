@@ -1,0 +1,44 @@
+/* Contact only. Current PDF geometry plus the user's November 6 visual update. */
+.page-contact{--bg-light:#f8fafc;--bg-dark:#604a3f;background:var(--bg-light);color:#111}
+.page-contact [data-site-header]{height:0}.page-contact .header-logo img{filter:brightness(0)}
+.page-contact .contact-c5{container-type:inline-size;background:var(--bg-light);display:block;min-height:0;padding:0 0 6cqw;overflow:hidden;flex:1 0 auto}
+.contact-hero-c5{height:54cqw;position:relative}
+.contact-photo-c5{position:absolute;left:52.67%;right:0;top:0;height:100%;overflow:hidden;clip-path:polygon(27.6% 0,100% 0,100% 100%,0 100%)}
+.contact-photo-c5 img{position:absolute;max-width:none;width:52.11cqw;height:69.48cqw;left:0;top:-9.07cqw;object-fit:fill}
+.contact-intro-c5{position:absolute;top:14cqw;left:10%;width:45%;text-align:center}
+.page-contact .contact-intro-c5 h1{font:400 3cqw/1.4 var(--serif);margin:0 0 6.3cqw;padding:0;text-align:center;max-width:none}
+.contact-intro-c5 p{font:400 1.3cqw/1.4 var(--sans);max-width:38ch;margin:0 auto 1cqw}
+.contact-home-c5{position:absolute;left:44.5%;top:34.9cqw;width:23cqw;min-height:4.6cqw;font-size:1.25cqw;letter-spacing:.16em;font-weight:500;border-radius:1.5cqw;padding:1cqw;z-index:2}
+.contact-form-section{position:relative;width:83.4%;margin:0 auto;z-index:3}
+.contact-form-section>h2{font:400 3cqw/1.4 var(--serif);margin:-5.3cqw 0 1.8cqw 13cqw;color:#111}
+.contact-form-section .contact-form{background:#fff;border:1.5px solid var(--blue);border-radius:20px;padding:34px 35px 18px;box-shadow:0 12px 22px #0001}
+.contact-form-section .contact-form h3{display:none}
+.contact-form-section .form-grid{gap:22px 8cqw}
+.contact-form-section .form-group label{font-size:12px;margin-bottom:4px}
+.contact-form-section .form-group input,.contact-form-section .form-group select,.contact-form-section .form-group textarea{border-color:#a2c8e0;background:#fff;min-height:40px;border-radius:9px;padding:8px 10px}
+.contact-form-section .form-group textarea{min-height:125px}
+.contact-form-section .form-action{margin-top:20px}
+.contact-form-section .form-action .button{width:24%;min-width:220px;border-radius:22px;min-height:44px;padding:10px}
+.contact-form-section :is(input,select,textarea):focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.contact-closing-c5{font:400 1.3cqw/1.5 var(--serif);text-align:center;margin:2.6cqw 6% 0}
+.contact-flower-c5{position:absolute;max-width:none;width:32cqw;left:-7cqw;top:39.5cqw;opacity:.25;transform:rotate(3.51508deg);pointer-events:none;z-index:1}
+.page-contact .site-footer{background:var(--bg-light)}
+@media(max-width:1100px){
+.page-contact .header-inner{background:var(--bg-light)}.page-contact .social-rail{display:none}
+.contact-hero-c5{height:auto;min-height:890px;padding:120px 25px 440px}
+.contact-intro-c5{position:relative;inset:auto;width:100%;max-width:620px;margin:auto}
+.page-contact .contact-intro-c5 h1{font-size:34px;margin:0 0 35px}
+.contact-intro-c5 p{font-size:16px;line-height:1.6;margin-bottom:15px}
+.contact-home-c5{position:relative;inset:auto;width:max-content;max-width:100%;min-height:48px;font-size:14px;margin:28px auto 0;display:flex;padding:12px 25px;border-radius:18px}
+.contact-photo-c5{left:auto;right:0;top:auto;bottom:0;width:min(100%,760px);height:400px;clip-path:polygon(13% 0,100% 0,100% 100%,0 100%)}
+.contact-photo-c5 img{width:100%;height:100%;top:0;left:0;object-fit:cover;object-position:50% 55%}
+.contact-form-section{width:calc(100% - 48px);margin:30px auto 0}.contact-form-section>h2{font-size:30px;margin:0 0 25px;text-align:center}
+.contact-form-section .form-grid{gap:24px 30px}.contact-form-section .contact-form{padding:25px}
+.contact-closing-c5{font-size:16px;margin:35px 25px 0}.contact-flower-c5{top:850px;left:-75px;width:240px;opacity:.18}
+.page-contact .contact-c5{padding-bottom:50px}
+}
+@media(max-width:599px){.contact-form-section .form-grid{grid-template-columns:1fr}.contact-form-section{width:calc(100% - 36px)}.contact-form-section .contact-form{padding:24px 20px}.contact-form-section .form-action .button{width:100%;min-width:0}.contact-hero-c5{min-height:910px}.contact-intro-c5 p{font-size:15px}}
+/* Pass 2: reversible treatment matching the supplied pale Contact visual.
+   The original JPEG is unchanged; the fade inherits the page light token. */
+.contact-photo-c5 img{filter:brightness(1.04) contrast(.94) saturate(.8)}
+.contact-photo-c5::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 66%,color-mix(in srgb,var(--bg-light) 16%,transparent) 78%,var(--bg-light) 100%);pointer-events:none}

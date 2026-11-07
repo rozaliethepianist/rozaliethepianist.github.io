@@ -1,0 +1,200 @@
+/* Dutch Study Adviser only. Current 1024.5 x 3436.5 PDF/HTML composition.
+   Separate source panels are joined into one continuous background plane. */
+.page-dutch { --bg-light: #fff; --bg-dark: var(--brown); --adviser-paper: #fff; background: var(--bg-dark); color: #111; }
+.page-dutch [data-site-header] { height: 0; }
+.page-dutch .site-header { color: #111; }
+.page-dutch .header-logo img { filter: brightness(0); }
+.page-dutch .social-rail { color: #111; }
+.page-dutch .adviser-main { width: min(100%,1440px); margin-inline: auto; flex: 0 0 auto; container-type: inline-size; background: var(--bg-dark); isolation: isolate; }
+.adviser-main::before { content: ''; position: absolute; inset: 0; z-index: 0; background: linear-gradient(to bottom,var(--bg-light) 0 112.445cqw,var(--adviser-paper) 112.445cqw); clip-path: polygon(0 0,65.73% 0,52.67% 56.2225cqw,39.61% 112.445cqw,52.23% 169.107cqw,65.58% 225.3294cqw,68.77% 240.32cqw,60.31% 281.552cqw,62% 289.122cqw,0 289.122cqw); pointer-events: none; }
+.adviser-main > section { position: relative; z-index: 2; }
+.adviser-main h1,.adviser-main h2,.adviser-main h3,.adviser-main p { margin: 0; }
+.adviser-main .button { border-radius: 1.35cqw; font-weight: 400; letter-spacing: 0; }
+.adviser-hero { height: 56.2225cqw; }
+.adviser-hero-photo { position: absolute; left: 52.67%; right: 0; top: 0; height: 100%; overflow: hidden; clip-path: polygon(27.6% 0,100% 0,100% 100%,0 100%); }
+.adviser-hero-photo img { position: absolute; max-width: none; width: 66.21cqw; height: 88.28cqw; left: -7.63cqw; top: -6.398cqw; object-fit: fill; }
+.adviser-hero-copy { position: absolute; left: 15.5%; top: 12.5cqw; width: 35%; text-align: center; }
+.adviser-hero h1 { font: 700 2.38cqw/1.65 var(--serif); letter-spacing: .073em; white-space: nowrap; }
+.adviser-hero h2 { font: 400 1.9cqw/1.39 var(--serif); margin: 1.7cqw 0 3.6cqw; text-wrap: balance; }
+.adviser-subtitle { font: 400 1.6cqw/1.25 var(--sans); white-space: nowrap; }
+.adviser-main .adviser-reassurance { font: 400 1.5cqw/1.7 var(--sans); margin-top: 2.4cqw; }
+.adviser-main .adviser-hero-cta { margin: 4.5cqw 0 0 16.8cqw; width: 28.1cqw; min-height: 5.65cqw; font-size: 1.16cqw; letter-spacing: .215em; white-space: nowrap; padding: 1cqw 1.5cqw; }
+.adviser-main .adviser-welcome { font: 400 1.31cqw/1.4 var(--sans); text-transform: uppercase; margin: 6.3cqw 0 0; }
+.adviser-process { height: 56.2225cqw; color: #fff; }
+.adviser-introduction { position: absolute; left: 15.65%; top: 9.6cqw; width: 33.84%; color: #111; text-align: center; }
+.adviser-introduction p { font: 400 1.33cqw/1.5 var(--sans); letter-spacing: .041em; margin-bottom: 1.05cqw; white-space: nowrap; }
+.adviser-portrait { width: 100%; aspect-ratio: 462.27 / 469.79; position: relative; overflow: hidden; }
+.adviser-portrait img { width: 100%; max-width: none; height: auto; position: absolute; left: 0; top: -14.06%; }
+.adviser-process-copy { position: absolute; top: 1.9cqw; left: 52.4%; right: 6.4%; text-align: center; }
+.adviser-quote { font: 400 1.33cqw/1.8 var(--sans); letter-spacing: .04em; white-space: nowrap; }
+.adviser-process-copy h2 { font: 400 2.88cqw/1.4 var(--sans); margin: 6.9cqw 0 4.5cqw; text-transform: uppercase; white-space: nowrap; }
+.adviser-steps { margin: 0; padding-left: 1.35em; text-align: left; font: 400 1.075cqw/2.5 var(--editorial); letter-spacing: .136em; }
+.adviser-steps li { padding-left: 0; }
+.adviser-main .adviser-process-result { font: 400 1.46cqw/1.35 var(--serif); margin: 3.7cqw -1cqw 4.2cqw; }
+.adviser-process-copy > .button { font-size: 1.31cqw; min-height: 3.7cqw; width: 17.8cqw; padding: .8cqw 1cqw; }
+.adviser-main .adviser-choose { font: 400 1.315cqw/1.4 var(--sans); margin: 6.8cqw 0 0; }
+.adviser-offers { height: 56.662cqw; display: grid; grid-template-columns: 1fr 1fr; gap: 4.65cqw; padding: 1.6cqw 6% 0 7.06%; align-items: start; }
+.adviser-offer { background: var(--surface-card-light); border-radius: 1.15cqw; padding: 3.2cqw 3cqw 2.1cqw; text-align: left; color: #111; min-width: 0; }
+.adviser-offer-bundle { background: var(--bg-light); }
+.adviser-offer h2 { font: 700 1.85cqw/1.65 var(--serif); text-align: center; text-transform: uppercase; margin: 0 0 1.85cqw; }
+.adviser-offer h3 { font: 400 1.36cqw/1.4 var(--sans); text-align: center; text-transform: uppercase; margin: 0 0 1.25cqw; }
+.adviser-offer ul { font: 400 .976cqw/1.72 var(--sans); margin: 0 0 2.7cqw; padding-left: 1em; }
+.adviser-offer > p:not(.adviser-price) { font: 400 .976cqw/1.72 var(--sans); }
+.adviser-offer .adviser-price { font: 700 1.85cqw/1.4 var(--serif); text-transform: uppercase; text-align: center; margin: 2.6cqw 0 1cqw; }
+.adviser-price span { margin-left: 1cqw; white-space: nowrap; }
+.adviser-offer .button { display: flex; width: 18.5cqw; margin: 0 auto; font-size: .98cqw; min-height: 3.3cqw; padding: .7cqw 1cqw; }
+.adviser-offer-bundle ul { margin-bottom: 1.4cqw; }
+.adviser-offer-bundle .adviser-topics { text-align: center; }
+.adviser-topic-list { font: 400 .976cqw/1.72 var(--sans); padding-left: 1.5em; width: fit-content; margin: 0 0 0 auto; }
+.adviser-offer-bundle .adviser-price { margin-top: 2.3cqw; }
+.adviser-explanation { color: #111; padding-left: 8.3%; padding-top: 5.8cqw; }
+.adviser-explanation h2 { font: 400 2.25cqw/1.4 var(--sans); text-transform: uppercase; white-space: nowrap; margin: 0 0 3.6cqw; }
+.adviser-explanation .adviser-steps { width: 48cqw; }
+.adviser-audience { height: 25cqw; }
+.adviser-helpful { height: 31.2225cqw; padding-top: 2.9cqw; }
+.adviser-story { height: 56.2225cqw; }
+.adviser-story h2 { position: absolute; left: 26.3%; top: 8.5cqw; font: 400 2.25cqw/1.4 var(--sans); text-transform: uppercase; }
+.adviser-story > img { position: absolute; left: 63.5%; top: 8.1cqw; width: 26.07%; height: auto; }
+.adviser-reviews { background: transparent; color: #111; }
+.adviser-reviews-title { height: 7.57cqw; padding-top: 1.7cqw; text-align: center; }
+.adviser-reviews-title h2 { font: 400 2.25cqw/1.4 var(--sans); text-transform: uppercase; }
+.adviser-reviews-title p { font: 400 .8cqw/1.4 var(--sans); margin-top: .35cqw; }
+.adviser-reviews-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8.4cqw; padding: 7.1cqw 8.8cqw 6.5cqw; background: var(--bg-light); }
+.adviser-reviews-grid .review { margin: 0; font: italic 400 1.12cqw/1.37 var(--sans); text-align: center; }
+.adviser-reviews-grid .review p { margin: 0 0 2.5cqw; }.adviser-reviews-grid .review cite { font: italic 400 .79cqw/1.4 var(--sans); }
+.adviser-opinion { min-height: 11.4cqw; background: linear-gradient(77deg,var(--adviser-paper) 69%,var(--bg-dark) 69%); display: flex; align-items: center; justify-content: center; }
+.adviser-opinion h2 { font: 400 1.8cqw/1.4 var(--sans); text-transform: uppercase; }
+.page-dutch .site-footer.footer-dark { width: min(100%,1440px); margin-inline: auto; color: #746a63; background: linear-gradient(77deg,var(--adviser-paper) 71%,var(--bg-dark) 71%); }
+.page-dutch .footer-legal { color: #746a63; }
+@media(min-width:1101px) { .page-dutch .footer-right { color: #f8fafc; } }
+/* The current reference has no narrow layout. Reflow preserves its complete
+   content and prices while increasing text sizes and removing steep masks. */
+@media(max-width:1100px) {
+ .adviser-main::before { display: none; }
+ .page-dutch .site-header.header-dark .header-inner { background: var(--bg-light); }
+ .page-dutch .site-header.header-dark .menu-toggle { color: #111; }
+ .page-dutch .site-header.header-dark .primary-nav { color: #111; background: var(--bg-light); }
+ .page-dutch .social-rail { display: none; }
+ .adviser-main .button { border-radius: 18px; }
+ .adviser-hero { height: auto; padding: 125px 28px 440px; min-height: 1030px; background: var(--bg-light); }
+ .adviser-hero-copy { position: relative; inset: auto; width: min(100%,630px); margin: auto; }
+ .adviser-hero h1 { font-size: clamp(24px,4vw,34px); line-height: 1.4; white-space: normal; }
+ .adviser-hero h2 { font-size: 25px; margin: 25px auto 35px; max-width: 28ch; }
+ .adviser-subtitle { font-size: 18px; white-space: normal; line-height: 1.5; }
+ .adviser-main .adviser-reassurance { font-size: 17px; margin-top: 25px; }
+ .adviser-main .adviser-hero-cta { font-size: 13px; width: auto; min-height: 50px; margin: 30px 0 0; padding: 14px 20px; letter-spacing: .08em; white-space: normal; }
+ .adviser-main .adviser-welcome { font-size: 14px; margin: 30px auto 25px; max-width: 38ch; }
+ .adviser-hero-photo { left: 0; right: 0; top: auto; bottom: 0; height: 400px; clip-path: polygon(12% 0,100% 0,100% 100%,0 100%); }
+ .adviser-hero-photo img { width: 100%; height: 100%; left: 0; top: 0; object-fit: cover; object-position: 50% 36%; }
+ .adviser-process { height: auto; background: var(--bg-dark); display: flex; flex-direction: column; }
+ .adviser-introduction { position: relative; inset: auto; width: 100%; padding: 45px max(25px,12%); background: var(--bg-light); }
+ .adviser-introduction p { font-size: 16px; line-height: 1.6; margin-bottom: 25px; white-space: normal; }
+ .adviser-portrait { max-width: 530px; margin: auto; }
+ .adviser-process-copy { position: relative; inset: auto; padding: 40px max(25px,8%) 35px; }
+ .adviser-quote { font-size: 16px; white-space: normal; }.adviser-quote br { display: none; }
+ .adviser-process-copy h2 { font-size: 30px; margin: 40px 0 30px; white-space: normal; }
+ .adviser-steps { font-size: 14px; line-height: 1.8; letter-spacing: .06em; }.adviser-steps li { margin-bottom: 17px; }
+ .adviser-main .adviser-process-result { font-size: 19px; margin: 35px 0; }
+ .adviser-process-copy > .button { font-size: 14px; width: auto; min-height: 48px; padding: 12px 25px; }
+ .adviser-main .adviser-choose { font-size: 16px; margin: 40px 0 0; }
+ .adviser-offers { height: auto; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; padding: 35px 24px 50px; background: var(--bg-dark); }
+ .adviser-offer { border-radius: 17px; padding: 30px 22px; }.adviser-offer h2 { font-size: 21px; line-height: 1.5; margin-bottom: 30px; }
+ .adviser-offer h3 { font-size: 17px; margin-bottom: 20px; }
+ .adviser-offer ul { font-size: 13px; line-height: 1.7; margin-bottom: 30px; }
+ .adviser-offer > p:not(.adviser-price),.adviser-topic-list { font-size: 13px; line-height: 1.7; }
+ .adviser-offer .adviser-price,.adviser-offer-bundle .adviser-price { font-size: 22px; margin: 30px 0 20px; }
+ .adviser-price span { margin-left: 10px; }.adviser-offer .button { width: 100%; font-size: 12px; min-height: 48px; padding: 12px; }
+ .adviser-explanation,.adviser-helpful { height: auto; padding: 45px max(28px,8%); background: var(--adviser-paper); }
+ .adviser-explanation h2 { font-size: 27px; white-space: normal; margin-bottom: 30px; }.adviser-explanation .adviser-steps { width: 100%; }
+ .adviser-story { height: auto; min-height: 0; padding: 45px 25px 60px; background: var(--adviser-paper); display: flex; flex-direction: column; align-items: center; gap: 35px; }
+ .adviser-story h2 { position: static; font-size: 28px; }.adviser-story > img { position: static; width: min(100%,430px); }
+ .adviser-reviews-title { background: var(--adviser-paper); height: auto; padding: 30px 25px; }.adviser-reviews-title h2 { font-size: 28px; }.adviser-reviews-title p { font-size: 12px; margin-top: 10px; }
+ .adviser-reviews-grid { padding: 45px 30px 55px; gap: 32px; }.adviser-reviews-grid .review { font-size: 14px; line-height: 1.5; }.adviser-reviews-grid .review p { margin-bottom: 24px; }.adviser-reviews-grid .review cite { font-size: 11px; }
+ .adviser-opinion { min-height: 150px; background: var(--adviser-paper); padding: 30px 20px; }.adviser-opinion h2 { font-size: 22px; text-align: center; }
+ .page-dutch .site-footer.footer-dark { background: var(--adviser-paper); color: #746a63; }.page-dutch .footer-dark .social-icon img { filter: brightness(0); }
+}
+@media(max-width:599px) {
+ .adviser-hero { padding-top: 115px; min-height: 1050px; }.adviser-hero h2 { font-size: 22px; }.adviser-subtitle { font-size: 16px; }
+ .adviser-hero-photo img { object-position: 53% 24%; }
+ .adviser-offers { grid-template-columns: 1fr; padding: 30px 20px 45px; gap: 30px; }.adviser-offer { padding: 35px 25px; }
+ .adviser-offer h2 { font-size: 22px; }.adviser-offer ul,.adviser-offer > p:not(.adviser-price),.adviser-topic-list { font-size: 14px; }
+ .adviser-reviews-grid { grid-template-columns: 1fr; padding: 45px 35px 60px; gap: 45px; }.adviser-reviews-grid .review { font-size: 15px; }
+ .adviser-opinion h2 { font-size: 19px; }
+}
+/* Pass 2: original artwork spans source slide cuts once; photos retain
+   their native pixels. Decorative images never capture pointer input. */
+.adviser-main > .adviser-art-layer { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+.adviser-art-layer img { position: absolute; max-width: none; height: auto; pointer-events: none; }
+.adviser-art-layer .adviser-art-hero { width: 30.55cqw; left: -5.03cqw; top: 48.1cqw; transform: rotate(3.51508deg); opacity: .25; }
+.adviser-art-layer .adviser-art-process { width: 30.55cqw; left: -13.2cqw; top: 101.7cqw; transform: rotate(83.3358deg); opacity: .3; }
+.adviser-art-layer .adviser-art-story { width: 26.04cqw; left: -6.8cqw; top: 220.34cqw; transform: rotate(-7.11549deg); opacity: .28; }
+.adviser-art-footer { position: absolute; max-width: none; width: 27.45cqw; height: auto; left: -3.4cqw; bottom: -.8cqw; transform: rotate(-6.05855deg); opacity: .25; pointer-events: none; }
+.adviser-opinion h2 { position: relative; z-index: 1; }
+.adviser-topic-layout { display: flex; align-items: flex-start; gap: .4cqw; font: 400 .976cqw/1.72 var(--sans); }
+.adviser-topic-layout p { flex: 1; }.adviser-topic-layout .adviser-topic-list { flex: none; margin: 0; }
+@media(max-width:1100px) {
+ .adviser-art-layer img { display: none; }.adviser-art-footer { width: 230px; left: -80px; bottom: -5px; opacity: .2; }
+ .adviser-topic-layout { display: block; font-size: 13px; }.adviser-topic-layout .adviser-topic-list { margin-left: 18px; }
+}
+@media(max-width:599px) { .adviser-topic-layout { font-size: 14px; } }
+@media(min-width:1101px) {
+ .adviser-offer-single { min-height: 44.57cqw; }
+ .adviser-offer-single .adviser-price { margin-top: 2.3cqw; margin-bottom: .65cqw; }
+ .adviser-offer-bundle .adviser-price { margin-top: 1.4cqw; }
+}
+/* The adviser PDF review panel has its own #f9f9f9 fill. */
+.adviser-reviews-grid { background: var(--bg-light); }
+/* Current November6 export adds complete story, differentiated lists and two reviews. */
+.adviser-story-copy { position:absolute;left:6.5%;top:7.7cqw;width:55%;font:400 1.04cqw/1.75 var(--editorial); }
+.adviser-story-copy p { margin:0 0 1.6em; }
+.adviser-story-copy .button { font-size:12px;letter-spacing:0; }
+.adviser-story>img { left:auto;right:3%;top:13cqw;width:29%; }
+.adviser-reviews-grid { grid-template-columns:repeat(2,minmax(0,1fr));gap:12%;padding-inline:19%; }
+.adviser-explanation .adviser-steps { max-width:50%; }
+@media(min-width:1101px) { .adviser-story { height:auto;min-height:65cqw; }.adviser-story-copy { font-size:max(12px,1.04cqw); }.adviser-offer ul { font-size:max(12px,.9cqw); }.adviser-explanation .adviser-steps { max-width:49%; }.adviser-hero-copy { max-width:44%; } }
+@media(max-width:1100px) { .adviser-story-copy { position:static;width:100%;font-size:14px;line-height:1.8; }.adviser-story>img { position:static;width:min(100%,430px); }.adviser-explanation .adviser-steps { max-width:100%; }.adviser-reviews-grid { padding-inline:8%;gap:35px; } }
+@media(max-width:599px) { .adviser-reviews-grid { grid-template-columns:1fr; } }
+@media(min-width:1101px) {
+ .adviser-story { display:grid;grid-template-columns:62% 32%;gap:3cqw 6%;height:auto;min-height:0;padding:5cqw 6.5%;background:linear-gradient(77deg,var(--adviser-paper) 77%,var(--bg-dark) 77%); }
+ .adviser-story h2 { position:static;grid-column:1/-1;font-size:2.8cqw;text-align:center;margin:0; }
+ .adviser-story-copy { position:static;width:100%;font-size:14px;line-height:1.75; }
+ .adviser-story>img { position:static;width:100%;align-self:center; }
+}
+.adviser-story-portrait { min-width:0;align-self:center;text-align:center; }
+.adviser-story-portrait img { width:100%;height:auto; }
+.adviser-story-portrait .button { margin:25px auto 0;font-size:12px;letter-spacing:0; }
+@media(max-width:1100px) { .adviser-story-portrait { width:min(100%,530px); } }
+@media(min-width:1101px) {
+ .adviser-story { grid-template-columns:60% 34%;background:var(--bg-dark);isolation:isolate; }
+ .adviser-story::before { content:'';position:absolute;inset:0;background:var(--adviser-paper);clip-path:polygon(0 0,65.58% 0,60.31% 100%,0 100%);z-index:-1; }
+ .adviser-story h2 { grid-column:1;grid-row:1;font-size:2.25cqw; }
+ .adviser-story-copy { grid-column:1;grid-row:2; }
+ .adviser-story-portrait { grid-column:2;grid-row:2; }
+ .adviser-reviews-title { position:relative;isolation:isolate;background:var(--bg-dark); }
+ .adviser-reviews-title::before { content:'';position:absolute;inset:0;background:var(--adviser-paper);clip-path:polygon(0 0,60.31% 0,62% 100%,0 100%);z-index:-1; }
+}
+/* Readable offer/list copy just above the mobile breakpoint. Local pale
+   planes share endpoints so increased text height cannot break the diagonal. */
+@media(min-width:1101px) {
+ .adviser-offers { height:auto;min-height:56.662cqw;padding-bottom:4cqw;isolation:isolate;background:var(--bg-dark); }
+ .adviser-audience,.adviser-helpful { height:auto;padding-bottom:5cqw;isolation:isolate;background:var(--bg-dark); }
+ .adviser-audience { min-height:25cqw; }.adviser-helpful { min-height:31.2225cqw; }
+ .adviser-offers::before,.adviser-audience::before,.adviser-helpful::before { content:'';position:absolute;inset:0;z-index:-1;background:var(--bg-light); }
+ .adviser-offers::before { clip-path:polygon(0 0,39.61% 0,52.23% 100%,0 100%); }
+ .adviser-audience::before { clip-path:polygon(0 0,52.23% 0,58.17% 100%,0 100%); }
+ .adviser-helpful::before { clip-path:polygon(0 0,58.17% 0,65.58% 100%,0 100%); }
+ .adviser-offer ul,.adviser-offer > p:not(.adviser-price),.adviser-topic-list,.adviser-topic-layout { font-size:max(14px,.976cqw);line-height:1.7; }
+ .adviser-explanation .adviser-steps { font-size:max(14px,1.075cqw);letter-spacing:.07em;line-height:2;max-width:47%; }
+ .adviser-reviews-grid .review { font-size:max(14px,1.02cqw);line-height:1.7; }
+}
+
+@media(min-width:1101px) {
+ .adviser-offers::before,.adviser-audience::before,.adviser-helpful::before,.adviser-story::before,.adviser-reviews-title::before { inset:-1px 0; }
+}
+
+/* Current PDF image65: bbox577.32,1800.70,901.32,2232.70 on1024.5pt canvas.
+   The tulips span audience/helpful, independently of the later story portrait. */
+.adviser-tulips { position:absolute;left:56.351%;top:6.657cqw;width:31.625%;margin:0; }
+.adviser-tulips img { display:block;width:100%;height:auto; }
+@media(min-width:1101px) { .adviser-main > .adviser-audience { z-index:3; } }
+@media(max-width:1100px) { .adviser-tulips { position:static;width:min(100%,380px);margin:35px auto 0; } }

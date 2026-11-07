@@ -1,0 +1,6 @@
+/* Losslessly compressed WOFF2 versions of the supplied OFL fonts. Distribution notices live beside each font file. */
+@font-face{font-family:Montserrat;src:url('/static/fonts/montserrat/Montserrat[wght].woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:Montserrat;src:url('/static/fonts/montserrat/Montserrat-Italic[wght].woff2') format('woff2');font-style:italic;font-weight:100 900;font-display:swap}
+@font-face{font-family:Cinzel;src:url('/static/fonts/cinzel/Cinzel[wght].woff2') format('woff2');font-style:normal;font-weight:400 900;font-display:swap}
+@font-face{font-family:'Cinzel Decorative';src:url('/static/fonts/cinzeldecorative/CinzelDecorative-Bold.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:Manrope;src:url('/static/fonts/manrope/Manrope[wght].woff2') format('woff2');font-style:normal;font-weight:200 800;font-display:swap}

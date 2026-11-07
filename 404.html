@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>
+    (() => {
+      const { pathname, search, hash } = window.location;
+      // Retry a missing route with a trailing slash before showing the error page.
+      if (pathname !== '/404.html' && !pathname.endsWith('/')) {
+        window.location.replace(pathname + '/' + search + hash);
+      } else if (pathname !== '/404/') {
+        window.location.replace('/404/' + search + hash);
+      }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>Page Not Found | Rozalie the Pianist</title>
+</head>
+<body>
+  <p>Continue to the <a href="/404/">page not found</a> page.</p>
+</body>
+</html>

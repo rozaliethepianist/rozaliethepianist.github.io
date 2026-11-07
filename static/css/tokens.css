@@ -1,0 +1,75 @@
+/* Shared defaults only. Art-directed coordinates remain with their page rules.
+   Override --bg-light / --bg-dark directly on body or a paint-owning section.
+   These inherited properties deliberately have no frozen effective-color alias. */
+:root {
+  /* Palette: text colors and independent component variants are not page planes. */
+  --white: #fff;
+  --ink: #080808;
+  --cream: #eae5db;
+  --cream-card: #f9f1df;
+  --brown: #604a3f;
+  --brown-deep: #3f3933;
+  --blue: #408bb6;
+  --blue-hover: #32769d;
+  --text-body: #1f1c19;
+
+  /* Primary surfaces: inherit root -> page -> optional local section. */
+  --bg-light: #fff;
+  --bg-dark: #050505;
+
+  /* Explicit component variants preserve existing artwork palettes. */
+  --surface-accent: var(--brown);
+  --surface-card-light: var(--cream-card);
+  --surface-card-dark: #292929;
+  --surface-form-light: #eee;
+  --surface-field-light: #f4f4f4;
+  --surface-field-dark: #171717;
+  --surface-media: #181818;
+  --surface-iframe: #111;
+  --surface-reviews: #f8f8f8;
+  --surface-rate-1: #fff4e6;
+  --surface-rate-2: #f0cabf;
+  --surface-rate-3: #db9380;
+  --surface-online-1: #e6efff;
+  --surface-online-2: #ccd7f0;
+  --surface-online-3: #9ed7e7;
+  --surface-nav-light: #f6f1e8;
+  --surface-nav-dark: #40352e;
+  --surface-header-light: #fff;
+  --surface-header-contrast: #171512;
+
+  /* Font roles: Telegraf has no supplied web license; Manrope is the verified fallback. */
+  --sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --serif: 'Cinzel', Georgia, serif;
+  --serif-decor: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  --editorial: 'Manrope', 'Montserrat', Arial, sans-serif;
+  --font-size-base: 15px;
+  --line-height-base: 1.65;
+
+  /* Layout limits and shared spacing. Do not round source mask coordinates. */
+  --site-max: 1440px;
+  --max: var(--site-max);
+  --content-max: 1280px;
+  --page-gutter: clamp(18px, 3.5vw, 55px);
+  --space-1: 5px;
+  --space-2: 10px;
+  --space-3: 15px;
+  --space-4: 20px;
+  --space-5: 25px;
+  --space-6: 30px;
+  --space-7: 35px;
+  --space-8: 40px;
+  --space-9: 45px;
+  --space-10: 50px;
+  --radius-card: 15px;
+  --radius-media: 10px;
+  --radius-pill: 999px;
+
+  --button-radius: 24px;
+  --button-padding-block: 12px;
+  --button-padding-inline: 24px;
+  --button-font-size: 12px;
+  --button-letter-spacing: .12em;
+  --duration-fast: .2s;
+  --duration-media: .35s;
+}
