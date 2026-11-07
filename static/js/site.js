@@ -2,6 +2,8 @@
    Edit socialLinks and pressKitUrl in one place. No form backend is included. */
 (() => {
   'use strict';
+  document.addEventListener('keydown', event => { if (event.key === 'Tab') document.documentElement.classList.add('keyboard-navigation'); });
+  document.addEventListener('pointerdown', () => document.documentElement.classList.remove('keyboard-navigation'), {passive:true});
   const url = (path = '') => '/' + path.replace(/^\/+/, '');
   const asset = (path) => url('static/' + path);
   const page = document.body.dataset.page || 'home';
@@ -20,7 +22,7 @@
       linkedin: 'https://www.linkedin.com/in/roz%C3%A1lie-stoklasov%C3%A1-4a620a34b',
       linktree: 'https://linktr.ee/rozalie.stoklasova',
     },
-    pressKitUrl: 'https://assets.muvac.com/profiles/rozalie-stoklasova-1/docs/851404/1775391208837-rozlie_stoklasov_-_press_kit_2025.pdf?download=',
+    pressKitUrl: '/static/documents/rozalie-stoklasova-press-kit-2026.pdf',
   };
 
   const menu = [
@@ -55,7 +57,7 @@
             <span></span><span></span><span></span>
           </button>
           <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">${nav}</nav>
-          ${page === 'about' ? `<a class="press-link" href="${settings.pressKitUrl}" target="_blank" rel="noopener noreferrer">Press kit</a>` : ''}
+          ${page === 'about' ? `<a class="press-link" data-press-kit href="${settings.pressKitUrl}" target="_blank" rel="noopener noreferrer">Press kit</a>` : ''}
         </div>
       </header>`;
     const toggle = el.querySelector('.menu-toggle');
@@ -96,7 +98,7 @@
     el.addEventListener('focusin', event => { lastHeaderFocus = event.target; });
     document.addEventListener('focusin', event => { if (!el.contains(event.target) && event.target !== document.body) lastHeaderFocus = null; });
     document.addEventListener('pointerdown', event => { if (!el.contains(event.target)) lastHeaderFocus = null; });
-    const desktop = matchMedia('(min-width: 769px)');
+    const desktop = matchMedia('(min-width: 786px)');
     desktop.addEventListener('change', () => {
       const active = document.activeElement === document.body ? lastHeaderFocus : document.activeElement;
       const focusInMenu = navEl.contains(active);
@@ -170,7 +172,8 @@
 
   let youtubeAPI;
   const uploads = 'UUG5_aMyEhXXVwi5zO8ttx0g';
-  function configureUploads(iframe, index, autoplay = false, onSelection) {
+  // YouTube selects adaptive playback quality automatically; do not force a resolution.
+  function configureUploads(iframe, index, autoplay = false, onSelection, videoId) {
     const source = new URL(iframe.src);
     source.searchParams.set('enablejsapi', '1');
     source.searchParams.set('origin', location.origin);
@@ -186,11 +189,12 @@
     youtubeAPI.then(() => {
       if (!iframe.isConnected) return;
       iframe._youtubePlayer = new window.YT.Player(iframe, { events: { onReady(event) {
+        if (videoId) { event.target.cueVideoById(videoId); return; }
         const selection = { list: uploads, listType: 'playlist', index: Number(index) };
         if (autoplay) event.target.loadPlaylist(selection);
         else event.target.cuePlaylist(selection);
       }, onStateChange(event) {
-        if (event.data === 5 && event.target.getPlaylistIndex() === Number(index)) onSelection?.(event.target.getVideoData());
+        if (event.data === 5 && (videoId || event.target.getPlaylistIndex() === Number(index))) onSelection?.(event.target.getVideoData());
       } } });
     });
   }
@@ -208,6 +212,15 @@
     let backgroundState = [];
     const close = () => { dialog.hidden = true; backgroundState.forEach(([el, inert]) => { el.inert = inert; }); backgroundState = []; dialog.querySelector('.video-iframe-holder iframe')?._youtubePlayer?.destroy(); dialog.querySelector('.video-iframe-holder').replaceChildren(); document.body.classList.remove('modal-open'); previousFocus?.focus(); };
     dialog.querySelector('.video-close').addEventListener('click', close);
+    const pauseVideo = () => {
+      const iframe = dialog.querySelector('.video-iframe-holder iframe');
+      iframe?._youtubePlayer?.pauseVideo();
+      iframe?.contentWindow?.postMessage(JSON.stringify({ event: 'command', func: 'pauseVideo', args: [] }), 'https://www.youtube-nocookie.com');
+    };
+    const externalLink = dialog.querySelector('.video-external-link');
+    externalLink.addEventListener('click', pauseVideo);
+    externalLink.addEventListener('auxclick', event => { if (event.button === 1) pauseVideo(); });
+
     dialog.addEventListener('click', event => { if (event.target === dialog) close(); });
     document.addEventListener('keydown', event => { if (event.key === 'Escape' && !dialog.hidden) close(); });
     dialog.addEventListener('keydown', event => {
@@ -227,7 +240,7 @@
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       iframe.allowFullscreen = true;
       iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-      iframe.src = playlistIndex !== undefined ? `https://www.youtube-nocookie.com/embed/videoseries?list=UUG5_aMyEhXXVwi5zO8ttx0g&index=${Number(playlistIndex) + 1}&autoplay=1&rel=0` : `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+      iframe.src = playlistIndex !== undefined ? `https://www.youtube-nocookie.com/embed/videoseries?list=UUG5_aMyEhXXVwi5zO8ttx0g&index=${Number(playlistIndex) + 1}&autoplay=1&rel=0` : `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}`;
       dialog.querySelector('.video-iframe-holder').replaceChildren(iframe);
       if (playlistIndex !== undefined) configureUploads(iframe, playlistIndex, true);
       dialog.querySelector('.video-external-link').href = playlistIndex !== undefined ? `https://www.youtube.com/playlist?list=UUG5_aMyEhXXVwi5zO8ttx0g` : `https://www.youtube.com/watch?v=${id}`;
@@ -279,6 +292,27 @@
   }
 
   document.querySelectorAll('[data-press-kit]').forEach(el => { el.href = settings.pressKitUrl; });
+  document.addEventListener('click', event => {
+    const link = event.target.closest?.('a[data-press-kit]');
+    if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    const download = () => {
+      const anchor = document.createElement('a');
+      anchor.href = settings.pressKitUrl;
+      anchor.download = 'Rozalie-Stoklasova-Press-Kit-2026.pdf';
+      document.body.append(anchor);anchor.click();anchor.remove();
+    };
+    let popup;
+    try {
+      popup = window.open('about:blank', '_blank');
+      if (!popup || popup.closed) { download();return; }
+      popup.opener = null;
+      popup.location.replace(settings.pressKitUrl);
+    } catch {
+      popup?.close();download();
+    }
+  });
+
   document.querySelectorAll('[data-youtube-video]').forEach(el => { el.href = settings.socialLinks.youtube; });
   function renderCurrentAdviserArt() {
     if (page !== 'dutch') return;
@@ -286,9 +320,9 @@
     layer.className = 'adviser-current-art';layer.setAttribute('aria-hidden', 'true');
     const pieces = [
       { anchor: '#offers', x: -4.646, y: -19.522, width: 32.29, angle: 0, opacity: .31 },
-      { anchor: '#audience', x: -12.409, y: -21.8, width: 26.624, angle: -39.768, opacity: .31 },
-      { anchor: '#story', x: -9.8565, y: -12.6638, width: 27.6073, angle: 21.0637, opacity: .31 },
-      { anchor: '.adviser-opinion h2', x: -3.8458, y: -7.5287, width: 25.944, angle: 0, opacity: .23 }
+      { anchor: '#audience', x: -12.409, y: -25.8, width: 26.624, angle: -39.768, opacity: .31 },
+      { anchor: '#story', x: -9.8565, y: -10.0, width: 27.6073, angle: 21.0637, opacity: .31 },
+      { anchor: '.adviser-opinion h2', x: -4.8458, y: -9.5287, width: 25.944, angle: 0, opacity: .23 }
     ];
     pieces.forEach((piece, index) => { const img = document.createElement('img');img.src = ['/static/image/optimized/adviser-current-0-882d3ffa6ccc.webp','/static/image/optimized/adviser-current-1-716e1098fb45.webp','/static/image/optimized/adviser-current-2-e9b4120717c7.webp','/static/image/optimized/adviser-current-3-b5db5fb982aa.webp'][index];img.alt = '';layer.append(img);piece.image = img; });
     document.body.append(layer);
@@ -299,11 +333,12 @@
         image.style.left = `${main.left - body.left + piece.x * unit}px`;
         image.style.width = `${piece.width * unit}px`;
         image.style.transform = `rotate(${piece.angle}deg)`;
+        image.style.clipPath = piece.anchor === '#story' ? 'inset(0 0 33.333% 0)' : 'none';
         image.style.opacity = innerWidth <= 1100 ? '.16' : piece.opacity;
         if (piece.anchor) image.style.top = `${document.querySelector(piece.anchor).getBoundingClientRect().top - body.top + piece.y * unit}px`;
         else image.style.bottom = `${piece.bottom * unit}px`;
       });
-      const photoRects = [...document.querySelectorAll('.adviser-hero-photo,.adviser-portrait,.adviser-tulips,.adviser-story-crop')].map(photo => { const r = photo.getBoundingClientRect();return `<rect x="${r.left-body.left}" y="${r.top-body.top}" width="${r.width}" height="${r.height}" fill="black"/>`; }).join('');
+      const photoRects = [...document.querySelectorAll('.adviser-hero-photo,.adviser-tulips,.adviser-story-crop')].map(photo => { const r = photo.getBoundingClientRect();return `<rect x="${r.left-body.left}" y="${r.top-body.top}" width="${r.width}" height="${r.height}" fill="black"/>`; }).join('');
       const edge = document.body.classList.contains('canvas-fits-viewport') ? '' : `<defs><linearGradient id="edge"><stop stop-color="white" stop-opacity="0"/><stop offset="${44/body.width}" stop-color="white"/><stop offset="${1-44/body.width}" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs>`;
       const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${body.width}" height="${body.height}">${edge}<rect width="100%" height="100%" fill="${edge ? 'url(#edge)' : 'white'}"/>${photoRects}</svg>`;
       layer.style.maskImage = `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
@@ -388,32 +423,92 @@
     document.fonts.ready.then(updateEndingPlane);
     updateEndingPlane();
   }
+
+  // YouTube can return a tiny placeholder with HTTP 200 for unavailable sizes.
+  function setYouTubeThumbnail(image, id) {
+    const standard = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+    image.dataset.thumbnailVideo = id;
+    image.removeAttribute('srcset');
+    image.onerror = null;
+    image.src = standard;
+    if (navigator.connection?.saveData || /^(slow-2g|2g|3g)$/.test(navigator.connection?.effectiveType || '')) return;
+    const candidate = new Image();
+    candidate.onload = () => {
+      if (candidate.naturalWidth < 640 || candidate.naturalHeight < 360 || image.dataset.thumbnailVideo !== id || !image.isConnected) return;
+      image.onerror = () => { image.onerror = null; image.src = standard; };
+      image.src = candidate.src;
+    };
+    // Leave the already displayed standard thumbnail untouched on a failed probe.
+    candidate.onerror = () => {};
+    candidate.src = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+  }
+
+  // Build the video cards before binding player controls and metadata resolvers.
+  const videoSettings = window.ROZALIE_VIDEOS || { about: [], home: ['auto', 'auto'] };
+  function configuredVideoId(value) {
+    try {
+      const url = new URL(value);
+      if (url.protocol !== 'https:' || !['youtu.be', 'youtube.com', 'www.youtube.com', 'www.youtube-nocookie.com'].includes(url.hostname)) return null;
+      const id = url.hostname === 'youtu.be' ? url.pathname.slice(1) : url.pathname === '/watch' ? url.searchParams.get('v') : /^\/(embed|shorts)\//.test(url.pathname) ? url.pathname.split('/')[2] : null;
+      return /^[\w-]{11}$/.test(id || '') ? id : null;
+    } catch { return null; }
+  }
+  function configuredCard(id, slot, autoIndex) {
+    const button = document.createElement('button');
+    button.className = 'video-thumb'; button.type = 'button';
+    button.setAttribute('aria-label', 'Play on YouTube');
+    if (autoIndex !== undefined) {
+      button.dataset.liveUpload = autoIndex;
+      button.dataset.videoPlaylist = autoIndex;
+    } else { button.dataset.video = id; button.dataset.videoSlot = slot; }
+    const image = document.createElement('img'); image.alt = ''; image.width = 480; image.height = 360; image.loading = 'lazy';
+    if (id) image.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+    const badge = document.createElement('span'); badge.className = 'youtube-badge'; badge.textContent = 'YouTube';
+    const title = document.createElement('span'); title.className = 'video-card-title'; title.textContent = autoIndex === undefined ? 'YouTube video' : 'Latest YouTube performance';
+    button.append(image, badge, title); return button;
+  }
+  const aboutVideoGrid = document.querySelector('.about-media-grid');
+  if (aboutVideoGrid) {
+    aboutVideoGrid.replaceChildren();
+    (Array.isArray(videoSettings.about) ? videoSettings.about : []).forEach((url, index) => {
+      const id = configuredVideoId(url); if (!id) return;
+      const figure = document.createElement('figure');
+      figure.append(configuredCard(id, `about-${index + 1}`));
+      aboutVideoGrid.append(figure);
+    });
+  }
+  const homeVideoGrid = document.querySelector('.home-videos');
+  if (homeVideoGrid) {
+    homeVideoGrid.replaceChildren(); let automaticIndex = 0;
+    [0, 1].forEach(index => {
+      const value = videoSettings.home?.[index];
+      const id = configuredVideoId(value);
+      homeVideoGrid.append(id ? configuredCard(id, `home-${index + 1}`) : configuredCard(null, null, automaticIndex++));
+    });
+  }
+
   renderForms();
   renderVideoDialog();
   renderPhotoDialog();
   renderCurrentAdviserArt();
-  document.querySelectorAll('[data-live-upload]').forEach(button => {
+  document.querySelectorAll('[data-live-upload], [data-video-slot]').forEach(button => {
+    const configuredVideo = button.hasAttribute('data-live-upload') ? null : button.dataset.video;
     const iframe = document.createElement('iframe');
     iframe.className = 'youtube-metadata-resolver';
     iframe.title = 'YouTube upload metadata resolver';
     iframe.setAttribute('aria-hidden', 'true'); iframe.tabIndex = -1;
     iframe.style.cssText = 'position:absolute;top:0;left:-10000px;width:200px;height:113px;border:0;pointer-events:none';
-    iframe.src = `https://www.youtube-nocookie.com/embed/videoseries?list=${uploads}&rel=0`;
+    iframe.src = configuredVideo ? `https://www.youtube-nocookie.com/embed/${configuredVideo}?rel=0` : `https://www.youtube-nocookie.com/embed/videoseries?list=${uploads}&rel=0`;
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
     document.body.append(iframe);
     configureUploads(iframe, button.dataset.liveUpload, false, video => {
       if (!/^[\w-]{11}$/.test(video.video_id)) return;
       button.dataset.video = video.video_id;
+      delete button.dataset.videoPlaylist;
       button.setAttribute('aria-label', `Play on YouTube: ${video.title}`);
       button.querySelector('.video-card-title').textContent = video.title;
-      const image = button.querySelector('img');
-      image.src = `https://i.ytimg.com/vi/${video.video_id}/hqdefault.jpg`;
-      if (!navigator.connection?.saveData && !/^(slow-2g|2g|3g)$/.test(navigator.connection?.effectiveType || '')) {
-        image.srcset = `https://i.ytimg.com/vi/${video.video_id}/hqdefault.jpg 480w, https://i.ytimg.com/vi/${video.video_id}/maxresdefault.jpg 1280w`;
-        image.sizes = '(max-width: 1100px) 90vw, 450px';
-      }
-      image.onerror = () => { image.removeAttribute('srcset'); image.onerror = null; image.src = `https://i.ytimg.com/vi/${video.video_id}/hqdefault.jpg`; };
-    });
+      setYouTubeThumbnail(button.querySelector('img'), video.video_id);
+    }, configuredVideo);
   });
   if (page === 'home') {
     const main = document.querySelector('main');
@@ -428,5 +523,19 @@
     new ResizeObserver(updateSeam).observe(document.body);
     document.fonts.ready.then(updateSeam);
     updateSeam();
+  }
+  const artistQuote = document.querySelector('.home-quote');
+  if (artistQuote) {
+    const alignClosingQuote = () => {
+      const paragraph = artistQuote.querySelector('p:last-child');
+      const range = document.createRange();
+      range.selectNodeContents(paragraph);
+      const lines = [...range.getClientRects()].filter(rect => rect.height > 0);
+      const last = lines.at(-1);
+      if (last) artistQuote.style.setProperty('--quote-end-y', `${last.top + last.height / 2 - artistQuote.getBoundingClientRect().top}px`);
+    };
+    new ResizeObserver(alignClosingQuote).observe(artistQuote);
+    document.fonts.ready.then(alignClosingQuote);
+    alignClosingQuote();
   }
 })();
