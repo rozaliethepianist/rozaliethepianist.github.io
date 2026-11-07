@@ -33,11 +33,11 @@
 .page-lessons .lessons-method-left p { font: 400 .925cqw/1.342 var(--editorial); letter-spacing: 0; margin: 0 0 3.1cqw; text-align: justify; }
 .page-lessons .lessons-method-left p:last-child { font-size: .98cqw; margin-top: -1.6cqw; }
 .page-lessons .lessons-method-right { position: absolute; top: 1.05cqw; left: 48.05%; width: 48.2%; padding: 0; }
-.page-lessons .lessons-gallery-primary { grid-template-columns: 1fr 1fr; gap: .35cqw; width: 93%; }
+.page-lessons .lessons-gallery-primary { grid-template-columns: 1fr 1fr; gap: .35cqw; width: 93%; margin-left: 1cqw;}
 .page-lessons .lessons-gallery-primary img,.page-lessons .lessons-gallery-secondary img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
-.page-lessons .lessons-gallery-caption { font: italic 400 .76cqw/1.4 var(--sans); text-align: left; margin: .8cqw 0 1.9cqw; }
-.page-lessons .lessons-gallery-secondary { gap: .65cqw; margin-left: 1.6cqw; }
-.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption { margin-left: 2.3cqw; white-space: nowrap; font-size: .75cqw; }
+.page-lessons .lessons-gallery-caption { font: italic 400 .76cqw/1.4 var(--sans); text-align: left; margin: .8cqw 1cqw 1.9cqw; }
+.page-lessons .lessons-gallery-secondary { gap: .65cqw; margin-left: 3cqw; }
+.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption { margin-left: 3cqw; white-space: nowrap; font-size: .75cqw; }
 .page-lessons .lessons-method-right > .button { margin: 1.9cqw 0 0; font-size: .98cqw; font-weight: 400; letter-spacing: 0; min-height: 3.2cqw; padding: .7cqw 1.4cqw; }
 .page-lessons .lessons-rates,.page-lessons .lessons-online { height: 56.23cqw; min-height: 0; display: grid; grid-template-columns: 65% 35%; }
 .page-lessons .rates-left { padding: 4.5cqw 2.45cqw 0 8.1cqw; text-align: center; }
@@ -59,7 +59,7 @@
 .page-lessons .lessons-online .rates-left { padding-top: 5cqw; padding-left: 8.35cqw; padding-right: 1.5cqw; }
 .page-lessons .lessons-online .rates-left h2 { font: 700 1.8cqw/1.4 var(--serif); margin: 0 0 3.5cqw; }
 .page-lessons .online-description { font: 400 .88cqw/1.35 var(--editorial); letter-spacing: 0; max-width: none; margin: 0 0 3cqw; }
-.page-lessons .lessons-online .rate-grid { margin: 0 1.3cqw 0 1.1cqw; gap: 2.8cqw; }
+.page-lessons .lessons-online .rate-grid { margin: 0; gap: 2.8cqw; }
 .page-lessons .lessons-online .rates-aside { padding-top: 6.6cqw; gap: 5.7cqw; }
 .page-lessons .lessons-online .rates-aside .note { margin-top: 2.5cqw; }
 .page-lessons .lessons-reviews { --bg-light: #fff; background: transparent; padding: 0; color: #111; }
@@ -94,7 +94,7 @@
  .page-lessons .lessons-teaching-right .closing { font-size: 17px; margin-top: 35px; }
  .page-lessons .lessons-method-left h2 { font-size: 28px; white-space: normal; margin: 0 0 30px; text-align: center; }
  .page-lessons .lessons-method-left p,.page-lessons .lessons-method-left p:last-child { font-size: 14px; line-height: 1.6; text-align: left; margin: 0 0 24px; }
- .page-lessons .lessons-gallery-primary { width: 100%; gap: 8px; }.page-lessons .lessons-gallery-secondary { gap: 7px; margin: 0; }
+ .page-lessons .lessons-gallery-primary { width: 100%; gap: 8px; margin-left: 0;}.page-lessons .lessons-gallery-secondary { gap: 7px; margin: 0; }
  .page-lessons .lessons-gallery-caption,.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption { font-size: 11px; white-space: normal; margin: 12px 0 25px; }
  .page-lessons .lessons-method-right > .button { font-size: 12px; min-height: 44px; padding: 10px 16px; margin-top: 12px; }
  .page-lessons .lessons-rates,.page-lessons .lessons-online { height: auto; display: flex; flex-direction: column; background: var(--bg-dark); }
@@ -175,4 +175,31 @@
 /* Individual Lessons PDF: retain the native footer rotation and proportions. */
 @media(min-width:1101px){
  .lessons-art-layer .lessons-art-footer{width:25.5495cqw;left:-3.3441cqw}
+}
+
+.lesson-photo-rate-1 { filter:saturate(.8); }
+.lesson-photo-rate-2 { filter:url(#lesson-cool-rate) saturate(.9); }
+.lesson-photo-rate-3 { filter:saturate(1.15) hue-rotate(2deg); }
+.lesson-photo-online-1 { filter: saturate(1.1); }
+.lesson-photo-online-2 { filter:url(#lesson-cool-online) saturate(1.35); }
+.lesson-photo-online-3 { filter:saturate(1.75) hue-rotate(7deg); }
+@media (any-hover: hover) and (any-pointer: fine) {
+  .page-lessons .rate-card {
+    transition: transform .22s ease, box-shadow .22s ease;
+  }
+
+  .page-lessons .rate-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .16);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-lessons .rate-card {
+    transition: none;
+  }
+
+  .page-lessons .rate-card:hover {
+    transform: none;
+  }
 }

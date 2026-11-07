@@ -43,3 +43,9 @@
 .about-photo-grid img:nth-child(3){aspect-ratio:1.7778}.about-photo-grid img:nth-child(4){aspect-ratio:1.5}
 @media(max-width:1100px){.page-about [data-site-header]{height:76px}.page-about .header-logo img{height:72px;width:122px}.about-photo-grid img:nth-child(n){aspect-ratio:1}}
 .about-follow{font:400 16px/1.7 var(--serif);text-align:center;margin:45px 25px}.about-follow a{text-decoration:underline}
+
+/* Center an unpaired final performance at the same width as the other cards. */
+.about-c4 .about-media-grid > figure:last-child:nth-child(odd) { grid-column:1 / -1; justify-self:center; width:calc((100% - 4cqw) / 2); }
+@media (max-width: 1100px) {
+ .about-c4 .about-media-grid > figure:last-child:nth-child(odd) { width:100%; }
+}
