@@ -403,3 +403,24 @@ body.page-dutch .adviser-reviews-grid { background:#f8fafc; }
  body.page-dutch .adviser-reviews-title { background:#f8fafc; }
  body.page-dutch .adviser-reviews-title::before { background:#f8fafc; }
 }
+
+/* Full-width hero frames have straight edges; preserve split desktop frames. */
+body.page-lessons .lessons-hero-photo.hero-fills-viewport,
+body.page-dutch .adviser-hero-photo.hero-fills-viewport,
+body.page-contact .contact-photo-c5.hero-fills-viewport { clip-path:none; }
+body.page-lessons .lessons-hero-photo.hero-fills-viewport,
+body.page-dutch .adviser-hero-photo.hero-fills-viewport { mask-image:none; }
+body.page-lessons .lessons-hero-photo.hero-fills-viewport::after,
+body.page-dutch .adviser-hero-photo.hero-fills-viewport::after { display:none; }
+
+/* Extend feathering fields one CSS pixel beyond each photo boundary. */
+body :is(.home-hero-photo,.lessons-hero-photo,.adviser-hero-photo,.contact-photo-c5),
+body.page-about .about-hero>img {
+ mask-size:calc(100% + 2px) calc(100% + 2px);
+ mask-position:-1px -1px;
+ mask-repeat:no-repeat;
+}
+body.page-home .home-hero-photo::after,
+body.page-lessons .lessons-hero-photo::after,
+body.page-dutch .adviser-hero-photo::after,
+body.page-contact .contact-photo-c5::after { inset:-1px; }

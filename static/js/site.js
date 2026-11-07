@@ -313,7 +313,7 @@
 
   const connection = navigator.connection;
   if (connection?.saveData || /^(slow-2g|2g|3g)$/.test(connection?.effectiveType || '')) document.querySelectorAll('[data-adaptive-thumbnail]').forEach(img => img.removeAttribute('srcset'));
-  const updateEdgeBlend = () => { document.body.style.setProperty('--viewport-width', `${document.documentElement.clientWidth}px`); const main = document.querySelector('main'); document.body.classList.toggle('canvas-fits-viewport', !!main && main.getBoundingClientRect().width >= document.documentElement.clientWidth - 1); };
+  const updateEdgeBlend = () => { document.querySelectorAll('.lessons-hero-photo,.adviser-hero-photo,.contact-photo-c5').forEach(photo => photo.classList.toggle('hero-fills-viewport', photo.getBoundingClientRect().width >= document.documentElement.clientWidth - 1)); document.body.style.setProperty('--viewport-width', `${document.documentElement.clientWidth}px`); const main = document.querySelector('main'); document.body.classList.toggle('canvas-fits-viewport', !!main && main.getBoundingClientRect().width >= document.documentElement.clientWidth - 1); };
   new ResizeObserver(updateEdgeBlend).observe(document.documentElement);
   updateEdgeBlend();
   // Root scrollbar variables inherit the current page's right-margin palette.
