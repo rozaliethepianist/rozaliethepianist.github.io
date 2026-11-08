@@ -175,7 +175,7 @@
 
   let youtubeAPI;
   const videoSettings = window.ROZALIE_VIDEOS || { about: [], home: [] };
-  const uploads = videoSettings.uploadsPlaylist || ''; 
+  const uploads = videoSettings.uploadsPlaylist || '';
   // YouTube selects adaptive playback quality automatically; do not force a resolution.
   function configureUploads(iframe, index, autoplay = false, onSelection, videoId) {
     const source = new URL(iframe.src);
@@ -462,8 +462,8 @@
       const start = frame.width * .6031;
       // Reverse the same continuous diagonal at the final section before the footer.
       const opinion = endingPlane.querySelector('.lessons-opinion,.adviser-opinion');
-      const bendTop = opinion ? opinion.getBoundingClientRect().top - frame.top : frame.height;
-      const slope = Math.tan(13 * Math.PI / 180);
+      const bendTop = (opinion ? opinion.getBoundingClientRect().top - frame.top : frame.height) - 65;
+      const slope = Math.tan(15 * Math.PI / 180);
       const bend = start + (bendTop - top) * slope;
       const end = bend - (frame.height - bendTop) * slope;
       const overlap = parseFloat(getComputedStyle(endingPlane).getPropertyValue('--background-paint-overlap')) || 0;

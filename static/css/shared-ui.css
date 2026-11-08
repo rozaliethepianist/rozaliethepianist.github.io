@@ -392,7 +392,7 @@ body.page-about .about-photos > #photo-credit { opacity: .25; }
 @media(min-width:1101px) {
  body:is(.page-lessons,.page-dutch) .page-plane::before {
   top:calc(var(--ending-top,100%) - var(--background-paint-overlap));
-  clip-path:polygon(0 0,calc(var(--ending-x-start,60.31%) - .461736px) 0,var(--ending-x-end,72%) 100%,0 100%);
+  clip-path:polygon(0 0,calc(var(--ending-x-start,60.31%) - .932615px) 0,var(--ending-x-end,72%) 100%,0 100%);
  }
  body:is(.page-lessons,.page-dutch) .page-plane > main::before {
   mask-image:linear-gradient(to bottom,#000 0 calc(var(--ending-top,100%) + var(--background-paint-overlap)),transparent calc(var(--ending-top,100%) + var(--background-paint-overlap)));
@@ -583,6 +583,6 @@ body.page-about .site-header::before {
 /* One background polygon turns back before the footer, without a separate seam. */
 @media(min-width:1101px){
  body:is(.page-lessons,.page-dutch) .page-plane::before{
-  clip-path:polygon(0 0,calc(var(--ending-x-start,60.31%) - .461736px) 0,var(--ending-x-bend,72%) var(--ending-bend-top,80%),var(--ending-x-end,69%) 100%,0 100%);
+  clip-path:polygon(0 0,calc(var(--ending-x-start,60.31%) - .932615px) 0,var(--ending-x-bend,72%) var(--ending-bend-top,80%),var(--ending-x-end,69%) 100%,0 100%);
  }
 }
