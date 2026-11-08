@@ -36,8 +36,8 @@
 .page-lessons .lessons-gallery-primary { grid-template-columns: 1fr 1fr; gap: .35cqw; width: 93%; margin-left: 1cqw;}
 .page-lessons .lessons-gallery-primary img,.page-lessons .lessons-gallery-secondary img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
 .page-lessons .lessons-gallery-caption { font: italic 400 .76cqw/1.4 var(--sans); text-align: left; margin: .8cqw 1cqw 1.9cqw; }
-.page-lessons .lessons-gallery-secondary { gap: .65cqw; margin-left: 3cqw; }
-.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption { margin-left: 3cqw; white-space: nowrap; font-size: .75cqw; }
+.page-lessons .lessons-gallery-secondary { gap: .65cqw; margin-left: 4cqw; }
+.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption { margin-left: 4cqw; white-space: nowrap; font-size: .75cqw; }
 .page-lessons .lessons-method-right > .button { margin: 1.9cqw 0 0; font-size: .98cqw; font-weight: 400; letter-spacing: 0; min-height: 3.2cqw; padding: .7cqw 1.4cqw; }
 .page-lessons .lessons-rates,.page-lessons .lessons-online { height: 56.23cqw; min-height: 0; display: grid; grid-template-columns: 65% 35%; }
 .page-lessons .rates-left { padding: 4.5cqw 2.45cqw 0 8.1cqw; text-align: center; }

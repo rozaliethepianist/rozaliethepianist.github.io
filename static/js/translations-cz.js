@@ -140,7 +140,7 @@ window.rozalieCzech = {
   "In Maastricht & Online": "V Maastrichtu i online",
   "For musicians of all levels and ages": "Pro hudebníky všech úrovní a věků",
   "5 years of teaching experience": "5 let pedagogické praxe",
-  "BA in Classical Piano at the Conservatorium Maastricht (NL) and a Teaching Certificate": "Bakalářské vzdělání v klasickém klavíru na Conservatorium Maastricht (NL) a pedagogický certifikát",
+  "BA in Classical Piano at the Conservatorium Maastricht (NL) and a Teaching Certificate": "Bakalářské vzdělání (BA) v klasickém klavíru na Conservatorium Maastricht (NL) a pedagogický certifikát",
   "Students with smiles on their faces": "Studenti s úsměvem na tváři",
   "Guidance that triggers your fantasy": "Vedení, které probouzí fantazii",
   "Ask about lessons": "Zeptat se na lekce",
