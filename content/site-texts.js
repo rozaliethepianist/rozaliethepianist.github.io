@@ -9,8 +9,8 @@ window.ROZALIE_CONTENT = {
     "cz": "970 Kč"
   },
   "price_lessons_in_person_bundle_5": {
-    "en": "€210",
-    "cz": "5 110 Kč"
+    "en": "€190",
+    "cz": "4 650 Kč"
   },
   "price_lessons_online_45": {
     "en": "€35",
@@ -21,16 +21,16 @@ window.ROZALIE_CONTENT = {
     "cz": "970 Kč"
   },
   "price_lessons_online_bundle_5": {
-    "en": "€210",
-    "cz": "5 110 Kč"
+    "en": "€190",
+    "cz": "4 650 Kč"
   },
   "price_adviser_single": {
     "en": "€80",
     "cz": "1 950 Kč"
   },
   "price_adviser_bundle_3": {
-    "en": "€200",
-    "cz": "4 900 Kč"
+    "en": "€230",
+    "cz": "5 600 Kč"
   },
   "home_the_pianist_pianist_piano_lessons_dutch_study": {
     "en": "Rozalie The Pianist | Pianist, Piano Lessons & Dutch Study Advising",
@@ -228,97 +228,9 @@ window.ROZALIE_CONTENT = {
     "en": "Contact Rozalie",
     "cz": "Kontaktovat Rozálii"
   },
-  "terms_terms_of_service_the_pianist": {
-    "en": "Terms of Service | Rozalie The Pianist",
-    "cz": "Podmínky služeb | Rozalie The Pianist"
-  },
-  "terms_terms_and_conditions": {
-    "en": "Terms and Conditions",
-    "cz": "Podmínky služeb"
-  },
-  "terms_information_for_piano_lessons_dutch_study_consultations": {
-    "en": "Information for piano lessons, Dutch study consultations and use of this website. Last updated: November 6, 2026.",
-    "cz": "Informace o výuce klavíru, konzultacích ke studiu v Nizozemsku a používání webu. Aktualizováno: 6. listopadu 2026."
-  },
-  "terms_services_and_contact": {
-    "en": "Services and contact",
-    "cz": "Služby a kontakt"
-  },
-  "terms_offers_piano_lessons_in_maastricht_and_online": {
-    "en": "Rozálie Stoklasová offers piano lessons in Maastricht and online, and online consultations about studying and living in the Netherlands. Email",
-    "cz": "Rozálie Stoklasová nabízí prezenční výuku klavíru v Maastrichtu, online lekce a online konzultace ke studiu a životu v Nizozemsku. Napište na"
-  },
-  "terms_to_discuss_availability_your_goals_and_practical": {
-    "en": "to discuss availability, your goals and practical arrangements. The website does not confirm bookings, accept payments or send form submissions.",
-    "cz": "a domluvte se na dostupnosti, svých cílech a praktických podrobnostech. Web nepotvrzuje rezervace, nepřijímá platby ani neodesílá zprávy z formulářů."
-  },
-  "terms_lesson_options_and_displayed_prices": {
-    "en": "Lesson options and displayed prices",
-    "cz": "Varianty výuky a uvedené ceny"
-  },
-  "terms_in_person_piano_lessons_45_minutes_price": {
-    "en": "In-person piano lessons: 45 minutes {{price_lessons_in_person_45}}, 60 minutes {{price_lessons_in_person_60}}, or five 60-minute lessons {{price_lessons_in_person_bundle_5}}. Online piano lessons: 45 minutes {{price_lessons_online_45}}, 60 minutes {{price_lessons_online_60}}, or five 60-minute lessons {{price_lessons_online_bundle_5}}. A 10% student discount is available with enrollment evidence. Confirm eligibility, the final total, any applicable tax treatment and what is included directly before agreeing to a service. No additional package expiry or payment deadline is imposed by this page.",
-    "cz": "Prezenční výuka klavíru: 45 minut za {{price_lessons_in_person_45}}, 60 minut za {{price_lessons_in_person_60}} nebo balíček pěti 60minutových lekcí za {{price_lessons_in_person_bundle_5}}. Online výuka klavíru: 45 minut za {{price_lessons_online_45}}, 60 minut za {{price_lessons_online_60}} nebo balíček pěti 60minutových lekcí za {{price_lessons_online_bundle_5}}. Studenti mohou po doložení studia získat slevu 10 %. Nárok na slevu, konečnou cenu, případné daňové podmínky a obsah služby si před dohodou ověřte přímo. Tato stránka nestanovuje další dobu platnosti balíčků ani lhůtu splatnosti."
-  },
-  "terms_study_consultations": {
-    "en": "Study consultations",
-    "cz": "Studijní konzultace"
-  },
-  "terms_the_adviser_page_lists_a_one_off": {
-    "en": "The Adviser page lists a one-off 60-minute online consultation at {{price_adviser_single}} and a bundle of three 60-minute consultations at {{price_adviser_bundle_3}}. The page explains the included preparation, information and materials. Advice draws on Rozálie’s experience; it is not an assurance of admission, housing, employment, funding or an administrative outcome. Check decisions and requirements with the relevant institution or authority.",
-    "cz": "Stránka Studium v Nizozemsku uvádí jednorázovou 60minutovou online konzultaci za {{price_adviser_single}} a balíček tří 60minutových konzultací za {{price_adviser_bundle_3}}. Popisuje zahrnutou přípravu, informace a materiály. Poradenství vychází ze zkušeností Rozálie; nezaručuje přijetí ke studiu, bydlení, zaměstnání, financování ani výsledek úředního řízení. Rozhodnutí a požadavky si ověřujte u příslušné instituce či úřadu."
-  },
-  "terms_agreeing_on_a_lesson_or_consultation": {
-    "en": "Agreeing on a lesson or consultation",
-    "cz": "Domluvení lekce nebo konzultace"
-  },
-  "terms_discuss_the_service_dates_location_or_online": {
-    "en": "Discuss the service, dates, location or online platform, duration, preparation, price and payment arrangements by email. An inquiry or browsing this website is not a confirmed appointment. For a child’s lessons, a parent or guardian should handle these arrangements. Any service-specific conditions should be provided and agreed before a commitment is made.",
-    "cz": "Službu, termíny, místo nebo online platformu, délku, přípravu, cenu a platební podmínky domluvte e-mailem. Dotaz ani prohlížení webu nepředstavují potvrzenou schůzku. Výuku dítěte by měl sjednávat rodič nebo zákonný zástupce. Podmínky konkrétní služby musí být poskytnuty a odsouhlaseny před vznikem závazku."
-  },
-  "terms_preparation_and_participation": {
-    "en": "Preparation and participation",
-    "cz": "Příprava a účast"
-  },
-  "terms_please_arrive_or_connect_on_time_have": {
-    "en": "Please arrive or connect on time, have the agreed instrument, materials and equipment ready, and share relevant goals or questions. For online sessions, check your internet connection, camera and sound beforehand. Progress depends on individual circumstances, participation and practice; no particular examination or performance result is promised.",
-    "cz": "Přijďte nebo se připojte včas, připravte si dohodnutý nástroj, materiály a vybavení a sdělte své cíle či otázky. Před online lekcí zkontrolujte internet, kameru a zvuk. Pokrok závisí na individuálních okolnostech, zapojení a cvičení; konkrétní výsledek zkoušky nebo vystoupení není zaručen."
-  },
-  "terms_changes_cancellations_and_refunds": {
-    "en": "Changes, cancellations and refunds",
-    "cz": "Změny, rušení a vracení plateb"
-  },
-  "terms_if_either_party_needs_to_change_an": {
-    "en": "If either party needs to change an appointment, contact the other as soon as possible. Rescheduling depends on mutual availability. Any cancellation notice period, room charge, package validity, payment deadline or refund arrangement must be confirmed in writing before the service is agreed. This website does not create an automatic forfeiture, non-refundable package or additional cancellation fee.",
-    "cz": "Potřebuje-li některá strana změnit termín, kontaktuje druhou co nejdříve. Náhradní termín závisí na vzájemné dostupnosti. Lhůtu pro zrušení, poplatek za místnost, platnost balíčku, splatnost nebo podmínky vrácení plateb je nutné písemně potvrdit před sjednáním služby. Tento web nezavádí automatické propadnutí platby, nevratný balíček ani dodatečný storno poplatek."
-  },
-  "terms_applicable_statutory_consumer_rights_remain_unaffected_where": {
-    "en": "Applicable statutory consumer rights remain unaffected. Where a contract is concluded at a distance, any applicable withdrawal information and arrangements for starting a service during a withdrawal period must be provided before agreement. Do not assume that simply contacting Rozálie or using this site waives those rights.",
-    "cz": "Zákonná práva spotřebitelů zůstávají nedotčena. Při uzavření smlouvy na dálku musí být před dohodou poskytnuty případné informace o odstoupení a podmínkách zahájení služby během lhůty pro odstoupení. Samotný kontakt s Rozálií ani používání webu neznamenají vzdání se těchto práv."
-  },
-  "terms_materials_photographs_and_recordings": {
-    "en": "Materials, photographs and recordings",
-    "cz": "Materiály, fotografie a nahrávky"
-  },
-  "terms_respect_copyright_in_scores_teaching_materials_photographs": {
-    "en": "Respect copyright in scores, teaching materials, photographs and videos. Public access to a page does not grant permission to redistribute its contents. Ask before recording a lesson or consultation, and agree on its purpose and use. Photographer credits and links are retained on the About page.",
-    "cz": "Respektujte autorská práva k notám, výukovým materiálům, fotografiím a videím. Veřejná dostupnost stránky neopravňuje k dalšímu šíření jejího obsahu. Před nahráváním lekce či konzultace požádejte o souhlas a dohodněte účel a použití nahrávky. Fotografické kredity a odkazy jsou uvedeny na stránce O mně."
-  },
-  "terms_questions_and_privacy": {
-    "en": "Questions and privacy",
-    "cz": "Dotazy a soukromí"
-  },
-  "terms_raise_concerns_about_a_service_promptly_by": {
-    "en": "Raise concerns about a service promptly by email so that the matter can be discussed. See the",
-    "cz": "Případné výhrady ke službě sdělte včas e-mailem, aby je bylo možné projednat. Viz"
-  },
   "common_privacy_policy": {
     "en": "Privacy Policy",
     "cz": "Ochrana osobních údajů"
-  },
-  "terms_for_information_about_this_website_email_correspondence": {
-    "en": "for information about this website, email correspondence and external services. These terms do not restrict rights that cannot lawfully be excluded. Business registration, address, tax details and any additional service policies should be supplied with the final service agreement..",
-    "cz": "s informacemi o webu, e-mailové komunikaci a externích službách. Tyto podmínky neomezují práva, která nelze ze zákona vyloučit. Údaje o registraci podnikání, adrese, daních a další podmínky mají být poskytnuty s konečnou dohodou o službě."
   },
   "adviser_dutch_study_adviser_the_pianist": {
     "en": "Dutch Study Adviser | Rozalie The Pianist",
@@ -889,8 +801,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Vedle pedagogické práce studuje Rozálie Stoklasová magisterský obor klasického klavíru na Conservatorium Maastricht pod vedením Dr. Katie Veekmans. V roce 2026 dokončila bakalářské studium se zaměřením na klavírní pedagogiku a získala pedagogický certifikát. V roce 2022 absolvovala osmileté studium na Gymnáziu a Hudební škole hl. m. Prahy jako členka speciální hudební třídy pod vedením prof. Iriny Parker. Získala maturitní vysvědčení a studium zakončila sólovým recitálem."
   },
   "about_in_order_to_develop_her_musical_skills": {
-    "en": "In order to develop her musical skills, Rozálie attended masterclasses with prominent pianists and teachers. In 2024, she was chosen as a piano-class representative at the masterclass of a Russian pianist Mikhail Voskresensky. The following year, she attended \"D´Accord Academy\" in Germany, where she took lessons with Czech pianist Bohumír Stehlík. In 2022, she participated in the \"International Forum for Flute and Piano\" in Luxembourg, working with American pianist Prof. Daniel Blumenthal. At a young age, she participated in Masterclasses with Czech pianist Martin Kasík.",
-    "cz": "Pro rozvoj hudebních dovedností navštěvovala mistrovské kurzy významných klavíristů a pedagogů. V roce 2024 byla vybrána jako zástupkyně klavírní třídy na kurzu Michaila Voskresenského. Následující rok se účastnila D´Accord Academy v Německu, kde studovala u Bohumíra Stehlíka. V roce 2022 absolvovala International Forum for Flute and Piano v Lucembursku pod vedením amerického klavíristy prof. Daniela Blumenthala. V mládí se účastnila kurzů Martina Kasíka."
+    "en": "In order to develop her musical skills, Rozálie attended masterclasses with prominent pianists and teachers. In 2024, she was chosen as a piano-class representative at the masterclass of a Russian pianist Mikhail Voskresensky. The previous year, she attended \"D´Accord Academy\" in Germany, where she took lessons with Czech pianist Bohumír Stehlík. In 2022, she participated in the \"International Forum for Flute and Piano\" in Luxembourg, working with American pianist Prof. Daniel Blumenthal. At a young age, she participated in Masterclasses with Czech pianist Martin Kasík.",
+    "cz": "Pro rozvoj hudebních dovedností navštěvovala mistrovské kurzy významných klavíristů a pedagogů. V roce 2024 byla vybrána jako zástupkyně klavírní třídy na kurzu Michaila Voskresenského. Předchozí rok se účastnila D´Accord Academy v Německu, kde studovala u Bohumíra Stehlíka. V roce 2022 absolvovala International Forum for Flute and Piano v Lucembursku pod vedením amerického klavíristy prof. Daniela Blumenthala. V mládí se účastnila kurzů Martina Kasíka."
   },
   "about_spending_her_childhood_in_the_homely_town": {
     "en": "Spending her childhood in the homely town Rožnov pod Radhoštěm and experiencing her teenage years in Prague, the capital of the Czech Republic, shaped Rozálie's unique personality. The cultural diversity she tasted within her home country inspired her to devote herself to musical education in the Netherlands. The guidance of professional teachers led her to explore teaching as a new passion. She strives to teach intensively after her studies, providing lessons and masterclasses, and popularizing classical music with a wider audience. Her vision is to encourage the imagination of her students and allow them to fully appreciate the unique connection between music and fantasy.",
@@ -1468,16 +1380,152 @@ window.ROZALIE_CONTENT = {
     "en": "No articles are currently available.",
     "cz": "Momentálně nejsou k dispozici žádné práce."
   },
-  "about_open_cv": {"en": "Open CV", "cz": "Otevřít životopis"},
-  "lessons_faq_heading": {"en": "Q&A", "cz": "Otázky a odpovědi"},
-  "lessons_faq_beginner_question": {"en": "Can I start as a complete beginner?", "cz": "Mohu začít i jako úplný začátečník?"},
-  "lessons_faq_beginner_answer": {"en": "Yes. In-person lessons are suitable for complete beginners, and I adapt the pace and material to your experience.", "cz": "Ano. Prezenční výuka je vhodná i pro úplné začátečníky. Tempo i náplň lekcí přizpůsobím vašim zkušenostem."},
-  "lessons_faq_location_question": {"en": "Where do in-person lessons take place?", "cz": "Kde probíhá prezenční výuka?"},
-  "lessons_faq_location_answer": {"en": "I teach in Maastricht, the Netherlands. Contact me to discuss the practical details.", "cz": "Vyučuji v nizozemském Maastrichtu. Ozvěte se mi a domluvíme se na podrobnostech."},
-  "lessons_faq_online_question": {"en": "What do I need for an online lesson?", "cz": "Co potřebuji pro online lekci?"},
-  "lessons_faq_online_answer": {"en": "A piano or keyboard, a device with a camera and microphone, and a reliable internet connection. We can discuss the setup before your lesson.", "cz": "Klavír nebo keyboard, zařízení s kamerou a mikrofonem a stabilní připojení k internetu. Nastavení můžeme probrat před lekcí."},
-  "lessons_faq_language_question": {"en": "Which languages do you teach in?", "cz": "V jakých jazycích vyučujete?"},
-  "lessons_faq_language_answer": {"en": "Lessons are available in English or Czech.", "cz": "Lekce probíhají v angličtině nebo češtině."},
-  "lessons_faq_start_question": {"en": "How do I arrange my first lesson?", "cz": "Jak si domluvím první lekci?"},
-  "lessons_faq_start_answer": {"en": "Email me with your experience, goals and whether you prefer in-person or online lessons. We will discuss a suitable next step.", "cz": "Napište mi e-mailem, jaké máte zkušenosti a cíle a zda preferujete prezenční, nebo online výuku. Společně se domluvíme na dalším postupu."}
+  "about_open_cv": {
+    "en": "Open CV",
+    "cz": "Otevřít životopis"
+  },
+  "terms_page_title": {
+    "en": "Terms and Conditions | Rozalie The Pianist",
+    "cz": "Podmínky výuky | Rozalie The Pianist"
+  },
+  "terms_heading": {
+    "en": "Terms and Conditions",
+    "cz": "Podmínky výuky"
+  },
+  "terms_description": {
+    "en": "Practical information about private piano lessons, scheduling, payments and changes.",
+    "cz": "Praktické informace o soukromé výuce klavíru, domlouvání termínů, platbách a změnách."
+  },
+  "terms_intro": {
+    "en": "Private piano lessons with Rozálie Stoklasová. Last updated: November 8, 2026. Please read these terms before arranging lessons. Any additional service-specific conditions must be agreed before you commit.",
+    "cz": "Soukromá výuka klavíru s Rozálií Stoklasovou. Aktualizováno 8. listopadu 2026. Před domluvením výuky si prosím přečtěte tyto podmínky. Případné další podmínky konkrétní služby je nutné dohodnout před závazným sjednáním."
+  },
+  "terms_lessons_heading": {
+    "en": "Lesson types and pricing",
+    "cz": "Formy výuky a ceny"
+  },
+  "terms_formats": {
+    "en": "I offer individual piano lessons in Maastricht and online, in English or Czech. You can inquire about a single lesson, ongoing lessons or a package of five 60-minute lessons.",
+    "cz": "Nabízím individuální výuku klavíru v Maastrichtu a online, v angličtině nebo češtině. Můžete se informovat o jednotlivé lekci, pravidelné výuce nebo balíčku pěti 60minutových lekcí."
+  },
+  "terms_in_person": {
+    "en": "In-person lessons: 45 minutes — {{price_lessons_in_person_45}}; 60 minutes — {{price_lessons_in_person_60}}; five 60-minute lessons — {{price_lessons_in_person_bundle_5}}.",
+    "cz": "Prezenční výuka: 45 minut — {{price_lessons_in_person_45}}; 60 minut — {{price_lessons_in_person_60}}; pět 60minutových lekcí — {{price_lessons_in_person_bundle_5}}."
+  },
+  "terms_online_prices": {
+    "en": "Online lessons: 45 minutes — {{price_lessons_online_45}}; 60 minutes — {{price_lessons_online_60}}; five 60-minute lessons — {{price_lessons_online_bundle_5}}.",
+    "cz": "Online výuka: 45 minut — {{price_lessons_online_45}}; 60 minut — {{price_lessons_online_60}}; pět 60minutových lekcí — {{price_lessons_online_bundle_5}}."
+  },
+  "terms_discount": {
+    "en": "A 10% student discount is available with proof of enrollment. Email your Statement of Enrollment to request it. Confirm eligibility, whether the discount applies to your chosen lesson or package, the final total, any applicable taxes and what is included before agreeing to lessons.",
+    "cz": "Studenti mohou po doložení studia získat slevu 10 %. Pro její uplatnění zašlete e-mailem potvrzení o studiu. Před sjednáním výuky si potvrďte nárok na slevu, její použití pro zvolenou lekci či balíček, konečnou cenu, případné daně a zahrnuté služby."
+  },
+  "terms_booking_heading": {
+    "en": "Booking and scheduling",
+    "cz": "Domlouvání lekcí a termínů"
+  },
+  "terms_booking_process": {
+    "en": "Email me with your experience, goals and preferred lesson format. We will discuss availability and an exact lesson time, duration, location or online platform, preparation and price. An inquiry is not a confirmed appointment; these details and any additional conditions need to be agreed directly. A parent or guardian should handle arrangements for a child.",
+    "cz": "Napište mi e-mailem, jaké máte zkušenosti a cíle a jakou formu výuky preferujete. Probereme dostupnost, přesný termín a délku lekce, místo nebo online platformu, přípravu a cenu. Samotný dotaz není potvrzenou rezervací; tyto údaje a případné další podmínky je nutné dohodnout přímo. Výuku dítěte by měl domlouvat rodič nebo zákonný zástupce."
+  },
+  "terms_booking_package": {
+    "en": "For ongoing lessons or a package, discuss the frequency and individual dates before committing. Changes to agreed dates depend on mutual availability. The website does not confirm bookings, accept payments or submit contact forms.",
+    "cz": "U pravidelné výuky a balíčků si před závaznou dohodou domluvte četnost a jednotlivé termíny. Změny sjednaných termínů závisejí na vzájemné dostupnosti. Web nepotvrzuje rezervace, nepřijímá platby ani neodesílá kontaktní formuláře."
+  },
+  "terms_payment_heading": {
+    "en": "Payment arrangements",
+    "cz": "Platební podmínky"
+  },
+  "terms_payment_details": {
+    "en": "Payment timing and accepted methods for both individual lessons and packages are agreed by email before the service is confirmed. This page does not impose advance payment or a fixed payment deadline. Clarify any payment requirement for holding a time slot and any invoice or payment receipt you need before making a payment.",
+    "cz": "Termín a způsob úhrady jednotlivých lekcí i balíčků se domlouvají e-mailem před potvrzením služby. Tato stránka nestanovuje povinnou platbu předem ani pevnou splatnost. Před platbou si vyjasněte případnou podmínku úhrady pro rezervaci termínu a požadavky na fakturu nebo potvrzení o platbě."
+  },
+  "terms_cancellations_heading": {
+    "en": "Cancellations and rescheduling",
+    "cz": "Rušení a přesouvání lekcí"
+  },
+  "terms_student_changes": {
+    "en": "If you need to cancel or move a lesson, email me as soon as possible. Any notice period, distinction between timely and late cancellation, no-show policy, cancellation fee or room charge must be confirmed in writing before you agree to lessons. This page does not itself introduce such a fee.",
+    "cz": "Potřebujete-li lekci zrušit nebo přesunout, napište mi co nejdříve e-mailem. Případnou lhůtu pro zrušení, rozlišení včasného a pozdního zrušení, pravidla při nedostavení se, storno poplatek či náklady na místnost je nutné písemně potvrdit před sjednáním výuky. Tato stránka sama takový poplatek nezavádí."
+  },
+  "terms_teacher_changes": {
+    "en": "If I need to change an appointment, I will contact you as soon as possible. We will discuss an alternative date based on mutual availability and any payment adjustment under the arrangements agreed for your lessons. If illness or an emergency affects either of us, please communicate promptly so we can discuss the next step.",
+    "cz": "Pokud budu potřebovat změnit termín já, ozvu se vám co nejdříve. Probereme náhradní termín podle vzájemné dostupnosti a případné finanční vyrovnání podle dohodnutých podmínek výuky. Pokud jednoho z nás postihne nemoc nebo mimořádná událost, komunikujte prosím bez odkladu, abychom mohli probrat další postup."
+  },
+  "terms_packages_heading": {
+    "en": "Lesson packages",
+    "cz": "Balíčky lekcí"
+  },
+  "terms_package_details": {
+    "en": "Each piano lesson package contains five 60-minute lessons. Agree the payment schedule, lesson dates and any validity period in writing before purchasing. Any rules for unused lessons, transfers to another person, extensions or a pause for health reasons also need to be agreed at that stage. This page does not impose an expiry date or automatic loss of unused lessons.",
+    "cz": "Každý balíček klavírní výuky obsahuje pět 60minutových lekcí. Před nákupem si písemně dohodněte úhradu, termíny lekcí a případnou dobu platnosti. Zároveň je potřeba dohodnout pravidla pro nevyužité lekce, převod na jinou osobu, prodloužení nebo přerušení ze zdravotních důvodů. Tato stránka nestanovuje datum konce platnosti ani automatické propadnutí nevyužitých lekcí."
+  },
+  "terms_refunds_heading": {
+    "en": "Refunds and unused lessons",
+    "cz": "Vrácení plateb a nevyužité lekce"
+  },
+  "terms_refund_details": {
+    "en": "Refund arrangements must be confirmed in writing before you commit, including what happens if I cancel teaching, you end a package early, or illness or exceptional circumstances prevent lessons. Contact me to discuss the unused lessons and any amount to be settled under those arrangements. No blanket non-refundable policy or fixed refund amount is established here. Applicable consumer rights remain unaffected.",
+    "cz": "Podmínky vrácení plateb je nutné písemně potvrdit před závaznou dohodou, včetně situací, kdy výuku zruším já, balíček předčasně ukončíte vy nebo lekcím zabrání nemoc či mimořádné okolnosti. Kontaktujte mě, abychom probrali nevyužité lekce a případné vyrovnání podle těchto podmínek. Tato stránka nezavádí všeobecné pravidlo nevratnosti plateb ani pevnou částku refundace. Příslušná spotřebitelská práva zůstávají zachována."
+  },
+  "terms_responsibilities_heading": {
+    "en": "Preparing and learning together",
+    "cz": "Příprava a spolupráce při výuce"
+  },
+  "terms_student_duties": {
+    "en": "Please arrive or connect on time, prepare the agreed instrument and materials, and share your goals or questions. Follow the agreed schedule and discuss any difficulties with practice or attendance. Progress depends on individual circumstances, participation and practice; no particular examination or performance result is promised.",
+    "cz": "Přicházejte nebo se připojujte včas, připravte si dohodnutý nástroj a materiály a sdílejte své cíle či otázky. Dodržujte sjednaný harmonogram a případné obtíže s cvičením či docházkou se mnou proberte. Pokrok závisí na individuálních okolnostech, zapojení a cvičení; konkrétní výsledek zkoušky ani výkon nelze zaručit."
+  },
+  "terms_teacher_duties": {
+    "en": "I adapt lessons to each student’s individual needs, with patience, respect and attention to musical imagination as well as technique. We discuss learning goals, preparation and suitable study materials as part of organizing your lessons. Please ask if you are unsure what to prepare or bring.",
+    "cz": "Výuku přizpůsobuji individuálním potřebám každého studenta, s trpělivostí, respektem a důrazem na hudební představivost i techniku. Při organizaci lekcí probíráme cíle, přípravu a vhodné studijní materiály. Pokud si nejste jisti, co si připravit nebo přinést, zeptejte se."
+  },
+  "terms_online_heading": {
+    "en": "Online lessons and technical issues",
+    "cz": "Online výuka a technické potíže"
+  },
+  "terms_online_details": {
+    "en": "Have a piano or keyboard, a tablet or computer with a camera and microphone, and a suitable internet connection ready. Check the sound and camera before connecting. We agree the platform in advance; options described on the lessons page include Zoom, Google Meet and Teams.",
+    "cz": "Připravte si klavír nebo keyboard, tablet či počítač s kamerou a mikrofonem a vhodné připojení k internetu. Před připojením zkontrolujte zvuk a kameru. Platformu si domluvíme předem; stránka výuky uvádí například Zoom, Google Meet a Teams."
+  },
+  "terms_online_disruption": {
+    "en": "If either of us has a connection or equipment problem, let the other know promptly. Any make-up time, replacement lesson or payment adjustment depends on the arrangements agreed before booking. This page does not automatically charge for, or promise a refund for, a disrupted session.",
+    "cz": "Při problému s připojením nebo vybavením na kterékoli straně dejte druhému co nejdříve vědět. Případné doplnění času, náhradní lekce či finanční vyrovnání závisí na podmínkách dohodnutých před rezervací. Tato stránka automaticky nestanovuje úhradu narušené lekce ani za ni neslibuje vrácení peněz."
+  },
+  "terms_materials_heading": {
+    "en": "Materials and recordings",
+    "cz": "Materiály a nahrávání"
+  },
+  "terms_materials_details": {
+    "en": "Respect copyright in scores, teaching materials, photographs and videos. Public access does not grant permission to redistribute content. Ask before recording a lesson and agree its purpose and use. Photographer credits remain on the About page.",
+    "cz": "Respektujte autorská práva k notám, výukovým materiálům, fotografiím a videím. Veřejná dostupnost neznamená souhlas s dalším šířením. Před nahráváním lekce si vyžádejte souhlas a dohodněte účel a použití nahrávky. Údaje o fotografech zůstávají na stránce O mně."
+  },
+  "terms_consultations_heading": {
+    "en": "Other services: Dutch study advising",
+    "cz": "Další služby: poradenství ke studiu v Nizozemsku"
+  },
+  "terms_consultation_details": {
+    "en": "Online study advising is a separate service: one 60-minute consultation costs {{price_adviser_single}}, and three 60-minute consultations cost {{price_adviser_bundle_3}}. Confirm its scope, preparation, scheduling and service-specific conditions directly. Advice draws on my experience and does not guarantee admission, housing, employment, funding or an administrative outcome. Verify requirements with the relevant institution or authority.",
+    "cz": "Online studijní poradenství je samostatnou službou: jedna 60minutová konzultace stojí {{price_adviser_single}}, tři 60minutové konzultace stojí {{price_adviser_bundle_3}}. Rozsah, přípravu, termíny a konkrétní podmínky si potvrďte přímo. Rady vycházejí z mých zkušeností a nezaručují přijetí, bydlení, zaměstnání, financování ani výsledek úředního řízení. Požadavky si ověřujte u příslušné instituce či úřadu."
+  },
+  "terms_general_heading": {
+    "en": "Communication, privacy and applicable terms",
+    "cz": "Komunikace, soukromí a platné podmínky"
+  },
+  "terms_general_details": {
+    "en": "Please raise questions or concerns promptly by email. Review the current terms and confirm any additional conditions when arranging lessons; this page does not establish a separate amendment procedure. Business registration, address, tax details and any additional service policies should be supplied with the final service agreement.",
+    "cz": "Dotazy či nejasnosti prosím řešte bez odkladu e-mailem. Při domlouvání výuky si přečtěte aktuální podmínky a potvrďte případná další pravidla; tato stránka nestanovuje samostatný postup změn podmínek. Údaje o podnikatelské registraci, adrese, daních a případné další podmínky služby mají být poskytnuty s konečnou dohodou o službě."
+  },
+  "terms_rights": {
+    "en": "These terms do not limit rights that cannot lawfully be excluded. Where distance-contract withdrawal rights apply, the necessary information and any arrangements for starting lessons during that period must be provided before agreement. An inquiry or use of this site does not waive those rights.",
+    "cz": "Tyto podmínky neomezují práva, která nelze ze zákona vyloučit. Pokud se uplatní právo na odstoupení od smlouvy uzavřené na dálku, musí být před uzavřením dohody poskytnuty potřebné informace a případná ujednání o zahájení výuky v této lhůtě. Dotaz ani použití webu neznamenají vzdání se těchto práv."
+  },
+  "terms_contact_label": {
+    "en": "Questions and lesson inquiries:",
+    "cz": "Dotazy a zájem o výuku:"
+  },
+  "terms_privacy_sentence": {
+    "en": "For information about personal data, email correspondence and external services, see the Privacy Policy.",
+    "cz": "Informace o osobních údajích, e-mailové komunikaci a externích službách najdete v zásadách ochrany osobních údajů."
+  }
 };

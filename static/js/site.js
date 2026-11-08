@@ -20,7 +20,7 @@
       linkedin: 'https://www.linkedin.com/in/roz%C3%A1lie-stoklasov%C3%A1-4a620a34b',
       links: '/links/',
     },
-    pressKitUrl: '/static/documents/rozalie-stoklasova-press-kit.pdf',
+    pressKitUrl: '/documents/rozalie-stoklasova-press-kit.pdf',
   };
 
   const menu = [
