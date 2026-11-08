@@ -18,7 +18,7 @@
       instagram: 'https://www.instagram.com/rozalie.the.pianist',
       facebook: 'https://www.facebook.com/rozalie.stoklasova',
       linkedin: 'https://www.linkedin.com/in/roz%C3%A1lie-stoklasov%C3%A1-4a620a34b',
-      linktree: 'https://linktr.ee/rozalie.stoklasova',
+      links: '/links/',
     },
     pressKitUrl: '/static/documents/rozalie-stoklasova-press-kit-2026.pdf',
   };
@@ -30,7 +30,7 @@
     ['about', 'About', 'about/'],
     ['contact', 'Contact', 'contact/'],
   ];
-  const socialLabels = { youtube: 'YouTube', instagram: 'Instagram', facebook: 'Facebook', linkedin: 'LinkedIn', linktree: 'Linktree' };
+  const socialLabels = { youtube: 'YouTube', instagram: 'Instagram', facebook: 'Facebook', linkedin: 'LinkedIn', links: 'Links' };
   const socialIcon = (kind) => {
     const href = settings.socialLinks[kind];
     const inner = `<img src="${asset('image/icons/' + kind + '.svg')}" alt="" width="20" height="20" loading="lazy">`;
@@ -130,7 +130,12 @@
             <p><a href="${url('privacy-policy/')}">Privacy policy</a> <span aria-hidden="true">&amp;</span> <a href="${url('terms-of-service/')}">Terms of service</a></p>
           </div>
           <div class="footer-right"><div class="footer-contact-row"><a class="footer-contact-link" href="/contact/">Contact</a><a class="footer-email" href="mailto:${settings.email}">${settings.email}</a></div>
-            <div class="footer-social">${['youtube', 'instagram', 'facebook', 'linkedin', 'linktree'].map(s => socialIcon(s)).join('')}</div>
+            <div class="footer-social">${['youtube', 'instagram', 'facebook', 'linkedin', 'links'].map(s => socialIcon(s)).join('')}
+              <button class="social-icon" type="button" data-share-page aria-label="Share" title="Share" style="color:inherit;cursor:pointer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg>
+                <span data-share-status role="status" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap"></span>
+              </button>
+            </div>
           </div>
         </div>
       </footer>`;
@@ -405,6 +410,47 @@
   renderHeader();
   renderSocialRail();
   renderFooter();
+  const shareLabel = () => ['cs', 'cz'].includes(document.documentElement.lang.toLowerCase().split('-')[0]) ? 'Sdílet' : 'Share';
+  const updateShareLabel = () => {
+    const button = document.querySelector('[data-share-page]');
+    if (!button) return;
+    button.setAttribute('aria-label', shareLabel());
+    button.title = shareLabel();
+  };
+  updateShareLabel();
+  new MutationObserver(updateShareLabel).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+  document.querySelector('[data-share-page]')?.addEventListener('click', async event => {
+    const button = event.currentTarget;
+    if (button.disabled) return;
+    const shareUrl = location.href;
+    const isCzech = ['cs', 'cz'].includes(document.documentElement.lang.toLowerCase().split('-')[0]);
+    button.disabled = true;
+    try {
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: document.title, url: shareUrl });
+          return;
+        } catch (error) {
+          if (error.name === 'AbortError') return;
+        }
+      }
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        const status = button.querySelector('[data-share-status]');
+        status.textContent = isCzech ? 'Odkaz zkopírován' : 'Link copied';
+        button.title = status.textContent;
+        setTimeout(() => {
+          status.textContent = '';
+          button.title = shareLabel();
+        }, 2000);
+      } catch {
+        window.prompt(isCzech ? 'Zkopírovat odkaz:' : 'Copy link:', shareUrl);
+      }
+    } finally {
+      button.disabled = false;
+    }
+  });
+
   const endingPlane = document.querySelector('.page-plane');
   if (endingPlane) {
     const updateEndingPlane = () => {
