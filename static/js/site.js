@@ -9,11 +9,9 @@
   const page = document.body.dataset.page || 'home';
   const darkHeader = ['about', 'dutch'].includes(page);
   const darkFooter = ['home', 'about', 'dutch'].includes(page);
-  const videoId = 'S_CacDghMmc';
 
   const settings = {
     email: 'rozalie.stoklasova@gmail.com',
-    videoId,
     // Authoritative profile links supplied by the site owner.
     socialLinks: {
       youtube: 'https://www.youtube.com/@RozalieThePianist?sub_confirmation=1',
@@ -50,7 +48,7 @@
     el.innerHTML = `
       <header class="site-header${darkHeader ? ' header-dark' : ''}" id="top">
         <div class="header-inner">
-          <a class="header-logo" href="${url('')}" aria-label="Rozálie Stoklasová — home">
+          <a class="header-logo" href="${url('')}" aria-label="Rozalie The Pianist — home">
             <img src="${asset('image/icons/' + logoFile)}" alt="Rozálie the pianist" width="137" height="83" fetchpriority="high">
           </a>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
@@ -171,7 +169,8 @@
   }
 
   let youtubeAPI;
-  const uploads = 'UUG5_aMyEhXXVwi5zO8ttx0g';
+  const videoSettings = window.ROZALIE_VIDEOS || { about: [], home: [] };
+  const uploads = videoSettings.uploadsPlaylist || ''; 
   // YouTube selects adaptive playback quality automatically; do not force a resolution.
   function configureUploads(iframe, index, autoplay = false, onSelection, videoId) {
     const source = new URL(iframe.src);
@@ -231,7 +230,7 @@
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     });
     document.querySelectorAll('[data-video], [data-video-playlist]').forEach(btn => btn.addEventListener('click', () => {
-      const id = btn.dataset.videoId || btn.dataset.video || settings.videoId;
+      const id = btn.dataset.videoId || btn.dataset.video || '';
       const playlistIndex = btn.dataset.videoPlaylist;
       if (playlistIndex === undefined && !/^[\w-]{11}$/.test(id)) return;
       previousFocus = document.activeElement;
@@ -240,10 +239,10 @@
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       iframe.allowFullscreen = true;
       iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-      iframe.src = playlistIndex !== undefined ? `https://www.youtube-nocookie.com/embed/videoseries?list=UUG5_aMyEhXXVwi5zO8ttx0g&index=${Number(playlistIndex) + 1}&autoplay=1&rel=0` : `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}`;
+      iframe.src = playlistIndex !== undefined ? `https://www.youtube-nocookie.com/embed/videoseries?list=${uploads}&index=${Number(playlistIndex) + 1}&autoplay=1&rel=0` : `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}`;
       dialog.querySelector('.video-iframe-holder').replaceChildren(iframe);
       if (playlistIndex !== undefined) configureUploads(iframe, playlistIndex, true);
-      dialog.querySelector('.video-external-link').href = playlistIndex !== undefined ? `https://www.youtube.com/playlist?list=UUG5_aMyEhXXVwi5zO8ttx0g` : `https://www.youtube.com/watch?v=${id}`;
+      dialog.querySelector('.video-external-link').href = playlistIndex !== undefined ? `https://www.youtube.com/playlist?list=${uploads}` : `https://www.youtube.com/watch?v=${id}`;
       backgroundState = [...document.body.children].filter(el => el !== dialog).map(el => [el, el.inert]);
       backgroundState.forEach(([el]) => { el.inert = true; });
       dialog.hidden = false;
@@ -320,9 +319,9 @@
     layer.className = 'adviser-current-art';layer.setAttribute('aria-hidden', 'true');
     const pieces = [
       { anchor: '#offers', x: -4.646, y: -19.522, width: 32.29, angle: 0, opacity: .31 },
-      { anchor: '#audience', x: -12.409, y: -25.8, width: 26.624, angle: -39.768, opacity: .31 },
+      { anchor: '#audience', x: -12.409, y: -28.8, width: 26.624, angle: -39.768, opacity: .31 },
       { anchor: '#story', x: -9.8565, y: -10.0, width: 27.6073, angle: 21.0637, opacity: .31 },
-      { anchor: '.adviser-opinion h2', x: -4.8458, y: -9.5287, width: 25.944, angle: 0, opacity: .23 }
+      { anchor: '.adviser-opinion h2', x: -5.5, y: -8.1, width: 25.944, angle: 0, opacity: .23 }
     ];
     pieces.forEach((piece, index) => { const img = document.createElement('img');img.src = ['/static/image/optimized/adviser-current-0-882d3ffa6ccc.webp','/static/image/optimized/adviser-current-1-716e1098fb45.webp','/static/image/optimized/adviser-current-2-e9b4120717c7.webp','/static/image/optimized/adviser-current-3-b5db5fb982aa.webp'][index];img.alt = '';layer.append(img);piece.image = img; });
     document.body.append(layer);
@@ -444,10 +443,10 @@
   }
 
   // Build the video cards before binding player controls and metadata resolvers.
-  const videoSettings = window.ROZALIE_VIDEOS || { about: [], home: ['auto', 'auto'] };
   function configuredVideoId(value) {
     try {
-      const url = new URL(value);
+      if (typeof value !== 'string') return null;
+      const url = new URL(value.trim());
       if (url.protocol !== 'https:' || !['youtu.be', 'youtube.com', 'www.youtube.com', 'www.youtube-nocookie.com'].includes(url.hostname)) return null;
       const id = url.hostname === 'youtu.be' ? url.pathname.slice(1) : url.pathname === '/watch' ? url.searchParams.get('v') : /^\/(embed|shorts)\//.test(url.pathname) ? url.pathname.split('/')[2] : null;
       return /^[\w-]{11}$/.test(id || '') ? id : null;
@@ -483,7 +482,8 @@
     [0, 1].forEach(index => {
       const value = videoSettings.home?.[index];
       const id = configuredVideoId(value);
-      homeVideoGrid.append(id ? configuredCard(id, `home-${index + 1}`) : configuredCard(null, null, automaticIndex++));
+      if (id) homeVideoGrid.append(configuredCard(id, `home-${index + 1}`));
+      else if (uploads && (value === undefined || value === null || value === '' || value === 'auto')) homeVideoGrid.append(configuredCard(null, null, automaticIndex++));
     });
   }
 

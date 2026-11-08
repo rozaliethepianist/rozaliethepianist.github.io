@@ -576,3 +576,7 @@ body .header-inner > .language-switch:not(.is-positioned) {
     );
   }
 }
+
+body.page-about .site-header::before {
+  bottom: -7px;
+}

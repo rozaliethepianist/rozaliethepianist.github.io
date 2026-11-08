@@ -31,6 +31,7 @@
  };
  const process = root => {
    if (root.nodeType === Node.TEXT_NODE) {
+     if (root.parentElement?.closest('[data-content]')) return;
      if (language === 'cz' && !root.parentElement?.closest('script,style,.language-switch,textarea,input')) {
        const value = translate(root.data);if (value !== root.data) root.data = value;
      }
