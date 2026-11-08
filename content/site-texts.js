@@ -1,5 +1,4 @@
-// Website copy and service prices. Edit en and cz values; keep identifiers stable.
-// Reuse a value inside another text with {{key}}, for example {{price_lessons_online_45}}.
+
 window.ROZALIE_CONTENT = {
   "price_lessons_in_person_45": {
     "en": "€35",
