@@ -204,7 +204,7 @@
   }
 }
 /* Short, always-visible answers keep the teaching information accessible. */
-.page-lessons .lessons-faq{background:var(--bg-light,#f8fafc);color:#111;padding:clamp(10px,2cqw,22px) clamp(24px,7cqw,100px) clamp(20px,3cqw,32px)}
+.page-lessons .lessons-faq{background:var(--bg-light,#f8fafc);color:#111;padding:clamp(18px,2.5cqw,28px) clamp(24px,7cqw,100px) clamp(20px,4cqw,42px)}
 .page-lessons .lessons-faq>h2{text-align:center;font:400 2.25cqw/1.4 var(--sans);margin:0 0 36px}
 .page-lessons .lessons-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px;max-width:1100px;margin-inline:auto}
 .page-lessons .lessons-faq-item{border-top:1px solid #408bb640;padding-top:20px;min-width:0}
