@@ -1453,8 +1453,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Připravujeme"
   },
   "in_progress_return_to_home": {
-    "en": "Return to home",
-    "cz": "Zpět na úvod"
+    "en": "Return to main page",
+    "cz": "Zpět na hlavní stránku"
   },
   "common_open_pdf": {
     "en": "Open PDF",
