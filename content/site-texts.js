@@ -801,8 +801,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Vedle pedagogické práce studuje Rozálie Stoklasová magisterský obor klasického klavíru na Conservatorium Maastricht pod vedením Dr. Katie Veekmans. V roce 2026 dokončila bakalářské studium se zaměřením na klavírní pedagogiku a získala pedagogický certifikát. V roce 2022 absolvovala osmileté studium na Gymnáziu a Hudební škole hl. m. Prahy jako členka speciální hudební třídy pod vedením prof. Iriny Parker. Získala maturitní vysvědčení a studium zakončila sólovým recitálem."
   },
   "about_in_order_to_develop_her_musical_skills": {
-    "en": "In order to develop her musical skills, Rozálie attended masterclasses with prominent pianists and teachers. In 2024, she was chosen as a piano-class representative at the masterclass of a Russian pianist Mikhail Voskresensky. The previous year, she attended \"D´Accord Academy\" in Germany, where she took lessons with Czech pianist Bohumír Stehlík. In 2022, she participated in the \"International Forum for Flute and Piano\" in Luxembourg, working with American pianist Prof. Daniel Blumenthal. At a young age, she participated in Masterclasses with Czech pianist Martin Kasík.",
-    "cz": "Pro rozvoj hudebních dovedností navštěvovala mistrovské kurzy významných klavíristů a pedagogů. V roce 2024 byla vybrána jako zástupkyně klavírní třídy na kurzu Michaila Voskresenského. Předchozí rok se účastnila D´Accord Academy v Německu, kde studovala u Bohumíra Stehlíka. V roce 2022 absolvovala International Forum for Flute and Piano v Lucembursku pod vedením amerického klavíristy prof. Daniela Blumenthala. V mládí se účastnila kurzů Martina Kasíka."
+    "en": "In order to develop her musical skills, Rozálie attended masterclasses with prominent pianists and teachers. In 2024, she was chosen as a piano-class representative at the masterclass of a Russian pianist Mikhail Voskresensky. The following year, she attended \"D´Accord Academy\" in Germany, where she took lessons with Czech pianist Bohumír Stehlík. In 2022, she participated in the \"International Forum for Flute and Piano\" in Luxembourg, working with American pianist Prof. Daniel Blumenthal. At a young age, she participated in Masterclasses with Czech pianist Martin Kasík.",
+    "cz": "Pro rozvoj hudebních dovedností navštěvovala mistrovské kurzy významných klavíristů a pedagogů. V roce 2024 byla vybrána jako zástupkyně klavírní třídy na kurzu Michaila Voskresenského. Následující rok se účastnila D´Accord Academy v Německu, kde studovala u Bohumíra Stehlíka. V roce 2022 absolvovala International Forum for Flute and Piano v Lucembursku pod vedením amerického klavíristy prof. Daniela Blumenthala. V mládí se účastnila kurzů Martina Kasíka."
   },
   "about_spending_her_childhood_in_the_homely_town": {
     "en": "Spending her childhood in the homely town Rožnov pod Radhoštěm and experiencing her teenage years in Prague, the capital of the Czech Republic, shaped Rozálie's unique personality. The cultural diversity she tasted within her home country inspired her to devote herself to musical education in the Netherlands. The guidance of professional teachers led her to explore teaching as a new passion. She strives to teach intensively after her studies, providing lessons and masterclasses, and popularizing classical music with a wider audience. Her vision is to encourage the imagination of her students and allow them to fully appreciate the unique connection between music and fantasy.",
@@ -839,110 +839,6 @@ window.ROZALIE_CONTENT = {
   "about_photo_collection": {
     "en": "Photo collection",
     "cz": "Sbírka fotografií"
-  },
-  "about_past_events": {
-    "en": "Past events",
-    "cz": "Proběhlé akce"
-  },
-  "about_january_24th_2026_maastricht_the_netherlands_night": {
-    "en": "January 24th, 2026 – MAASTRICHT (The Netherlands) – Night of Classical Music",
-    "cz": "24. ledna 2026 – MAASTRICHT (Nizozemsko) – Night of Classical Music"
-  },
-  "about_within_dances_and_dreams_piano_solo_recital": {
-    "en": "-“Within Dances and Dreams” - Piano Solo Recital",
-    "cz": "– „Within Dances and Dreams“ – sólový klavírní recitál"
-  },
-  "about_oboes_throughout_the_centuries_trio_dell_arte": {
-    "en": "-”Oboes Throughout the Centuries” - Trio Dell´Arte",
-    "cz": "– „Oboes Throughout the Centuries“ – Trio Dell´Arte"
-  },
-  "about_january_25th_2026_meerssen_the_netherlands_het": {
-    "en": "January 25th, 2026 – MEERSSEN (The Netherlands) – Het Leopoldskerkje  - Trio Dell´Arte",
-    "cz": "25. ledna 2026 – MEERSSEN (Nizozemsko) – Het Leopoldskerkje – Trio Dell´Arte"
-  },
-  "about_piano_stefanie_kindler_oboe_livija_tolpeznikova_oboe": {
-    "en": "(Rozálie Stoklasová - piano, Stefanie Kindler - oboe, Livija Tolpežnikova - oboe)",
-    "cz": "(Rozálie Stoklasová – klavír, Stefanie Kindler – hoboj, Livija Tolpežnikova – hoboj)"
-  },
-  "about_february_5th_2026_heerlen_the_netherlands_limburgzaal": {
-    "en": "February 5th, 2026 – HEERLEN (The Netherlands) –  Limburgzaal- Day of Classical Music",
-    "cz": "5. února 2026 – HEERLEN (Nizozemsko) – Limburgzaal – Day of Classical Music"
-  },
-  "about_march_2026_maastricht_the_netherlands_willem_hijstek": {
-    "en": "March 2026 - MAASTRICHT (The Netherlands) - Willem Hijstek Concert Hall",
-    "cz": "Březen 2026 – MAASTRICHT (Nizozemsko) – Willem Hijstek Concert Hall"
-  },
-  "about_chamber_music_festival": {
-    "en": "Chamber Music Festival",
-    "cz": "Festival komorní hudby"
-  },
-  "about_violin_sonata_no_2_in_a_major": {
-    "en": "-Violin Sonata No.2 in A major Op.100 - J.Brahms",
-    "cz": "– Houslová sonáta č. 2 A dur op. 100 – J. Brahms"
-  },
-  "about_piano_mina_aoki_girardelli_violin": {
-    "en": "(Rozálie Stoklasová - piano, Mina Aoki Girardelli - violin)",
-    "cz": "(Rozálie Stoklasová – klavír, Mina Aoki Girardelli – housle)"
-  },
-  "about_april_2026_eindhoven_the_netherlands_muziekgebuow_eindhoven": {
-    "en": "April 2026 - EINDHOVEN (The Netherlands) - Muziekgebuow Eindhoven",
-    "cz": "Duben 2026 – EINDHOVEN (Nizozemsko) – Muziekgebouw Eindhoven"
-  },
-  "about_from_baroque_to_romantic_piano_solo_recital": {
-    "en": "“From Baroque to Romantic” - Piano Solo Recital",
-    "cz": "„From Baroque to Romantic“ – sólový klavírní recitál"
-  },
-  "about_may_2026_maastricht_the_netherlands_moving_music": {
-    "en": "May 2026 - MAASTRICHT (The Netherlands) - Moving Music Festival",
-    "cz": "Květen 2026 – MAASTRICHT (Nizozemsko) – Moving Music Festival"
-  },
-  "about_from_inferno_to_ancient_echoes_piano_solo": {
-    "en": "“From Inferno to Ancient Echoes” - Piano Solo & Four-Hand Piano Recital",
-    "cz": "„From Inferno to Ancient Echoes“ – sólový a čtyřruční klavírní recitál"
-  },
-  "about_piano_vasileios_gavvaris_piano": {
-    "en": "(Rozálie Stoklasová - piano, Vasileios Gavvaris - piano)",
-    "cz": "(Rozálie Stoklasová – klavír, Vasileios Gavvaris – klavír)"
-  },
-  "about_may_2026_prague_czech_republic_kjj_concert": {
-    "en": "May 2026 - PRAGUE (Czech Republic) - KJJ Concert Hall - Piano Solo Recital",
-    "cz": "Květen 2026 – PRAHA (Česko) – Koncertní sál KJJ – sólový klavírní recitál"
-  },
-  "about_works_by_mozart_chopin_ravel_brahms": {
-    "en": "-works by Mozart, Chopin, Ravel, Brahms",
-    "cz": "– skladby Mozarta, Chopina, Ravela a Brahmse"
-  },
-  "about_june_2026_maastricht_the_netherlands_willem_hijstek": {
-    "en": "June 2026 - MAASTRICHT (The Netherlands) - Willem Hijstek Concert Hall - Solo Recital",
-    "cz": "Červen 2026 – MAASTRICHT (Nizozemsko) – Willem Hijstek Concert Hall – sólový recitál"
-  },
-  "about_works_by_chopin_debussy_franck_and_schumann": {
-    "en": "-works by Chopin, Debussy, Franck and Schumann",
-    "cz": "– skladby Chopina, Debussyho, Francka a Schumanna"
-  },
-  "about_upcoming_concerts": {
-    "en": "Upcoming concerts",
-    "cz": "Připravované koncerty"
-  },
-  "about_january_2027_maastricht_the_netherlands_night_of": {
-    "en": "January, 2027 – MAASTRICHT (The Netherlands) – Night of Classical Music",
-    "cz": "Leden 2027 – MAASTRICHT (Nizozemsko) – Night of Classical Music"
-  },
-  "about_concerts_in_the_dark_piano_solo_recital": {
-    "en": "-“Concerts in the Dark” - Piano Solo Recital",
-    "cz": "– „Concerts in the Dark“ – sólový klavírní recitál"
-  },
-  "about_march_2027_maastricht_the_netherlands_willem_hijstek": {
-    "en": "March, 2027 - MAASTRICHT (The Netherlands) - Willem Hijstek Concert Hall",
-    "cz": "Březen 2027 – MAASTRICHT (Nizozemsko) – Willem Hijstek Concert Hall"
-  },
-  "about_chamber_music_festival_trio_amabile_works_by": {
-    "en": "Chamber Music Festival, Trio Amabile - works by R. Kahn",
-    "cz": "Chamber Music Festival, Trio Amabile – skladby R. Kahna"
-  },
-  "about_piano_livija_tolpeznikova_oboe_samia_moussavi_viola": {
-    "en": "(Rozálie Stoklasová - piano, Livija Tolpežnikova - oboe, Samia Moussavi - viola)",
-    "cz": "(Rozálie Stoklasová – klavír, Livija Tolpežnikova – hoboj, Samia Moussavi – viola)"
   },
   "about_follow": {
     "en": "Follow",
