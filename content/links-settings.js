@@ -68,7 +68,7 @@ window.ROZALIE_LINKS = {
     {
       "id": "press-kit",
       "group": "explore",
-      "url": "/static/documents/rozalie-stoklasova-press-kit-2026.pdf",
+      "url": "/documents/rozalie-stoklasova-press-kit-2026.pdf",
       "icon": "pdf",
       "title": {
         "en": "Press kit 2026",

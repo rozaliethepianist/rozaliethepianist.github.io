@@ -58,3 +58,26 @@
 
 .page-about .about-cv-cta .press-link{font-size:31px}
 @media(max-width:768px){.page-about .about-cv-cta .press-link{font-size:22px}}
+
+/* Native accordions keep the repertoire compact and keyboard accessible. */
+.page-about .about-repertoire{padding:clamp(40px,5cqw,72px) 7.2% clamp(50px,6cqw,86px);background:var(--bg-dark);color:var(--bg-light)}
+.page-about .about-repertoire>h2{font:400 clamp(28px,3cqw,43px)/1.4 var(--serif);text-align:center;margin:0 0 32px}
+.repertoire-categories{max-width:1120px;margin:auto;display:grid;gap:14px}
+.repertoire-category{border:1px solid #f8fafc38;border-radius:12px;background:#ffffff06;overflow:hidden}
+.repertoire-category summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 26px;cursor:pointer}
+.repertoire-category summary::-webkit-details-marker{display:none}
+.repertoire-category summary::after{content:'+';display:grid;place-items:center;flex:none;width:30px;height:30px;border:1px solid #f8fafc50;border-radius:50%;color:inherit;font:300 24px/1 var(--sans)}
+.repertoire-category[open] summary::after{content:'−'}
+.repertoire-label{display:grid;gap:7px;min-width:0}
+.repertoire-name{font:500 clamp(17px,1.4cqw,20px)/1.4 var(--sans)}
+.repertoire-summary{font:400 clamp(12px,1cqw,14px)/1.6 var(--sans);color:#c6c6c6}
+.repertoire-category summary:focus-visible{outline:2px solid var(--blue,#408bb6);outline-offset:-4px;border-radius:12px}
+.repertoire-category[open] summary{border-bottom:1px solid #f8fafc24}
+.repertoire-panel{padding:24px 26px 28px;font:400 clamp(14px,1.05cqw,15px)/1.7 var(--sans)}
+.repertoire-composers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 40px}
+.repertoire-composer{min-width:0;overflow-wrap:anywhere}
+.repertoire-composer strong{font-weight:600}.repertoire-composer ul{padding-left:20px;margin:9px 0 0}.repertoire-composer li+li{margin-top:5px}
+.repertoire-panel h3{font:500 18px/1.5 var(--serif);margin:0 0 8px}.repertoire-panel .repertoire-composers+h3{margin-top:32px}
+.repertoire-instruments{font-style:italic;color:#c6c6c6;margin:0 0 24px}
+@media(any-hover:hover) and (any-pointer:fine){.repertoire-category summary:hover{background:#ffffff0a;color:#75b9dd}.repertoire-category summary:hover::after{border-color:currentColor}}
+@media(max-width:768px){.page-about .about-repertoire{padding:40px 24px 50px}.repertoire-category summary{padding:19px 18px;gap:12px}.repertoire-panel{padding:20px 18px 24px}.repertoire-composers{grid-template-columns:1fr;gap:22px}}

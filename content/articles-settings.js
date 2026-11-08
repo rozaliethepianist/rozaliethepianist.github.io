@@ -6,6 +6,6 @@ window.ROZALIE_ARTICLES = [
     description: "Advanced Teaching Skills final thesis, Conservatorium Maastricht, 2024/25.",
     descriptionCz: "Závěrečná práce předmětu Advanced Teaching Skills, Conservatorium Maastricht, 2024/25.",
     type: "pdf",
-    url: "/static/documents/rozalie-stoklasova-sight-reading-thesis-2025.pdf"
+    url: "/documents/rozalie-stoklasova-sight-reading-thesis-2025.pdf"
   }
 ];
