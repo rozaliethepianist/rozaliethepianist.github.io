@@ -1,0 +1,14 @@
+/* Original certificate artwork; positions are scoped to the two hero sections. */
+body.page-home .home-hero>.teaching-certificate-badge,
+body.page-lessons .lessons-hero>.teaching-certificate-badge{position:absolute;display:block;height:auto;max-width:none;object-fit:contain;z-index:3;cursor:pointer;text-decoration:none;filter:drop-shadow(0 5px 9px #0002);transform-origin:center}
+body.page-home .home-hero>.teaching-certificate-badge{width:clamp(145px,15cqw,202px);right:4%;bottom:8%;transform:rotate(9deg)}
+body.page-lessons .lessons-hero>.teaching-certificate-badge{width:clamp(130px,11.5cqw,166px);left:6%;bottom:8%;transform:rotate(-9deg)}
+@media(max-width:1100px){body.page-lessons .lessons-hero>.teaching-certificate-badge{width:clamp(110px,15cqw,145px);left:24px;bottom:20px;}}
+@media(max-width:1100px){body.page-home .home-hero>.teaching-certificate-badge{width:clamp(110px,15cqw,145px);}}
+@media(max-width:768px){body.page-home .home-hero>.teaching-certificate-badge{width:clamp(75px,15cqw,150px);right:12px;bottom:10px;transform:rotate(7deg)}body.page-lessons .lessons-hero>.teaching-certificate-badge{width:clamp(75px,15cqw,150px);left:12px;bottom:16px;transform:rotate(-7deg)}}
+
+/* The artwork remains unchanged inside the accessible document link. */
+body:is(.page-home,.page-lessons) .teaching-certificate-badge>img{position:static;display:block;width:100%;height:auto;max-width:100%;margin:0;inset:auto;transform:none;object-fit:contain}
+body:is(.page-home,.page-lessons) .teaching-certificate-badge:focus-visible{outline:3px solid var(--blue,#408bb6);outline-offset:5px;border-radius:8px}
+@media(any-hover:hover) and (any-pointer:fine){body:is(.page-home,.page-lessons) .teaching-certificate-badge:hover{filter:drop-shadow(0 7px 12px #0003) brightness(1.04)}}
+
