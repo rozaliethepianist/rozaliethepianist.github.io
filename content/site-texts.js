@@ -1467,5 +1467,17 @@ window.ROZALIE_CONTENT = {
   "common_no_articles_are_currently_available": {
     "en": "No articles are currently available.",
     "cz": "Momentálně nejsou k dispozici žádné práce."
-  }
+  },
+  "about_open_cv": {"en": "Open CV", "cz": "Otevřít životopis"},
+  "lessons_faq_heading": {"en": "Q&A", "cz": "Otázky a odpovědi"},
+  "lessons_faq_beginner_question": {"en": "Can I start as a complete beginner?", "cz": "Mohu začít i jako úplný začátečník?"},
+  "lessons_faq_beginner_answer": {"en": "Yes. In-person lessons are suitable for complete beginners, and I adapt the pace and material to your experience.", "cz": "Ano. Prezenční výuka je vhodná i pro úplné začátečníky. Tempo i náplň lekcí přizpůsobím vašim zkušenostem."},
+  "lessons_faq_location_question": {"en": "Where do in-person lessons take place?", "cz": "Kde probíhá prezenční výuka?"},
+  "lessons_faq_location_answer": {"en": "I teach in Maastricht, the Netherlands. Contact me to discuss the practical details.", "cz": "Vyučuji v nizozemském Maastrichtu. Ozvěte se mi a domluvíme se na podrobnostech."},
+  "lessons_faq_online_question": {"en": "What do I need for an online lesson?", "cz": "Co potřebuji pro online lekci?"},
+  "lessons_faq_online_answer": {"en": "A piano or keyboard, a device with a camera and microphone, and a reliable internet connection. We can discuss the setup before your lesson.", "cz": "Klavír nebo keyboard, zařízení s kamerou a mikrofonem a stabilní připojení k internetu. Nastavení můžeme probrat před lekcí."},
+  "lessons_faq_language_question": {"en": "Which languages do you teach in?", "cz": "V jakých jazycích vyučujete?"},
+  "lessons_faq_language_answer": {"en": "Lessons are available in English or Czech.", "cz": "Lekce probíhají v angličtině nebo češtině."},
+  "lessons_faq_start_question": {"en": "How do I arrange my first lesson?", "cz": "Jak si domluvím první lekci?"},
+  "lessons_faq_start_answer": {"en": "Email me with your experience, goals and whether you prefer in-person or online lessons. We will discuss a suitable next step.", "cz": "Napište mi e-mailem, jaké máte zkušenosti a cíle a zda preferujete prezenční, nebo online výuku. Společně se domluvíme na dalším postupu."}
 };

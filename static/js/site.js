@@ -20,7 +20,7 @@
       linkedin: 'https://www.linkedin.com/in/roz%C3%A1lie-stoklasov%C3%A1-4a620a34b',
       links: '/links/',
     },
-    pressKitUrl: '/static/documents/rozalie-stoklasova-press-kit-2026.pdf',
+    pressKitUrl: '/static/documents/rozalie-stoklasova-press-kit.pdf',
   };
 
   const menu = [
@@ -297,13 +297,14 @@
 
   document.querySelectorAll('[data-press-kit]').forEach(el => { el.href = settings.pressKitUrl; });
   document.addEventListener('click', event => {
-    const link = event.target.closest?.('a[data-press-kit]');
+    const link = event.target.closest?.('a[data-press-kit],a[data-pdf-document]');
     if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
+    const documentUrl = link.href;
     const download = () => {
       const anchor = document.createElement('a');
-      anchor.href = settings.pressKitUrl;
-      anchor.download = 'Rozalie-Stoklasova-Press-Kit-2026.pdf';
+      anchor.href = documentUrl;
+      anchor.download = new URL(documentUrl).pathname.split('/').pop() || 'document.pdf';
       document.body.append(anchor);anchor.click();anchor.remove();
     };
     let popup;
@@ -311,7 +312,7 @@
       popup = window.open('about:blank', '_blank');
       if (!popup || popup.closed) { download();return; }
       popup.opener = null;
-      popup.location.replace(settings.pressKitUrl);
+      popup.location.replace(documentUrl);
     } catch {
       popup?.close();download();
     }
@@ -459,7 +460,15 @@
       const frame = endingPlane.getBoundingClientRect();
       const top = reviews.getBoundingClientRect().top - frame.top;
       const start = frame.width * .6031;
-      const end = start + (frame.height - top) * Math.tan(13 * Math.PI / 180);
+      // Reverse the same continuous diagonal at the final section before the footer.
+      const opinion = endingPlane.querySelector('.lessons-opinion,.adviser-opinion');
+      const bendTop = opinion ? opinion.getBoundingClientRect().top - frame.top : frame.height;
+      const slope = Math.tan(13 * Math.PI / 180);
+      const bend = start + (bendTop - top) * slope;
+      const end = bend - (frame.height - bendTop) * slope;
+      const overlap = parseFloat(getComputedStyle(endingPlane).getPropertyValue('--background-paint-overlap')) || 0;
+      endingPlane.style.setProperty('--ending-bend-top', `${bendTop - top + overlap}px`);
+      endingPlane.style.setProperty('--ending-x-bend', `${bend}px`);
       endingPlane.style.setProperty('--ending-top', `${top}px`);
       endingPlane.style.setProperty('--ending-x-start', `${start}px`);
       endingPlane.style.setProperty('--ending-x-end', `${end}px`);

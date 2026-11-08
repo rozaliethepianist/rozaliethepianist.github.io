@@ -580,3 +580,9 @@ body .header-inner > .language-switch:not(.is-positioned) {
 body.page-about .site-header::before {
   bottom: -7px;
 }
+/* One background polygon turns back before the footer, without a separate seam. */
+@media(min-width:1101px){
+ body:is(.page-lessons,.page-dutch) .page-plane::before{
+  clip-path:polygon(0 0,calc(var(--ending-x-start,60.31%) - .461736px) 0,var(--ending-x-bend,72%) var(--ending-bend-top,80%),var(--ending-x-end,69%) 100%,0 100%);
+ }
+}
