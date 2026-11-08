@@ -1,18 +1,7 @@
 /* Article catalogue and local PDF opening with a blocked-window download fallback. */
 (() => {
   'use strict';
-  Object.assign(window.rozalieCzech ||= {}, {
-    'My Articles': 'Moje Práce',
-    'Articles': 'Práce',
-    'Articles | Rozálie Stoklasová': 'Práce | Rozálie Stoklasová',
-    'Sight reading': 'Čtení z listu',
-    'Check my other articles': 'Prohlédnout další práce',
-    'About piano teaching and musical education.': 'O výuce klavíru a hudebním vzdělávání.',
-    'Open PDF': 'Otevřít PDF',
-    'Read article': 'Přečíst práci',
-    'PDF opens in a new tab. If the new tab is blocked, the file will download.': 'PDF se otevře na nové kartě. Pokud je otevření zablokováno, soubor se stáhne.',
-    'No articles are currently available.': 'Momentálně nejsou k dispozici žádné práce.'
-  });
+  window.rozalieCzech ||= {};
   // Register article translations from the editable catalogue before language.js runs.
   for (const article of Array.isArray(window.ROZALIE_ARTICLES) ? window.ROZALIE_ARTICLES : []) {
     for (const field of ['title', 'description']) {

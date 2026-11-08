@@ -210,7 +210,7 @@
   margin: 27px auto 0;
   align-items: center;
 }
-.page-home .home-about-photo { margin-left: 32px; max-width: 518px; transform: translateY(-37px); }
+.page-home .home-about-photo { margin-left: 12px; max-width: 518px; transform: translateY(-120px); }
 .page-home .home-about-photo img { width: 100%; height: 345px; object-fit: cover; object-position: 50% 50%; }
 .page-home .home-about-text { max-width: 650px; margin-top: 90px; transform: translateX(25px); }
 .page-home .home-about .section-heading { font-size: 40px; }
@@ -431,7 +431,7 @@
  .page-home .offer-wrap .button{font-size:13px;letter-spacing:0;min-height:44px;min-width:62.3%;margin-top:6px}
  .page-home .offer-wrap:last-child .button{min-width:70%}
  .page-home .home-about{min-height:62.5cqw}
- .page-home .home-about-photo{width:35.88cqw;max-width:none;margin-left:3.04cqw;transform:translateY(-2.74cqw)}
+ .page-home .home-about-photo{width:40cqw;max-width:none;margin-left:1cqw;transform:translateY(-7.74cqw)}
  .page-home .home-about-photo img{height:auto;aspect-ratio:799/533;object-fit:contain}
  .page-home .home-about-text{max-width:44.66cqw;margin-top:6.68cqw}
  .page-home .home-about-text .button{font-size:13px;letter-spacing:0;min-width:56.3%}
@@ -491,7 +491,7 @@
  .page-home .home-art-layer .home-art-dark{clip-path:polygon(62.278% 0,100% 0,100% 100%,0 100%,0 267.17cqw)}
  .page-home .home-hero-floral-window{position:absolute;left:0;top:56.08cqw;width:100%;height:56.08cqw;overflow:hidden}
  .page-home .art-flower-hero{left:-5.6cqw;top:42.05cqw;width:36.75cqw;opacity:.25}
- .page-home .art-flower-about{left:-2.35cqw;top:149.2cqw;width:36.75cqw;opacity:.28}
+ .page-home .art-flower-about{left:-2.35cqw;top:152cqw;width:36.75cqw;opacity:.28}
  .page-home .art-flower-dark-hero{left:25.53cqw;top:-34.48cqw;width:73.9cqw;opacity:.09;transform:scaleX(-1) rotate(90deg)}
  .page-home .art-flower-dark-work{left:70.27cqw;top:170.31cqw;width:33.73cqw;opacity:.11;transform:scaleX(-1)}
  .page-home .art-flower-dark-seam{display:none}
@@ -569,3 +569,42 @@
 }
 
 .page-home .home-art-layer .art-flower-hero { translate: -10px 20px; }
+
+.page-home .home-work-cards {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: inherit;
+  align-items: stretch;
+}
+
+body.page-home .home-work-cards > .work-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.page-home .home-work-cards .work-photo {
+  flex-shrink: 0;
+}
+
+.page-home .home-work-cards h3 {
+  margin-top: 2px;
+  padding-top: 16px;
+}
+.page-home .home-work-cards p {
+  text-wrap: pretty;
+}
+
+@media (max-width: 1100px) {
+  .page-home .home-work-cards {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .page-home .home-work-cards {
+    grid-template-columns: 1fr;
+  }
+}

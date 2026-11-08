@@ -1,5 +1,5 @@
 /* Scoped article links on Home and the article catalogue. */
-.page-home .article-actions { display:flex; flex-direction:column; align-items:center; gap:12px; width:100%; }
+.page-home .article-actions { display:flex; flex-direction:column; align-items:center; gap:12px; width:100%; margin-top: 12px;}
 .page-home .work-promo.article .article-actions .button { max-width:100%; white-space:normal; text-align:center; }
 .page-articles { background:var(--bg-light); color:#171717; }
 .page-articles .articles-page { width:min(100%,var(--site-max)); margin-inline:auto; }
@@ -11,7 +11,7 @@
 @media(max-width:600px) { .page-articles .article-entry {padding:22px;} }
 
 .page-home .article-actions .button-primary { background:var(--blue); border:1px solid var(--blue); color:#fff; }
-.page-home .article-actions .button-outline-blue { background:transparent; border:1px solid var(--blue); color:var(--blue); }
+.page-home .article-actions .button-outline-blue { background:transparent; border:2px solid var(--blue); color:var(--blue); }
 @media (any-hover: hover) and (any-pointer: fine) {
  .page-home .article-actions .button-primary:hover { background:var(--blue-hover); border-color:var(--blue-hover); color:#fff; }
  .page-home .article-actions .button-outline-blue:hover { background:transparent; border-color:var(--blue-hover); color:var(--blue-hover); box-shadow:0 8px 18px #0002; }
