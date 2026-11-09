@@ -29,7 +29,7 @@
 .adviser-quote { font: 400 1.3cqw / 2 var(--serif); letter-spacing: .04em; white-space: nowrap; text-align: left; text-wrap: pretty; }
 .adviser-main .adviser-quote { margin-left: 3cqw; text-align: left; }
 .adviser-process-copy h2 { font: 400 2.88cqw/1.4 var(--sans); margin: 6.9cqw 0 4.5cqw; text-transform: uppercase; white-space: nowrap; }
-.adviser-steps { margin: 0 0 0 1.5rem; padding-left: 1.35em; text-align: left; font: 400 1.075cqw/2.5 var(--editorial); letter-spacing: .136em; }
+.adviser-steps { margin: 0 0 0 2.5rem; padding-left: 1.35em; text-align: left; font: 400 1.075cqw/2.5 var(--editorial); letter-spacing: .136em; }
 .adviser-steps li { padding-left: 0; }
 .adviser-steps li::marker { font-weight: 600; }
 .adviser-main .adviser-process-result { font: 400 1.46cqw/1.35 var(--serif); margin: 3.7cqw -1cqw 4.2cqw; }

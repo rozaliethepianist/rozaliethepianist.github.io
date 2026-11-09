@@ -31,6 +31,7 @@
 .contact-intro-c5{position:relative;inset:auto;width:100%;max-width:620px;margin:auto}
 .page-contact .contact-intro-c5 h1{font-size:34px;margin:0 0 35px}
 .contact-intro-c5 p{font-size:16px;line-height:1.6;margin-bottom:15px}
+.contact-intro-c5 .contact-hero-subtitle {font-size:22px;}
 .contact-home-c5{position:relative;inset:auto;width:max-content;max-width:100%;min-height:48px;font-size:14px;margin:28px auto 0;display:flex;padding:12px 25px;border-radius:18px}
 .contact-photo-c5{left:auto;right:0;top:auto;bottom:0;width:min(100%,760px);height:400px;clip-path:polygon(13% 0,100% 0,100% 100%,0 100%)}
 .contact-photo-c5 img{width:100%;height:100%;top:0;left:0;object-fit:cover;object-position:50% 55%}
@@ -39,7 +40,7 @@
 .contact-closing-c5{font-size:16px;margin:35px 25px 0}.contact-flower-c5{top:850px;left:-75px;width:240px;opacity:.18}
 .page-contact .contact-c5{padding-bottom:50px}
 }
-@media(max-width:599px){.contact-form-section .form-grid{grid-template-columns:1fr}.contact-form-section{width:calc(100% - 36px)}.contact-form-section .contact-form{padding:24px 20px}.contact-form-section .form-action .button{width:100%;min-width:0}.contact-hero-c5{min-height:910px}.contact-intro-c5 p{font-size:15px}}
+@media(max-width:599px){.contact-form-section .form-grid{grid-template-columns:1fr}.contact-form-section{width:calc(100% - 36px)}.contact-form-section .contact-form{padding:24px 20px}.contact-form-section .form-action .button{width:100%;min-width:0}.contact-hero-c5{min-height:910px}.contact-intro-c5 p{font-size:15px}.contact-intro-c5 .contact-hero-subtitle {font-size:18px;}}
 /* Pass 2: reversible treatment matching the supplied pale Contact visual.
    The original JPEG is unchanged; the fade inherits the page light token. */
 .contact-photo-c5 img{filter:none}
@@ -62,4 +63,8 @@
   .page-contact .footer-social > a:hover {
     opacity: 1;
   }
+}
+
+body.page-contact .contact-photo-c5 img {
+  filter: brightness(1.14) contrast(0.94) sepia(0.06);
 }
