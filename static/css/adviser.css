@@ -155,6 +155,7 @@
 .adviser-explanation .adviser-steps { max-width:50%; }
 @media(min-width:1101px) { .adviser-story { height:auto;min-height:65cqw; }.adviser-story-copy { font-size:max(12px,1.04cqw); }.adviser-offer ul { font-size:max(12px,.9cqw); }.adviser-explanation .adviser-steps { max-width:49%; }.adviser-hero-copy { max-width:44%; } }
 @media(max-width:1100px) { .adviser-story-copy { position:static;width:100%;font-size:14px;line-height:1.8; }.adviser-story>img { position:static;width:min(100%,430px); }.adviser-explanation .adviser-steps { max-width:100%; }.adviser-reviews-grid { padding-inline:8%;gap:35px; } }
+@media(max-width:768px) { .adviser-explanation .adviser-steps { margin-left: 0; } }
 @media(max-width:599px) { .adviser-reviews-grid { grid-template-columns:1fr; } }
 @media(min-width:1101px) {
  .adviser-story { display:grid;grid-template-columns:62% 32%;gap:3cqw 6%;height:auto;min-height:0;padding:5cqw 6.5%;background:linear-gradient(77deg,var(--adviser-paper) 77%,var(--bg-dark) 77%); }
