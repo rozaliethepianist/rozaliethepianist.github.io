@@ -1,68 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="24 24 432 432" role="img" aria-labelledby="badge-title badge-description">
-  <title id="badge-title">Piano Teaching Certificate Badge</title>
-  <desc id="badge-description">Circular bronze and ivory piano teaching badge with a piano keyboard and CERTIFICATE in a rounded rectangle, without ribbon tails.</desc>
-  <defs>
-    <!-- All colors can be changed independently. -->
-    <linearGradient id="sealFill" x1="96" y1="53" x2="402" y2="444" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="0.62" stop-color="#FBF8F3"/>
-      <stop offset="1" stop-color="#F0E4D6"/>
-    </linearGradient>
-    <linearGradient id="circleEdge" x1="65" y1="52" x2="414" y2="428" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#E3C59C"/>
-      <stop offset="0.55" stop-color="#BD9060"/>
-      <stop offset="1" stop-color="#8C6848"/>
-    </linearGradient>
-    <linearGradient id="keyboardFrame" x1="156" y1="159" x2="324" y2="261" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#735247"/>
-      <stop offset="1" stop-color="#442C26"/>
-    </linearGradient>
-    <linearGradient id="certificateBar" x1="120" y1="360" x2="360" y2="408" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#67463A"/>
-      <stop offset="1" stop-color="#442C26"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Smooth circular frame, matching the English C1 badge geometry. -->
-  <circle cx="240" cy="240" r="214" fill="url(#sealFill)" stroke="url(#circleEdge)" stroke-width="4"/>
-  <circle cx="240" cy="240" r="201" fill="none" stroke="#C6A275" stroke-width="1.6"/>
-  <circle cx="240" cy="240" r="193" fill="none" stroke="#D8C2A5" stroke-width="1.1"/>
-
-  <!-- Top heading and ornaments. -->
-  <text x="240" y="112" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
-        font-size="17" font-weight="700" letter-spacing="1.4" fill="#4D342C">PIANO TEACHING</text>
-  <path d="M153 130 H211 M269 130 H327" stroke="#C6A275" stroke-width="1.6" stroke-linecap="round"/>
-  <path d="M240 124 L246 130 L240 136 L234 130 Z" fill="#BD9568"/>
-
-  <!-- Piano motif with seven ivory keys and five dark keys, without a circular backing. -->
-  <rect x="156" y="159" width="168" height="102" rx="10" fill="url(#keyboardFrame)"/>
-  <rect x="163" y="166" width="154" height="88" rx="5" fill="#BD966E"/>
-  <g fill="#FCF9F3" stroke="#553B31" stroke-width="1.55">
-    <rect x="170" y="173" width="20" height="74" rx="2"/>
-    <rect x="190" y="173" width="20" height="74" rx="2"/>
-    <rect x="210" y="173" width="20" height="74" rx="2"/>
-    <rect x="230" y="173" width="20" height="74" rx="2"/>
-    <rect x="250" y="173" width="20" height="74" rx="2"/>
-    <rect x="270" y="173" width="20" height="74" rx="2"/>
-    <rect x="290" y="173" width="20" height="74" rx="2"/>
-  </g>
-  <g fill="#3A2925" stroke="#2C211F" stroke-width="1">
-    <rect x="184" y="173" width="12" height="43" rx="2"/>
-    <rect x="204" y="173" width="12" height="43" rx="2"/>
-    <rect x="244" y="173" width="12" height="43" rx="2"/>
-    <rect x="264" y="173" width="12" height="43" rx="2"/>
-    <rect x="284" y="173" width="12" height="43" rx="2"/>
-  </g>
-
-  <!-- Content stays clear of the rectangle and circular frame. -->
-  <text x="240" y="317" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
-        font-size="43" font-weight="700" letter-spacing="2.4" fill="#4D342C">PIANO</text>
-  <text x="240" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
-        font-size="12" font-weight="700" letter-spacing="2.5" fill="#8D6A4A">MUSIC EDUCATION</text>
-
-  <!-- Rounded certificate label; no pointed ends or diagonal ribbon tails. -->
-  <rect x="120" y="360" width="240" height="48" rx="15" fill="url(#certificateBar)"/>
-  <rect x="123" y="363" width="234" height="42" rx="12" fill="none" stroke="#C6A275" stroke-width="1" opacity=".75"/>
-  <text x="240" y="391" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
-        font-size="22" font-weight="700" letter-spacing="1.5" fill="#FFF7EA">CERTIFICATE</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="24 24 432 432">
+    <defs>
+        <linearGradient id="sealFill" x1="96" y1="53" x2="402" y2="444" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#FFFFFF"/>
+            <stop offset="0.62" stop-color="#FBF8F3"/>
+            <stop offset="1" stop-color="#F0E4D6"/>
+        </linearGradient>
+        <linearGradient id="circleEdge" x1="65" y1="52" x2="414" y2="428" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#E3C59C"/>
+            <stop offset="0.55" stop-color="#BD9060"/>
+            <stop offset="1" stop-color="#8C6848"/>
+        </linearGradient>
+        <linearGradient id="keyboardFrame" x1="156" y1="159" x2="324" y2="261" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#735247"/>
+            <stop offset="1" stop-color="#442C26"/>
+        </linearGradient>
+        <linearGradient id="certificateBar" x1="65.103" y1="360" x2="415.10299" y2="430" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#67463A"/>
+            <stop offset="1" stop-color="#442C26"/>
+        </linearGradient>
+    </defs>
+    <circle cx="240" cy="240" r="214" fill="url(#sealFill)" stroke="url(#circleEdge)" stroke-width="4"/>
+    <circle cx="240" cy="240" r="201" fill="none" stroke="#C6A275" stroke-width="1.6"/>
+    <circle cx="240" cy="240" r="193" fill="none" stroke="#D8C2A5" stroke-width="1.1"/>
+    <text x="239.69606" y="112.63529" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="19.153px" font-weight="700" letter-spacing="1.4" fill="#4d342c">PIANO TEACHING
+    </text>
+    <path d="M153 130 H211 M269 130 H327" stroke="#C6A275" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M240 124 L246 130 L240 136 L234 130 Z" fill="#BD9568"/>
+    <rect x="156" y="159" width="168" height="102" rx="10" fill="url(#keyboardFrame)"/>
+    <rect x="163" y="166" width="154" height="88" rx="5" fill="#BD966E"/>
+    <g fill="#FCF9F3" stroke="#553B31" stroke-width="1.55">
+        <rect x="170" y="173" width="20" height="74" rx="2"/>
+        <rect x="190" y="173" width="20" height="74" rx="2"/>
+        <rect x="210" y="173" width="20" height="74" rx="2"/>
+        <rect x="230" y="173" width="20" height="74" rx="2"/>
+        <rect x="250" y="173" width="20" height="74" rx="2"/>
+        <rect x="270" y="173" width="20" height="74" rx="2"/>
+        <rect x="290" y="173" width="20" height="74" rx="2"/>
+    </g>
+    <g fill="#3A2925" stroke="#2C211F" stroke-width="1">
+        <rect x="184" y="173" width="12" height="43" rx="2"/>
+        <rect x="204" y="173" width="12" height="43" rx="2"/>
+        <rect x="244" y="173" width="12" height="43" rx="2"/>
+        <rect x="264" y="173" width="12" height="43" rx="2"/>
+        <rect x="284" y="173" width="12" height="43" rx="2"/>
+    </g>
+    <text x="240" y="317" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="43"
+          font-weight="700" letter-spacing="2.4" fill="#4D342C">PIANO
+    </text>
+    <text x="240" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12"
+          font-weight="700" letter-spacing="2.5" fill="#8D6A4A">MUSIC EDUCATION
+    </text>
+    <rect x="65.103" y="360" width="349.99999" height="70" rx="21.875" fill="url(#certificateBar)"/>
+    <rect x="69.478" y="364.375" width="341.24999" height="61.25" rx="17.5" fill="none" stroke="#c6a275"
+          stroke-width="1.45833" opacity="0.75"/>
+    <text x="240.10299" y="405.20833" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="32.08333" font-weight="700" letter-spacing="2.1875" fill="#fff7ea">CERTIFICATE
+    </text>
 </svg>
