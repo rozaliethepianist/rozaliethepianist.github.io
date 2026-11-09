@@ -476,9 +476,17 @@ window.ROZALIE_CONTENT = {
     "en": "5 years of teaching experience",
     "cz": "5 let pedagogické praxe"
   },
+  "lessons_ba_in_classical_piano_at_the_conservatorium_link": {
+    "en": "BA in Classical Piano" + " ",
+    "cz": "Bakalářské vzdělání (BA)" + " "
+  },
   "lessons_ba_in_classical_piano_at_the_conservatorium": {
-    "en": "BA in Classical Piano at the Conservatorium Maastricht (NL) and a Teaching Certificate",
-    "cz": "Bakalářské vzdělání (BA) v hraní klasické hudby na klavíru na Conservatorium Maastricht (NL) a pedagogický certifikát"
+    "en": "at the Conservatorium Maastricht (NL) and a" + " ",
+    "cz": "v hraní klasické hudby na klavíru na Conservatorium Maastricht (NL) a" + " "
+  },
+  "lessons_ba_teaching_certificate_link": {
+    "en": "Teaching Certificate",
+    "cz": "pedagogický certifikát"
   },
   "lessons_students_with_smiles_on_their_faces": {
     "en": "Students with smiles on their faces",
@@ -1461,11 +1469,19 @@ window.ROZALIE_CONTENT = {
     "cz": "Certifikát angličtiny C1"
   },
   "about_teaching_certificate_intro": {
-    "en": "Teaching certificate documentation: ",
+    "en": "Teaching competence documentation: ",
     "cz": "Doklad o pedagogickém certifikátu: "
   },
   "about_teaching_certificate_link": {
     "en": "Teaching certificate",
     "cz": "Pedagogický certifikát"
+  },
+  "about_bachelor_certificate_intro": {
+    "en": "Bachelor degree documentation: ",
+    "cz": "Doklad o bakalářském vzdělání: "
+  },
+  "about_bachelor_certificate_link": {
+    "en": "Bachelor degree certificate",
+    "cz": "Certifikát bakalářského titulu"
   },
 };
