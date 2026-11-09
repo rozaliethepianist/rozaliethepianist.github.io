@@ -31,18 +31,21 @@
 .contact-intro-c5{position:relative;inset:auto;width:100%;max-width:620px;margin:auto}
 .page-contact .contact-intro-c5 h1{font-size:34px;margin:0 0 35px}
 .contact-intro-c5 p{font-size:16px;line-height:1.6;margin-bottom:15px}
+.contact-intro-c5 .contact-hero-subtitle {font-size:22px;}
 .contact-home-c5{position:relative;inset:auto;width:max-content;max-width:100%;min-height:48px;font-size:14px;margin:28px auto 0;display:flex;padding:12px 25px;border-radius:18px}
 .contact-photo-c5{left:auto;right:0;top:auto;bottom:0;width:min(100%,760px);height:400px;clip-path:polygon(13% 0,100% 0,100% 100%,0 100%)}
-.contact-photo-c5 img{width:100%;height:100%;top:0;left:0;object-fit:cover;object-position:50% 55%}
+.contact-photo-c5 img{width:100%;height:100%;top:0;left:0;object-fit:cover;object-position:50% 40%}
 .contact-form-section{width:calc(100% - 48px);margin:30px auto 0}.contact-form-section>h2{font-size:30px;margin:0 0 25px;text-align:center}
 .contact-form-section .form-grid{gap:24px 30px}.contact-form-section .contact-form{padding:25px}
 .contact-closing-c5{font-size:16px;margin:35px 25px 0}.contact-flower-c5{top:850px;left:-75px;width:240px;opacity:.18}
 .page-contact .contact-c5{padding-bottom:50px}
 }
-@media(max-width:599px){.contact-form-section .form-grid{grid-template-columns:1fr}.contact-form-section{width:calc(100% - 36px)}.contact-form-section .contact-form{padding:24px 20px}.contact-form-section .form-action .button{width:100%;min-width:0}.contact-hero-c5{min-height:910px}.contact-intro-c5 p{font-size:15px}}
+@media(max-width:768px){
+.contact-photo-c5 img{object-position:50% 30%;}
+}
+@media(max-width:599px){.contact-photo-c5 img{object-position:80% 55%;}.contact-form-section .form-grid{grid-template-columns:1fr}.contact-form-section{width:calc(100% - 36px)}.contact-form-section .contact-form{padding:24px 20px}.contact-form-section .form-action .button{width:100%;min-width:0}.contact-hero-c5{min-height:910px}.contact-intro-c5 p{font-size:15px}.contact-intro-c5 .contact-hero-subtitle {font-size:18px;}}
 /* Pass 2: reversible treatment matching the supplied pale Contact visual.
    The original JPEG is unchanged; the fade inherits the page light token. */
-.contact-photo-c5 img{filter:none}
 .contact-photo-c5::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 75.4167%,color-mix(in srgb,var(--bg-light) 7.06%,transparent) 78%,color-mix(in srgb,var(--bg-light) 13.73%,transparent) 80.6%,color-mix(in srgb,var(--bg-light) 20.39%,transparent) 83.18%,color-mix(in srgb,var(--bg-light) 35.69%,transparent) 85.77%,color-mix(in srgb,var(--bg-light) 55.29%,transparent) 88.35%,color-mix(in srgb,var(--bg-light) 74.9%,transparent) 90.94%,color-mix(in srgb,var(--bg-light) 88.63%,transparent) 93.52%,color-mix(in srgb,var(--bg-light) 92.16%,transparent) 96.11%,color-mix(in srgb,var(--bg-light) 96.08%,transparent) 98.69%,var(--bg-light) 101.28%);pointer-events:none}
 
 /* Individual Contact PDF: native 417.844px artwork on the 1367px canvas. */
@@ -62,4 +65,8 @@
   .page-contact .footer-social > a:hover {
     opacity: 1;
   }
+}
+
+body.page-contact .contact-photo-c5 img {
+  filter: brightness(1.14) contrast(0.94) sepia(0.06);
 }

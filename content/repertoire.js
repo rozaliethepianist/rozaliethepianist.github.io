@@ -61,7 +61,7 @@ window.ROZALIE_REPERTOIRE = {
     "cz": "Sólový klavír"
   },
   "repertoire_solo_summary": {
-    "en": "7 works · Bach, Mozart, Chopin, Liszt, Ravel, Rachmaninoff",
+    "en": "7 pieces · Bach, Mozart, Chopin, Liszt, Ravel, Rachmaninoff",
     "cz": "7 skladeb · Bach, Mozart, Chopin, Liszt, Ravel, Rachmaninoff"
   },
   "repertoire_debussy": {

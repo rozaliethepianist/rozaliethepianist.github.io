@@ -178,7 +178,7 @@ window.ROZALIE_CONTENT = {
   },
   "home_is_pursuing_a_master_s_degree_in": {
     "en": "Rozálie is pursuing a master's degree in classical piano at Conservatorium Maastricht with Dr. Katia Veekmans. She completed her bachelor's degree with a specialization in piano pedagogy in 2026. Her experience of living in the Netherlands informs her study consultations.",
-    "cz": "Rozálie studuje magisterský obor klasického klavíru na Conservatorium Maastricht pod vedením Dr. Katie Veekmans. Bakalářské studium se zaměřením na klavírní pedagogiku dokončila v roce 2026. Zkušenosti ze života v Nizozemsku využívá při studijních konzultacích."
+    "cz": "Rozálie studuje magisterský obor hraní klasické hudby na klavír na Conservatorium Maastricht pod vedením Dr. Katie Veekmans. Bakalářské studium se zaměřením na klavírní pedagogiku dokončila v roce 2026. Zkušenosti ze života v Nizozemsku využívá při studijních konzultacích."
   },
   "home_enjoy_great_music_and_master_your_piano": {
     "en": "Enjoy great music and master your piano technique with my free tips.",
@@ -438,7 +438,7 @@ window.ROZALIE_CONTENT = {
   },
   "adviser_having_completed_my_bachelor_s_degree_in": {
     "en": "Having completed my bachelor's degree in classical piano, I can see how I learned, grew, experienced, and gained. It is worth so much that I decided to stay for a master's as well. It is a step that is worth it.",
-    "cz": "Po dokončení bakalářského studia klasického klavíru vidím, kolik jsem se naučila, zažila a získala a jak jsem osobnostně vyrostla. Má to pro mě takovou hodnotu, že jsem se rozhodla pokračovat v magisterském studiu. Je to krok, který stojí za to."
+    "cz": "Po dokončení bakalářského studia hraní klasické hudby na klavír vidím, kolik jsem se naučila, zažila a získala a jak jsem osobnostně vyrostla. Má to pro mě takovou hodnotu, že jsem se rozhodla pokračovat v magisterském studiu. Je to krok, který stojí za to."
   },
   "common_reviews": {
     "en": "Reviews",
@@ -478,7 +478,7 @@ window.ROZALIE_CONTENT = {
   },
   "lessons_ba_in_classical_piano_at_the_conservatorium": {
     "en": "BA in Classical Piano at the Conservatorium Maastricht (NL) and a Teaching Certificate",
-    "cz": "Bakalářské vzdělání (BA) v klasickém klavíru na Conservatorium Maastricht (NL) a pedagogický certifikát"
+    "cz": "Bakalářské vzdělání (BA) v hraní klasické hudby na klavíru na Conservatorium Maastricht (NL) a pedagogický certifikát"
   },
   "lessons_students_with_smiles_on_their_faces": {
     "en": "Students with smiles on their faces",
@@ -489,8 +489,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Vedení, které probouzí fantazii"
   },
   "lessons_ask_about_lessons": {
-    "en": "Ask for a consultation",
-    "cz": "Zeptat se na konzultaci"
+    "en": "Ask for a lesson",
+    "cz": "Zeptat se na lekci"
   },
   "lessons_check_my_hourly_rates": {
     "en": "Check my hourly rates",
@@ -798,11 +798,11 @@ window.ROZALIE_CONTENT = {
   },
   "about_additional_activities_have_included_work_with_several": {
     "en": "Additional activities have included work with several chamber music ensembles. For example, a piano trio or an unusual formation of piano and two classical saxophones. Currently, Rozálie is a member of Trio Dell´Arte together with oboe and English horn. Her ensemble focuses mainly on baroque repertoire and pieces by the German composer Max Bruch. The latest formed ensemble is Trio Amabile, a beautiful combination of oboe, viola, and piano. Rozálie gained experience also in four-hand piano repertoire and accompaniment. She currently works as an accompanist of Donna Voce vocal ensemble, a female choir based in Wahlwiller. Beyond her musical background, worth mentioning is her several years of employment in the service area of the National Theatre in Prague.",
-    "cz": "Věnovala se také několika komorním souborům, například klavírnímu triu či neobvyklému uskupení klavíru a dvou klasických saxofonů. V současnosti je členkou Trio Dell´Arte s hobojem a anglickým rohem, zaměřeného především na barokní repertoár a skladby Maxe Brucha. Nejnověji vzniklo Trio Amabile, kombinace hoboje, violy a klavíru. Rozálie má zkušenosti i se čtyřruční hrou a korepeticí a nyní působí jako korepetitorka ženského pěveckého souboru Donna Voce z Wahlwilleru. Mimo hudbu stojí za zmínku několik let práce v oblasti služeb v Národním divadle v Praze."
+    "cz": "Věnovala se také několika komorním souborům, například klavírnímu triu či neobvyklému uskupení klavíru a dvou saxofonů. V současnosti je členkou Trio Dell´Arte s hobojem a anglickým rohem, zaměřeného především na barokní repertoár a skladby Maxe Brucha. Nejnověji vzniklo Trio Amabile, kombinace hoboje, violy a klavíru. Rozálie má zkušenosti i se čtyřruční hrou a korepeticí a nyní působí jako korepetitorka ženského pěveckého souboru Donna Voce z Wahlwilleru. Mimo hudbu stojí za zmínku několik let práce v oblasti služeb v Národním divadle v Praze."
   },
   "about_next_to_her_career_as_a_teacher": {
     "en": "Next to her career as a teacher, Rozálie Stoklasová is currently studying for a master's in classical piano at the Conservatorium Maastricht under the guidance of Dr. Katia Veekmans. She successfully completed her bachelor's degree in 2026 with a specialization in piano pedagogy and acquired a Teaching Certificate. As for her prior education, in 2022, she completed an eight-year program at the Prague Secondary School of Music (\"Gymnázium a Hudební škola hl. m. Prahy\") as a member of a special music class led by Prof. Irina Parker. She obtained her Secondary Education Diploma and graduated with a final solo recital.",
-    "cz": "Vedle pedagogické práce studuje Rozálie Stoklasová magisterský obor klasického klavíru na Conservatorium Maastricht pod vedením Dr. Katie Veekmans. V roce 2026 dokončila bakalářské studium se zaměřením na klavírní pedagogiku a získala pedagogický certifikát. V roce 2022 absolvovala osmileté studium na Gymnáziu a Hudební škole hl. m. Prahy jako členka speciální hudební třídy pod vedením prof. Iriny Parker. Získala maturitní vysvědčení a studium zakončila sólovým recitálem."
+    "cz": "Vedle pedagogické práce studuje Rozálie Stoklasová magisterský klavirní obor klasické hudby na Conservatorium Maastricht pod vedením Dr. Katie Veekmans. V roce 2026 dokončila bakalářské studium se zaměřením na klavírní pedagogiku a získala pedagogický certifikát. V roce 2022 absolvovala osmileté studium na Gymnáziu a Hudební škole hl. m. Prahy jako členka speciální hudební třídy pod vedením prof. Iriny Parker. Získala maturitní vysvědčení a studium zakončila sólovým recitálem."
   },
   "about_in_order_to_develop_her_musical_skills": {
     "en": "In order to develop her musical skills, Rozálie attended masterclasses with prominent pianists and teachers. In 2024, she was chosen as a piano-class representative at the masterclass of a Russian pianist Mikhail Voskresensky. The previous year, she attended \"D´Accord Academy\" in Germany, where she took lessons with Czech pianist Bohumír Stehlík. In 2022, she participated in the \"International Forum for Flute and Piano\" in Luxembourg, working with American pianist Prof. Daniel Blumenthal. At a young age, she participated in Masterclasses with Czech pianist Martin Kasík.",
@@ -966,7 +966,7 @@ window.ROZALIE_CONTENT = {
   },
   "home_czech_classical_pianist_piano_teacher_in_maastricht": {
     "en": "Rozálie Stoklasová — Czech classical pianist, piano teacher in Maastricht and online, and Dutch study adviser.",
-    "cz": "Rozálie Stoklasová — česká klasická klavíristka, učitelka klavíru v Maastrichtu i online a poradkyně ke studiu v Nizozemsku."
+    "cz": "Rozálie Stoklasová — česká klavíristka klasické hudby, učitelka klavíru v Maastrichtu i online a poradkyně ke studiu v Nizozemsku."
   },
   "lessons_ask_about_a_lesson_bundle": {
     "en": "Ask about a lesson bundle",
@@ -1238,7 +1238,7 @@ window.ROZALIE_CONTENT = {
   },
   "about_learn_about_s_work_as_a_classical": {
     "en": "Learn about Rozálie Stoklasová's work as a classical pianist, teacher, chamber musician and accompanist. Watch performances and read her biography.",
-    "cz": "Seznamte se s tvorbou Rozálie Stoklasové jakožto klasické klavíristky, pedagožky, komorní hráčky a korepetitorky. Zhlédněte její vystoupení a přečtěte si její životopis."
+    "cz": "Seznamte se s tvorbou Rozálie Stoklasové jakožto klavíristky klasické hudby, pedagožky, komorní hráčky a korepetitorky. Zhlédněte její vystoupení a přečtěte si její životopis."
   },
   "about_play_on_youtube": {
     "en": "Play on YouTube",
@@ -1430,7 +1430,7 @@ window.ROZALIE_CONTENT = {
   },
   "about_has_always_been_interested_in_teaching_as_after_certificate": {
     "en": "Teaching Certificate and demonstrating knowledge from psychology, didactics, and piano pedagogy. She works with private students of all levels and ages, from children to adults and beginners to advanced players. Outside the private sphere, she teaches at the Junior Department of the Conservatorium Maastricht, guiding a class of young, classically trained musicians. By adjusting her lessons to the individual needs of each student, she creates a safe space where music comes alive. The core value of her lesson is not only to develop the technique but also to build a unique connection between music and fantasy.",
-    "cz": "Pedagogický certifikát a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuje se soukromými studenty všech věků a úrovní, od dětí po dospělé a od začátečníků po pokročilé. Učí také na Junior Department of the Conservatorium Maastricht, kde vede třídu mladých klasických hudebníků. Přizpůsobováním výuky individuálním potřebám vytváří bezpečný prostor, v němž hudba ožívá. Základem není jen rozvoj techniky, ale také jedinečné spojení hudby a fantazie."
+    "cz": "Pedagogický certifikát a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuje se soukromými studenty všech věků a úrovní, od dětí po dospělé a od začátečníků po pokročilé. Učí také na Junior Department of the Conservatorium Maastricht, kde vede třídu mladých hudebníků hrajících klasickou hudbu. Přizpůsobováním výuky individuálním potřebám vytváří bezpečný prostor, v němž hudba ožívá. Základem není jen rozvoj techniky, ale také jedinečné spojení hudby a fantazie."
   },
   "lessons_i_have_always_been_interested_in_teaching_certificate_link": {
     "en": "Teaching Certificate",
@@ -1438,7 +1438,7 @@ window.ROZALIE_CONTENT = {
   },
   "lessons_i_have_always_been_interested_in_teaching_after_certificate": {
     "en": " and demonstrating knowledge from psychology, didactics, and piano pedagogy. I work with private students of all levels and ages, from children to adults and beginners to advanced players. Outside the private sphere, I also teach at the Junior Department of the Conservatorium Maastricht, guiding a class of young, classically trained musicians.",
-    "cz": " a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuji se soukromými studenty všech úrovní a věků, od dětí po dospělé a od začátečníků po pokročilé. Mimo soukromou výuku učím také na Junior Department of the Conservatorium Maastricht, kde vedu třídu mladých klasických hudebníků."
+    "cz": " a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuji se soukromými studenty všech úrovní a věků, od dětí po dospělé a od začátečníků po pokročilé. Mimo soukromou výuku učím také na Junior Department of the Conservatorium Maastricht, kde vedu třídu mladých hudebníků studujícich klasickou hudbu."
   },
   "home_certificate_intro": {
     "en": "I hold a ",
