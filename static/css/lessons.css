@@ -30,7 +30,7 @@
 .page-lessons .lessons-method { height: 56.23cqw; min-height: 0; display: block; }
 .page-lessons .lessons-method-left { position: absolute; top: 7.2cqw; left: 6.25%; width: 41.9%; padding: 0; }
 .page-lessons .lessons-method-left h2 { font: 400 2.25cqw/1.37 var(--sans); margin: 0 0 3cqw 1.9cqw; letter-spacing: 0; white-space: nowrap; }
-.page-lessons .lessons-method-left p { font: 400 .925cqw/1.342 var(--editorial); letter-spacing: 0; margin: 0 0 3.1cqw; text-align: justify; }
+.page-lessons .lessons-method-left p { font: 400 .925cqw/1.342 var(--editorial); letter-spacing: 0; margin: 0 0 1.8cqw; text-align: justify; }
 .page-lessons .lessons-method-left p:last-child { font-size: .98cqw; margin-top: -1.6cqw; }
 .page-lessons .lessons-method-right { position: absolute; top: 1.05cqw; left: 48.05%; width: 48.2%; padding: 0; }
 .page-lessons .lessons-gallery-primary { grid-template-columns: 1fr 1fr; gap: .35cqw; width: 93%; margin-left: 1cqw;}
