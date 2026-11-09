@@ -196,9 +196,13 @@ window.ROZALIE_CONTENT = {
     "en": "Do you have a specific question or prefer an individual approach?",
     "cz": "Máte konkrétní otázku nebo preferujete individuální přístup?"
   },
+  "common_book_your_lesson": {
+    "en": "Book your lesson or consultation via the contact form below!",
+    "cz": "Rezervujte si lekci nebo konzultaci prostřednictvím kontaktního formuláře níže"
+  },
   "common_do_not_hesitate_to_contact_me": {
-    "en": "Do not hesitate to contact me.",
-    "cz": "Neváhejte mě kontaktovat."
+    "en": "Do not hesitate to send me a message.",
+    "cz": "Neváhejte mě kontaktovat a pošli mi zprávu."
   },
   "home_icing_on_the_cake": {
     "en": "Icing on the Cake",
@@ -245,7 +249,7 @@ window.ROZALIE_CONTENT = {
     "cz": "pro zájemce o studium v Nizozemsku"
   },
   "adviser_ask_about_a_consultation": {
-    "en": "Ask about a consultation",
+    "en": "Ask for a consultation",
     "cz": "Zeptat se na konzultaci"
   },
   "adviser_hi_i_am": {
@@ -485,20 +489,20 @@ window.ROZALIE_CONTENT = {
     "cz": "Vedení, které probouzí fantazii"
   },
   "lessons_ask_about_lessons": {
-    "en": "Ask about lessons",
-    "cz": "Zeptat se na lekce"
+    "en": "Ask for a consultation",
+    "cz": "Zeptat se na konzultaci"
   },
   "lessons_check_my_hourly_rates": {
     "en": "Check my hourly rates",
     "cz": "Prohlédnout ceník"
   },
   "lessons_piano_lessons_that_capture_your_heart": {
-    "en": "“Piano Lessons that capture your heart",
-    "cz": "„Výuka klavíru, která vás chytí za srdce"
+    "en": "Piano Lessons that capture your heart",
+    "cz": "Výuka klavíru, která vás chytí za srdce"
   },
   "lessons_guidance_that_captivates_your_fantasy": {
-    "en": "Guidance that captivates your fantasy”",
-    "cz": "Vedení, které zaujme vaši fantazii“"
+    "en": "Guidance that captivates your fantasy",
+    "cz": "Vedení, které zaujme vaši fantazii"
   },
   "lessons_the_art_of_teaching": {
     "en": "The Art of Teaching",

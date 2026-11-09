@@ -236,3 +236,8 @@
     background: var(--bg-light);
   }
 }
+
+.lesson-quote-mark { position: relative; font:400 44px/0 var(--serif); color:#c5c2ba; pointer-events:none; box-sizing: border-box; top: .75rem;}
+@media(max-width:768px) { .lesson-quote-mark {font-size:30px; top: .15rem;} }
+
+.lessons-hero-subtitle { font-family: var(--serif-decor) }

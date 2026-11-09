@@ -586,3 +586,42 @@ body.page-about .site-header::before {
   clip-path:polygon(0 0,calc(var(--ending-x-start,60.31%) - .932615px) 0,var(--ending-x-bend,72%) var(--ending-bend-top,80%),var(--ending-x-end,69%) 100%,0 100%);
  }
 }
+
+/* Shared blue hero buttons. Adjust these tokens to update every hero CTA. */
+:root {
+  --hero-button-font-family: var(--sans);
+  --hero-button-font-size: 14px;
+  --hero-button-font-weight: 500;
+  --hero-button-letter-spacing: .12em;
+  --hero-button-height: 60px;
+  --hero-button-padding-inline: 24px;
+}
+@media (max-width:1100px) {
+  :root {
+    --hero-button-font-size: 13px;
+    --hero-button-height: 52px;
+  }
+}
+body:is(.page-home,.page-lessons,.page-dutch,.page-contact)
+:is(.home-hero,.lessons-hero,.adviser-hero,.contact-hero-c5) .button.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: var(--hero-button-height);
+  min-height: var(--hero-button-height);
+  padding: 0 var(--hero-button-padding-inline);
+  font-family: var(--hero-button-font-family);
+  font-size: var(--hero-button-font-size);
+  font-weight: var(--hero-button-font-weight);
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: var(--hero-button-letter-spacing);
+  text-transform: uppercase;
+  white-space: normal;
+  gap: 14px;
+}
+body:is(.page-home,.page-lessons,.page-dutch,.page-contact)
+:is(.home-hero,.lessons-hero,.adviser-hero,.contact-hero-c5) .button.button-primary::after {
+  flex-shrink: 0;
+}
