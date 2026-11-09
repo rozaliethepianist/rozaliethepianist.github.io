@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="24 24 432 432" role="img" aria-labelledby="badge-title badge-description">
+  <title id="badge-title">English C1 Certificate Badge</title>
+  <desc id="badge-description">Circular English C1 badge with a book illustration and CERTIFICATE in a rounded rectangle; no ribbon tails.</desc>
+  <defs>
+    <linearGradient id="sealFill" x1="96" y1="53" x2="402" y2="444" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.62" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EAF3F8"/>
+    </linearGradient>
+    <linearGradient id="circleEdge" x1="65" y1="52" x2="414" y2="428" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A8C9DB"/>
+      <stop offset="0.55" stop-color="#408BB6"/>
+      <stop offset="1" stop-color="#294B5C"/>
+    </linearGradient>
+    <linearGradient id="bookPaper" x1="170" y1="172" x2="302" y2="251" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EAF3F8"/>
+    </linearGradient>
+    <linearGradient id="certificateBar" x1="119" y1="365" x2="356" y2="408" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#408BB6"/>
+      <stop offset="1" stop-color="#294B5C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- A true circular border replaces the original scalloped perimeter. -->
+  <circle cx="240" cy="240" r="214" fill="url(#sealFill)" stroke="url(#circleEdge)" stroke-width="4"/>
+  <circle cx="240" cy="240" r="201" fill="none" stroke="#A8C9DB" stroke-width="1.6"/>
+  <circle cx="240" cy="240" r="193" fill="none" stroke="#D6CABB" stroke-width="1.1"/>
+
+  <!-- Heading -->
+  <text x="240" y="112" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="17" font-weight="700" letter-spacing="1.4" fill="#294B5C">ENGLISH LANGUAGE</text>
+  <path d="M153 130 H211 M269 130 H327" stroke="#A8C9DB" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M240 124 L246 130 L240 136 L234 130 Z" fill="#D6CABB"/>
+
+  <!-- Book motif, retained as individually editable SVG paths. -->
+  <circle cx="240" cy="213" r="72" fill="#E7F1F7"/>
+  <circle cx="240" cy="213" r="69" fill="none" stroke="#C5DDEB" stroke-width="1"/>
+  <path d="M240 186 C220 172 194 167 162 176 L162 246 C195 238 220 244 240 258 C260 244 285 238 318 246 L318 176 C286 167 260 172 240 186 Z"
+        fill="#6498B8" stroke="#355E78" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M240 191 C220 179 195 174 170 181 L170 239 C201 233 225 242 240 254 Z"
+        fill="url(#bookPaper)" stroke="#5685A1" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M240 191 C260 179 285 174 310 181 L310 239 C279 233 255 242 240 254 Z"
+        fill="url(#bookPaper)" stroke="#5685A1" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M240 191 V254" fill="none" stroke="#356C91" stroke-width="2.1" stroke-linecap="round"/>
+  <g fill="none" stroke="#B7CEDC" stroke-width="2" stroke-linecap="round">
+    <path d="M181 198 Q206 192 226 204 M181 210 Q206 204 226 216 M181 222 Q205 216 225 227"/>
+    <path d="M299 198 Q274 192 254 204 M299 210 Q274 204 254 216 M299 222 Q275 216 255 227"/>
+  </g>
+
+  <!-- Level -->
+  <text x="240" y="317" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="51" font-weight="700" letter-spacing="2" fill="#294B5C">C1</text>
+  <text x="240" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="12" font-weight="700" letter-spacing="2.8" fill="#6489A0">CEFR LEVEL</text>
+
+  <!-- Horizontal rounded label, without angled ribbon or tails. -->
+  <rect x="120" y="360" width="240" height="48" rx="15" fill="url(#certificateBar)"/>
+  <rect x="123" y="363" width="234" height="42" rx="12" fill="none" stroke="#A8C9DB" stroke-width="1" opacity=".7"/>
+  <text x="240" y="391" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" font-weight="700" letter-spacing="1.5" fill="#FFFFFF">CERTIFICATE</text>
+</svg>

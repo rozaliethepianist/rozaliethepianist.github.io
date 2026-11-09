@@ -196,9 +196,13 @@ window.ROZALIE_CONTENT = {
     "en": "Do you have a specific question or prefer an individual approach?",
     "cz": "Máte konkrétní otázku nebo preferujete individuální přístup?"
   },
+  "common_book_your_lesson": {
+    "en": "Book your lesson or consultation via the contact form below!",
+    "cz": "Rezervujte si lekci nebo konzultaci prostřednictvím kontaktního formuláře níže"
+  },
   "common_do_not_hesitate_to_contact_me": {
-    "en": "Do not hesitate to contact me.",
-    "cz": "Neváhejte mě kontaktovat."
+    "en": "Do not hesitate to send me a message.",
+    "cz": "Neváhejte mě kontaktovat a pošli mi zprávu."
   },
   "home_icing_on_the_cake": {
     "en": "Icing on the Cake",
@@ -245,7 +249,7 @@ window.ROZALIE_CONTENT = {
     "cz": "pro zájemce o studium v Nizozemsku"
   },
   "adviser_ask_about_a_consultation": {
-    "en": "Ask about a consultation",
+    "en": "Ask for a consultation",
     "cz": "Zeptat se na konzultaci"
   },
   "adviser_hi_i_am": {
@@ -485,20 +489,20 @@ window.ROZALIE_CONTENT = {
     "cz": "Vedení, které probouzí fantazii"
   },
   "lessons_ask_about_lessons": {
-    "en": "Ask about lessons",
-    "cz": "Zeptat se na lekce"
+    "en": "Ask for a consultation",
+    "cz": "Zeptat se na konzultaci"
   },
   "lessons_check_my_hourly_rates": {
     "en": "Check my hourly rates",
     "cz": "Prohlédnout ceník"
   },
   "lessons_piano_lessons_that_capture_your_heart": {
-    "en": "“Piano Lessons that capture your heart",
-    "cz": "„Výuka klavíru, která vás chytí za srdce"
+    "en": "Piano Lessons that capture your heart",
+    "cz": "Výuka klavíru, která vás chytí za srdce"
   },
   "lessons_guidance_that_captivates_your_fantasy": {
-    "en": "Guidance that captivates your fantasy”",
-    "cz": "Vedení, které zaujme vaši fantazii“"
+    "en": "Guidance that captivates your fantasy",
+    "cz": "Vedení, které zaujme vaši fantazii"
   },
   "lessons_the_art_of_teaching": {
     "en": "The Art of Teaching",
@@ -545,8 +549,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Motivace a metoda"
   },
   "lessons_i_have_always_been_interested_in_teaching": {
-    "en": "I have always been interested in teaching, as I admired the art of giving a well-structured, inspiring piano lesson. During my studies, I successfully completed specialized training in “Advanced teaching skills,” obtaining a Teaching Certificate and demonstrating knowledge from psychology, didactics, and piano pedagogy. I work with private students of all levels and ages, from children to adults and beginners to advanced players. Outside the private sphere, I also teach at the Junior Department of the Conservatorium Maastricht, guiding a class of young, classically trained musicians.",
-    "cz": "Vždy mě přitahovala promyšlená a inspirativní výuka klavíru. Během studia jsem absolvovala specializovaný kurz Advanced Teaching Skills, získala pedagogický certifikát a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuji se soukromými studenty všech úrovní a věků, od dětí po dospělé a od začátečníků po pokročilé. Mimo soukromou výuku učím také na Junior Department of the Conservatorium Maastricht, kde vedu třídu mladých klasických hudebníků."
+    "en": "I have always been interested in teaching, as I admired the art of giving a well-structured, inspiring piano lesson. During my studies, I successfully completed specialized training in “Advanced teaching skills,” obtaining a ",
+    "cz": "Vždy mě přitahovala promyšlená a inspirativní výuka klavíru. Během studia jsem absolvovala specializovaný kurz Advanced Teaching Skills, získala "
   },
   "lessons_by_adjusting_my_lessons_to_the_individual": {
     "en": "By adjusting my lessons to the individual needs of each student, I create a safe space where music comes alive. The core value of my lesson is not only to develop the technique but also to build a unique connection between music and fantasy.",
@@ -781,8 +785,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Rozálie Stoklasová je česká klavíristka, učitelka a poradkyně žijící v Nizozemsku. Její hlavní vášní je výuka. Věnuje se mezinárodním studentům v soukromé praxi a od roku 2025 učí na Junior Conservatorium Maastricht. Díky certifikovanému vzdělání stojí její lekce na tvořivosti, empatii a individuálním vedení podporujícím představivost žáků. Jako klavíristka získala široké profesní zkušenosti, z nichž vychází její pedagogický přístup."
   },
   "about_has_always_been_interested_in_teaching_as": {
-    "en": "Rozálie has always been interested in teaching, as she admired the art of giving a well-structured, inspiring piano lesson. During her studies, she successfully completed specialized training in \"Advanced teaching skills,\" obtaining a Teaching Certificate and demonstrating knowledge from psychology, didactics, and piano pedagogy. She works with private students of all levels and ages, from children to adults and beginners to advanced players. Outside the private sphere, she teaches at the Junior Department of the Conservatorium Maastricht, guiding a class of young, classically trained musicians. By adjusting her lessons to the individual needs of each student, she creates a safe space where music comes alive. The core value of her lesson is not only to develop the technique but also to build a unique connection between music and fantasy.",
-    "cz": "Rozálii vždy přitahovala promyšlená a inspirativní výuka klavíru. Během studia absolvovala kurz Advanced Teaching Skills, získala pedagogický certifikát a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuje se soukromými studenty všech věků a úrovní, od dětí po dospělé a od začátečníků po pokročilé. Učí také na Junior Department of the Conservatorium Maastricht, kde vede třídu mladých klasických hudebníků. Přizpůsobováním výuky individuálním potřebám vytváří bezpečný prostor, v němž hudba ožívá. Základem není jen rozvoj techniky, ale také jedinečné spojení hudby a fantazie."
+    "en": "Rozálie has always been interested in teaching, as she admired the art of giving a well-structured, inspiring piano lesson. During her studies, she successfully completed specialized training in \"Advanced teaching skills,\" obtaining a ",
+    "cz": "Rozálii vždy přitahovala promyšlená a inspirativní výuka klavíru. Během studia absolvovala kurz Advanced Teaching Skills, získala "
   },
   "about_as_an_actively_performing_pianist_gained_many": {
     "en": "As an actively performing pianist, Rozálie gained many experiences within the music industry, demonstrating her ability to perform with distinctive touch, technical skills, and colorful expressivity. She participated, among others, in the \"Samson Francois International Piano Competition 2024\". In the same year, she won the \"IAFM Köln Award\" in \"The IAFM Cologne International Piano Competition 2024\", where the jury appraised her precise differentiation of various musical styles. During the years 2018-2022, she was awarded first prizes in the \"Art-Duo Music Festival\" held in famous European cities such as Copenhagen, Berlin, Madrid, and Vienna. As a young talent, Rozálie won second prize in the Czech international competition \"Amadeus\" and first prize in the \"Virtuosi per Musica di Pianoforte International Competition\". She also became a two-time first prize-winner in \"Prague Junior Note Piano Competition\". As a child, she was named the absolute prize-winner in the \"Pro Bohemia Piano Competition\".",
@@ -801,8 +805,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Vedle pedagogické práce studuje Rozálie Stoklasová magisterský obor klasického klavíru na Conservatorium Maastricht pod vedením Dr. Katie Veekmans. V roce 2026 dokončila bakalářské studium se zaměřením na klavírní pedagogiku a získala pedagogický certifikát. V roce 2022 absolvovala osmileté studium na Gymnáziu a Hudební škole hl. m. Prahy jako členka speciální hudební třídy pod vedením prof. Iriny Parker. Získala maturitní vysvědčení a studium zakončila sólovým recitálem."
   },
   "about_in_order_to_develop_her_musical_skills": {
-    "en": "In order to develop her musical skills, Rozálie attended masterclasses with prominent pianists and teachers. In 2024, she was chosen as a piano-class representative at the masterclass of a Russian pianist Mikhail Voskresensky. The following year, she attended \"D´Accord Academy\" in Germany, where she took lessons with Czech pianist Bohumír Stehlík. In 2022, she participated in the \"International Forum for Flute and Piano\" in Luxembourg, working with American pianist Prof. Daniel Blumenthal. At a young age, she participated in Masterclasses with Czech pianist Martin Kasík.",
-    "cz": "Pro rozvoj hudebních dovedností navštěvovala mistrovské kurzy významných klavíristů a pedagogů. V roce 2024 byla vybrána jako zástupkyně klavírní třídy na kurzu Michaila Voskresenského. Následující rok se účastnila D´Accord Academy v Německu, kde studovala u Bohumíra Stehlíka. V roce 2022 absolvovala International Forum for Flute and Piano v Lucembursku pod vedením amerického klavíristy prof. Daniela Blumenthala. V mládí se účastnila kurzů Martina Kasíka."
+    "en": "In order to develop her musical skills, Rozálie attended masterclasses with prominent pianists and teachers. In 2024, she was chosen as a piano-class representative at the masterclass of a Russian pianist Mikhail Voskresensky. The previous year, she attended \"D´Accord Academy\" in Germany, where she took lessons with Czech pianist Bohumír Stehlík. In 2022, she participated in the \"International Forum for Flute and Piano\" in Luxembourg, working with American pianist Prof. Daniel Blumenthal. At a young age, she participated in Masterclasses with Czech pianist Martin Kasík.",
+    "cz": "Pro rozvoj hudebních dovedností navštěvovala mistrovské kurzy významných klavíristů a pedagogů. V roce 2024 byla vybrána jako zástupkyně klavírní třídy na kurzu Michaila Voskresenského. Předchozí rok se účastnila D´Accord Academy v Německu, kde studovala u Bohumíra Stehlíka. V roce 2022 absolvovala International Forum for Flute and Piano v Lucembursku pod vedením amerického klavíristy prof. Daniela Blumenthala. V mládí se účastnila kurzů Martina Kasíka."
   },
   "about_spending_her_childhood_in_the_homely_town": {
     "en": "Spending her childhood in the homely town Rožnov pod Radhoštěm and experiencing her teenage years in Prague, the capital of the Czech Republic, shaped Rozálie's unique personality. The cultural diversity she tasted within her home country inspired her to devote herself to musical education in the Netherlands. The guidance of professional teachers led her to explore teaching as a new passion. She strives to teach intensively after her studies, providing lessons and masterclasses, and popularizing classical music with a wider audience. Her vision is to encourage the imagination of her students and allow them to fully appreciate the unique connection between music and fantasy.",
@@ -1423,5 +1427,45 @@ window.ROZALIE_CONTENT = {
   "terms_privacy_sentence": {
     "en": "For information about personal data, email correspondence and external services, see the Privacy Policy.",
     "cz": "Informace o osobních údajích, e-mailové komunikaci a externích službách najdete v zásadách ochrany osobních údajů."
-  }
+  },
+  "about_has_always_been_interested_in_teaching_as_after_certificate": {
+    "en": "Teaching Certificate and demonstrating knowledge from psychology, didactics, and piano pedagogy. She works with private students of all levels and ages, from children to adults and beginners to advanced players. Outside the private sphere, she teaches at the Junior Department of the Conservatorium Maastricht, guiding a class of young, classically trained musicians. By adjusting her lessons to the individual needs of each student, she creates a safe space where music comes alive. The core value of her lesson is not only to develop the technique but also to build a unique connection between music and fantasy.",
+    "cz": "Pedagogický certifikát a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuje se soukromými studenty všech věků a úrovní, od dětí po dospělé a od začátečníků po pokročilé. Učí také na Junior Department of the Conservatorium Maastricht, kde vede třídu mladých klasických hudebníků. Přizpůsobováním výuky individuálním potřebám vytváří bezpečný prostor, v němž hudba ožívá. Základem není jen rozvoj techniky, ale také jedinečné spojení hudby a fantazie."
+  },
+  "lessons_i_have_always_been_interested_in_teaching_certificate_link": {
+    "en": "Teaching Certificate",
+    "cz": "pedagogický certifikát"
+  },
+  "lessons_i_have_always_been_interested_in_teaching_after_certificate": {
+    "en": " and demonstrating knowledge from psychology, didactics, and piano pedagogy. I work with private students of all levels and ages, from children to adults and beginners to advanced players. Outside the private sphere, I also teach at the Junior Department of the Conservatorium Maastricht, guiding a class of young, classically trained musicians.",
+    "cz": " a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuji se soukromými studenty všech úrovní a věků, od dětí po dospělé a od začátečníků po pokročilé. Mimo soukromou výuku učím také na Junior Department of the Conservatorium Maastricht, kde vedu třídu mladých klasických hudebníků."
+  },
+  "home_certificate_intro": {
+    "en": "I hold a ",
+    "cz": "Mám "
+  },
+  "home_certificate_link": {
+    "en": "Teaching Certificate",
+    "cz": "pedagogický certifikát"
+  },
+  "home_certificate_end": {
+    "en": " in piano pedagogy.",
+    "cz": " se zaměřením na klavírní pedagogiku."
+  },
+  "about_english_certificate_intro": {
+    "en": "English language documentation: ",
+    "cz": "Doklad o angličtině: "
+  },
+  "about_english_certificate_link": {
+    "en": "English C1 certificate",
+    "cz": "Certifikát angličtiny C1"
+  },
+  "about_teaching_certificate_intro": {
+    "en": "Teaching certificate documentation: ",
+    "cz": "Doklad o pedagogickém certifikátu: "
+  },
+  "about_teaching_certificate_link": {
+    "en": "Teaching certificate",
+    "cz": "Pedagogický certifikát"
+  },
 };

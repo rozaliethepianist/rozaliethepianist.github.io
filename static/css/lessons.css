@@ -64,7 +64,7 @@
 .page-lessons .lessons-online .rates-aside .note { margin-top: 2.5cqw; }
 .page-lessons .lessons-reviews { --bg-light: #fff; background: transparent; padding: 0; color: #111; }
 .page-lessons .lessons-reviews h2 { height: 7.57cqw; font: 400 2.25cqw/1.4 var(--sans); margin: 0; padding-top: 1.75cqw; }
-.page-lessons .reviews-grid { background: #fff; width: 100%; padding: 7.1cqw 8.8cqw 6.5cqw; gap: 8.4cqw; }
+.page-lessons .reviews-grid { background: #fff; width: 100%; padding: 7.1cqw 8.8cqw 2.5cqw; gap: 8.4cqw; }
 .page-lessons .review { margin: 0; font: italic 400 1.12cqw/1.37 var(--sans); }
 .page-lessons .review p { margin: 0 0 2.5cqw; }
 .page-lessons .review cite { font: italic 400 .79cqw/1.4 var(--sans); }
@@ -204,7 +204,7 @@
   }
 }
 /* Short, always-visible answers keep the teaching information accessible. */
-.page-lessons .lessons-faq{background:var(--bg-light,#f8fafc);color:#111;padding:clamp(10px,2cqw,22px) clamp(24px,7cqw,100px) clamp(20px,3cqw,32px)}
+.page-lessons .lessons-faq{background:var(--bg-light,#f8fafc);color:#111;padding:clamp(18px,2.5cqw,28px) clamp(24px,7cqw,100px) clamp(20px,4cqw,42px)}
 .page-lessons .lessons-faq>h2{text-align:center;font:400 2.25cqw/1.4 var(--sans);margin:0 0 36px}
 .page-lessons .lessons-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px;max-width:1100px;margin-inline:auto}
 .page-lessons .lessons-faq-item{border-top:1px solid #408bb640;padding-top:20px;min-width:0}
@@ -215,3 +215,29 @@
 /* Match the review section typography at the same responsive breakpoints. */
 @media(max-width:1100px){.page-lessons .lessons-faq>h2{font-size:28px}.page-lessons .lessons-faq-item h3,.page-lessons .lessons-faq-item p{font-size:14px;line-height:1.5}}
 @media(max-width:768px){.page-lessons .lessons-faq-item h3,.page-lessons .lessons-faq-item p{font-size:15px}}
+
+.page-lessons .lessons-reviews h2 {
+  padding-top: calc(1.75cqw + 25px);
+  height: calc(7.57cqw + 25px);
+}
+
+@media (max-width: 1100px) {
+  .page-lessons .lessons-reviews h2 {
+    padding-top: 65px; /* Original 40px + 25px */
+    height: auto;
+  }
+}
+
+.page-lessons .lessons-faq {
+  background: #fff;
+}
+@media (max-width: 1100px) {
+  .page-lessons .lessons-faq {
+    background: var(--bg-light);
+  }
+}
+
+.lesson-quote-mark { position: relative; font:400 44px/0 var(--serif); color:#c5c2ba; pointer-events:none; box-sizing: border-box; top: .75rem;}
+@media(max-width:768px) { .lesson-quote-mark {font-size:30px; top: .15rem;} }
+
+.lessons-hero-subtitle { font-family: var(--serif-decor) }

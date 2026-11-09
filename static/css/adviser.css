@@ -26,11 +26,12 @@
 .adviser-portrait { width: 100%; aspect-ratio: 462.27 / 469.79; position: relative; overflow: hidden; }
 .adviser-portrait img { width: 100%; max-width: none; height: auto; position: absolute; left: 0; top: -14.06%; }
 .adviser-process-copy { position: absolute; top: 1.9cqw; left: 52.4%; right: 6.4%; text-align: center; }
-.adviser-quote { font: 400 1.33cqw/1.8 var(--sans); letter-spacing: .04em; white-space: nowrap; text-align: left; text-wrap: pretty; }
-.adviser-main .adviser-quote { margin-left: 3cqw; text-align: justify; }
+.adviser-quote { font: 400 1.3cqw / 2 var(--serif); letter-spacing: .04em; white-space: nowrap; text-align: left; text-wrap: pretty; }
+.adviser-main .adviser-quote { margin-left: 3cqw; text-align: left; }
 .adviser-process-copy h2 { font: 400 2.88cqw/1.4 var(--sans); margin: 6.9cqw 0 4.5cqw; text-transform: uppercase; white-space: nowrap; }
-.adviser-steps { margin: 0; padding-left: 1.35em; text-align: left; font: 400 1.075cqw/2.5 var(--editorial); letter-spacing: .136em; }
+.adviser-steps { margin: 0 0 0 1.5rem; padding-left: 1.35em; text-align: left; font: 400 1.075cqw/2.5 var(--editorial); letter-spacing: .136em; }
 .adviser-steps li { padding-left: 0; }
+.adviser-steps li::marker { font-weight: 600; }
 .adviser-main .adviser-process-result { font: 400 1.46cqw/1.35 var(--serif); margin: 3.7cqw -1cqw 4.2cqw; }
 .adviser-process-copy > .button { font-size: 1.31cqw; min-height: 3.7cqw; width: 17.8cqw; padding: .8cqw 1cqw; }
 .adviser-main .adviser-choose { font: 400 1.315cqw/1.4 var(--sans); margin: 6.8cqw 0 0; }
@@ -50,7 +51,7 @@
 .adviser-offer-bundle .adviser-price { margin-top: 2.3cqw; }
 .adviser-explanation { color: #111; padding-left: 8.3%; padding-top: 5.8cqw; }
 .adviser-explanation h2 { font: 400 2.25cqw/1.4 var(--sans); text-transform: uppercase; white-space: nowrap; margin: 0 0 3.6cqw; }
-.adviser-explanation .adviser-steps { width: 48cqw; }
+.adviser-explanation .adviser-steps { width: 45cqw; }
 .adviser-audience { height: 25cqw; }
 .adviser-helpful { height: 31.2225cqw; padding-top: 2.9cqw; }
 .adviser-story { height: 56.2225cqw; }
@@ -60,7 +61,7 @@
 .adviser-reviews-title { height: 7.57cqw; padding-top: 1.7cqw; text-align: center; }
 .adviser-reviews-title h2 { font: 400 2.25cqw/1.4 var(--sans); text-transform: uppercase; }
 .adviser-reviews-title p { font: 400 .8cqw/1.4 var(--sans); margin-top: .35cqw; }
-.adviser-reviews-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8.4cqw; padding: 7.1cqw 8.8cqw 6.5cqw; background: var(--bg-light); }
+.adviser-reviews-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8.4cqw; padding: 7.1cqw 8.8cqw 2.5cqw; background: var(--bg-light); }
 .adviser-reviews-grid .review { margin: 0; font: italic 400 1.12cqw/1.37 var(--sans); text-align: center; }
 .adviser-reviews-grid .review p { margin: 0 0 2.5cqw; }.adviser-reviews-grid .review cite { font: italic 400 .79cqw/1.4 var(--sans); }
 .adviser-opinion { min-height: 11.4cqw; background: linear-gradient(77deg,var(--adviser-paper) 69%,var(--bg-dark) 69%); display: flex; align-items: center; justify-content: center; }
@@ -185,7 +186,7 @@
  .adviser-audience::before { clip-path:polygon(0 0,52.23% 0,58.17% 100%,0 100%); }
  .adviser-helpful::before { clip-path:polygon(0 0,58.17% 0,65.58% 100%,0 100%); }
  .adviser-offer ul,.adviser-offer > p:not(.adviser-price),.adviser-topic-list,.adviser-topic-layout { font-size:max(14px,.976cqw);line-height:1.7; }
- .adviser-explanation .adviser-steps { font-size:max(14px,1.075cqw);letter-spacing:.07em;line-height:2;max-width:47%; }
+ .adviser-explanation .adviser-steps { font-size:max(14px,1.075cqw);letter-spacing:.07em;line-height:2;max-width:45%; }
  .adviser-reviews-grid .review { font-size:max(14px,1.02cqw);line-height:1.7; }
 }
 
@@ -201,10 +202,8 @@
 @media(max-width:1100px) { .adviser-tulips { position:static;width:min(100%,380px);margin:35px auto 0; } }
 
 .adviser-quote { position:relative; width:fit-content; max-width:100%; margin-inline:auto; }
-.adviser-quote::before,.adviser-quote::after { position:absolute; font:400 44px/1 var(--serif); color:#c5c2ba; pointer-events:none; }
-.adviser-quote::before { content:"“"; left:-24px; top:0; }
-.adviser-quote::after { content:"”"; right:-18px; }
-@media(max-width:768px) { .adviser-quote::before,.adviser-quote::after {font-size:30px;} .adviser-quote::before{left:-10px}.adviser-quote::after{right:-8px} }
+.adviser-quote-mark { position: relative; font:400 44px/0 var(--serif); color:#c5c2ba; pointer-events:none; box-sizing: border-box; top: .75rem;}
+@media(max-width:768px) { .adviser-quote-mark {font-size:30px; top: .15rem;} }
 
 @media (any-hover: hover) and (any-pointer: fine) {
   .adviser-offer {
