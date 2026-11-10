@@ -1213,16 +1213,16 @@ window.ROZALIE_CONTENT = {
     "cz": "Výuka klavíru s Rozálií Stoklasovou v Maastrichtu i online. Seznamte se s její metodou výuky, nabídkou lekcí, cenami a referencemi."
   },
   "lessons_mariana_stanford_bifcj": {
-    "en": "Mariana Stanford",
-    "cz": "Mariana Stanford"
+    "en": "Inge Römgens",
+    "cz": "Inge Römgens"
   },
   "lessons_pedro_ituralde_63du8": {
-    "en": "Pedro Ituralde",
-    "cz": "Pedro Ituralde"
+    "en": "Alex Lemmens",
+    "cz": "Alex Lemmens"
   },
   "lessons_anita_cooke_9i9jt": {
-    "en": "Anita Cooke",
-    "cz": "Anita Cooke"
+    "en": "Aneta Kuchařová",
+    "cz": "Aneta Kuchařová"
   },
   "common_gmail_com_yam4m": {
     "en": "rozalie.stoklasova@gmail.com",
