@@ -12,7 +12,7 @@
    const title = document.querySelector(`[data-events-title="${group}"]`);
    if (!target || !title) continue;
    const data = window.ROZALIE_EVENTS?.[group] || {};
-   const titleKey = `events_${group}_title`;
+   const titleKey = `events_${group}_title_up4gu`;
    catalogue[titleKey] = localize(data.title);title.dataset.content = titleKey;
    const fragment = document.createDocumentFragment();
    for (const [index,item] of (Array.isArray(data.items) ? data.items : []).entries()) {
@@ -24,11 +24,11 @@
        const element = document.createElement(tag),span = document.createElement('span');
        span.dataset.content = key;element.append(span);article.append(element);
      };
-     append('strong',heading,`events_${group}_${index}_heading`);
+     append('strong',heading,`events_${group}_${index}_heading_81m1t`);
      const paragraphs = Array.isArray(item.paragraphs) ? item.paragraphs : [];
      paragraphs.forEach((value,paragraphIndex) => {
        const text = localize(value);
-       if (text.en) append('p',text,`events_${group}_${index}_paragraph_${paragraphIndex}`);
+       if (text.en) append('p',text,`events_${group}_${index}_paragraph_${paragraphIndex}_4hhm6`);
      });
      fragment.append(article);
    }
