@@ -81,3 +81,87 @@
 .repertoire-instruments{font-style:italic;color:#c6c6c6;margin:0 0 24px}
 @media(any-hover:hover) and (any-pointer:fine){.repertoire-category summary:hover{background:#ffffff0a;color:#75b9dd}.repertoire-category summary:hover::after{border-color:currentColor}}
 @media(max-width:768px){.page-about .about-repertoire{padding:40px 24px 50px}.repertoire-category summary{padding:19px 18px;gap:12px}.repertoire-panel{padding:20px 18px 24px}.repertoire-composers{grid-template-columns:1fr;gap:22px}}
+
+/* Mobile browser compatibility: use ordinary paragraph line breaking instead
+   of pretty wrapping, and keep the full-width hero inside its containing box. */
+@media (max-width:1100px) {
+ body.page-about {
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+ }
+ body.page-about .about-c4 .about-biography-inner p {
+  text-align:left;
+  text-align-last:auto;
+  text-wrap:wrap;
+  word-break:normal;
+  overflow-wrap:break-word;
+ }
+ body.page-about .about-c4 .about-hero h1 {
+  margin-inline:0;
+ }
+ body.page-about .about-c4 {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  overflow-x:hidden;
+ }
+ @supports (overflow:clip) {
+  body.page-about .about-c4 { overflow:clip; }
+ }
+ /* Contain decorative overflow at the document edge without clipping dialogs. */
+ html:has(> body.page-about) { overflow-x:hidden; }
+ @supports (overflow:clip) {
+  html:has(> body.page-about) { overflow-x:clip; }
+ }
+ body.page-about .about-media-grid,
+ body.page-about .about-events { grid-template-columns:minmax(0,1fr); }
+ body.page-about .about-photo-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ body.page-about :is(.about-media-grid,.about-events,.about-photo-grid) > * { min-width:0; }
+}
+
+/* Compact About layout: stacked events, separate certificate labels and links,
+   and a light breathing strip below the navigation at every compact width. */
+@media (max-width:1100px) {
+ body.page-about .about-events {
+  grid-template-columns:minmax(0,1fr);
+  row-gap:32px;
+ }
+ body.page-about .about-biography-inner p.certificate-document-note {
+  text-align:left;
+  text-align-last:auto;
+ }
+ body.page-about .certificate-document-note > .certificate-document-link {
+  display:block;
+  width:fit-content;
+  max-width:100%;
+  text-align:left;
+  white-space:normal;
+  overflow-wrap:anywhere;
+ }
+ body.page-about > [data-site-header] {
+  height:var(--header-height);
+  background:var(--bg-light);
+ }
+ body.page-about .site-header { height:100%; }
+ body.page-about .site-header .header-inner { height:var(--header-height); }
+}
+
+/* Match the desktop panel's 7px painted extension on compact screens too.
+   Keep navigation geometry unchanged; the extension belongs to its backdrop. */
+@media (max-width:1100px) {
+ body.page-about > [data-site-header] > .site-header {
+  height:var(--header-height);
+  isolation:isolate;
+  overflow:visible;
+ }
+ body.page-about > [data-site-header] > .site-header::before {
+  content:"";
+  position:absolute;
+  inset:0 0 -7px;
+  width:auto;
+  z-index:-1;
+  background:var(--bg-light);
+  clip-path:none;
+  pointer-events:none;
+ }
+}

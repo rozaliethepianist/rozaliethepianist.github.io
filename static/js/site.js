@@ -7,8 +7,8 @@
   const url = (path = '') => '/' + path.replace(/^\/+/, '');
   const asset = (path) => url('static/' + path);
   const page = document.body.dataset.page || 'home';
-  const darkHeader = ['about', 'dutch'].includes(page);
-  const darkFooter = ['home', 'about', 'dutch'].includes(page);
+  const darkHeader = ['about', 'media'].includes(page);
+  const darkFooter = ['home', 'about', 'media'].includes(page);
 
   const settings = {
     email: 'rozalie.stoklasova@gmail.com',
@@ -26,7 +26,7 @@
   const menu = [
     ['home', 'Home', ''],
     ['piano-lessons', 'Piano Lessons', 'piano-lessons/'],
-    ['dutch', 'Dutch Study Adviser', 'dutch-study-adviser/'],
+    ['media', 'Media', 'media/'],
     ['about', 'About', 'about/'],
     ['contact', 'Contact', 'contact/'],
   ];
@@ -55,7 +55,7 @@
             <span></span><span></span><span></span>
           </button>
           <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">${nav}</nav>
-          ${page === 'about' ? `<a class="press-link" data-press-kit href="${settings.pressKitUrl}" target="_blank" rel="noopener noreferrer">Press kit</a>` : ''}
+          ${['about', 'media'].includes(page) ? `<a class="press-link" data-press-kit href="${settings.pressKitUrl}" target="_blank" rel="noopener noreferrer">Press kit</a>` : ''}
         </div>
       </header>`;
     const toggle = el.querySelector('.menu-toggle');
@@ -154,7 +154,6 @@
             <option value="">Select an option</option>
             <option value="piano-lessons">Piano lessons in Maastricht</option>
             <option value="online-lessons">Online piano lessons</option>
-            <option value="dutch-study">Dutch study advising</option>
             <option value="press-kit">Press and performances</option>
             <option value="other">Other inquiry</option>
           </select></div>
@@ -174,7 +173,7 @@
   }
 
   let youtubeAPI;
-  const videoSettings = window.ROZALIE_VIDEOS || { about: [], home: [] };
+  const videoSettings = window.ROZALIE_VIDEOS || { media: [], home: [] };
   const uploads = videoSettings.uploadsPlaylist || '';
   // YouTube selects adaptive playback quality automatically; do not force a resolution.
   function configureUploads(iframe, index, autoplay = false, onSelection, videoId) {
@@ -524,7 +523,7 @@
   const aboutVideoGrid = document.querySelector('.about-media-grid');
   if (aboutVideoGrid) {
     aboutVideoGrid.replaceChildren();
-    (Array.isArray(videoSettings.about) ? videoSettings.about : []).forEach((url, index) => {
+    (Array.isArray(videoSettings.media) ? videoSettings.media : []).forEach((url, index) => {
       const id = configuredVideoId(url); if (!id) return;
       const figure = document.createElement('figure');
       figure.append(configuredCard(id, `about-${index + 1}`));

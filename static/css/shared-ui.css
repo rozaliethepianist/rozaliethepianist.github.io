@@ -510,6 +510,9 @@ body .header-inner > .language-switch a:focus-visible { color:#171717; }
  body .nav-open .site-header .primary-nav { display:flex; }
  body .site-header .header-inner > .press-link { display:none; }
 }
+@media(max-width:450px) {
+  body .header-inner > .language-switch { transform:translate(0,-50%); }
+}
 /* A skip link is a keyboard aid, never a persistent corner button. */
 body .skip-link,body .skip-link:focus { top:0;transform:translateY(calc(-100% - 16px)); }
 html.keyboard-navigation body .skip-link:focus-visible { top:12px;transform:none; }
