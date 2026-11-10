@@ -26,8 +26,8 @@
   const menu = [
     ['home', 'Home', ''],
     ['piano-lessons', 'Piano Lessons', 'piano-lessons/'],
-    ['media', 'Media', 'media/'],
     ['about', 'About', 'about/'],
+    ['media', 'Media', 'media/'],
     ['contact', 'Contact', 'contact/'],
   ];
   const socialLabels = { youtube: 'YouTube', instagram: 'Instagram', facebook: 'Facebook', linkedin: 'LinkedIn', links: 'Links' };
