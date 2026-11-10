@@ -60,8 +60,8 @@ window.ROZALIE_LINKS = {
         "cz": "Oficiální stránky"
       },
       "description": {
-        "en": "Piano lessons, performances & study advising",
-        "cz": "Výuka klavíru, vystoupení a studijní poradenství"
+        "en": "Piano lessons & performances",
+        "cz": "Výuka klavíru a vystoupení"
       },
       "featured": true
     },

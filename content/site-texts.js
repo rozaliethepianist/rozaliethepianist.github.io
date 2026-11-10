@@ -33,9 +33,9 @@ window.ROZALIE_CONTENT = {
     "cz": "5 600 Kč"
   },
   "home_the_pianist_pianist_piano_lessons_dutch_study_0kkri": {
-    "en": "Rozalie The Pianist | Pianist, Piano Lessons & Dutch Study Advising",
-    "cz": "Rozalie The Pianist | Klavíristka, výuka klavíru a studium v Nizozemsku"
-  },
+  "en": "Rozalie The Pianist | Pianist & Piano Teacher",
+  "cz": "Rozalie The Pianist | Klavíristka a učitelka klavíru"
+},
   "common_skip_to_content_k3hsq": {
     "en": "Skip to content",
     "cz": "Přejít na obsah"
@@ -49,9 +49,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Poradenství ke studiu v Nizozemsku"
   },
   "home_that_capture_your_heart_jymog": {
-    "en": "That capture your heart",
-    "cz": "Které vás chytí za srdce"
-  },
+  "en": "“Rozálie approaches music with sincerity, intelligence, and sensitivity, always striving to understand and communicate what lies behind the notes.”",
+  "cz": "„Rozálie přistupuje k hudbě s upřímností, inteligencí a citlivostí a vždy se snaží porozumět tomu, co se skrývá za notami, a předat to posluchačům.“"
+},
   "common_check_my_offer_ckdmq": {
     "en": "Check my offer",
     "cz": "Prohlédnout nabídku"
@@ -73,25 +73,25 @@ window.ROZALIE_CONTENT = {
     "cz": "Chci se učit hrát na klavír"
   },
   "home_dutch_study_adviser_4y3eh": {
-    "en": "Dutch Study Adviser",
-    "cz": "Studium v Nizozemsku"
-  },
+  "en": "Me as a Pianist",
+  "cz": "Já jako klavíristka"
+},
   "home_online_consultations_9hgli": {
-    "en": "Online Consultations",
-    "cz": "Online konzultace"
-  },
+  "en": "The beauty of Piano Music",
+  "cz": "Krása klavírní hudby"
+},
   "home_for_students_who_want_to_study_in_133i6": {
-    "en": "For students who want to study in the Netherlands.",
-    "cz": "Pro studenty, kteří chtějí studovat v Nizozemsku."
-  },
+  "en": "For audiences, promoters, and booking agencies.",
+  "cz": "Pro publikum, pořadatele a umělecké agentury."
+},
   "common_don_t_stress_out_nail_it_ohktm": {
-    "en": "Don't stress out, nail it!",
-    "cz": "Nestresujte se, zvládněte to!"
-  },
+  "en": "Piano music that comes alive!",
+  "cz": "Klavírní hudba, která ožívá!"
+},
   "home_i_want_to_study_in_the_netherlands_383w2": {
-    "en": "I want to study in the Netherlands",
-    "cz": "Chci studovat v Nizozemsku"
-  },
+  "en": "Explore my music",
+  "cz": "Poznejte mou hudbu"
+},
   "home_me_as_an_artist_t1xfv": {
     "en": "Me as an Artist",
     "cz": "Já jako umělkyně"
@@ -129,9 +129,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Tvořit smysluplnou hudbu a žít smysluplný život"
   },
   "home_is_a_core_value_of_my_lessons_79g08": {
-    "en": "is a core value of my lessons, performances, and consultations.",
-    "cz": "je základní hodnotou mých lekcí, vystoupení a konzultací."
-  },
+  "en": "is a core value of my lessons and performances.",
+  "cz": "je základní hodnotou mé výuky a vystoupení."
+},
   "home_studying_abroad_l0ut7": {
     "en": "Studying abroad",
     "cz": "Studium v zahraničí"
@@ -517,9 +517,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Umění učit"
   },
   "lessons_as_a_piano_teacher_i_share_my_izlc7": {
-    "en": "As a piano teacher, I share my knowledge and experience, I am open to musicians of all levels, and work reliably with",
-    "cz": "Jako učitelka klavíru předávám své znalosti a zkušenosti, vítám hudebníky všech úrovní a ke studentům přistupuji spolehlivě, s"
-  },
+  "en": "I'm Rozálie and as a piano teacher, I share my knowledge and experience, I am open to musicians of all levels, and work reliably with",
+  "cz": "Jsem Rozálie a jako učitelka klavíru předávám své znalosti a zkušenosti, vítám hudebníky všech úrovní a ke studentům přistupuji spolehlivě, s"
+},
   "lessons_warm_respect_and_patience_fdw70": {
     "en": "warm respect and patience.",
     "cz": "vstřícností, respektem a trpělivostí."
@@ -777,9 +777,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Poslat dotaz"
   },
   "about_biography_performances_the_pianist_a7vth": {
-    "en": "Biography & Performances | Rozalie The Pianist",
-    "cz": "Životopis a vystoupení | Rozalie The Pianist"
-  },
+  "en": "About | Rozalie The Pianist",
+  "cz": "O mně | Rozalie The Pianist"
+},
   "about_where_i_stand_as_an_artist_31rpx": {
     "en": "Where I stand as an artist",
     "cz": "Moje umělecká cesta"
@@ -789,9 +789,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Životopis"
   },
   "about_is_a_czech_pianist_teacher_and_adviser_k30jv": {
-    "en": "Rozálie Stoklasová is a Czech pianist, teacher, and adviser, currently based in the Netherlands. As her main passion is teaching, she focuses on working with international students within the private sphere, and in 2025, she started giving lessons at the Junior Conservatorium Maastricht. By virtue of certified training, her lessons stand for creativity, empathy, and individual guidance that encourages pupils' imagination. As a pianist, she gained a wide range of professional experiences that are an appropriate source of her pedagogical know-how.",
-    "cz": "Rozálie Stoklasová je česká klavíristka, učitelka a poradkyně žijící v Nizozemsku. Její hlavní vášní je výuka. Věnuje se mezinárodním studentům v soukromé praxi a od roku 2025 učí na Junior Conservatorium Maastricht. Díky certifikovanému vzdělání stojí její lekce na tvořivosti, empatii a individuálním vedení podporujícím představivost žáků. Jako klavíristka získala široké profesní zkušenosti, z nichž vychází její pedagogický přístup."
-  },
+  "en": "Rozálie Stoklasová is a Czech teacher, educator, and pianist, currently based in the Netherlands. As her main passion is teaching, she focuses on working with international students within the private sphere, and in 2025, she started giving lessons at the Junior Conservatorium Maastricht. By virtue of certified training, her lessons stand for creativity, empathy, and individual guidance that encourages pupils' imagination. As a pianist, she gained a wide range of professional experiences that are an appropriate source of her pedagogical know-how.",
+  "cz": "Rozálie Stoklasová je česká učitelka klavíru, pedagog a klavíristka žijící v Nizozemsku. Její hlavní vášní je výuka. Věnuje se mezinárodním studentům v soukromé praxi a od roku 2025 učí na Junior Conservatorium Maastricht. Díky certifikovanému vzdělání stojí její lekce na tvořivosti, empatii a individuálním vedení podporujícím představivost žáků. Jako klavíristka získala široké profesní zkušenosti, z nichž vychází její pedagogický přístup."
+},
   "about_has_always_been_interested_in_teaching_as_agpb4": {
     "en": "Rozálie has always been interested in teaching, as she admired the art of giving a well-structured, inspiring piano lesson. During her studies, she successfully completed specialized training in \"Advanced teaching skills,\" obtaining a ",
     "cz": "Rozálii vždy přitahovala promyšlená a inspirativní výuka klavíru. Během studia absolvovala kurz Advanced Teaching Skills, získala "
@@ -973,9 +973,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Zvětšit fotografii služby"
   },
   "home_czech_classical_pianist_piano_teacher_in_maastricht_u9ryr": {
-    "en": "Rozálie Stoklasová — Czech classical pianist, piano teacher in Maastricht and online, and Dutch study adviser.",
-    "cz": "Rozálie Stoklasová — česká klavíristka klasické hudby, učitelka klavíru v Maastrichtu i online a poradkyně ke studiu v Nizozemsku."
-  },
+  "en": "Rozálie Stoklasová — Czech classical pianist and piano teacher in Maastricht and online.",
+  "cz": "Rozálie Stoklasová — česká klavíristka a učitelka klavíru v Maastrichtu a online."
+},
   "lessons_ask_about_a_lesson_bundle_aopj1": {
     "en": "Ask about a lesson bundle",
     "cz": "Zeptat se na balíček lekcí"
@@ -1265,9 +1265,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Rozalie The Pianist"
   },
   "contact_get_in_touch_with_pianist_and_piano_fd7lr": {
-    "en": "Get in touch with pianist and piano teacher Rozálie Stoklasová for lessons, performances, or Dutch study consultations.",
-    "cz": "Kontaktujte klavíristku a učitelku klavíru Rozálii Stoklasovou ohledně výuky, vystoupení nebo konzultací ke studiu v Nizozemsku."
-  },
+  "en": "Get in touch with pianist and piano teacher Rozálie Stoklasová for lessons and performances.",
+  "cz": "Kontaktujte klavíristku a učitelku klavíru Rozálii Stoklasovou ohledně výuky a vystoupení."
+},
   "in_progress_work_in_progress_pdv58": {
     "en": "Work in progress",
     "cz": "Připravujeme"
@@ -1405,9 +1405,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Materiály a nahrávání"
   },
   "terms_materials_details_zuz2g": {
-    "en": "Respect copyright in scores, teaching materials, photographs and videos. Public access does not grant permission to redistribute content. Ask before recording a lesson and agree its purpose and use. Photographer credits remain on the About page.",
-    "cz": "Respektujte autorská práva k notám, výukovým materiálům, fotografiím a videím. Veřejná dostupnost neznamená souhlas s dalším šířením. Před nahráváním lekce si vyžádejte souhlas a dohodněte účel a použití nahrávky. Údaje o fotografech zůstávají na stránce O mně."
-  },
+  "en": "Respect copyright in scores, teaching materials, photographs and videos. Public access does not grant permission to redistribute content. Ask before recording a lesson and agree its purpose and use. Photographer credits remain on the Media page.",
+  "cz": "Respektujte autorská práva k notám, výukovým materiálům, fotografiím a videím. Veřejná dostupnost neznamená souhlas s dalším šířením. Před nahráváním lekce si vyžádejte souhlas a dohodněte účel a použití nahrávky. Údaje o fotografech zůstávají na stránce Média."
+},
   "terms_consultations_heading_e29cm": {
     "en": "Other services: Dutch study advising",
     "cz": "Další služby: poradenství ke studiu v Nizozemsku"
@@ -1484,4 +1484,36 @@ window.ROZALIE_CONTENT = {
     "en": "Bachelor degree certificate",
     "cz": "Certifikát bakalářského titulu"
   },
+  "home_hero_pianist_x9f43": {
+  "en": "Pianist",
+  "cz": "Klavíristka"
+},
+  "home_hero_piano_teacher_mumpj": {
+  "en": "Piano Teacher",
+  "cz": "Učitelka klavíru"
+},
+  "home_hero_quote_author_hxphx": {
+  "en": "— Dr. Katia Veekmans",
+  "cz": "— Dr. Katia Veekmans"
+},
+  "home_artist_performance_k1clw": {
+  "en": "As a pianist, through the music, I revive emotions and bring them alive. In brilliant passage, not less than in lyrical melodies, my playing stands for clarity and musical expressivity. I perceive live performances as a unique chance to narrate stories that are touching, inspiring and understandable to audiences all around the world.",
+  "cz": "Jako klavíristka prostřednictvím hudby probouzím emoce a přivádím je k životu. V brilantních pasážích stejně jako v lyrických melodiích je pro mou hru zásadní jasnost a hudební výraz. Živá vystoupení vnímám jako jedinečnou příležitost vyprávět příběhy, které oslovují a inspirují posluchače po celém světě."
+},
+  "lessons_explore_rozalie_pcuna": {
+  "en": "I want to explore more about Rozálie",
+  "cz": "Chci se dozvědět více o Rozálii"
+},
+  "media_page_title_5rmix": {
+  "en": "Media | Rozalie The Pianist",
+  "cz": "Média | Rozalie The Pianist"
+},
+  "media_heading_apcsl": {
+  "en": "Media",
+  "cz": "Média"
+},
+  "media_description_3pl41": {
+  "en": "Performances, videos, photographs, events, repertoire and press kit of pianist Rozálie Stoklasová.",
+  "cz": "Vystoupení, videa, fotografie, akce, repertoár a press kit klavíristky Rozálie Stoklasové."
+}
 };
