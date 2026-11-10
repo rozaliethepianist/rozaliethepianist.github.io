@@ -789,8 +789,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Životopis"
   },
   "about_is_a_czech_pianist_teacher_and_adviser_k30jv": {
-  "en": "Rozálie Stoklasová is a Czech teacher, educator, and pianist, currently based in the Netherlands. As her main passion is teaching, she focuses on working with international students within the private sphere, and in 2025, she started giving lessons at the Junior Conservatorium Maastricht. By virtue of certified training, her lessons stand for creativity, empathy, and individual guidance that encourages pupils' imagination. As a pianist, she gained a wide range of professional experiences that are an appropriate source of her pedagogical know-how.",
-  "cz": "Rozálie Stoklasová je česká učitelka klavíru, pedagog a klavíristka žijící v Nizozemsku. Její hlavní vášní je výuka. Věnuje se mezinárodním studentům v soukromé praxi a od roku 2025 učí na Junior Conservatorium Maastricht. Díky certifikovanému vzdělání stojí její lekce na tvořivosti, empatii a individuálním vedení podporujícím představivost žáků. Jako klavíristka získala široké profesní zkušenosti, z nichž vychází její pedagogický přístup."
+  "en": "Rozálie Stoklasová is a Czech pianist and piano teacher, currently based in the Netherlands. As her main passion is teaching, she focuses on working with international students within the private sphere, and in 2025, she started giving lessons at the Junior Conservatorium Maastricht. By virtue of certified training, her lessons stand for creativity, empathy, and individual guidance that encourages pupils' imagination. As a pianist, she gained a wide range of professional experiences that are an appropriate source of her pedagogical know-how.",
+  "cz": "Rozálie Stoklasová je česká klavíristka a učitelka klavíru žijící v Nizozemsku. Její hlavní vášní je výuka. Věnuje se mezinárodním studentům v soukromé praxi a od roku 2025 učí na Junior Conservatorium Maastricht. Díky certifikovanému vzdělání stojí její lekce na tvořivosti, empatii a individuálním vedení podporujícím představivost žáků. Jako klavíristka získala široké profesní zkušenosti, z nichž vychází její pedagogický přístup."
 },
   "about_has_always_been_interested_in_teaching_as_agpb4": {
     "en": "Rozálie has always been interested in teaching, as she admired the art of giving a well-structured, inspiring piano lesson. During her studies, she successfully completed specialized training in \"Advanced teaching skills,\" obtaining a ",
@@ -1288,10 +1288,7 @@ window.ROZALIE_CONTENT = {
     "en": "No articles are currently available.",
     "cz": "Momentálně nejsou k dispozici žádné práce."
   },
-  "about_open_cv_9xi43": {
-    "en": "Open CV",
-    "cz": "Otevřít životopis"
-  },
+  "about_open_cv_9xi43": {"en": "Open Biography", "cz": "Otevřít životopis"},
   "terms_page_title_f8p5e": {
     "en": "Terms and Conditions | Rozalie The Pianist",
     "cz": "Podmínky výuky | Rozalie The Pianist"
@@ -1515,5 +1512,9 @@ window.ROZALIE_CONTENT = {
   "media_description_3pl41": {
   "en": "Performances, videos, photographs, events, repertoire and press kit of pianist Rozálie Stoklasová.",
   "cz": "Vystoupení, videa, fotografie, akce, repertoár a press kit klavíristky Rozálie Stoklasové."
-}
+},
+"media_youtube_invitation_vvtpr": {"en": "Check out my", "cz": "Navštivte můj"},
+"media_youtube_channel_y79cv": {"en": "YouTube channel", "cz": "YouTube kanál"},
+"media_enjoy_music_cf6zw": {"en": "and enjoy the music.", "cz": "a vychutnejte si hudbu."},
+"media_hero_performance_alt_bgvcd": {"en": "Rozálie playing a grand piano under colorful stage lighting", "cz": "Rozálie hraje na klavír v barevném pódiovém osvětlení"}
 };
