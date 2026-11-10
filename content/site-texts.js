@@ -197,8 +197,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Máte konkrétní otázku nebo preferujete individuální přístup?"
   },
   "common_book_your_lesson_wgzva": {
-    "en": "Book your lesson or consultation via the contact form below!",
-    "cz": "Rezervujte si lekci nebo konzultaci prostřednictvím kontaktního formuláře níže"
+    "en": "Book your lesson via the contact form below!",
+    "cz": "Rezervujte si lekci prostřednictvím kontaktního formuláře níže"
   },
   "common_do_not_hesitate_to_contact_me_w7g3g": {
     "en": "Do not hesitate to send me a message.",
@@ -1515,6 +1515,6 @@ window.ROZALIE_CONTENT = {
 },
 "media_youtube_invitation_vvtpr": {"en": "Check out my", "cz": "Navštivte můj"},
 "media_youtube_channel_y79cv": {"en": "YouTube channel", "cz": "YouTube kanál"},
-"media_enjoy_music_cf6zw": {"en": "and enjoy the music.", "cz": "a vychutnejte si hudbu."},
+"media_enjoy_music_cf6zw": {"en": "and enjoy the music", "cz": "a vychutnejte si hudbu"},
 "media_hero_performance_alt_bgvcd": {"en": "Rozálie playing a grand piano under colorful stage lighting", "cz": "Rozálie hraje na klavír v barevném pódiovém osvětlení"}
 };
