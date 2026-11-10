@@ -1484,4 +1484,12 @@ window.ROZALIE_CONTENT = {
     "en": "Bachelor degree certificate",
     "cz": "Certifikát bakalářského titulu"
   },
+  "left_quote_mark_q4b67": {
+    "en": "“",
+    "cz": "„"
+  },
+  "right_quote_mark_as46l": {
+    "en": "”",
+    "cz": "“"
+  },
 };
