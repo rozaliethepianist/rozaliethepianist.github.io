@@ -25,7 +25,7 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Press kit"
   },
   "media_press_title_vp2q3": {
-    "en": "A closer look at the artist",
-    "cz": "Poznejte umělkyni blíže"
+    "en": "Have a closer look at Rozálie",
+    "cz": "Poznejte Rozálii blíže"
   }
 });
