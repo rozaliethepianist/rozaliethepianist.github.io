@@ -6,7 +6,7 @@ window.ROZALIE_LINKS = {
   "copy": {
     "subtitle": {
       "en": "Classical pianist & piano teacher",
-      "cz": "Klasicistní klavíristka a učitelka klavíru"
+      "cz": "Klavíristka klasické hudby a učitelka klavíru"
     },
     "explore": {
       "en": "Explore my work",
@@ -68,11 +68,11 @@ window.ROZALIE_LINKS = {
     {
       "id": "press-kit",
       "group": "explore",
-      "url": "/documents/rozalie-stoklasova-press-kit-2026.pdf",
+      "url": "/documents/rozalie-stoklasova-press-kit.pdf",
       "icon": "pdf",
       "title": {
-        "en": "Press kit 2026",
-        "cz": "Press kit 2026"
+        "en": "Electronic Press kit 2026",
+        "cz": "Digitální Press kit 2026"
       },
       "description": {
         "en": "Biography, repertoire & photographs · PDF",
