@@ -645,8 +645,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Získejte slevu 10 %"
   },
   "lessons_to_request_the_10_discount_email_your_k5bc9": {
-    "en": "To request the 10% discount, email your Statement of Enrollment using the email link on the contact page. The preview form cannot send attachments.",
-    "cz": "Pro uplatnění 10% slevy pošlete potvrzení o studiu e-mailem přes odkaz na kontaktní stránce. Ukázkový formulář neumí odesílat přílohy."
+    "en": "To request the 10% discount, email your Statement of Enrollment using the email link on the contact page. Please send attachments directly to the email address.",
+    "cz": "Pro uplatnění 10% slevy pošlete potvrzení o studiu e-mailem přes odkaz na kontaktní stránce. Přílohy posílejte přímo na emailovou adresu."
   },
   "lessons_my_lessons_are_taught_in_english_or_6lofz": {
     "en": "My lessons are taught in English or Czech",
