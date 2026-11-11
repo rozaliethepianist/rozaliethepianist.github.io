@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 64" fill="none" aria-labelledby="title"><title id="title">Piano article</title>
+  
+  <path d="M7 2.5H32L43.5 14V58.5A3 3 0 0 1 40.5 61.5H7.5A3 3 0 0 1 4.5 58.5V5A2.5 2.5 0 0 1 7 2.5Z" stroke="#FE5152" stroke-width="2.3" stroke-linejoin="round"/>
+  <path d="M32 2.5V12A2 2 0 0 0 34 14H43.5" stroke="#FE5152" stroke-width="2.3" stroke-linejoin="round"/>
+  
+  <rect x="9.5" y="10" width="17" height="13" rx="2" fill="#FE5152" fill-opacity=".10" stroke="#FE5152" stroke-width="1.7"/>
+  <g transform="translate(0.5,0.35)">
+    <path d="m 13.5,12 v 9 m 4,-9 v 9 m 4,-9 v 9" stroke="#fe5152" stroke-width="1.2"/>
+    <path d="m 12.4,11.3 h 2.2 v 5.5 h -2.2 z m 4,0 h 2.2 v 5.5 h -2.2 z m 4,0 h 2.2 v 5.5 h -2.2 z" fill="#fe5152"/>
+  </g>
+  
+  <path d="m 30.5,19 h 7 M 10,29 H 37.5 M 10,34 H 31 M 10,39 H 37.5 M 10,44 h 27.625" stroke="#fe5152" stroke-width="2" stroke-linecap="round"/>
+  <path d="m 10,54.5 h 9" stroke="#fe5152" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 10,48.8125 H 27.750186" stroke="#fe5152" stroke-width="2" stroke-linecap="round"/>
+  
+  <circle cx="35.5" cy="52.5" r="3" fill="#FE5152"/>
+  <path d="M35.5 50.8V54.2M33.8 52.5H37.2" stroke="white" stroke-width=".85" stroke-linecap="round"/>
+</svg>
