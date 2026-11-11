@@ -15,7 +15,7 @@
 .about-c4 .about-media{padding:5.3cqw 16.5% 3cqw;background:var(--bg-dark)}
 .about-c4 .about-media-grid{display:grid;grid-template-columns:1fr 1fr;gap:5.2cqw 4cqw;width:100%}
 .about-c4 figure{margin:0}.about-c4 figcaption{font:italic 400 .8cqw/1.5 var(--sans);text-align:center;margin-top:1.5cqw}
-.about-photos{padding:3cqw 8%;font-size:1.05cqw}.about-photos a{text-decoration:underline}
+.about-photos{padding:3cqw 5.5%;font-size:1.05cqw}.about-photos a{text-decoration:underline}
 .about-photo-grid{display:grid;grid-template-columns:1fr 1fr 1.1fr;grid-template-rows:1fr 1fr;gap:1.6cqw 3.7cqw;margin:2cqw 0}
 .about-photo-grid img{width:100%;height:100%;object-fit:cover;min-height:0}
 .about-photo-grid img:nth-child(1),.about-photo-grid img:nth-child(2){grid-row:1 / 3;align-self:center;height:auto;aspect-ratio:1}
