@@ -13,7 +13,7 @@
 .contact-home-c5{position:absolute;left:44.5%;top:34.9cqw;width:23cqw;min-height:4.6cqw;font-size:1.25cqw;letter-spacing:.16em;font-weight:500;border-radius:1.5cqw;padding:1cqw;z-index:2}
 .contact-form-section{position:relative;width:83.4%;margin:0 auto;z-index:3}
 .contact-form-section>h2{font:400 3cqw/1.4 var(--serif);margin:-5.3cqw 0 1.8cqw 13cqw;color:#111}
-.contact-form-section .contact-form{background:#fff;border:1.5px solid var(--blue);border-radius:20px;padding:34px 35px 18px;box-shadow:0 12px 22px #0001}
+.contact-form-section .contact-form{background:#fff;border:1.5px solid var(--blue);border-radius:20px;padding:20px 17px 12px;box-shadow:0 12px 22px #0001}
 .contact-form-section .contact-form h3{display:none}
 .contact-form-section .form-grid{gap:22px 8cqw}
 .contact-form-section .form-group label{font-size:12px;margin-bottom:4px}
