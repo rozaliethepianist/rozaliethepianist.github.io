@@ -1,5 +1,5 @@
 /* Rozálie Stoklasová — common site UI, navigation, footer and lightweight interactions.
-   Edit socialLinks and pressKitUrl in one place. No form backend is included. */
+   Edit socialLinks and pressKitUrl in one place. Contact forms are embedded from Notion. */
 (() => {
   'use strict';
   document.addEventListener('keydown', event => { if (event.key === 'Tab') document.documentElement.classList.add('keyboard-navigation'); });
@@ -141,34 +141,64 @@
       </footer>`;
   }
 
+  // One published Notion form powers both contact locations. The embedding
+  // URL comes from Notion's "Embed this page" dialog (not the response database).
+  const NOTION_FORM_URL = 'https://honorable-hose-085.notion.site/ebd/415ebc93c4a28025bd11e066249bb4cf';
+
   function renderForms() {
-    document.querySelectorAll('[data-contact-form]').forEach((el, index) => {
-      const compact = el.dataset.variant === 'dark';
-      const prefix = `contact-${index}`;
-      el.innerHTML = `<form class="contact-form${compact ? ' contact-form-dark' : ''}" aria-label="Contact request (submission unavailable)" novalidate>
-        <h3>Send request</h3>
-        <div class="form-grid">
-          <div class="form-group"><label for="${prefix}-name">Full name <span class="required">*</span></label><input id="${prefix}-name" name="name" required autocomplete="name" type="text" /></div>
-          <div class="form-group"><label for="${prefix}-email">Email address <span class="required">*</span></label><input id="${prefix}-email" name="email" required autocomplete="email" type="email" /></div>
-          <div class="form-group"><label for="${prefix}-interest">Primary interest</label><select id="${prefix}-interest" name="interest">
-            <option value="">Select an option</option>
-            <option value="piano-lessons">Piano lessons in Maastricht</option>
-            <option value="online-lessons">Online piano lessons</option>
-            <option value="press-kit">Press and performances</option>
-            <option value="other">Other inquiry</option>
-          </select></div>
-          <div class="form-group"><label for="${prefix}-phone">Phone number</label><input id="${prefix}-phone" name="phone" type="tel" autocomplete="tel" /></div>
-          <div class="form-group form-full"><label for="${prefix}-message">Message <span class="required">*</span></label><textarea id="${prefix}-message" name="message" required rows="5"></textarea></div>
-        </div>
-        <div class="form-action"><button class="button button-primary form-submit-preview" type="button" disabled>Submission unavailable</button></div>
-        <p class="form-status" id="${prefix}-status" role="status" aria-live="polite"></p>
-      </form>`;
-      const selectedInterest = new URLSearchParams(window.location.search).get('interest');
-      if (selectedInterest) {
-        const select = el.querySelector('select[name="interest"]');
-        if ([...select.options].some(option => option.value === selectedInterest)) select.value = selectedInterest;
+    const interestLabels = {
+      'piano-lessons': 'Piano lessons in Maastricht',
+      'online-lessons': 'Online piano lessons',
+      'press-kit': 'Press and performances',
+      'other': 'Other inquiry',
+    };
+
+    document.querySelectorAll('[data-contact-form]').forEach(el => {
+      const dark = el.dataset.variant === 'dark';
+      const form = document.createElement('div');
+      form.className = `contact-form notion-contact-form${dark ? ' contact-form-dark notion-contact-form--dark' : ' notion-contact-form--light'}`;
+
+      // The Contact page already has an external "Send request" heading.
+      /*
+      if (dark) {
+        const heading = document.createElement('h3');
+        heading.textContent = 'Send request';
+        form.appendChild(heading);
       }
-      el.querySelector('form').addEventListener('submit', event => event.preventDefault());
+      */
+
+      // Cross-origin iframes cannot be prefilled by manipulating their fields.
+      // Retain useful context for visitors arriving from the lesson offer links.
+      const interest = new URLSearchParams(window.location.search).get('interest');
+      if (!dark && Object.hasOwn(interestLabels, interest)) {
+        const hint = document.createElement('p');
+        hint.className = 'notion-contact-interest-hint';
+        hint.textContent = `Primary interest: please select “${interestLabels[interest]}” in the form below.`;
+        form.appendChild(hint);
+      }
+
+      const frameContainer = document.createElement('div');
+      frameContainer.className = 'notion-contact-frame-wrap';
+      const iframe = document.createElement('iframe');
+      iframe.className = 'notion-contact-iframe';
+      iframe.src = NOTION_FORM_URL;
+      iframe.title = 'Contact Rozalie The Pianist — Notion form';
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      frameContainer.appendChild(iframe);
+      form.appendChild(frameContainer);
+
+      // Always provide a direct link for browsers that block third-party frames.
+      const fallback = document.createElement('p');
+      fallback.className = 'notion-contact-fallback';
+      const link = document.createElement('a');
+      link.href = NOTION_FORM_URL;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = 'Form not displaying? Open it in a new tab';
+      fallback.appendChild(link);
+      form.appendChild(fallback);
+      el.replaceChildren(form);
     });
   }
 
