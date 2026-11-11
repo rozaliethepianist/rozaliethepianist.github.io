@@ -68,7 +68,7 @@ window.ROZALIE_EVENTS = {
       },
       {
         "heading": {
-          "en": "April 2026 - EINDHOVEN (The Netherlands) - Muziekgebuow Eindhoven",
+          "en": "April 2026 - EINDHOVEN (The Netherlands) - Muziekgebouw Eindhoven",
           "cz": "Duben 2026 – EINDHOVEN (Nizozemsko) – Muziekgebouw Eindhoven"
         },
         "paragraphs": [
