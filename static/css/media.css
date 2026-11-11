@@ -19,7 +19,7 @@ body.page-media .about-title-band::after { content:"";height:1px;background:var(
 body.page-media .about-c4 .about-title-band h2 { font:400 clamp(25px,2.5cqw,37px)/1.4 var(--serif);margin:0; }
 body.page-media .about-c4 .about-media { padding:0 8% 38px;background:transparent; }
 body.page-media .about-media-grid { grid-template-columns:repeat(2,minmax(0,1fr));gap:28px; }
-body.page-media .about-media-grid figure { max-width:none;width:100%; }
+body.page-media .about-media-grid figure { max-width:35cqw;width:100%; }
 body.page-media .video-thumb { border-radius:6px;border:1px solid #ffffff20; }
 body.page-media .about-events { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:50px;margin:30px 8% 70px;padding:40px 0 0;border-top:1px solid var(--media-line); }
 body.page-media .about-event-column h2 { position:static;display:block;min-height:0;background:none;clip-path:none;color:inherit;padding:0;margin:0 0 30px;text-align:left;font:400 clamp(23px,2.2cqw,32px)/1.4 var(--serif); }
@@ -108,6 +108,7 @@ body.page-about.page-media .site-header.header-dark .primary-nav { background:#0
 body.page-about.page-media .site-header.header-dark .menu-toggle { color:#f8fafc; }
 body.page-media .about-c4 .about-hero .media-hero-copy #about-title { padding-inline:0; justify-self: left;}
 @media(max-width:600px) {
+ body.page-media .about-media-grid figure { max-width:350px; }
  body.page-media .about-c4 .about-hero .media-hero-copy #about-title { max-width: 450px;}
 }
 @media(max-width:470px) {
@@ -117,8 +118,8 @@ body.page-media .about-c4 .about-hero .media-hero-copy #about-title { padding-in
 /* Permanent top/bottom feathering, independent of the wide-screen side mask.
    This painted layer stays behind the hero copy and does not intercept links. */
 body.page-media .about-c4 .about-hero::before {
- content:"";position:absolute;inset:-1px;z-index:-1;pointer-events:none;
- background:linear-gradient(to bottom,#000 0,transparent clamp(65px,8cqw,120px)),linear-gradient(to top,#07080d 0,transparent clamp(85px,10cqw,150px));
+ content:"";position:absolute;inset:-1px;pointer-events:none;
+ background:linear-gradient(to bottom,#000 0,transparent clamp(55px,6cqw,80px)),linear-gradient(to top,#07080d 0,transparent clamp(85px,10cqw,150px));
 }
 /* On phones the photograph occupies only the upper part of the hero. */
 @media(max-width:600px) {
