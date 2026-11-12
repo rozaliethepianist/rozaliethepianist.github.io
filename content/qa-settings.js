@@ -51,8 +51,8 @@ window.ROZALIE_QA = {
         "cz": "Jak si domluvím první lekci?"
       },
       "answer": {
-        "en": "Email me with your experience, goals and whether you prefer in-person or online lessons. We will discuss a suitable next step.",
-        "cz": "Napište mi e-mailem, jaké máte zkušenosti a cíle a zda preferujete prezenční, nebo online výuku. Společně se domluvíme na dalším postupu."
+        "en": "Use the contact form or email me with your goals and preferred format. A lesson is booked only after we confirm its details in writing.",
+        "cz": "Napište mi formulářem nebo e-mailem své cíle a preferovaný formát. Lekce je rezervována až po písemném potvrzení podrobností."
       }
     },
     {

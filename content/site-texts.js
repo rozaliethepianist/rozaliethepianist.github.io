@@ -645,9 +645,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Získejte slevu 10 %"
   },
   "lessons_to_request_the_10_discount_email_your_k5bc9": {
-    "en": "To request the 10% discount, email your Statement of Enrollment using the email link on the contact page. Please send attachments directly to the email address.",
-    "cz": "Pro uplatnění 10% slevy pošlete potvrzení o studiu e-mailem přes odkaz na kontaktní stránce. Přílohy posílejte přímo na emailovou adresu."
-  },
+  "en": "Email proof of current enrollment to request the 10% student discount. It applies once to individual lessons or a five-lesson package.",
+  "cz": "Pro studentskou slevu 10 % pošlete e-mailem potvrzení o aktuálním studiu. Sleva se uplatní jednou na jednotlivé lekce nebo balíček pěti lekcí."
+},
   "lessons_my_lessons_are_taught_in_english_or_6lofz": {
     "en": "My lessons are taught in English or Czech",
     "cz": "Vyučuji anglicky a česky"
@@ -695,78 +695,6 @@ window.ROZALIE_CONTENT = {
   "privacy_privacy_policy_the_pianist_47tur": {
     "en": "Privacy Policy | Rozalie The Pianist",
     "cz": "Ochrana osobních údajů | Rozalie The Pianist"
-  },
-  "privacy_this_notice_explains_the_current_website_and_jl7ii": {
-    "en": "This notice explains the current website and how to contact Rozálie about personal information. Last updated: November 6, 2026.",
-    "cz": "Toto oznámení popisuje současný web a možnosti kontaktu ohledně osobních údajů. Aktualizováno: 6. listopadu 2026."
-  },
-  "privacy_who_to_contact_43rat": {
-    "en": "Who to contact",
-    "cz": "Koho kontaktovat"
-  },
-  "privacy_pianist_piano_teacher_and_dutch_study_adviser_yc20d": {
-    "en": "Rozálie Stoklasová, pianist, piano teacher and Dutch study adviser based in the Netherlands, is the contact for inquiries sent directly to her. Email",
-    "cz": "Rozálie Stoklasová, klavíristka, učitelka klavíru a poradkyně ke studiu v Nizozemsku, je kontaktní osobou pro dotazy zaslané přímo jí. Napište na"
-  },
-  "privacy_about_this_notice_or_your_personal_information_l0nbj": {
-    "en": "about this notice or your personal information.",
-    "cz": "s dotazy k tomuto oznámení nebo svým osobním údajům."
-  },
-  "privacy_browsing_this_website_skuug": {
-    "en": "Browsing this website",
-    "cz": "Prohlížení webu"
-  },
-  "privacy_the_website_serves_static_pages_images_and_vnclr": {
-    "en": "The website serves static pages, images and locally hosted fonts. Its own code does not add analytics, advertising trackers or browser storage for marketing. The hosting service may process technical information such as your IP address, requested pages, device information and access times to deliver and secure the site. Host-managed authentication, security logs and cookies are separate from the website code.",
-    "cz": "Web poskytuje statické stránky, obrázky a lokálně uložená písma. Jeho vlastní kód nepřidává analytiku, reklamní sledování ani úložiště pro marketing. Poskytovatel hostingu může zpracovávat technické informace, například IP adresu, navštívené stránky, údaje o zařízení a časy přístupu, aby web poskytoval a zabezpečil. Přihlašování, bezpečnostní záznamy a cookies hostingu jsou oddělené od kódu webu."
-  },
-  "privacy_contact_forms_and_email_xhr2r": {
-    "en": "Contact forms and email",
-    "cz": "Kontaktní formuláře a e-mail"
-  },
-  "privacy_the_displayed_forms_cannot_submit_messages_their_7ctbo": {
-    "en": "The displayed forms cannot submit messages. Their fields remain in the page while you use it; the website code does not transmit or save those entries. Please do not enter sensitive information. Selecting the email link opens your email application. If you choose to email Rozálie, your email address, message and any attachments are processed through the email services used for that correspondence.",
-    "cz": "Zobrazené formuláře zprávy neodesílají. Vyplněné údaje zůstávají ve stránce během jejího používání; kód webu je nepřenáší ani neukládá. Nevkládejte citlivé informace. E-mailový odkaz otevře vaši poštovní aplikaci. Pokud Rozálii napíšete, vaše e-mailová adresa, zpráva a případné přílohy se zpracují prostřednictvím e-mailových služeb použitých pro tuto komunikaci."
-  },
-  "privacy_purpose_and_legal_grounds_ejeml": {
-    "en": "Purpose and legal grounds",
-    "cz": "Účel a právní základy"
-  },
-  "privacy_information_you_send_directly_is_used_to_rr6iy": {
-    "en": "Information you send directly is used to answer your inquiry and, where requested, discuss or arrange lessons, consultations or performances. Processing needed to take steps at your request or provide an agreed service is based on that purpose. Relevant legal obligations may require some service records. Security and necessary correspondence may involve legitimate interests, subject to your rights. Where consent is required for an optional use, it must be requested separately and can be withdrawn for future processing.",
-    "cz": "Přímo zaslané informace se používají k odpovědi na dotaz a na požádání k projednání nebo sjednání lekcí, konzultací či vystoupení. Zpracování nezbytné k provedení kroků na vaši žádost nebo poskytnutí dohodnuté služby se opírá o tento účel. Právní povinnosti mohou vyžadovat uchování některých záznamů o službách. Bezpečnost a nezbytná korespondence mohou zahrnovat oprávněné zájmy s ohledem na vaše práva. Je-li pro nepovinné použití nutný souhlas, musí být vyžádán samostatně a lze jej pro budoucí zpracování odvolat."
-  },
-  "privacy_sharing_and_international_services_sl20c": {
-    "en": "Sharing and international services",
-    "cz": "Sdílení a zahraniční služby"
-  },
-  "privacy_hosting_and_email_providers_process_information_as_8tam1": {
-    "en": "Hosting and email providers process information as needed to supply their services. Clicking a social, press-kit or photo-collection link takes you to another service, whose privacy practices apply. Home requests current video titles and preview images from YouTube as the page loads. About uses locally hosted preview images. Selecting a performance opens a privacy-enhanced YouTube player; that connects your browser to YouTube and may involve cookies, device information and processing outside your country. You may instead use the direct YouTube link. This website does not operate an online checkout or payment processor.",
-    "cz": "Poskytovatelé hostingu a e-mailu zpracovávají údaje podle potřeby pro své služby. Sociální odkazy a odkaz na sbírku fotografií vedou na jiné služby s vlastními pravidly ochrany soukromí. Při načtení úvodu web získává aktuální názvy videí a náhledy z YouTube. Stránka O mně používá místní náhledy. Výběr nahrávky otevře přehrávač YouTube v režimu zvýšené ochrany soukromí; prohlížeč se tím spojí s YouTube a může dojít k použití cookies, údajů o zařízení a zpracování mimo vaši zemi. Můžete místo toho použít přímý odkaz na YouTube. Web neprovozuje online pokladnu ani platební systém."
-  },
-  "privacy_keeping_information_konc0": {
-    "en": "Keeping information",
-    "cz": "Uchovávání údajů"
-  },
-  "privacy_the_website_has_no_database_of_form_y3vuf": {
-    "en": "The website has no database of form submissions. Email correspondence and service records have separate retention needs: responding to your request, providing an agreed service, resolving questions and meeting applicable legal record-keeping requirements. Contact Rozálie to ask which records and retention periods apply to your situation. The supplied website materials do not specify the host’s log retention or an email retention schedule.",
-    "cz": "Web nemá databázi zpráv z formulářů. E-mailová komunikace a záznamy o službách mají samostatné potřeby uchování: odpověď na žádost, poskytnutí dohodnuté služby, řešení dotazů a plnění zákonných archivačních povinností. Kontaktujte Rozálii ohledně konkrétních záznamů a lhůt ve vaší situaci. Dodané podklady neurčují dobu uchování záznamů hostingu ani e-mailů."
-  },
-  "privacy_your_rights_4ybr1": {
-    "en": "Your rights",
-    "cz": "Vaše práva"
-  },
-  "privacy_depending_on_the_circumstances_you_may_request_3s8b2": {
-    "en": "Depending on the circumstances, you may request access, correction, erasure, restriction or portability of your information, object to relevant processing, or withdraw consent. These rights are subject to applicable conditions and legal obligations. Send requests to the email address above; identity may need to be checked before information is disclosed. You can also complain to the competent data protection authority, including the Dutch Autoriteit Persoonsgegevens.",
-    "cz": "Podle okolností můžete požádat o přístup, opravu, výmaz, omezení či přenositelnost údajů, vznést námitku nebo odvolat souhlas. Práva podléhají zákonným podmínkám a povinnostem. Žádosti posílejte na uvedený e-mail; před sdělením údajů může být nutné ověřit totožnost. Můžete také podat stížnost příslušnému dozorovému úřadu, včetně nizozemského Autoriteit Persoonsgegevens."
-  },
-  "privacy_children_and_changes_c7jc5": {
-    "en": "Children and changes",
-    "cz": "Děti a změny"
-  },
-  "privacy_a_parent_or_guardian_should_handle_arrangements_efaaq": {
-    "en": "A parent or guardian should handle arrangements for a child’s lessons and avoid sending unnecessary information about the child. This notice should be updated if the website introduces working forms, analytics, new service providers or other processing. Provider-specific retention, transfer safeguards and business contact details must be confirmed for the final public hosting setup.",
-    "cz": "Výuku dítěte má sjednávat rodič nebo zákonný zástupce a neposílat zbytečné údaje o dítěti. Oznámení je třeba aktualizovat při zavedení funkčních formulářů, analytiky, nových poskytovatelů nebo jiného zpracování. Dobu uchování u poskytovatelů, záruky při předávání údajů a podnikatelské kontaktní údaje je nutné ověřit pro konečný veřejný hosting."
   },
   "contact_contact_the_pianist_686qb": {
     "en": "Contact | Rozalie The Pianist",
@@ -1148,10 +1076,6 @@ window.ROZALIE_CONTENT = {
     "en": "Two students celebrating graduation",
     "cz": "Dvě studentky slaví ukončení studia"
   },
-  "privacy_the_website_remembers_your_chosen_language_in_6rnjr": {
-    "en": "The website remembers your chosen language in local browser storage. You can change it using EN | CZ; the lang URL parameter takes priority.",
-    "cz": "Web si zvolený jazyk pamatuje v místním úložišti prohlížeče. Změníte jej pomocí EN | CZ; přednost má parametr lang v URL."
-  },
   "adviser_and_1xk0j": {
     "en": "and",
     "cz": "a"
@@ -1301,14 +1225,6 @@ window.ROZALIE_CONTENT = {
     "en": "Practical information about private piano lessons, scheduling, payments and changes.",
     "cz": "Praktické informace o soukromé výuce klavíru, domlouvání termínů, platbách a změnách."
   },
-  "terms_intro_w8kg3": {
-    "en": "Private piano lessons with Rozálie Stoklasová. Last updated: November 8, 2026. Please read these terms before arranging lessons. Any additional service-specific conditions must be agreed before you commit.",
-    "cz": "Soukromá výuka klavíru s Rozálií Stoklasovou. Aktualizováno 8. listopadu 2026. Před domluvením výuky si prosím přečtěte tyto podmínky. Případné další podmínky konkrétní služby je nutné dohodnout před závazným sjednáním."
-  },
-  "terms_lessons_heading_ujecb": {
-    "en": "Lesson types and pricing",
-    "cz": "Formy výuky a ceny"
-  },
   "terms_formats_xl279": {
     "en": "I offer individual piano lessons in Maastricht and online, in English or Czech. You can inquire about a single lesson, ongoing lessons or a package of five 60-minute lessons.",
     "cz": "Nabízím individuální výuku klavíru v Maastrichtu a online, v angličtině nebo češtině. Můžete se informovat o jednotlivé lekci, pravidelné výuce nebo balíčku pěti 60minutových lekcí."
@@ -1320,118 +1236,6 @@ window.ROZALIE_CONTENT = {
   "terms_online_prices_o6wbi": {
     "en": "Online lessons: 45 minutes — {{price_lessons_online_45_3jl6x}}; 60 minutes — {{price_lessons_online_60_0tquw}}; five 60-minute lessons — {{price_lessons_online_bundle_5_o238p}}.",
     "cz": "Online výuka: 45 minut — {{price_lessons_online_45_3jl6x}}; 60 minut — {{price_lessons_online_60_0tquw}}; pět 60minutových lekcí — {{price_lessons_online_bundle_5_o238p}}."
-  },
-  "terms_discount_78tro": {
-    "en": "A 10% student discount is available with proof of enrollment. Email your Statement of Enrollment to request it. Confirm eligibility, whether the discount applies to your chosen lesson or package, the final total, any applicable taxes and what is included before agreeing to lessons.",
-    "cz": "Studenti mohou po doložení studia získat slevu 10 %. Pro její uplatnění zašlete e-mailem potvrzení o studiu. Před sjednáním výuky si potvrďte nárok na slevu, její použití pro zvolenou lekci či balíček, konečnou cenu, případné daně a zahrnuté služby."
-  },
-  "terms_booking_heading_g110k": {
-    "en": "Booking and scheduling",
-    "cz": "Domlouvání lekcí a termínů"
-  },
-  "terms_booking_process_ytrnr": {
-    "en": "Email me with your experience, goals and preferred lesson format. We will discuss availability and an exact lesson time, duration, location or online platform, preparation and price. An inquiry is not a confirmed appointment; these details and any additional conditions need to be agreed directly. A parent or guardian should handle arrangements for a child.",
-    "cz": "Napište mi e-mailem, jaké máte zkušenosti a cíle a jakou formu výuky preferujete. Probereme dostupnost, přesný termín a délku lekce, místo nebo online platformu, přípravu a cenu. Samotný dotaz není potvrzenou rezervací; tyto údaje a případné další podmínky je nutné dohodnout přímo. Výuku dítěte by měl domlouvat rodič nebo zákonný zástupce."
-  },
-  "terms_booking_package_nncrf": {
-    "en": "For ongoing lessons or a package, discuss the frequency and individual dates before committing. Changes to agreed dates depend on mutual availability. The website does not confirm bookings, accept payments or submit contact forms.",
-    "cz": "U pravidelné výuky a balíčků si před závaznou dohodou domluvte četnost a jednotlivé termíny. Změny sjednaných termínů závisejí na vzájemné dostupnosti. Web nepotvrzuje rezervace, nepřijímá platby ani neodesílá kontaktní formuláře."
-  },
-  "terms_payment_heading_r1xet": {
-    "en": "Payment arrangements",
-    "cz": "Platební podmínky"
-  },
-  "terms_payment_details_kl7ow": {
-    "en": "Payment timing and accepted methods for both individual lessons and packages are agreed by email before the service is confirmed. This page does not impose advance payment or a fixed payment deadline. Clarify any payment requirement for holding a time slot and any invoice or payment receipt you need before making a payment.",
-    "cz": "Termín a způsob úhrady jednotlivých lekcí i balíčků se domlouvají e-mailem před potvrzením služby. Tato stránka nestanovuje povinnou platbu předem ani pevnou splatnost. Před platbou si vyjasněte případnou podmínku úhrady pro rezervaci termínu a požadavky na fakturu nebo potvrzení o platbě."
-  },
-  "terms_cancellations_heading_z3s9z": {
-    "en": "Cancellations and rescheduling",
-    "cz": "Rušení a přesouvání lekcí"
-  },
-  "terms_student_changes_zaa31": {
-    "en": "If you need to cancel or move a lesson, email me as soon as possible. Any notice period, distinction between timely and late cancellation, no-show policy, cancellation fee or room charge must be confirmed in writing before you agree to lessons. This page does not itself introduce such a fee.",
-    "cz": "Potřebujete-li lekci zrušit nebo přesunout, napište mi co nejdříve e-mailem. Případnou lhůtu pro zrušení, rozlišení včasného a pozdního zrušení, pravidla při nedostavení se, storno poplatek či náklady na místnost je nutné písemně potvrdit před sjednáním výuky. Tato stránka sama takový poplatek nezavádí."
-  },
-  "terms_teacher_changes_ncxy8": {
-    "en": "If I need to change an appointment, I will contact you as soon as possible. We will discuss an alternative date based on mutual availability and any payment adjustment under the arrangements agreed for your lessons. If illness or an emergency affects either of us, please communicate promptly so we can discuss the next step.",
-    "cz": "Pokud budu potřebovat změnit termín já, ozvu se vám co nejdříve. Probereme náhradní termín podle vzájemné dostupnosti a případné finanční vyrovnání podle dohodnutých podmínek výuky. Pokud jednoho z nás postihne nemoc nebo mimořádná událost, komunikujte prosím bez odkladu, abychom mohli probrat další postup."
-  },
-  "terms_packages_heading_k67gs": {
-    "en": "Lesson packages",
-    "cz": "Balíčky lekcí"
-  },
-  "terms_package_details_khao5": {
-    "en": "Each piano lesson package contains five 60-minute lessons. Agree the payment schedule, lesson dates and any validity period in writing before purchasing. Any rules for unused lessons, transfers to another person, extensions or a pause for health reasons also need to be agreed at that stage. This page does not impose an expiry date or automatic loss of unused lessons.",
-    "cz": "Každý balíček klavírní výuky obsahuje pět 60minutových lekcí. Před nákupem si písemně dohodněte úhradu, termíny lekcí a případnou dobu platnosti. Zároveň je potřeba dohodnout pravidla pro nevyužité lekce, převod na jinou osobu, prodloužení nebo přerušení ze zdravotních důvodů. Tato stránka nestanovuje datum konce platnosti ani automatické propadnutí nevyužitých lekcí."
-  },
-  "terms_refunds_heading_bculc": {
-    "en": "Refunds and unused lessons",
-    "cz": "Vrácení plateb a nevyužité lekce"
-  },
-  "terms_refund_details_t34um": {
-    "en": "Refund arrangements must be confirmed in writing before you commit, including what happens if I cancel teaching, you end a package early, or illness or exceptional circumstances prevent lessons. Contact me to discuss the unused lessons and any amount to be settled under those arrangements. No blanket non-refundable policy or fixed refund amount is established here. Applicable consumer rights remain unaffected.",
-    "cz": "Podmínky vrácení plateb je nutné písemně potvrdit před závaznou dohodou, včetně situací, kdy výuku zruším já, balíček předčasně ukončíte vy nebo lekcím zabrání nemoc či mimořádné okolnosti. Kontaktujte mě, abychom probrali nevyužité lekce a případné vyrovnání podle těchto podmínek. Tato stránka nezavádí všeobecné pravidlo nevratnosti plateb ani pevnou částku refundace. Příslušná spotřebitelská práva zůstávají zachována."
-  },
-  "terms_responsibilities_heading_am78u": {
-    "en": "Preparing and learning together",
-    "cz": "Příprava a spolupráce při výuce"
-  },
-  "terms_student_duties_b6rjw": {
-    "en": "Please arrive or connect on time, prepare the agreed instrument and materials, and share your goals or questions. Follow the agreed schedule and discuss any difficulties with practice or attendance. Progress depends on individual circumstances, participation and practice; no particular examination or performance result is promised.",
-    "cz": "Přicházejte nebo se připojujte včas, připravte si dohodnutý nástroj a materiály a sdílejte své cíle či otázky. Dodržujte sjednaný harmonogram a případné obtíže s cvičením či docházkou se mnou proberte. Pokrok závisí na individuálních okolnostech, zapojení a cvičení; konkrétní výsledek zkoušky ani výkon nelze zaručit."
-  },
-  "terms_teacher_duties_meq08": {
-    "en": "I adapt lessons to each student’s individual needs, with patience, respect and attention to musical imagination as well as technique. We discuss learning goals, preparation and suitable study materials as part of organizing your lessons. Please ask if you are unsure what to prepare or bring.",
-    "cz": "Výuku přizpůsobuji individuálním potřebám každého studenta, s trpělivostí, respektem a důrazem na hudební představivost i techniku. Při organizaci lekcí probíráme cíle, přípravu a vhodné studijní materiály. Pokud si nejste jisti, co si připravit nebo přinést, zeptejte se."
-  },
-  "terms_online_heading_64ae3": {
-    "en": "Online lessons and technical issues",
-    "cz": "Online výuka a technické potíže"
-  },
-  "terms_online_details_tegjl": {
-    "en": "Have a piano or keyboard, a tablet or computer with a camera and microphone, and a suitable internet connection ready. Check the sound and camera before connecting. We agree the platform in advance; options described on the lessons page include Zoom, Google Meet and Teams.",
-    "cz": "Připravte si klavír nebo keyboard, tablet či počítač s kamerou a mikrofonem a vhodné připojení k internetu. Před připojením zkontrolujte zvuk a kameru. Platformu si domluvíme předem; stránka výuky uvádí například Zoom, Google Meet a Teams."
-  },
-  "terms_online_disruption_h1gk1": {
-    "en": "If either of us has a connection or equipment problem, let the other know promptly. Any make-up time, replacement lesson or payment adjustment depends on the arrangements agreed before booking. This page does not automatically charge for, or promise a refund for, a disrupted session.",
-    "cz": "Při problému s připojením nebo vybavením na kterékoli straně dejte druhému co nejdříve vědět. Případné doplnění času, náhradní lekce či finanční vyrovnání závisí na podmínkách dohodnutých před rezervací. Tato stránka automaticky nestanovuje úhradu narušené lekce ani za ni neslibuje vrácení peněz."
-  },
-  "terms_materials_heading_tfgas": {
-    "en": "Materials and recordings",
-    "cz": "Materiály a nahrávání"
-  },
-  "terms_materials_details_zuz2g": {
-  "en": "Respect copyright in scores, teaching materials, photographs and videos. Public access does not grant permission to redistribute content. Ask before recording a lesson and agree its purpose and use. Photographer credits remain on the Media page.",
-  "cz": "Respektujte autorská práva k notám, výukovým materiálům, fotografiím a videím. Veřejná dostupnost neznamená souhlas s dalším šířením. Před nahráváním lekce si vyžádejte souhlas a dohodněte účel a použití nahrávky. Údaje o fotografech zůstávají na stránce Média."
-},
-  "terms_consultations_heading_e29cm": {
-    "en": "Other services: Dutch study advising",
-    "cz": "Další služby: poradenství ke studiu v Nizozemsku"
-  },
-  "terms_consultation_details_9z5gh": {
-    "en": "Online study advising is a separate service: one 60-minute consultation costs {{price_adviser_single_tszms}}, and three 60-minute consultations cost {{price_adviser_bundle_3_1pbc5}}. Confirm its scope, preparation, scheduling and service-specific conditions directly. Advice draws on my experience and does not guarantee admission, housing, employment, funding or an administrative outcome. Verify requirements with the relevant institution or authority.",
-    "cz": "Online studijní poradenství je samostatnou službou: jedna 60minutová konzultace stojí {{price_adviser_single_tszms}}, tři 60minutové konzultace stojí {{price_adviser_bundle_3_1pbc5}}. Rozsah, přípravu, termíny a konkrétní podmínky si potvrďte přímo. Rady vycházejí z mých zkušeností a nezaručují přijetí, bydlení, zaměstnání, financování ani výsledek úředního řízení. Požadavky si ověřujte u příslušné instituce či úřadu."
-  },
-  "terms_general_heading_pggxn": {
-    "en": "Communication, privacy and applicable terms",
-    "cz": "Komunikace, soukromí a platné podmínky"
-  },
-  "terms_general_details_ne9un": {
-    "en": "Please raise questions or concerns promptly by email. Review the current terms and confirm any additional conditions when arranging lessons; this page does not establish a separate amendment procedure. Business registration, address, tax details and any additional service policies should be supplied with the final service agreement.",
-    "cz": "Dotazy či nejasnosti prosím řešte bez odkladu e-mailem. Při domlouvání výuky si přečtěte aktuální podmínky a potvrďte případná další pravidla; tato stránka nestanovuje samostatný postup změn podmínek. Údaje o podnikatelské registraci, adrese, daních a případné další podmínky služby mají být poskytnuty s konečnou dohodou o službě."
-  },
-  "terms_rights_a9dhs": {
-    "en": "These terms do not limit rights that cannot lawfully be excluded. Where distance-contract withdrawal rights apply, the necessary information and any arrangements for starting lessons during that period must be provided before agreement. An inquiry or use of this site does not waive those rights.",
-    "cz": "Tyto podmínky neomezují práva, která nelze ze zákona vyloučit. Pokud se uplatní právo na odstoupení od smlouvy uzavřené na dálku, musí být před uzavřením dohody poskytnuty potřebné informace a případná ujednání o zahájení výuky v této lhůtě. Dotaz ani použití webu neznamenají vzdání se těchto práv."
-  },
-  "terms_contact_label_4h8c7": {
-    "en": "Questions and lesson inquiries:",
-    "cz": "Dotazy a zájem o výuku:"
-  },
-  "terms_privacy_sentence_w2uxe": {
-    "en": "For information about personal data, email correspondence and external services, see the Privacy Policy.",
-    "cz": "Informace o osobních údajích, e-mailové komunikaci a externích službách najdete v zásadách ochrany osobních údajů."
   },
   "about_has_always_been_interested_in_teaching_as_after_certificate_sf3l0": {
     "en": "Teaching Certificate and demonstrating knowledge from psychology, didactics, and piano pedagogy. She works with private students of all levels and ages, from children to adults and beginners to advanced players. Outside the private sphere, she teaches at the Junior Department of the Conservatorium Maastricht, guiding a class of young, classically trained musicians. By adjusting her lessons to the individual needs of each student, she creates a safe space where music comes alive. The core value of her lesson is not only to develop the technique but also to build a unique connection between music and fantasy.",
@@ -1516,5 +1320,190 @@ window.ROZALIE_CONTENT = {
 "media_youtube_invitation_vvtpr": {"en": "Check out my", "cz": "Navštivte můj"},
 "media_youtube_channel_y79cv": {"en": "YouTube channel", "cz": "YouTube kanál"},
 "media_enjoy_music_cf6zw": {"en": "and enjoy the music", "cz": "a vychutnejte si hudbu"},
-"media_hero_performance_alt_bgvcd": {"en": "Rozálie playing a grand piano under colorful stage lighting", "cz": "Rozálie hraje na klavír v barevném pódiovém osvětlení"}
+"media_hero_performance_alt_bgvcd": {"en": "Rozálie playing a grand piano under colorful stage lighting", "cz": "Rozálie hraje na klavír v barevném pódiovém osvětlení"},
+"privacy_intro_8kayg": {
+  "en": "This notice describes how I, Rozálie Stoklasová, handle personal data when you visit this website, contact me, or arrange piano lessons. Updated November 11, 2026.",
+  "cz": "Toto oznámení popisuje, jak já, Rozálie Stoklasová, zpracovávám osobní údaje při návštěvě webu, komunikaci a domlouvání klavírních lekcí. Aktualizováno 11. listopadu 2026."
+},
+"privacy_controller_heading_z50h0": {
+  "en": "Who is responsible",
+  "cz": "Kdo za údaje odpovídá"
+},
+"privacy_controller_text_gnx5v": {
+  "en": "I am the controller of the information I use to answer inquiries and organize my piano teaching. You can contact me at rozalie.stoklasova@gmail.com about your data or this notice.",
+  "cz": "Jsem správkyní údajů, které používám k vyřizování dotazů a organizaci výuky klavíru. Ohledně osobních údajů i tohoto oznámení mi můžete napsat na rozalie.stoklasova@gmail.com."
+},
+"privacy_collection_heading_zjajy": {
+  "en": "Information I receive",
+  "cz": "Jaké údaje získávám"
+},
+"privacy_collection_text_rn2yd": {
+  "en": "I receive the information you enter in the contact form or send by email, including your contact details, message and any lesson preferences you choose to share. For lessons, I use the agreed schedule and information relevant to learning. Where payment or invoicing is involved, I keep the necessary transaction and accounting records. Please do not send payment-card details, identity documents or unnecessary health information through the contact form.",
+  "cz": "Získávám údaje, které vyplníte do formuláře nebo pošlete e-mailem, například kontaktní údaje, zprávu a vámi sdělené požadavky na výuku. Pro výuku používám dohodnuté termíny a informace potřebné pro učení. Při platbách a fakturaci uchovávám nezbytné platební a účetní záznamy. Formulářem neposílejte údaje o platební kartě, doklady totožnosti ani zbytečné zdravotní informace."
+},
+"privacy_notion_heading_zgtup": {
+  "en": "Contact form and Notion",
+  "cz": "Kontaktní formulář a Notion"
+},
+"privacy_notion_text_mfyae": {
+  "en": "The contact form is hosted by Notion. When you load it, your browser connects to Notion; when you submit it, Notion processes your answers so I can respond and arrange lessons or performances. Notion may also process IP addresses, browser information and other technical data under its own privacy policy. For customer content, Notion describes itself as a processor acting on its customer’s instructions under its Data Processing Addendum; it also determines some processing for its own service purposes. Sending the form is an inquiry, not a confirmed booking. You may contact me by email instead.",
+  "cz": "Kontaktní formulář provozuje Notion. Po jeho načtení se prohlížeč připojí k Notion; po odeslání Notion zpracuje vaše odpovědi, abych mohla reagovat a domluvit lekce či vystoupení. Notion může podle svých zásad zpracovávat také IP adresu, údaje o prohlížeči a další technické údaje. U zákaznického obsahu Notion vystupuje jako zpracovatel podle pokynů zákazníka a svého dodatku o zpracování údajů; některé údaje zpracovává i pro vlastní provozní účely. Odesláním formuláře vzniká poptávka, nikoli potvrzená rezervace. Můžete mi také napsat e-mailem."
+},
+"privacy_basis_heading_3nsty": {
+  "en": "Purposes and legal bases",
+  "cz": "Účely a právní základy"
+},
+"privacy_basis_text_l5f4b": {
+  "en": "I process lesson inquiries and the information needed to provide agreed lessons to take steps at your request before a contract and to perform that contract (GDPR Article 6(1)(b)). Required accounting records are processed to meet legal obligations (Article 6(1)(c)). General correspondence, protecting my services and handling disputes rely on legitimate interests in communication, security and establishing or defending claims (Article 6(1)(f)), balanced against your rights. Optional embedded content is loaded on your request and consent where required (Article 6(1)(a)); consent is not a condition for contacting me by email.",
+  "cz": "Poptávky výuky a údaje nutné k poskytování dohodnutých lekcí zpracovávám pro jednání na vaši žádost před uzavřením smlouvy a pro její plnění (čl. 6 odst. 1 písm. b) GDPR). Povinné účetní záznamy zpracovávám ke splnění právních povinností (písm. c)). Běžná korespondence, ochrana služeb a řešení sporů vycházejí z oprávněných zájmů na komunikaci, bezpečnosti a ochraně právních nároků (písm. f)), při zohlednění vašich práv. Volitelný vložený obsah se načítá na vaši žádost a se souhlasem tam, kde je vyžadován (písm. a)). Souhlas není podmínkou e-mailového kontaktu."
+},
+"privacy_browser_heading_whe3p": {
+  "en": "Browser storage and external content",
+  "cz": "Úložiště prohlížeče a externí obsah"
+},
+"privacy_browser_text_2l482": {
+  "en": "The site stores your language choice as rozalie-language in localStorage; the lang URL parameter takes priority. It remembers your optional Notion and YouTube loading choices in sessionStorage for the current browser-tab session. No optional Notion frame, YouTube thumbnail, metadata frame or player is loaded by this site until you choose the relevant service. Loading YouTube permits connections to Google/YouTube for thumbnails, titles and videos, including youtube-nocookie.com players. Privacy-enhanced mode does not mean no personal data is transmitted. You can reset your choices below or clear browser storage. There is no site analytics or advertising script in this project. External links lead to services with their own policies.",
+  "cz": "Web ukládá jazyk pod klíčem rozalie-language v localStorage; přednost má parametr lang v URL. Volby načítání Notion a YouTube si pamatuje v sessionStorage po dobu aktuální relace karty prohlížeče. Dokud příslušnou službu nepovolíte, web nenačte její volitelný Notion iframe ani náhledy, metadata či přehrávače YouTube. Povolení YouTube umožní spojení s Google/YouTube pro náhledy, názvy a videa včetně přehrávačů youtube-nocookie.com. Režim zvýšeného soukromí neznamená, že se nepředávají žádné osobní údaje. Volby můžete obnovit tlačítkem níže nebo vymazáním úložiště prohlížeče. Projekt neobsahuje vlastní analytické ani reklamní skripty. Externí odkazy vedou ke službám s vlastními zásadami."
+},
+"privacy_sharing_heading_ly3x9": {
+  "en": "Hosting, recipients and international transfers",
+  "cz": "Hosting, příjemci a mezinárodní předávání"
+},
+"privacy_sharing_text_50eun": {
+  "en": "The public site uses GitHub Pages. GitHub may process technical request data such as IP addresses for delivery and security. Notion and my email service process correspondence; a payment provider or bank processes a transaction when you pay. I do not sell personal information. Service providers may process data outside the European Economic Area. Their published safeguards can include adequacy decisions and standard contractual clauses; Notion describes these in its DPA. Provider retention and independent processing are governed by their current terms.",
+  "cz": "Veřejný web využívá GitHub Pages. GitHub může pro doručování obsahu a bezpečnost zpracovávat technické údaje požadavků včetně IP adres. Korespondenci zpracovává Notion a poskytovatel e-mailu; při platbě zpracovává transakci banka nebo poskytovatel platby. Osobní údaje neprodávám. Poskytovatelé mohou údaje zpracovávat mimo Evropský hospodářský prostor. Jejich zveřejněné záruky mohou zahrnovat rozhodnutí o odpovídající ochraně a standardní smluvní doložky; Notion je popisuje v DPA. Uchovávání a samostatné zpracování u poskytovatelů se řídí jejich aktuálními podmínkami."
+},
+"privacy_retention_heading_grepk": {
+  "en": "How long information is kept",
+  "cz": "Doba uchovávání"
+},
+"privacy_retention_text_0hzjm": {
+  "en": "Unsuccessful inquiries, including the corresponding Notion responses, are kept for no more than 12 months after the last relevant communication, unless a specific legal obligation or dispute requires longer retention. Student correspondence is kept while lessons continue and for up to two years after the last lesson for follow-up and administration; only records still needed for legal obligations or claims are retained longer. Dutch basic business accounting records are generally retained for seven years, measured under the applicable tax rules. Technical logs held by hosting and external providers follow their own retention policies.",
+  "cz": "Nevyřízené poptávky, které nevedly ke sjednání služby, včetně odpovědí v Notion uchovávám nejvýše 12 měsíců od poslední relevantní komunikace, pokud konkrétní právní povinnost nebo spor nevyžaduje delší dobu. Korespondenci se studenty uchovávám během výuky a nejvýše dva roky po poslední lekci pro navazující komunikaci a administrativu; déle zůstávají jen záznamy potřebné pro zákonné povinnosti nebo právní nároky. Základní nizozemské podnikatelské účetní záznamy se zpravidla uchovávají sedm let, počítáno podle příslušných daňových pravidel. Technické záznamy hostingu a externích služeb podléhají jejich vlastním lhůtám."
+},
+"privacy_rights_heading_jsy9t": {
+  "en": "Your rights",
+  "cz": "Vaše práva"
+},
+"privacy_rights_text_2yin1": {
+  "en": "You may request access, correction, erasure or restriction of your data, object to processing based on legitimate interests, and request portability where the legal conditions apply. You can withdraw consent for optional content without affecting earlier lawful processing. Email me to exercise your rights; I may need proportionate verification of your identity. I normally respond within one month, subject to the GDPR’s permitted extensions. You may complain to the Dutch Autoriteit Persoonsgegevens or the competent authority where you live or work.",
+  "cz": "Můžete požádat o přístup, opravu, výmaz či omezení zpracování, vznést námitku proti zpracování založenému na oprávněném zájmu a při splnění zákonných podmínek žádat přenositelnost. Souhlas s volitelným obsahem můžete odvolat; dřívější zákonné zpracování tím není dotčeno. Pro uplatnění práv mi napište e-mail; může být potřebné přiměřené ověření totožnosti. Obvykle odpovím do jednoho měsíce, s možností prodloužení podle GDPR. Stížnost můžete podat nizozemskému Autoriteit Persoonsgegevens nebo příslušnému úřadu v místě bydliště či práce."
+},
+"privacy_children_heading_fq82m": {
+  "en": "Children and updates",
+  "cz": "Děti a změny oznámení"
+},
+"privacy_children_text_mrsfb": {
+  "en": "A parent or guardian should arrange lessons for a minor and provide only the information needed for teaching and communication. This website is not intended for children to independently submit personal information. I update this notice when the services or data practices change; the date above identifies the current version.",
+  "cz": "Výuku nezletilého má domlouvat rodič nebo zákonný zástupce a poskytovat jen údaje potřebné pro výuku a komunikaci. Web není určen k samostatnému předávání osobních údajů dětmi. Oznámení aktualizuji při změně služeb nebo zpracování; aktuální verzi označuje datum výše."
+},
+"privacy_reset_c3jsw": {
+  "en": "Reset external content choices",
+  "cz": "Obnovit volby externího obsahu"
+},
+"terms_current_intro_01cto": {
+  "en": "Private piano lessons with Rozálie Stoklasová. Effective November 11, 2026, for new agreements. These terms are provided before booking and apply when agreed with the student or the student’s parent or guardian. Existing agreements change only by mutual agreement.",
+  "cz": "Soukromá výuka klavíru s Rozálií Stoklasovou. Účinnost pro nové dohody od 11. listopadu 2026. Tyto podmínky jsou poskytovány před rezervací a platí po jejich sjednání se studentem nebo jeho rodičem či zákonným zástupcem. Stávající dohody se mění pouze vzájemnou dohodou."
+},
+"terms_offer_heading_fung4": {
+  "en": "Lessons and prices",
+  "cz": "Lekce a ceny"
+},
+"terms_final_prices_q4mks": {
+  "en": "The listed prices are the total consumer prices; no VAT surcharge is added afterward. The currency and final total are confirmed before booking. A 10% student discount applies once to either a single lesson or a five-lesson package when you provide proof of current enrollment. Package-based charges and refunds use the amount actually paid, including any discount.",
+  "cz": "Uvedené ceny jsou konečné spotřebitelské ceny; DPH se k nim dodatečně nepřipočítává. Měna a celková částka se potvrzují před rezervací. Studentská sleva 10 % se při doložení aktuálního studia uplatní jednou na jednotlivou lekci nebo balíček pěti lekcí. Poplatky a refundace u balíčku vycházejí ze skutečně zaplacené částky včetně případné slevy."
+},
+"terms_booking_current_heading_nkrna": {
+  "en": "Booking and confirmation",
+  "cz": "Rezervace a potvrzení"
+},
+"terms_booking_current_text_yroow": {
+  "en": "Send an inquiry through the Notion contact form or by email. Submission is not a booking. A lesson is confirmed by written agreement on the date, duration, format, location or online platform, total price and applicable terms. Packages and ongoing lessons are scheduled in advance according to mutual availability. A parent or guardian must agree to lessons for a minor.",
+  "cz": "Poptávku odešlete formulářem Notion nebo e-mailem. Odeslání není rezervací. Lekce je potvrzena písemnou dohodou o termínu, délce, formátu, místě nebo online platformě, konečné ceně a podmínkách. Termíny balíčků a pravidelné výuky plánujeme předem podle vzájemné dostupnosti. Výuku nezletilého musí sjednat rodič nebo zákonný zástupce."
+},
+"terms_payment_current_heading_vrgl9": {
+  "en": "Payment",
+  "cz": "Platby"
+},
+"terms_payment_current_text_eyrun": {
+  "en": "Individual lessons are paid after the lesson, within seven calendar days after you receive the invoice or payment request. Packages are paid before the first lesson. Payment is by bank transfer to the account communicated privately with the payment request. A different schedule may be agreed in writing. An invoice or payment confirmation is available on request. This website does not collect card details or take online payments.",
+  "cz": "Jednotlivé lekce se platí po uskutečnění, do sedmi kalendářních dnů od doručení faktury nebo výzvy k platbě. Balíčky se hradí před první lekcí. Platí se bankovním převodem na účet sdělený soukromě ve výzvě k platbě. Jiný harmonogram lze sjednat písemně. Fakturu nebo potvrzení platby poskytnu na požádání. Web neshromažďuje údaje o kartách ani nepřijímá online platby."
+},
+"terms_cancel_current_heading_fs2pu": {
+  "en": "Cancellation, rescheduling and lateness",
+  "cz": "Rušení, přesouvání a pozdní příchod"
+},
+"terms_cancel_current_text_fyz0j": {
+  "en": "Email a cancellation or rescheduling request as soon as possible. At least 24 hours before the agreed start, cancellation is free. With less than 24 hours’ notice, the cancellation charge is at most 50% of the applicable lesson price; a no-show without notice may be charged at most 100%. These are ceilings, not automatic penalties: any charge must reflect reasonable, demonstrable net loss after saved costs and replacement bookings, and mandatory consumer rights take priority. No cancellation charge is added twice. Package charges use the amount paid divided by five. If you arrive late, the lesson normally ends at the agreed time. If I start late, I provide the missing time or an equivalent credit.",
+  "cz": "Zrušení nebo žádost o přesun oznamte e-mailem co nejdříve. Při oznámení alespoň 24 hodin před dohodnutým začátkem je zrušení zdarma. Při pozdějším oznámení činí storno nejvýše 50 % příslušné ceny lekce; při nedostavení bez oznámení nejvýše 100 %. Jde o horní hranice, nikoli automatické sankce: částka musí odpovídat přiměřené a doložitelné čisté ztrátě po odečtení ušetřených nákladů a náhradních rezervací. Přednost mají povinná spotřebitelská práva. Za jednu situaci se storno neúčtuje dvakrát. U balíčku se vychází ze zaplacené částky dělené pěti. Při vašem pozdním příchodu lekce obvykle končí v dohodnutý čas. Při zpoždění z mé strany chybějící čas nahradím nebo poskytnu odpovídající kredit."
+},
+"terms_packages_current_heading_0ux40": {
+  "en": "Five-lesson packages",
+  "cz": "Balíčky pěti lekcí"
+},
+"terms_packages_current_text_atlok": {
+  "en": "A package includes five 60-minute lessons, planned for completion within three calendar months after the first lesson. Request dates in good time; I will offer reasonable availability to deliver the agreed lessons. A timely rescheduling does not remove prepaid value. If my availability prevents completion, you may choose an appropriate extension or a refund of the unused value. Serious illness or exceptional circumstances may justify a reasonable extension. Unused credit does not automatically become nonrefundable when the three-month scheduling period ends. Transfers to another student require prior written agreement so the teaching arrangements remain suitable.",
+  "cz": "Balíček obsahuje pět 60minutových lekcí s plánovaným vyčerpáním do tří kalendářních měsíců od první lekce. O termíny žádejte včas; nabídnu přiměřenou dostupnost pro uskutečnění dohodnuté výuky. Včasné přesunutí neznamená ztrátu předplacené hodnoty. Pokud čerpání znemožní moje dostupnost, můžete zvolit přiměřené prodloužení nebo vrácení nevyčerpané hodnoty. Závažná nemoc či mimořádné okolnosti mohou odůvodnit přiměřené prodloužení. Po uplynutí tříměsíčního plánovacího období nevyčerpaný kredit automaticky nepropadá bez náhrady. Převod na jiného studenta vyžaduje předchozí písemnou dohodu, aby podmínky výuky zůstaly vhodné."
+},
+"terms_refund_current_heading_9xzqf": {
+  "en": "Refunds and teacher cancellations",
+  "cz": "Vrácení peněz a zrušení učitelkou"
+},
+"terms_refund_current_text_qqfjf": {
+  "en": "If I cancel a lesson, you may choose a replacement time or a refund of the unused prepaid lesson value. You may end a package by email; unused lessons are settled proportionally at the package rate, without retrospectively repricing completed lessons at the single-lesson rate. Any reasonable cancellation charge is itemized separately and deducted only once. For example, two completed lessons use two fifths of the amount paid and leave three fifths before any lawful cancellation charge. Agreed refunds are made by bank transfer within 14 calendar days after the refund entitlement is established and the necessary payment details are received; statutory deadlines take priority.",
+  "cz": "Pokud lekci zruším já, můžete zvolit náhradní termín nebo vrácení předplacené hodnoty neuskutečněné lekce. Balíček můžete ukončit e-mailem; nevyčerpané lekce se vypořádají poměrně balíčkovou sazbou bez zpětného přecenění absolvovaných lekcí na jednotlivé ceny. Přiměřené storno se rozepíše samostatně a odečte nejvýše jednou. Dvě absolvované lekce například spotřebují dvě pětiny zaplacené částky a zbývají tři pětiny před případným zákonným stornem. Sjednanou refundaci odešlu bankovním převodem do 14 kalendářních dnů od vzniku nároku a obdržení potřebných platebních údajů; přednost mají zákonné lhůty."
+},
+"terms_illness_current_heading_lo80o": {
+  "en": "Illness and exceptional circumstances",
+  "cz": "Nemoc a mimořádné okolnosti"
+},
+"terms_illness_current_text_mcijs": {
+  "en": "Tell me promptly if illness or an emergency affects attendance. We will consider a reasonable replacement date or extension for a serious or continuing interruption. No medical diagnosis is needed in the contact form. Where I cannot provide the agreed service, replacement lessons or a proportional refund remain available.",
+  "cz": "Pokud nemoc nebo mimořádná událost ovlivní účast, ozvěte se co nejdříve. Při závažném nebo dlouhodobém přerušení zvážíme přiměřenou náhradu či prodloužení. Do kontaktního formuláře není třeba uvádět diagnózu. Pokud sjednanou službu nemohu poskytnout já, zůstává možnost náhradní výuky nebo poměrného vrácení peněz."
+},
+"terms_online_current_heading_zyuwu": {
+  "en": "Online lessons",
+  "cz": "Online lekce"
+},
+"terms_online_current_text_lakm4": {
+  "en": "Prepare a piano or keyboard, a camera and microphone, a suitable device and a stable internet connection; we agree the platform before the lesson. Both sides are responsible for checking their own equipment. Report problems immediately. If a technical failure prevents meaningful teaching, we agree make-up time, a replacement lesson or a proportional credit or refund for the undelivered portion. A teacher-side failure is not charged as completed teaching. A student-side problem does not automatically justify charging the full lesson; any cancellation charge remains subject to the limits above.",
+  "cz": "Připravte klavír nebo keyboard, kameru, mikrofon, vhodné zařízení a stabilní připojení; platformu dohodneme předem. Každá strana zkontroluje své vybavení. Problémy hlaste ihned. Pokud technická závada znemožní smysluplnou výuku, dohodneme náhradu času, náhradní lekci nebo poměrný kredit či refundaci neuskutečněné části. Výpadek na straně učitelky se neúčtuje jako uskutečněná výuka. Problém studenta automaticky neodůvodňuje účtování celé lekce; případné storno podléhá výše uvedeným omezením."
+},
+"terms_duties_current_heading_0vehy": {
+  "en": "Learning together",
+  "cz": "Spolupráce při výuce"
+},
+"terms_duties_current_text_smhqc": {
+  "en": "Please arrive on time, prepare the agreed materials, practice regularly as your circumstances allow and communicate difficulties early. I prepare and adapt lessons to your needs, recommend suitable materials and communicate changes promptly. Progress depends on individual circumstances and practice; no specific examination result is guaranteed. Obtain permission before recording a lesson and respect copyright in scores, photographs and recordings. Photographer credits and the repertoire are on Media.",
+  "cz": "Přicházejte včas, připravte dohodnuté materiály, podle svých možností pravidelně cvičte a potíže sdělujte včas. Lekce připravuji a přizpůsobuji vašim potřebám, doporučuji vhodné materiály a změny oznamuji bez zbytečného odkladu. Pokrok závisí na individuálních okolnostech a cvičení; konkrétní výsledek zkoušky není zaručen. Nahrávání lekce vyžaduje předchozí souhlas. Respektujte autorská práva k notám, fotografiím a nahrávkám. Údaje o fotografech a repertoár najdete na Media."
+},
+"terms_withdrawal_current_heading_p6ax8": {
+  "en": "Distance contracts and consumer rights",
+  "cz": "Smlouvy na dálku a práva spotřebitelů"
+},
+"terms_withdrawal_current_text_tesvh": {
+  "en": "Where the statutory right of withdrawal applies, you may withdraw within 14 days after concluding the service contract, without giving a reason, by an unambiguous email to rozalie.stoklasova@gmail.com. State your name, contact details, agreement date and the lessons or package concerned; the sentence “I withdraw from my piano lesson agreement” is sufficient. There is no requirement to use a particular form. If you expressly request lessons to begin during that period after receiving the required information, any lawful payment for services already provided is proportional. The right is lost on full performance only where the statutory requirements for prior express consent and acknowledgment are met. Mandatory law takes priority over these terms, including refund deadlines.",
+  "cz": "Pokud se uplatní zákonné právo na odstoupení, můžete do 14 dnů od uzavření smlouvy o službě odstoupit bez udání důvodu jednoznačným e-mailem na rozalie.stoklasova@gmail.com. Uveďte jméno, kontakt, datum sjednání a příslušné lekce nebo balíček; postačí věta „Odstupuji od smlouvy o výuce klavíru“. Použití konkrétního formuláře není povinné. Pokud po obdržení předepsaných informací výslovně požádáte o zahájení výuky během této lhůty, případná zákonná úhrada již poskytnuté části je poměrná. Právo zaniká úplným splněním jen při splnění zákonných podmínek předchozího výslovného souhlasu a potvrzení. Závazné právní předpisy mají přednost včetně lhůt refundací."
+},
+"terms_contact_current_heading_akx0j": {
+  "en": "Questions, privacy and changes",
+  "cz": "Dotazy, soukromí a změny"
+},
+"terms_contact_current_text_vixqg": {
+  "en": "Please raise questions or concerns by email so we can seek a fair solution. Later website changes do not retrospectively alter an agreed lesson contract. Personal information is handled under the Privacy Policy. These terms concern piano lessons; submitting an inquiry or browsing the site does not create a booking.",
+  "cz": "Dotazy nebo připomínky mi prosím napište e-mailem, abychom mohli hledat spravedlivé řešení. Pozdější změny webu zpětně nemění sjednanou smlouvu o výuce. S osobními údaji nakládám podle zásad ochrany soukromí. Tyto podmínky se týkají klavírních lekcí; odeslání poptávky ani prohlížení webu nevytváří rezervaci."
+},
+"terms_privacy_link_r5sg5": {
+  "en": "Privacy Policy",
+  "cz": "Ochrana osobních údajů"
+},
+"terms_contact_link_3fszi": {
+  "en": "Contact",
+  "cz": "Kontakt"
+},
+"external_notion_notice_n4t8p": {"en": "Loading the contact form connects to Notion, which may process technical data and use its own storage. You can email me instead.", "cz": "Načtením formuláře se připojíte k Notion, který může zpracovávat technické údaje a používat vlastní úložiště. Můžete mi místo toho napsat e-mailem."},
+"external_youtube_notice_j7b2a": {"en": "Loading recordings connects to Google/YouTube for thumbnails, titles and players. The service may process technical data and use cookies or similar storage.", "cz": "Načtení nahrávek propojí prohlížeč s Google/YouTube pro náhledy, názvy a přehrávače. Služba může zpracovávat technické údaje a používat cookies nebo obdobné úložiště."},
+"external_notion_load_c3r7x": {"en": "Allow and load contact form", "cz": "Povolit a načíst kontaktní formulář"},
+"external_youtube_load_f8m2s": {"en": "Allow and load YouTube", "cz": "Povolit a načíst YouTube"},
+"external_privacy_link_q7e4n": {"en": "Privacy Policy", "cz": "Ochrana osobních údajů"}
 };

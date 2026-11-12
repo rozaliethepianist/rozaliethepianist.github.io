@@ -628,3 +628,13 @@ body:is(.page-home,.page-lessons,.page-dutch,.page-contact)
 :is(.home-hero,.lessons-hero,.adviser-hero,.contact-hero-c5) .button.button-primary::after {
   flex-shrink: 0;
 }
+
+/* Provider choices reuse the page palette without changing the form/player. */
+.external-content-choice { margin:20px 0;padding:20px;border:1px solid currentColor;border-radius:12px;font:400 13px/1.7 var(--sans); }
+.external-content-choice p { margin:0 0 14px; }
+.external-content-choice .button { font-size:12px;letter-spacing:0;text-transform:none; }
+.external-content-choice>a { display:inline-block;margin:8px 0 8px 18px;text-decoration:underline; }
+
+.repertoire-general-offer { margin-top:16px;padding-top:16px;border-top:1px solid currentColor; }
+
+[data-external-pending] { display:none !important; }
