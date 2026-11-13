@@ -52,17 +52,17 @@
 @media(min-width:1101px){
  .contact-flower-c5{width:30.5665cqw;left:-5.3293cqw;top:39.6073cqw}
 }
-.page-contact .footer-social > a {
+.page-contact .footer-social > .social-icon {
   opacity: .65;
   transition: opacity .18s ease;
 }
 
-.page-contact .footer-social > a:focus-visible {
+.page-contact .footer-social > .social-icon:focus-visible {
   opacity: 1;
 }
 
 @media (any-hover: hover) and (any-pointer: fine) {
-  .page-contact .footer-social > a:hover {
+  .page-contact .footer-social > .social-icon:hover {
     opacity: 1;
   }
 }
