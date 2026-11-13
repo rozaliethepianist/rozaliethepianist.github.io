@@ -14,8 +14,8 @@
   --palette-brown-deep: #49362E;
   --palette-gold: #B89B6C;
   --palette-gold-light: #D2AA76;
-  --palette-blue: #3A6BB1;       /* interactive actions */
-  --palette-blue-hover: #2C5387;
+  --palette-blue: #408BB6;       /* interactive actions */
+  --palette-blue-hover: #32769D;
   --palette-blue-tint: #D9E4F4;
   --palette-white: #FFFFFF;
 
@@ -44,12 +44,12 @@
   --surface-media: var(--palette-navy-raised);
   --surface-iframe: var(--palette-navy);
   --surface-reviews: var(--palette-sand);
-  --surface-rate-1: var(--palette-ivory);
-  --surface-rate-2: var(--palette-linen);
-  --surface-rate-3: var(--palette-gold-light);
-  --surface-online-1: #EDF3FB;
-  --surface-online-2: var(--palette-blue-tint);
-  --surface-online-3: #B4C9E7;
+  --surface-rate-1: #fff4e6;
+  --surface-rate-2: #f0cabf;
+  --surface-rate-3: #db9380;
+  --surface-online-1: #e6efff;
+  --surface-online-2: #ccd7f0;
+  --surface-online-3: #9ed7e7;
   --surface-nav-light: var(--palette-ivory);
   --surface-nav-dark: var(--palette-navy-raised);
   --surface-header-light: var(--palette-cream);
@@ -90,3 +90,6 @@
   --duration-fast: .2s;
   --duration-media: .35s;
 }
+
+/* Stage pages return to black without changing the warm lesson/contact planes. */
+body:is(.page-home,.page-about,.page-media) { --palette-navy:#000;--palette-navy-raised:#292929;--bg-dark:#000;--surface-card-dark:#292929;--surface-field-dark:#171717;--surface-media:#171717;--surface-iframe:#000;--surface-nav-dark:#292929;--surface-header-contrast:#000; }

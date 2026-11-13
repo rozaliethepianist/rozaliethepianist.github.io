@@ -33,7 +33,7 @@
   const socialLabels = { youtube: 'YouTube', instagram: 'Instagram', facebook: 'Facebook', linkedin: 'LinkedIn', links: 'Links' };
   const socialIcon = (kind) => {
     const href = settings.socialLinks[kind];
-    const inner = `<img src="${asset('image/icons/' + kind + '.svg')}" alt="" width="20" height="20" loading="lazy">`;
+    const inner = `<span class="footer-social-glyph" style="--footer-glyph:url('${asset('image/icons/' + kind + '.svg')}')" aria-hidden="true"></span>`;
     const label = socialLabels[kind];
     return href
       ? `<a class="social-icon" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="${label} (opens in a new tab)">${inner}</a>`

@@ -49,8 +49,8 @@ window.ROZALIE_CONTENT = {
     "cz": "Poradenství ke studiu v Nizozemsku"
   },
   "home_that_capture_your_heart_jymog": {
-  "en": "“Rozálie approaches music with sincerity, intelligence, and sensitivity, always striving to understand and communicate what lies behind the notes.”",
-  "cz": "„Rozálie přistupuje k hudbě s upřímností, inteligencí a citlivostí a vždy se snaží porozumět tomu, co se skrývá za notami, a předat to posluchačům.“"
+  "en": "“In her lessons, Rozálie makes students feel at home.”",
+  "cz": "„Na Rozáliiných lekcích se studenti cítí jako doma.“"
 },
   "common_check_my_offer_ckdmq": {
     "en": "Check my offer",
@@ -73,29 +73,29 @@ window.ROZALIE_CONTENT = {
     "cz": "Chci se učit hrát na klavír"
   },
   "home_dutch_study_adviser_4y3eh": {
-  "en": "Me as a Pianist",
-  "cz": "Já jako klavíristka"
+  "en": "My pianistic background",
+  "cz": "Moje klavírní zázemí"
 },
   "home_online_consultations_9hgli": {
-  "en": "The beauty of Piano Music",
-  "cz": "Krása klavírní hudby"
+  "en": "Recordings, videos, photos and more",
+  "cz": "Nahrávky, videa, fotografie a další"
 },
   "home_for_students_who_want_to_study_in_133i6": {
-  "en": "For audiences, promoters, and booking agencies.",
-  "cz": "Pro publikum, pořadatele a umělecké agentury."
+  "en": "For those who want to see behind the curtain",
+  "cz": "Pro ty, kteří chtějí nahlédnout do zákulisí"
 },
   "common_don_t_stress_out_nail_it_ohktm": {
-  "en": "Piano music that comes alive!",
-  "cz": "Klavírní hudba, která ožívá!"
+  "en": "Enjoy piano music that comes alive!",
+  "cz": "Užijte si klavírní hudbu, která ožívá!"
 },
   "home_i_want_to_study_in_the_netherlands_383w2": {
   "en": "Explore my music",
   "cz": "Poznejte mou hudbu"
 },
   "home_me_as_an_artist_t1xfv": {
-    "en": "Me as an Artist",
-    "cz": "Já jako umělkyně"
-  },
+  "en": "Hi, I'm Rozálie",
+  "cz": "Ahoj, jsem Rozálie"
+},
   "home_a_few_honest_words_ldd36": {
     "en": "A few honest words",
     "cz": "Pár upřímných slov"
@@ -165,17 +165,17 @@ window.ROZALIE_CONTENT = {
     "cz": "Klavíristka"
   },
   "home_czech_solo_pianist_is_known_for_her_8kqva": {
-    "en": "Czech solo pianist Rozálie Stoklasová is known for her distinctive touch, technical skills, and colorful expressivity. She received the IAFM Köln Award in 2024 and made her solo debut at Muziekgebouw Eindhoven in April 2026. Her work also includes chamber music and accompaniment.",
-    "cz": "Česká sólová klavíristka Rozálie Stoklasová je známá osobitým úhozem, technickými dovednostmi a barevnou expresivitou. V roce 2024 získala IAFM Köln Award a v dubnu 2026 sólově debutovala v Muziekgebouw Eindhoven. Věnuje se také komorní hudbě a korepetici."
-  },
+  "en": "Czech solo pianist Rozálie Stoklasová is well known for her distinctive touch, technical skills, and colorful expressivity. She received the IAFM Köln Award 2024 and made her debut as a solo pianist at Muziekgebouw Eindhoven in April 2026. She also works as a choir accompanist and chamber musician.",
+  "cz": "Česká sólová klavíristka Rozálie Stoklasová je známá osobitým úhozem, technickými dovednostmi a barevnou expresivitou. Získala IAFM Köln Award 2024 a v dubnu 2026 debutovala jako sólová klavíristka v Muziekgebouw Eindhoven. Působí také jako korepetitorka sborů a komorní hráčka."
+},
   "home_piano_teacher_v56qn": {
     "en": "Piano Teacher",
     "cz": "Učitelka klavíru"
   },
   "home_has_always_been_drawn_to_the_art_h1uec": {
-    "en": "Rozálie has always been drawn to the art of giving an inspiring, well-structured piano lesson. Her Advanced Teaching Skills training led to a Teaching Certificate and covered psychology, didactics, and piano pedagogy. She teaches private and conservatory students.",
-    "cz": "Rozálii vždy přitahovala inspirativní a promyšlená výuka klavíru. Absolvovala kurz Advanced Teaching Skills, získala pedagogický certifikát a vzdělání v psychologii, didaktice a klavírní pedagogice. Učí soukromě i na konzervatoři."
-  },
+  "en": "Rozálie has always been fascinated by the art of giving inspiring piano lessons. During her studies, she completed pedagogical training and obtained a Teaching Certificate covering psychology and didactics in piano teaching. She works with private and conservatory students.",
+  "cz": "Rozálii vždy fascinovalo umění vést inspirativní klavírní lekce. Během studia absolvovala pedagogickou přípravu a získala Teaching Certificate zahrnující psychologii a didaktiku klavírní výuky. Pracuje se soukromými studenty i se studenty konzervatoře."
+},
   "home_is_pursuing_a_master_s_degree_in_2iji3": {
     "en": "Rozálie is pursuing a master's degree in classical piano at Conservatorium Maastricht with Dr. Katia Veekmans. She completed her bachelor's degree with a specialization in piano pedagogy in 2026. Her experience of living in the Netherlands informs her study consultations.",
     "cz": "Rozálie studuje magisterský obor hraní klasické hudby na klavír na Conservatorium Maastricht pod vedením Dr. Katie Veekmans. Bakalářské studium se zaměřením na klavírní pedagogiku dokončila v roce 2026. Zkušenosti ze života v Nizozemsku využívá při studijních konzultacích."
@@ -209,9 +209,9 @@ window.ROZALIE_CONTENT = {
     "cz": "Třešnička na dortu"
   },
   "home_taste_the_music_e8p1z": {
-    "en": "Taste the music",
-    "cz": "Ochutnejte hudbu"
-  },
+  "en": "Check my newest videos on YouTube",
+  "cz": "Podívejte se na moje nejnovější videa na YouTube"
+},
   "not_found_page_not_found_the_pianist_s2oky": {
     "en": "Page Not Found | Rozalie the Pianist",
     "cz": "Stránka nenalezena | Rozálie the Pianist"
@@ -1490,8 +1490,8 @@ window.ROZALIE_CONTENT = {
   "cz": "Učitelka klavíru"
 },
   "home_hero_quote_author_hxphx": {
-  "en": "— Dr. Katia Veekmans",
-  "cz": "— Dr. Katia Veekmans"
+  "en": "— Alejandro Serena Llinares",
+  "cz": "— Alejandro Serena Llinares"
 },
   "home_artist_performance_k1clw": {
   "en": "As a pianist, through the music, I revive emotions and bring them alive. In brilliant passage, not less than in lyrical melodies, my playing stands for clarity and musical expressivity. I perceive live performances as a unique chance to narrate stories that are touching, inspiring and understandable to audiences all around the world.",
@@ -1516,5 +1516,21 @@ window.ROZALIE_CONTENT = {
 "media_youtube_invitation_vvtpr": {"en": "Check out my", "cz": "Navštivte můj"},
 "media_youtube_channel_y79cv": {"en": "YouTube channel", "cz": "YouTube kanál"},
 "media_enjoy_music_cf6zw": {"en": "and enjoy the music", "cz": "a vychutnejte si hudbu"},
-"media_hero_performance_alt_bgvcd": {"en": "Rozálie playing a grand piano under colorful stage lighting", "cz": "Rozálie hraje na klavír v barevném pódiovém osvětlení"}
+"media_hero_performance_alt_bgvcd": {"en": "Rozálie playing a grand piano under colorful stage lighting", "cz": "Rozálie hraje na klavír v barevném pódiovém osvětlení"},
+  "home_intro_current_c7n2a": {
+  "en": "and I keep myself occupied with music as a pianist, teacher, performer, accompanist, and chamber musician. Despite my Czech origin, I have spent a while in the Netherlands, specifically in the cozy city of Maastricht, where I have been living and studying for five years now. During this time, I have gained a wealth of experience, not only as a musician but also as a person.",
+  "cz": "a hudbě se věnuji jako klavíristka, učitelka, interpretka, korepetitorka a komorní hráčka. Přestože pocházím z Česka, už nějakou dobu žiji v Nizozemsku, konkrétně v útulném Maastrichtu, kde již pět let žiji a studuji. Za tu dobu jsem získala nespočet zkušeností nejen jako hudebnice, ale také jako člověk."
+},
+  "home_teaching_passion_f4q8b": {
+  "en": "Music is a great passion that comes with great responsibility. As a teacher, I help my students navigate it.",
+  "cz": "Hudba je velká vášeň, která s sebou přináší velkou odpovědnost. Jako učitelka pomáhám svým studentům se v ní zorientovat."
+},
+  "home_certificate_lead_r2m5x": {
+  "en": "I hold a ",
+  "cz": "Mám "
+},
+  "home_certificate_story_w9k3d": {
+  "en": " in piano pedagogy, and over the past few years, I have realized how important it is to encourage pupils’ imaginations and allow them to fully appreciate the unique connection between music and fantasy. Music is not only about technical brilliance, but also about enjoyment, fun, and personal creativity that can be truly eye-opening.",
+  "cz": " z klavírní pedagogiky a během posledních let jsem si uvědomila, jak důležité je podporovat představivost žáků a umožnit jim naplno ocenit jedinečné spojení hudby a fantazie. Hudba není jen o technické brilanci, ale také o radosti, zábavě a osobní tvorbě, která může otevírat nové obzory."
+}
 };

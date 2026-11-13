@@ -628,3 +628,8 @@ body:is(.page-home,.page-lessons,.page-dutch,.page-contact)
 :is(.home-hero,.lessons-hero,.adviser-hero,.contact-hero-c5) .button.button-primary::after {
   flex-shrink: 0;
 }
+
+/* One inherited paint for every footer glyph, including Share. */
+body .site-header .primary-nav .nav-link { font-weight:700; }
+body .footer-social .social-icon { color:inherit; }
+body .footer-social .footer-social-glyph { display:block;width:20px;height:20px;background:currentColor;mask:var(--footer-glyph) center/contain no-repeat;-webkit-mask:var(--footer-glyph) center/contain no-repeat; }

@@ -26,3 +26,10 @@ body.page-home .offer-wrap:last-child .offer-photo img { inset:0;width:100%;heig
  body.page-home .home-work-cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
  body.page-home .work-side { width:100%;min-width:0; }
 }
+
+/* The welcome heading aligns with the copy, with normal mixed-case letterforms. */
+body.page-home .home-hero-title { font-weight:700;font-size:clamp(21px,2.15vw,30px); }
+body.page-home .home-about-text #home-about-title { font-family:var(--sans);font-size:clamp(23px,2.1vw,30px);font-weight:600;text-transform:none;text-align:left;letter-spacing:0;margin:0 0 24px; }
+body.page-home .home-about-text .home-quote { margin-left:0;margin-right:0; }
+@media(max-width:1100px) { body.page-home .home-hero-title { font-size:clamp(21px,2.35vw,26px); } }
+@media(max-width:600px) { body.page-home .home-hero-title { font-size:24px; } }

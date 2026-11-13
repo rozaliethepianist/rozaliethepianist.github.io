@@ -805,7 +805,7 @@ body > [data-social-rail] .social-rail { pointer-events: auto; }
 
 /* DARK: Home page */
 .notion-contact-form--dark .notion-contact-frame-wrap {
-  background: #0D1926;
+  background: #000;
 }
 
 .notion-contact-form--dark .notion-contact-iframe {
