@@ -12,3 +12,21 @@ body.page-media .media-hero-copy a:focus-visible { outline:2px solid var(--blue)
  body.page-media .about-c4 .about-hero .media-hero-copy h1 { font-size:clamp(23px,3.8vw,32px);max-width:30ch;margin-inline:auto; }
  body.page-media .about-c4 .about-hero>img { position:relative;inset:auto;width:100%;height:clamp(280px,55vw,520px);object-fit:cover;object-position:55% 65%; }
 }
+
+/* Editorial links follow the document-link treatment, with hover-only underline removal. */
+body.page-media :is(a.media-text-link,.media-hero-copy a) { color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;transition:color var(--duration-fast) opacity var(--duration-fast); }
+body.page-media :is(a.media-text-link,.media-hero-copy a):focus-visible { outline:2px solid var(--blue);outline-offset:4px;border-radius:2px; }
+@media (any-hover:hover) and (any-pointer:fine) {
+ body.page-media :is(a.media-text-link,.media-hero-copy a):hover { color:var(--blue);text-decoration:none;opacity:1; }
+
+}
+@media (prefers-reduced-motion:reduce) { body.page-media :is(a.media-text-link,.media-hero-copy a) { transition:none; } }
+
+/* Dim each credit fragment independently so only the link brightens on hover. */
+body.page-media .about-photos > #photo-credit { opacity:1; }
+body.page-media .about-photos > #photo-credit > span,
+body.page-media .about-photos > #photo-credit > a { opacity:.25; }
+body.page-media .about-photos > #photo-credit > a:focus-visible { opacity:1; }
+@media (any-hover:hover) and (any-pointer:fine) {
+ body.page-media .about-photos > #photo-credit > a:hover { opacity:1; }
+}

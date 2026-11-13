@@ -85,7 +85,7 @@ window.ROZALIE_CONTENT = {
   "cz": "Pro ty, kteří chtějí nahlédnout do zákulisí"
 },
   "common_don_t_stress_out_nail_it_ohktm": {
-  "en": "Enjoy piano music that comes alive!",
+  "en": "Enjoy Piano music that comes alive!",
   "cz": "Užijte si klavírní hudbu, která ožívá!"
 },
   "home_i_want_to_study_in_the_netherlands_383w2": {
@@ -165,7 +165,7 @@ window.ROZALIE_CONTENT = {
     "cz": "Klavíristka"
   },
   "home_czech_solo_pianist_is_known_for_her_8kqva": {
-  "en": "Czech solo pianist Rozálie Stoklasová is well known for her distinctive touch, technical skills, and colorful expressivity. She received the IAFM Köln Award 2024 and made her debut as a solo pianist at Muziekgebouw Eindhoven in April 2026. She also works as a choir accompanist and chamber musician.",
+  "en": "Czech solo pianist Rozálie Stoklasová is well known for her distinctive touch, technical skills, and colorful expressivity. She was awarded \"The IAFM Köln Award 2024\" and she made her debut as a solo pianist at the Muziekgebouw Eindhoven in April 2026. She also works as a choir accompanist and chamber musician.",
   "cz": "Česká sólová klavíristka Rozálie Stoklasová je známá osobitým úhozem, technickými dovednostmi a barevnou expresivitou. Získala IAFM Köln Award 2024 a v dubnu 2026 debutovala jako sólová klavíristka v Muziekgebouw Eindhoven. Působí také jako korepetitorka sborů a komorní hráčka."
 },
   "home_piano_teacher_v56qn": {
@@ -173,7 +173,7 @@ window.ROZALIE_CONTENT = {
     "cz": "Učitelka klavíru"
   },
   "home_has_always_been_drawn_to_the_art_h1uec": {
-  "en": "Rozálie has always been fascinated by the art of giving inspiring piano lessons. During her studies, she completed pedagogical training and obtained a Teaching Certificate covering psychology and didactics in piano teaching. She works with private and conservatory students.",
+  "en": "Rozálie has always been fascinated by the art of giving inspiring piano lessons. During her studies, she took part in pedagogical training and obtained a Teaching Certificate covering knowledge of psychology and didactics in piano. She works with private and conservatory students.",
   "cz": "Rozálii vždy fascinovalo umění vést inspirativní klavírní lekce. Během studia absolvovala pedagogickou přípravu a získala Teaching Certificate zahrnující psychologii a didaktiku klavírní výuky. Pracuje se soukromými studenty i se studenty konzervatoře."
 },
   "home_is_pursuing_a_master_s_degree_in_2iji3": {
@@ -1486,7 +1486,7 @@ window.ROZALIE_CONTENT = {
   "cz": "Klavíristka"
 },
   "home_hero_piano_teacher_mumpj": {
-  "en": "Piano Teacher",
+  "en": "Piano teacher",
   "cz": "Učitelka klavíru"
 },
   "home_hero_quote_author_hxphx": {
@@ -1518,11 +1518,11 @@ window.ROZALIE_CONTENT = {
 "media_enjoy_music_cf6zw": {"en": "and enjoy the music", "cz": "a vychutnejte si hudbu"},
 "media_hero_performance_alt_bgvcd": {"en": "Rozálie playing a grand piano under colorful stage lighting", "cz": "Rozálie hraje na klavír v barevném pódiovém osvětlení"},
   "home_intro_current_c7n2a": {
-  "en": "and I keep myself occupied with music as a pianist, teacher, performer, accompanist, and chamber musician. Despite my Czech origin, I have spent a while in the Netherlands, specifically in the cozy city of Maastricht, where I have been living and studying for five years now. During this time, I have gained a wealth of experience, not only as a musician but also as a person.",
+  "en": "and I keep myself occupied with music as a pianist, teacher, performer, accompanist, and chamber musician. Despite my Czech origin, I have spent a while in the Netherlands, concretely in the cozy city of Maastricht, where I have been living and studying for five years now. During this time, I gained an endless amount of experience, not only as a musician but also as a person.",
   "cz": "a hudbě se věnuji jako klavíristka, učitelka, interpretka, korepetitorka a komorní hráčka. Přestože pocházím z Česka, už nějakou dobu žiji v Nizozemsku, konkrétně v útulném Maastrichtu, kde již pět let žiji a studuji. Za tu dobu jsem získala nespočet zkušeností nejen jako hudebnice, ale také jako člověk."
 },
   "home_teaching_passion_f4q8b": {
-  "en": "Music is a great passion that comes with great responsibility. As a teacher, I help my students navigate it.",
+  "en": "Music is a big passion, which brings a big responsibility. As a teacher, I help my students to deal with it.",
   "cz": "Hudba je velká vášeň, která s sebou přináší velkou odpovědnost. Jako učitelka pomáhám svým studentům se v ní zorientovat."
 },
   "home_certificate_lead_r2m5x": {
@@ -1530,7 +1530,7 @@ window.ROZALIE_CONTENT = {
   "cz": "Mám "
 },
   "home_certificate_story_w9k3d": {
-  "en": " in piano pedagogy, and over the past few years, I have realized how important it is to encourage pupils’ imaginations and allow them to fully appreciate the unique connection between music and fantasy. Music is not only about technical brilliance, but also about enjoyment, fun, and personal creativity that can be truly eye-opening.",
+  "en": " in piano pedagogy and within the past few years, I realized how important it is to encourage the imagination of pupils and allow them to fully appreciate the unique connection between music and fantasy. Because music is not only about technical brilliance, but also about enjoyment, fun and personal creation that might be very eye-opening.",
   "cz": " z klavírní pedagogiky a během posledních let jsem si uvědomila, jak důležité je podporovat představivost žáků a umožnit jim naplno ocenit jedinečné spojení hudby a fantazie. Hudba není jen o technické brilanci, ale také o radosti, zábavě a osobní tvorbě, která může otevírat nové obzory."
 }
 };
