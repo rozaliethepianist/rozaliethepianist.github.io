@@ -1,10 +1,10 @@
 /* Scoped article links on Home and the article catalogue. */
 .page-home .article-actions { display:flex; flex-direction:column; align-items:center; gap:12px; width:100%; margin-top: 12px;}
 .page-home .work-promo.article .article-actions .button { max-width:100%; white-space:normal; text-align:center; }
-.page-articles { background:var(--bg-light); color:#171717; }
+.page-articles { background:var(--bg-light); color:var(--palette-navy); }
 .page-articles .articles-page { width:min(100%,var(--site-max)); margin-inline:auto; }
 .page-articles .articles-list { list-style:none; padding:0; margin:40px auto 0; max-width:850px; display:grid; gap:24px; }
-.page-articles .article-entry { padding:30px; border:1px solid #408bb638; border-radius:18px; background:#fff; text-align:left; }
+.page-articles .article-entry { padding:30px; border:1px solid color-mix(in srgb,var(--palette-blue) 22%,transparent); border-radius:18px; background:var(--palette-ivory); text-align:left; }
 .page-articles .article-entry h2 { font:400 clamp(20px,2.2vw,28px)/1.45 var(--serif); margin:0 0 16px; overflow-wrap:anywhere; }
 .page-articles .article-entry p { margin:0 0 24px; }
 .page-articles .articles-note { font-size:13px; margin-top:30px; }

@@ -49,7 +49,7 @@ body:is(.page-home,.page-lessons) .hero-certificate-link > img {
   object-fit: contain;
 }
 body:is(.page-home,.page-lessons) .hero-certificate-link:focus-visible {
-  outline: 3px solid var(--blue,#408bb6);
+  outline: 3px solid var(--blue,var(--palette-blue));
   outline-offset: 3px;
 }
 @media (any-hover:hover) and (any-pointer:fine) {

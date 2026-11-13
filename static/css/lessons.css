@@ -1,7 +1,7 @@
 /* Piano Lessons only. Desktop measures follow the current 1024.5 x 3432 PDF.
    The page canvas scales to 1440px; narrow layouts reflow for readable text.
    Shared UI and other routes keep their existing owners in site.css. */
-.page-lessons { --bg-light: #f8fafc; --bg-dark: var(--brown); background: var(--bg-dark); color: #111; }
+.page-lessons { --bg-light: var(--palette-cream); --bg-dark: var(--brown); background: var(--bg-dark); color: var(--palette-navy); }
 .page-lessons [data-site-header] { height: 0; }
 .page-lessons .lessons-main { width: min(100%,1440px); margin-inline: auto; container-type: inline-size; isolation: isolate; background: var(--bg-dark); }
 /* One continuous plane replaces separately rounded slide polygons. */
@@ -62,15 +62,15 @@
 .page-lessons .lessons-online .rate-grid { margin: 0; gap: 2.8cqw; }
 .page-lessons .lessons-online .rates-aside { padding-top: 6.6cqw; gap: 5.7cqw; }
 .page-lessons .lessons-online .rates-aside .note { margin-top: 2.5cqw; }
-.page-lessons .lessons-reviews { --bg-light: #fff; background: transparent; padding: 0; color: #111; }
+.page-lessons .lessons-reviews { --bg-light: var(--palette-sand); background: transparent; padding: 0; color: var(--palette-navy); }
 .page-lessons .lessons-reviews h2 { height: 7.57cqw; font: 400 2.25cqw/1.4 var(--sans); margin: 0; padding-top: 1.75cqw; }
-.page-lessons .reviews-grid { background: #fff; width: 100%; padding: 7.1cqw 8.8cqw 2.5cqw; gap: 8.4cqw; }
+.page-lessons .reviews-grid { background: var(--palette-sand); width: 100%; padding: 7.1cqw 8.8cqw 2.5cqw; gap: 8.4cqw; }
 .page-lessons .review { margin: 0; font: italic 400 1.12cqw/1.37 var(--sans); }
 .page-lessons .review p { margin: 0 0 2.5cqw; }
 .page-lessons .review cite { font: italic 400 .79cqw/1.4 var(--sans); }
 .page-lessons .lessons-opinion { min-height: 11.4cqw; background: linear-gradient(77deg,var(--bg-light) 69%,var(--bg-dark) 69%); }
 .page-lessons .lessons-opinion h2 { font: 400 1.8cqw/1.4 var(--sans); }
-.page-lessons .site-footer { width: min(100%,1440px); margin-inline: auto; background: linear-gradient(77deg,var(--bg-light) 71%,var(--bg-dark) 71%); color: #746a63; }
+.page-lessons .site-footer { width: min(100%,1440px); margin-inline: auto; background: linear-gradient(77deg,var(--bg-light) 71%,var(--bg-dark) 71%); color: var(--palette-brown); }
 /* Narrow layouts preserve every source section while keeping text readable.
    The desktop diagonal becomes consecutive light/dark panels. */
 @media(max-width:1100px) {
@@ -110,7 +110,7 @@
  .page-lessons .rates-aside .note,.page-lessons .lessons-online .rates-aside .note { font-size: 12px; line-height: 1.6; margin-top: 20px; }
  .page-lessons .rates-aside .aside-last { font-size: 13px; white-space: normal; }
  .page-lessons .lessons-online .rates-left h2 { font-size: 25px; margin-bottom: 30px; }.page-lessons .online-description { font-size: 14px; line-height: 1.6; margin-bottom: 35px; }
- .page-lessons .lessons-reviews { background: #fff; }.page-lessons .lessons-reviews h2 { height: auto; font-size: 28px; padding: 40px 20px 0; }
+ .page-lessons .lessons-reviews { background: var(--palette-sand); }.page-lessons .lessons-reviews h2 { height: auto; font-size: 28px; padding: 40px 20px 0; }
  .page-lessons .reviews-grid { padding: 40px max(26px,7%) 55px; gap: 30px; }.page-lessons .review { font-size: 14px; line-height: 1.5; }.page-lessons .review p { margin-bottom: 22px; }.page-lessons .review cite { font-size: 11px; }
  .page-lessons .lessons-opinion { min-height: 150px; }.page-lessons .lessons-opinion h2 { font-size: 22px; }.page-lessons .site-footer { background: var(--bg-light); }
 }
@@ -138,7 +138,7 @@
 .page-lessons .rate-photo img { position: absolute; max-width: none; height: auto; width: 149.62%; left: -24.81%; top: 0; aspect-ratio: auto; }
 .page-lessons .lessons-online .rate-photo img { width: 199.15%; left: -28.21%; top: -1.805%; }
 .page-lessons .header-logo img { filter: brightness(0); }
-@media(min-width:1101px) { .page-lessons .footer-right { color: #f8fafc; }.page-lessons .footer-right img { filter: brightness(0) invert(1); } }
+@media(min-width:1101px) { .page-lessons .footer-right { color: var(--palette-cream); }.page-lessons .footer-right img { filter: brightness(0) invert(1); } }
 @media(max-width:1100px) {
  .page-lessons .lessons-hero-photo { left: auto; right: 0; top: auto; bottom: 0; width: min(100%,760px); height: 400px; clip-path: polygon(15% 0,100% 0,100% 100%,0 100%); }
  .page-lessons .lessons-hero-photo img { width: 900px; height: 600px; left: calc(50% - 450px); top: -90px; transform: rotate(90deg); }
@@ -204,10 +204,10 @@
   }
 }
 /* Short, always-visible answers keep the teaching information accessible. */
-.page-lessons .lessons-faq{background:var(--bg-light,#f8fafc);color:#111;padding:clamp(18px,2.5cqw,28px) clamp(24px,7cqw,100px) clamp(20px,4cqw,42px)}
+.page-lessons .lessons-faq{background:var(--bg-light,var(--palette-cream));color:var(--palette-navy);padding:clamp(18px,2.5cqw,28px) clamp(24px,7cqw,100px) clamp(20px,4cqw,42px)}
 .page-lessons .lessons-faq>h2{text-align:center;font:400 2.25cqw/1.4 var(--sans);margin:0 0 36px}
 .page-lessons .lessons-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px;max-width:1100px;margin-inline:auto}
-.page-lessons .lessons-faq-item{border-top:1px solid #408bb640;padding-top:20px;min-width:0}
+.page-lessons .lessons-faq-item{border-top:1px solid color-mix(in srgb,var(--palette-blue) 25%,transparent);padding-top:20px;min-width:0}
 .page-lessons .lessons-faq-item h3{font:600 1.12cqw/1.5 var(--sans);margin:0 0 10px;text-transform:none;letter-spacing:normal}
 .page-lessons .lessons-faq-item p{font:italic 400 1.12cqw/1.37 var(--sans);margin:0;overflow-wrap:anywhere}
 @media(max-width:768px){.page-lessons .lessons-faq-grid{grid-template-columns:1fr;gap:24px}}
@@ -229,7 +229,7 @@
 }
 
 .page-lessons .lessons-faq {
-  background: #fff;
+  background: var(--palette-sand);
 }
 @media (max-width: 1100px) {
   .page-lessons .lessons-faq {
@@ -237,7 +237,7 @@
   }
 }
 
-.lesson-quote-mark { position: relative; font:400 44px/0 var(--serif); color:#c5c2ba; pointer-events:none; box-sizing: border-box; top: .75rem;}
+.lesson-quote-mark { position: relative; font:400 44px/0 var(--serif); color:var(--palette-gold); pointer-events:none; box-sizing: border-box; top: .75rem;}
 @media(max-width:768px) { .lesson-quote-mark {font-size:30px; top: .15rem;} }
 
 .lessons-hero-subtitle { font-family: var(--serif-decor) }

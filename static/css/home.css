@@ -97,7 +97,7 @@
   height: min(63.2vw, 910px);
   min-height: 0;
   overflow: visible;
-  color: #171717;
+  color: var(--palette-navy);
 }
 .page-home .home-hero-photo {
   position: absolute;
@@ -407,7 +407,7 @@
 .page-home .home-about-text .eyebrow{font:400 16px/1.4 var(--sans);letter-spacing:0}
 .page-home .home-about-text .closing{font:400 13.7px/1.5 var(--sans);letter-spacing:0}
 .page-home .home-quote{position:relative}
-.page-home .home-quote::before,.page-home .home-quote::after{position:absolute;font:400 44px/1 var(--serif);color:#c5c2ba;pointer-events:none}
+.page-home .home-quote::before,.page-home .home-quote::after{position:absolute;font:400 44px/1 var(--serif);color:var(--palette-gold);pointer-events:none}
 .page-home .home-quote::before{content:"“";left:-24px;top:-16px}
 .page-home .home-quote::after{content:"”";right:-18px;bottom:-20px}
 .page-home .work-photo{position:relative;overflow:hidden;aspect-ratio:1}
@@ -528,7 +528,7 @@
  .page-home .menu-toggle{color:#fff}
 }
 /* The current Home PDF uses true black; other page planes inherit their defaults. */
-.page-home{--bg-dark:#000}
+.page-home{--bg-dark:var(--palette-navy)}
 /* Literal saved Home text runs: Decorative Bold, .099em tracking. */
 .page-home .home-hero-title{line-height:1.4672}
 .page-home .service-primary,.page-home .service-secondary{letter-spacing:.099em}

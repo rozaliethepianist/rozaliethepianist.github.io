@@ -1,42 +1,59 @@
-/* Shared defaults only. Art-directed coordinates remain with their page rules.
-   Override --bg-light / --bg-dark directly on body or a paint-owning section.
-   These inherited properties deliberately have no frozen effective-color alias. */
+/* Rozalie The Pianist - unified press-kit / links / floral palette (2026-11-13).
+   Brand colors and surface roles are centralized here. Page CSS retains
+   editorial geometry, imagery, masks and local dark/light plane choices. */
 :root {
-  /* Palette: text colors and independent component variants are not page planes. */
-  --white: #fff;
-  --ink: #080808;
-  --cream: #eae5db;
-  --cream-card: #f9f1df;
-  --brown: #604a3f;
-  --brown-deep: #3f3933;
-  --blue: #408bb6;
-  --blue-hover: #32769d;
-  --text-body: #1f1c19;
+  /* Brand primitives: do not use decorative gold as small body text. */
+  --palette-cream: #F5ECDE;       /* principal warm paper */
+  --palette-sand: #EAE5DB;        /* secondary paper from press kit */
+  --palette-ivory: #FCF8F1;       /* foreground cards, forms */
+  --palette-linen: #DECFBD;       /* section accents */
+  --palette-navy: #0D1926;       /* ink and midnight stage */
+  --palette-navy-raised: #1C2B3B;
+  --palette-brown: #5C4B46;      /* warm stage from press kit */
+  --palette-brown-rich: #734F3A; /* featured cards and details */
+  --palette-brown-deep: #49362E;
+  --palette-gold: #B89B6C;
+  --palette-gold-light: #D2AA76;
+  --palette-blue: #3A6BB1;       /* interactive actions */
+  --palette-blue-hover: #2C5387;
+  --palette-blue-tint: #D9E4F4;
+  --palette-white: #FFFFFF;
 
-  /* Primary surfaces: inherit root -> page -> optional local section. */
-  --bg-light: #fff;
-  --bg-dark: #050505;
+  /* Existing component API is preserved. */
+  --white: var(--palette-white);
+  --ink: var(--palette-navy);
+  --cream: var(--palette-cream);
+  --cream-card: var(--palette-ivory);
+  --brown: var(--palette-brown);
+  --brown-deep: var(--palette-brown-deep);
+  --blue: var(--palette-blue);
+  --blue-hover: var(--palette-blue-hover);
+  --text-body: var(--palette-navy);
 
-  /* Explicit component variants preserve existing artwork palettes. */
-  --surface-accent: var(--brown);
-  --surface-card-light: var(--cream-card);
-  --surface-card-dark: #292929;
-  --surface-form-light: #eee;
-  --surface-field-light: #f4f4f4;
-  --surface-field-dark: #171717;
-  --surface-media: #181818;
-  --surface-iframe: #111;
-  --surface-reviews: #f8f8f8;
-  --surface-rate-1: #fff4e6;
-  --surface-rate-2: #f0cabf;
-  --surface-rate-3: #db9380;
-  --surface-online-1: #e6efff;
-  --surface-online-2: #ccd7f0;
-  --surface-online-3: #9ed7e7;
-  --surface-nav-light: #f6f1e8;
-  --surface-nav-dark: #40352e;
-  --surface-header-light: #fff;
-  --surface-header-contrast: #171512;
+  /* Primary planes (page-selectable, no duplicate hard-coded whites/blacks). */
+  --bg-light: var(--palette-cream);
+  --bg-dark: var(--palette-navy);
+
+  /* Shared component surfaces and semantic contrasts. */
+  --surface-accent: var(--palette-brown-rich);
+  --surface-card-light: var(--palette-ivory);
+  --surface-card-dark: var(--palette-navy-raised);
+  --surface-form-light: var(--palette-ivory);
+  --surface-field-light: var(--palette-cream);
+  --surface-field-dark: var(--palette-navy-raised);
+  --surface-media: var(--palette-navy-raised);
+  --surface-iframe: var(--palette-navy);
+  --surface-reviews: var(--palette-sand);
+  --surface-rate-1: var(--palette-ivory);
+  --surface-rate-2: var(--palette-linen);
+  --surface-rate-3: var(--palette-gold-light);
+  --surface-online-1: #EDF3FB;
+  --surface-online-2: var(--palette-blue-tint);
+  --surface-online-3: #B4C9E7;
+  --surface-nav-light: var(--palette-ivory);
+  --surface-nav-dark: var(--palette-navy-raised);
+  --surface-header-light: var(--palette-cream);
+  --surface-header-contrast: var(--palette-navy);
 
   /* Font roles: Telegraf has no supplied web license; Manrope is the verified fallback. */
   --sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;

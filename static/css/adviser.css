@@ -1,10 +1,10 @@
 /* Dutch Study Adviser only. Current 1024.5 x 3436.5 PDF/HTML composition.
    Separate source panels are joined into one continuous background plane. */
-.page-dutch { --bg-light: #fff; --bg-dark: var(--brown); --adviser-paper: #fff; background: var(--bg-dark); color: #111; }
+.page-dutch { --bg-light: var(--palette-cream); --bg-dark: var(--brown); --adviser-paper: var(--palette-cream); background: var(--bg-dark); color: var(--palette-navy); }
 .page-dutch [data-site-header] { height: 0; }
-.page-dutch .site-header { color: #111; }
+.page-dutch .site-header { color: var(--palette-navy); }
 .page-dutch .header-logo img { filter: brightness(0); }
-.page-dutch .social-rail { color: #111; }
+.page-dutch .social-rail { color: var(--palette-navy); }
 .page-dutch .adviser-main { width: min(100%,1440px); margin-inline: auto; flex: 0 0 auto; container-type: inline-size; background: var(--bg-dark); isolation: isolate; }
 .adviser-main::before { content: ''; position: absolute; inset: 0; z-index: 0; background: linear-gradient(to bottom,var(--bg-light) 0 112.445cqw,var(--adviser-paper) 112.445cqw); clip-path: polygon(0 0,65.73% 0,52.67% 56.2225cqw,39.61% 112.445cqw,52.23% 169.107cqw,65.58% 225.3294cqw,68.77% 240.32cqw,60.31% 281.552cqw,62% 289.122cqw,0 289.122cqw); pointer-events: none; }
 .adviser-main > section { position: relative; z-index: 2; }
@@ -21,7 +21,7 @@
 .adviser-main .adviser-hero-cta { margin: 4.5cqw 0 0 16.8cqw; width: 28.1cqw; min-height: 5.65cqw; font-size: 1.16cqw; letter-spacing: .215em; white-space: nowrap; padding: 1cqw 1.5cqw; }
 .adviser-main .adviser-welcome { font: 400 1.31cqw/1.4 var(--sans); text-transform: uppercase; margin: 6.3cqw 0 0; }
 .adviser-process { height: 56.2225cqw; color: #fff; }
-.adviser-introduction { position: absolute; left: 15.65%; top: 9.6cqw; width: 33.84%; color: #111; text-align: center; }
+.adviser-introduction { position: absolute; left: 15.65%; top: 9.6cqw; width: 33.84%; color: var(--palette-navy); text-align: center; }
 .adviser-introduction p { font: 400 1.33cqw/1.5 var(--sans); letter-spacing: .041em; margin-bottom: 1.05cqw; white-space: nowrap; }
 .adviser-portrait { width: 100%; aspect-ratio: 462.27 / 469.79; position: relative; overflow: hidden; }
 .adviser-portrait img { width: 100%; max-width: none; height: auto; position: absolute; left: 0; top: -14.06%; }
@@ -36,7 +36,7 @@
 .adviser-process-copy > .button { font-size: 1.31cqw; min-height: 3.7cqw; width: 17.8cqw; padding: .8cqw 1cqw; }
 .adviser-main .adviser-choose { font: 400 1.315cqw/1.4 var(--sans); margin: 6.8cqw 0 0; }
 .adviser-offers { height: 56.662cqw; display: grid; grid-template-columns: 1fr 1fr; gap: 4.65cqw; padding: 1.6cqw 6% 0 7.06%; align-items: start; }
-.adviser-offer { background: var(--surface-card-light); border-radius: 1.15cqw; padding: 3.2cqw 3cqw 2.1cqw; text-align: left; color: #111; min-width: 0; }
+.adviser-offer { background: var(--surface-card-light); border-radius: 1.15cqw; padding: 3.2cqw 3cqw 2.1cqw; text-align: left; color: var(--palette-navy); min-width: 0; }
 .adviser-offer-bundle { background: var(--bg-light); }
 .adviser-offer h2 { font: 700 1.85cqw/1.65 var(--serif); text-align: center; text-transform: uppercase; margin: 0 0 1.85cqw; }
 .adviser-offer h3 { font: 400 1.36cqw/1.4 var(--sans); text-align: center; text-transform: uppercase; margin: 0 0 1.25cqw; }
@@ -49,7 +49,7 @@
 .adviser-offer-bundle .adviser-topics { text-align: center; }
 .adviser-topic-list { font: 400 .976cqw/1.72 var(--sans); padding-left: 1.5em; width: fit-content; margin: 0 0 0 auto; }
 .adviser-offer-bundle .adviser-price { margin-top: 2.3cqw; }
-.adviser-explanation { color: #111; padding-left: 8.3%; padding-top: 5.8cqw; }
+.adviser-explanation { color: var(--palette-navy); padding-left: 8.3%; padding-top: 5.8cqw; }
 .adviser-explanation h2 { font: 400 2.25cqw/1.4 var(--sans); text-transform: uppercase; white-space: nowrap; margin: 0 0 3.6cqw; }
 .adviser-explanation .adviser-steps { width: 45cqw; }
 .adviser-audience { height: 25cqw; }
@@ -57,7 +57,7 @@
 .adviser-story { height: 56.2225cqw; }
 .adviser-story h2 { position: absolute; left: 26.3%; top: 8.5cqw; font: 400 2.25cqw/1.4 var(--sans); text-transform: uppercase; }
 .adviser-story > img { position: absolute; left: 63.5%; top: 8.1cqw; width: 26.07%; height: auto; }
-.adviser-reviews { background: transparent; color: #111; }
+.adviser-reviews { background: transparent; color: var(--palette-navy); }
 .adviser-reviews-title { height: 7.57cqw; padding-top: 1.7cqw; text-align: center; }
 .adviser-reviews-title h2 { font: 400 2.25cqw/1.4 var(--sans); text-transform: uppercase; }
 .adviser-reviews-title p { font: 400 .8cqw/1.4 var(--sans); margin-top: .35cqw; }
@@ -66,16 +66,16 @@
 .adviser-reviews-grid .review p { margin: 0 0 2.5cqw; }.adviser-reviews-grid .review cite { font: italic 400 .79cqw/1.4 var(--sans); }
 .adviser-opinion { min-height: 11.4cqw; background: linear-gradient(77deg,var(--adviser-paper) 69%,var(--bg-dark) 69%); display: flex; align-items: center; justify-content: center; }
 .adviser-opinion h2 { font: 400 1.8cqw/1.4 var(--sans); text-transform: uppercase; }
-.page-dutch .site-footer.footer-dark { width: min(100%,1440px); margin-inline: auto; color: #746a63; background: linear-gradient(77deg,var(--adviser-paper) 71%,var(--bg-dark) 71%); }
-.page-dutch .footer-legal { color: #746a63; }
-@media(min-width:1101px) { .page-dutch .footer-right { color: #f8fafc; } }
+.page-dutch .site-footer.footer-dark { width: min(100%,1440px); margin-inline: auto; color: var(--palette-brown); background: linear-gradient(77deg,var(--adviser-paper) 71%,var(--bg-dark) 71%); }
+.page-dutch .footer-legal { color: var(--palette-brown); }
+@media(min-width:1101px) { .page-dutch .footer-right { color: var(--palette-cream); } }
 /* The current reference has no narrow layout. Reflow preserves its complete
    content and prices while increasing text sizes and removing steep masks. */
 @media(max-width:1100px) {
  .adviser-main::before { display: none; }
  .page-dutch .site-header.header-dark .header-inner { background: var(--bg-light); }
- .page-dutch .site-header.header-dark .menu-toggle { color: #111; }
- .page-dutch .site-header.header-dark .primary-nav { color: #111; background: var(--bg-light); }
+ .page-dutch .site-header.header-dark .menu-toggle { color: var(--palette-navy); }
+ .page-dutch .site-header.header-dark .primary-nav { color: var(--palette-navy); background: var(--bg-light); }
  .page-dutch .social-rail { display: none; }
  .adviser-main .button { border-radius: 18px; }
  .adviser-hero { height: auto; padding: 125px 28px 440px; min-height: 1030px; background: var(--bg-light); }
@@ -113,7 +113,7 @@
  .adviser-reviews-title { background: var(--adviser-paper); height: auto; padding: 30px 25px; }.adviser-reviews-title h2 { font-size: 28px; }.adviser-reviews-title p { font-size: 12px; margin-top: 10px; }
  .adviser-reviews-grid { padding: 45px 30px 55px; gap: 32px; }.adviser-reviews-grid .review { font-size: 14px; line-height: 1.5; }.adviser-reviews-grid .review p { margin-bottom: 24px; }.adviser-reviews-grid .review cite { font-size: 11px; }
  .adviser-opinion { min-height: 150px; background: var(--adviser-paper); padding: 30px 20px; }.adviser-opinion h2 { font-size: 22px; text-align: center; }
- .page-dutch .site-footer.footer-dark { background: var(--adviser-paper); color: #746a63; }.page-dutch .footer-dark .social-icon img { filter: brightness(0); }
+ .page-dutch .site-footer.footer-dark { background: var(--adviser-paper); color: var(--palette-brown); }.page-dutch .footer-dark .social-icon img { filter: brightness(0); }
 }
 @media(max-width:599px) {
  .adviser-hero { padding-top: 115px; min-height: 1050px; }.adviser-hero h2 { font-size: 22px; }.adviser-subtitle { font-size: 16px; }
@@ -203,7 +203,7 @@
 @media(max-width:1100px) { .adviser-tulips { position:static;width:min(100%,380px);margin:35px auto 0; } }
 
 .adviser-quote { position:relative; width:fit-content; max-width:100%; margin-inline:auto; }
-.adviser-quote-mark { position: relative; font:400 44px/0 var(--serif); color:#c5c2ba; pointer-events:none; box-sizing: border-box; top: .75rem;}
+.adviser-quote-mark { position: relative; font:400 44px/0 var(--serif); color:var(--palette-gold); pointer-events:none; box-sizing: border-box; top: .75rem;}
 @media(max-width:768px) { .adviser-quote-mark {font-size:30px; top: .15rem;} }
 
 @media (any-hover: hover) and (any-pointer: fine) {
