@@ -27,9 +27,13 @@ body.page-media .media-hero-copy a {
 
 body.page-media .media-channel-handle {
   font: italic 400 clamp(12px,1cqw,15px)/1.6 var(--sans);
-  opacity: var(--media-channel-opacity);
   margin: 20px 0 0;
   overflow-wrap: anywhere;
+}
+
+body.page-media .media-hero-copy .media-channel-handle a {
+  opacity: var(--media-channel-opacity);
+  text-decoration: none;
 }
 
 body.page-media .about-c4 .about-hero>img {
