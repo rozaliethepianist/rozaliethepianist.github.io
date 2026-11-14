@@ -1,7 +1,5 @@
 
-window.ROZALIE_LINKS = {
-  "siteOrigin": "https://rozaliethepianist.github.io",
-  "name": "Rozálie Stoklasová",
+window.ROZALIE_LINKS = {  "name": "Rozálie Stoklasová",
   "portrait": "/static/image/optimized/about-gallery-1-native-55df75eb98e3.webp",
   "copy": {
     "subtitle": {
