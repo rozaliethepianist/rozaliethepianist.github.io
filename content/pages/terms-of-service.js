@@ -3,144 +3,168 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "en": "Terms and Conditions | Rozalie The Pianist",
     "cz": "Podmínky výuky | Rozalie The Pianist"
   },
-  "terms_heading_h1khc": {
-    "en": "Terms and Conditions",
-    "cz": "Podmínky výuky"
-  },
   "terms_description_rpf3z": {
     "en": "Practical information about private piano lessons, scheduling, payments and changes.",
     "cz": "Praktické informace o soukromé výuce klavíru, domlouvání termínů, platbách a změnách."
   },
-  "terms_intro_w8kg3": {
-    "en": "Private piano lessons with Rozálie Stoklasová. Last updated: November 8, 2026. Please read these terms before arranging lessons. Any additional service-specific conditions must be agreed before you commit.",
-    "cz": "Soukromá výuka klavíru s Rozálií Stoklasovou. Aktualizováno 8. listopadu 2026. Před domluvením výuky si prosím přečtěte tyto podmínky. Případné další podmínky konkrétní služby je nutné dohodnout před závazným sjednáním."
+  "terms_legal_01_p8m4r": {
+    "en": "Terms and Conditions",
+    "cz": "Podmínky výuky"
   },
-  "terms_lessons_heading_ujecb": {
-    "en": "Lesson types and pricing",
-    "cz": "Formy výuky a ceny"
+  "terms_legal_02_p8m4r": {
+    "en": "Private piano teaching · Updated November 14, 2026",
+    "cz": "Soukromá výuka klavíru · Aktualizováno 14. listopadu 2026"
   },
-  "terms_formats_xl279": {
-    "en": "I offer individual piano lessons in Maastricht and online, in English or Czech. You can inquire about a single lesson, ongoing lessons or a package of five 60-minute lessons.",
-    "cz": "Nabízím individuální výuku klavíru v Maastrichtu a online, v angličtině nebo češtině. Můžete se informovat o jednotlivé lekci, pravidelné výuce nebo balíčku pěti 60minutových lekcí."
+  "terms_legal_03_p8m4r": {
+    "en": "Lessons, prices and booking",
+    "cz": "Lekce, ceny a rezervace"
   },
-  "terms_in_person_7ohn7": {
-    "en": "In-person lessons: 45 minutes — {{price_lessons_in_person_45_h3cgj}}; 60 minutes — {{price_lessons_in_person_60_fwrxu}}; five 60-minute lessons — {{price_lessons_in_person_bundle_5_a03bc}}.",
-    "cz": "Prezenční výuka: 45 minut — {{price_lessons_in_person_45_h3cgj}}; 60 minut — {{price_lessons_in_person_60_fwrxu}}; pět 60minutových lekcí — {{price_lessons_in_person_bundle_5_a03bc}}."
+  "terms_legal_04_p8m4r": {
+    "en": "I offer individual piano lessons in Maastricht and online, in English or Czech: 45 minutes, 60 minutes, or a package of five 60-minute lessons.",
+    "cz": "Nabízím individuální lekce klavíru v Maastrichtu a online, v angličtině nebo češtině: 45 minut, 60 minut nebo balíček pěti 60minutových lekcí."
   },
-  "terms_online_prices_o6wbi": {
-    "en": "Online lessons: 45 minutes — {{price_lessons_online_45_3jl6x}}; 60 minutes — {{price_lessons_online_60_0tquw}}; five 60-minute lessons — {{price_lessons_online_bundle_5_o238p}}.",
-    "cz": "Online výuka: 45 minut — {{price_lessons_online_45_3jl6x}}; 60 minut — {{price_lessons_online_60_0tquw}}; pět 60minutových lekcí — {{price_lessons_online_bundle_5_o238p}}."
+  "terms_legal_05_p8m4r": {
+    "en": "Standard prices · EUR / CZK",
+    "cz": "Základní ceny · EUR / CZK"
   },
-  "terms_discount_78tro": {
-    "en": "A 10% student discount is available with proof of enrollment. Email your Statement of Enrollment to request it. Confirm eligibility, whether the discount applies to your chosen lesson or package, the final total, any applicable taxes and what is included before agreeing to lessons.",
-    "cz": "Studenti mohou po doložení studia získat slevu 10 %. Pro její uplatnění zašlete e-mailem potvrzení o studiu. Před sjednáním výuky si potvrďte nárok na slevu, její použití pro zvolenou lekci či balíček, konečnou cenu, případné daně a zahrnuté služby."
+  "terms_legal_06_p8m4r": {
+    "en": "Lesson",
+    "cz": "Lekce"
   },
-  "terms_booking_heading_g110k": {
-    "en": "Booking and scheduling",
-    "cz": "Domlouvání lekcí a termínů"
+  "terms_legal_07_p8m4r": {
+    "en": "In person",
+    "cz": "Prezenčně"
   },
-  "terms_booking_process_ytrnr": {
-    "en": "Email me with your experience, goals and preferred lesson format. We will discuss availability and an exact lesson time, duration, location or online platform, preparation and price. An inquiry is not a confirmed appointment; these details and any additional conditions need to be agreed directly. A parent or guardian should handle arrangements for a child.",
-    "cz": "Napište mi e-mailem, jaké máte zkušenosti a cíle a jakou formu výuky preferujete. Probereme dostupnost, přesný termín a délku lekce, místo nebo online platformu, přípravu a cenu. Samotný dotaz není potvrzenou rezervací; tyto údaje a případné další podmínky je nutné dohodnout přímo. Výuku dítěte by měl domlouvat rodič nebo zákonný zástupce."
+  "terms_legal_08_p8m4r": {
+    "en": "Online",
+    "cz": "Online"
   },
-  "terms_booking_package_nncrf": {
-    "en": "For ongoing lessons or a package, discuss the frequency and individual dates before committing. Changes to agreed dates depend on mutual availability. The website does not confirm bookings, accept payments or submit contact forms.",
-    "cz": "U pravidelné výuky a balíčků si před závaznou dohodou domluvte četnost a jednotlivé termíny. Změny sjednaných termínů závisejí na vzájemné dostupnosti. Web nepotvrzuje rezervace, nepřijímá platby ani neodesílá kontaktní formuláře."
+  "terms_legal_09_p8m4r": {
+    "en": "45 minutes",
+    "cz": "45 minut"
   },
-  "terms_payment_heading_r1xet": {
-    "en": "Payment arrangements",
-    "cz": "Platební podmínky"
+  "terms_legal_10_p8m4r": {
+    "en": "60 minutes",
+    "cz": "60 minut"
   },
-  "terms_payment_details_kl7ow": {
-    "en": "Payment timing and accepted methods for both individual lessons and packages are agreed by email before the service is confirmed. This page does not impose advance payment or a fixed payment deadline. Clarify any payment requirement for holding a time slot and any invoice or payment receipt you need before making a payment.",
-    "cz": "Termín a způsob úhrady jednotlivých lekcí i balíčků se domlouvají e-mailem před potvrzením služby. Tato stránka nestanovuje povinnou platbu předem ani pevnou splatnost. Před platbou si vyjasněte případnou podmínku úhrady pro rezervaci termínu a požadavky na fakturu nebo potvrzení o platbě."
+  "terms_legal_11_p8m4r": {
+    "en": "5 × 60 minutes",
+    "cz": "5 × 60 minut"
   },
-  "terms_cancellations_heading_z3s9z": {
-    "en": "Cancellations and rescheduling",
-    "cz": "Rušení a přesouvání lekcí"
+  "terms_legal_12_p8m4r": {
+    "en": "Both EUR and CZK prices are valid independently; they are not an automatic currency conversion. We confirm the final price and currency before you book. A 10% student discount applies once to individual lessons and packages, on presentation of proof of enrollment.",
+    "cz": "Ceny v EUR i CZK platí samostatně; nejde o automatický přepočet měny. Konečnou cenu a měnu potvrdíme před sjednáním výuky. Studentská sleva 10 % se po doložení studia uplatňuje jednou na jednotlivé lekce i balíčky."
   },
-  "terms_student_changes_zaa31": {
-    "en": "If you need to cancel or move a lesson, email me as soon as possible. Any notice period, distinction between timely and late cancellation, no-show policy, cancellation fee or room charge must be confirmed in writing before you agree to lessons. This page does not itself introduce such a fee.",
-    "cz": "Potřebujete-li lekci zrušit nebo přesunout, napište mi co nejdříve e-mailem. Případnou lhůtu pro zrušení, rozlišení včasného a pozdního zrušení, pravidla při nedostavení se, storno poplatek či náklady na místnost je nutné písemně potvrdit před sjednáním výuky. Tato stránka sama takový poplatek nezavádí."
+  "terms_legal_13_p8m4r": {
+    "en": "Request lessons through the Notion contact form or by email. Sending a form does not confirm a booking: the lesson time and practical arrangements are confirmed individually in writing. A parent or legal guardian makes arrangements for a minor.",
+    "cz": "O lekce požádejte prostřednictvím kontaktního formuláře Notion nebo e-mailem. Odeslání formuláře nepotvrzuje rezervaci: termín a praktické podrobnosti potvrzujeme individuálně písemně. Za nezletilého jedná rodič nebo zákonný zástupce."
   },
-  "terms_teacher_changes_ncxy8": {
-    "en": "If I need to change an appointment, I will contact you as soon as possible. We will discuss an alternative date based on mutual availability and any payment adjustment under the arrangements agreed for your lessons. If illness or an emergency affects either of us, please communicate promptly so we can discuss the next step.",
-    "cz": "Pokud budu potřebovat změnit termín já, ozvu se vám co nejdříve. Probereme náhradní termín podle vzájemné dostupnosti a případné finanční vyrovnání podle dohodnutých podmínek výuky. Pokud jednoho z nás postihne nemoc nebo mimořádná událost, komunikujte prosím bez odkladu, abychom mohli probrat další postup."
+  "terms_legal_14_p8m4r": {
+    "en": "Payments",
+    "cz": "Platby"
   },
-  "terms_packages_heading_k67gs": {
-    "en": "Lesson packages",
-    "cz": "Balíčky lekcí"
+  "terms_legal_15_p8m4r": {
+    "en": "Individual lessons are paid after they take place, within seven calendar days of receiving the invoice or payment request. Packages are paid in advance by bank transfer. Different payment arrangements must be agreed individually in writing.",
+    "cz": "Jednotlivé lekce se platí po uskutečnění, do sedmi kalendářních dnů od doručení faktury nebo platební výzvy. Balíčky se hradí předem bankovním převodem. Jiné platební podmínky je nutné individuálně dohodnout písemně."
   },
-  "terms_package_details_khao5": {
-    "en": "Each piano lesson package contains five 60-minute lessons. Agree the payment schedule, lesson dates and any validity period in writing before purchasing. Any rules for unused lessons, transfers to another person, extensions or a pause for health reasons also need to be agreed at that stage. This page does not impose an expiry date or automatic loss of unused lessons.",
-    "cz": "Každý balíček klavírní výuky obsahuje pět 60minutových lekcí. Před nákupem si písemně dohodněte úhradu, termíny lekcí a případnou dobu platnosti. Zároveň je potřeba dohodnout pravidla pro nevyužité lekce, převod na jinou osobu, prodloužení nebo přerušení ze zdravotních důvodů. Tato stránka nestanovuje datum konce platnosti ani automatické propadnutí nevyužitých lekcí."
+  "terms_legal_16_p8m4r": {
+    "en": "Cancellations, rescheduling and attendance",
+    "cz": "Zrušení, změny termínů a docházka"
   },
-  "terms_refunds_heading_bculc": {
-    "en": "Refunds and unused lessons",
-    "cz": "Vrácení plateb a nevyužité lekce"
+  "terms_legal_17_p8m4r": {
+    "en": "Please notify me in writing as soon as you need to cancel or change a lesson. Instead of canceling, you may reschedule each individual lesson up to three times, subject to mutual availability and written confirmation. Any amount already paid transfers to the new confirmed date; rescheduling is not a new purchase. I may allow exceptions for illness or exceptional circumstances.",
+    "cz": "Pokud potřebujete lekci zrušit nebo přesunout, informujte mě co nejdříve písemně. Místo zrušení můžete každou jednotlivou lekci přesunout nejvýše třikrát, podle vzájemné dostupnosti a po písemném potvrzení. Již zaplacená částka se převádí na nový potvrzený termín; přesun není novým nákupem. Při nemoci či mimořádných okolnostech mohu povolit výjimku."
   },
-  "terms_refund_details_t34um": {
-    "en": "Refund arrangements must be confirmed in writing before you commit, including what happens if I cancel teaching, you end a package early, or illness or exceptional circumstances prevent lessons. Contact me to discuss the unused lessons and any amount to be settled under those arrangements. No blanket non-refundable policy or fixed refund amount is established here. Applicable consumer rights remain unaffected.",
-    "cz": "Podmínky vrácení plateb je nutné písemně potvrdit před závaznou dohodou, včetně situací, kdy výuku zruším já, balíček předčasně ukončíte vy nebo lekcím zabrání nemoc či mimořádné okolnosti. Kontaktujte mě, abychom probrali nevyužité lekce a případné vyrovnání podle těchto podmínek. Tato stránka nezavádí všeobecné pravidlo nevratnosti plateb ani pevnou částku refundace. Příslušná spotřebitelská práva zůstávají zachována."
+  "terms_legal_18_p8m4r": {
+    "en": "For cancellation rather than rescheduling, the standard cancellation charge is 50% of the lesson price with at least 48 hours’ notice, 75% with at least 24 but less than 48 hours’ notice, and normally 100% with less than 24 hours’ notice or absence without prior notice. These are maximum rates, not automatic penalties: the charge may not exceed a reasonable, substantiated amount permitted by applicable law. I account for work performed, costs avoided and replacement bookings, explain the calculation and reduce or waive the charge where required. Any refund is the amount paid less the justified charge; no cost is charged twice.",
+    "cz": "Při zrušení místo přesunu činí standardní storno poplatek 50 % ceny lekce při oznámení alespoň 48 hodin předem, 75 % při oznámení alespoň 24, ale méně než 48 hodin předem a zpravidla 100 % při oznámení méně než 24 hodin předem nebo při absenci bez předchozí omluvy. Jde o maximální sazby, nikoli automatické sankce: poplatek nesmí překročit přiměřenou, doloženou a právně přípustnou výši. Zohledním provedenou práci, ušetřené náklady a obsazení termínu jiným studentem, vysvětlím výpočet a podle právních požadavků poplatek snížím nebo neúčtuji. Refundace odpovídá zaplacené částce snížené o oprávněný poplatek; žádný náklad se neúčtuje dvakrát."
   },
-  "terms_responsibilities_heading_am78u": {
-    "en": "Preparing and learning together",
-    "cz": "Příprava a spolupráce při výuce"
+  "terms_legal_19_p8m4r": {
+    "en": "If I cancel, I will offer a replacement lesson or a corresponding refund. After five or more absences without prior notice during our work together, I may end the teaching arrangement and decline further bookings after notifying you in writing. Completed lessons and justified cancellation charges are settled; the balance for other unused prepaid lessons is refunded.",
+    "cz": "Pokud lekci zruším já, nabídnu náhradní termín nebo odpovídající refundaci. Při pěti nebo více absencích bez předchozí omluvy během spolupráce mohu po písemném oznámení výuku ukončit a odmítnout další rezervace. Vyúčtují se uskutečněné lekce a oprávněné storno náklady; zbývající částka za ostatní nevyužité předplacené lekce se vrátí."
   },
-  "terms_student_duties_b6rjw": {
-    "en": "Please arrive or connect on time, prepare the agreed instrument and materials, and share your goals or questions. Follow the agreed schedule and discuss any difficulties with practice or attendance. Progress depends on individual circumstances, participation and practice; no particular examination or performance result is promised.",
-    "cz": "Přicházejte nebo se připojujte včas, připravte si dohodnutý nástroj a materiály a sdílejte své cíle či otázky. Dodržujte sjednaný harmonogram a případné obtíže s cvičením či docházkou se mnou proberte. Pokrok závisí na individuálních okolnostech, zapojení a cvičení; konkrétní výsledek zkoušky ani výkon nelze zaručit."
+  "terms_legal_20_p8m4r": {
+    "en": "Packages, validity and refunds",
+    "cz": "Balíčky, platnost a refundace"
   },
-  "terms_teacher_duties_meq08": {
-    "en": "I adapt lessons to each student’s individual needs, with patience, respect and attention to musical imagination as well as technique. We discuss learning goals, preparation and suitable study materials as part of organizing your lessons. Please ask if you are unsure what to prepare or bring.",
-    "cz": "Výuku přizpůsobuji individuálním potřebám každého studenta, s trpělivostí, respektem a důrazem na hudební představivost i techniku. Při organizaci lekcí probíráme cíle, přípravu a vhodné studijní materiály. Pokud si nejste jisti, co si připravit nebo přinést, zeptejte se."
+  "terms_legal_21_p8m4r": {
+    "en": "A package contains five 60-minute lessons, normally planned within three calendar months of the first lesson. To use a purchase, take the lesson or confirm a specific lesson date within six calendar months of purchase. A date confirmed within that period remains valid even if the lesson takes place later. For a package, confirm the remaining schedule within that six-month period.",
+    "cz": "Balíček obsahuje pět 60minutových lekcí, standardně plánovaných na tři kalendářní měsíce od první lekce. Nákup uplatníte absolvováním lekce nebo potvrzením konkrétního termínu do šesti kalendářních měsíců od zakoupení. Včas potvrzený termín zůstává platný, i když se lekce uskuteční později. U balíčku v této šestiměsíční lhůtě potvrďte harmonogram zbývajících lekcí."
   },
-  "terms_online_heading_64ae3": {
-    "en": "Online lessons and technical issues",
-    "cz": "Online výuka a technické potíže"
+  "terms_legal_22_p8m4r": {
+    "en": "Contact me before these periods end if you need an extension, a pause or a transfer to another person; these require individual written agreement. My unavailability will not cause you to lose prepaid lessons. Unused lessons do not automatically become nonrefundable: we arrange replacement dates or a refund consistent with our agreement and your statutory rights.",
+    "cz": "Potřebujete-li prodloužení, přerušení nebo převod na jinou osobu, ozvěte se před uplynutím těchto období; vyžadují individuální písemnou dohodu. Moje nedostupnost nezpůsobí ztrátu předplacených lekcí. Nevyužité lekce automaticky nepropadají bez náhrady: domluvíme náhradní termíny nebo refundaci podle dohody a vašich zákonných práv."
   },
-  "terms_online_details_tegjl": {
-    "en": "Have a piano or keyboard, a tablet or computer with a camera and microphone, and a suitable internet connection ready. Check the sound and camera before connecting. We agree the platform in advance; options described on the lessons page include Zoom, Google Meet and Teams.",
-    "cz": "Připravte si klavír nebo keyboard, tablet či počítač s kamerou a mikrofonem a vhodné připojení k internetu. Před připojením zkontrolujte zvuk a kameru. Platformu si domluvíme předem; stránka výuky uvádí například Zoom, Google Meet a Teams."
+  "terms_legal_23_p8m4r": {
+    "en": "Refunds use the amount actually paid. Each package lesson is valued at one fifth of the paid package price, including any discount. Completed lessons are not retrospectively repriced at the single-lesson rate. Where a refund is due, I will confirm the calculation and return it by bank transfer without undue delay; any mandatory refund deadline takes priority.",
+    "cz": "Refundace vychází ze skutečně zaplacené částky. Hodnota jedné lekce v balíčku je pětina zaplacené ceny balíčku včetně případné slevy. Uskutečněné lekce se zpětně nepřeceňují na cenu jednotlivé lekce. Vznikne-li nárok na refundaci, potvrdím výpočet a platbu vrátím bankovním převodem bez zbytečného odkladu; zákonná lhůta má přednost."
   },
-  "terms_online_disruption_h1gk1": {
-    "en": "If either of us has a connection or equipment problem, let the other know promptly. Any make-up time, replacement lesson or payment adjustment depends on the arrangements agreed before booking. This page does not automatically charge for, or promise a refund for, a disrupted session.",
-    "cz": "Při problému s připojením nebo vybavením na kterékoli straně dejte druhému co nejdříve vědět. Případné doplnění času, náhradní lekce či finanční vyrovnání závisí na podmínkách dohodnutých před rezervací. Tato stránka automaticky nestanovuje úhradu narušené lekce ani za ni neslibuje vrácení peněz."
+  "terms_legal_24_p8m4r": {
+    "en": "Learning together and online lessons",
+    "cz": "Spolupráce a online výuka"
   },
-  "terms_materials_heading_tfgas": {
-    "en": "Materials and recordings",
-    "cz": "Materiály a nahrávání"
+  "terms_legal_26_p8m4r": {
+    "en": "Online lessons need a piano or keyboard, a device with a camera and microphone, and a stable internet connection. We agree on the platform and test the setup where needed. Report technical problems promptly. We first try to reconnect; if a meaningful lesson is not possible, we discuss a replacement or fair settlement. A lesson not delivered because of a problem on my side is replaced or refunded.",
+    "cz": "Pro online lekce potřebujete klavír či keyboard, zařízení s kamerou a mikrofonem a stabilní internet. Platformu dohodneme a podle potřeby ověříme nastavení. Technické problémy hlaste ihned. Nejprve se pokusíme připojení obnovit; není-li smysluplná výuka možná, probereme náhradní termín nebo přiměřené vyrovnání. Lekce neuskutečněná kvůli problému na mé straně se nahradí nebo refunduje."
   },
-  "terms_materials_details_zuz2g": {
-    "en": "Respect copyright in scores, teaching materials, photographs and videos. Public access does not grant permission to redistribute content. Ask before recording a lesson and agree its purpose and use. Photographer credits remain on the Media page.",
-    "cz": "Respektujte autorská práva k notám, výukovým materiálům, fotografiím a videím. Veřejná dostupnost neznamená souhlas s dalším šířením. Před nahráváním lekce si vyžádejte souhlas a dohodněte účel a použití nahrávky. Údaje o fotografech zůstávají na stránce Média."
+  "terms_legal_27_p8m4r": {
+    "en": "Respect copyright in sheet music and teaching materials; supplying them does not transfer copyright. Recording or sharing a lesson requires prior agreement from everyone involved, including a parent or guardian where appropriate.",
+    "cz": "Respektujte autorská práva k notám a výukovým materiálům; jejich poskytnutím se autorská práva nepřevádějí. Nahrávání nebo sdílení lekce vyžaduje předchozí dohodu všech zúčastněných, případně rodiče či zákonného zástupce."
   },
-  "terms_consultations_heading_e29cm": {
-    "en": "Other services: Dutch study advising",
-    "cz": "Další služby: poradenství ke studiu v Nizozemsku"
+  "terms_legal_28_p8m4r": {
+    "en": "Consumer rights, contact and changes",
+    "cz": "Spotřebitelská práva, kontakt a změny"
   },
-  "terms_consultation_details_9z5gh": {
-    "en": "Online study advising is a separate service: one 60-minute consultation costs {{price_adviser_single_tszms}}, and three 60-minute consultations cost {{price_adviser_bundle_3_1pbc5}}. Confirm its scope, preparation, scheduling and service-specific conditions directly. Advice draws on my experience and does not guarantee admission, housing, employment, funding or an administrative outcome. Verify requirements with the relevant institution or authority.",
-    "cz": "Online studijní poradenství je samostatnou službou: jedna 60minutová konzultace stojí {{price_adviser_single_tszms}}, tři 60minutové konzultace stojí {{price_adviser_bundle_3_1pbc5}}. Rozsah, přípravu, termíny a konkrétní podmínky si potvrďte přímo. Rady vycházejí z mých zkušeností a nezaručují přijetí, bydlení, zaměstnání, financování ani výsledek úředního řízení. Požadavky si ověřujte u příslušné instituce či úřadu."
+  "terms_legal_29_p8m4r": {
+    "en": "Mandatory consumer rights take priority over these terms. Where a statutory withdrawal right applies to a distance or off-premises agreement, you generally have 14 days from concluding the agreement to withdraw by an unequivocal statement, including by email. Request the standard withdrawal form by email if you wish; using it is not required.",
+    "cz": "Závazná spotřebitelská práva mají před těmito podmínkami přednost. Pokud se na smlouvu uzavřenou na dálku nebo mimo obchodní prostory vztahuje zákonné právo odstoupit, máte zpravidla 14 dní od uzavření smlouvy k odstoupení jednoznačným oznámením, například e-mailem. O vzorový formulář můžete požádat e-mailem; jeho použití není povinné."
   },
-  "terms_general_heading_pggxn": {
-    "en": "Communication, privacy and applicable terms",
-    "cz": "Komunikace, soukromí a platné podmínky"
+  "terms_legal_30_p8m4r": {
+    "en": "If you expressly request teaching during an applicable withdrawal period, I will first explain any proportionate payment for services already provided and confirm your request in writing. Loss of the withdrawal right after full performance requires the legally required prior consent and acknowledgment. Ordinary cancellation charges do not replace statutory withdrawal rights.",
+    "cz": "Pokud výslovně požádáte o výuku během příslušné lhůty pro odstoupení, předem vysvětlím případnou poměrnou úhradu již poskytnutých služeb a vaši žádost písemně potvrdím. Zánik práva odstoupit po úplném poskytnutí vyžaduje zákonem stanovený předchozí souhlas a potvrzení této skutečnosti. Běžné storno nenahrazuje zákonná práva při odstoupení."
   },
-  "terms_general_details_ne9un": {
-    "en": "Please raise questions or concerns promptly by email. Review the current terms and confirm any additional conditions when arranging lessons; this page does not establish a separate amendment procedure. Business registration, address, tax details and any additional service policies should be supplied with the final service agreement.",
-    "cz": "Dotazy či nejasnosti prosím řešte bez odkladu e-mailem. Při domlouvání výuky si přečtěte aktuální podmínky a potvrďte případná další pravidla; tato stránka nestanovuje samostatný postup změn podmínek. Údaje o podnikatelské registraci, adrese, daních a případné další podmínky služby mají být poskytnuty s konečnou dohodou o službě."
+  "terms_legal_31_p8m4r": {
+    "en": "Contact me with questions or concerns so we can seek a fair solution. These terms apply to bookings agreed after they are provided to you. Updates apply to future bookings; existing confirmed arrangements are not changed unilaterally. Personal data is handled as described in the Privacy Policy.",
+    "cz": "S dotazy či připomínkami mě kontaktujte, abychom hledali spravedlivé řešení. Podmínky se vztahují na rezervace sjednané poté, co vám byly poskytnuty. Změny platí pro budoucí rezervace; již potvrzené dohody se jednostranně nemění. Osobní údaje zpracovávám podle zásad ochrany osobních údajů."
   },
-  "terms_rights_a9dhs": {
-    "en": "These terms do not limit rights that cannot lawfully be excluded. Where distance-contract withdrawal rights apply, the necessary information and any arrangements for starting lessons during that period must be provided before agreement. An inquiry or use of this site does not waive those rights.",
-    "cz": "Tyto podmínky neomezují práva, která nelze ze zákona vyloučit. Pokud se uplatní právo na odstoupení od smlouvy uzavřené na dálku, musí být před uzavřením dohody poskytnuty potřebné informace a případná ujednání o zahájení výuky v této lhůtě. Dotaz ani použití webu neznamenají vzdání se těchto práv."
+  "terms_legal_32_p8m4r": {
+    "en": "Privacy Policy",
+    "cz": "Ochrana osobních údajů"
   },
-  "terms_contact_label_4h8c7": {
-    "en": "Questions and lesson inquiries:",
-    "cz": "Dotazy a zájem o výuku:"
+  "terms_reference_intro_n4v7k": {
+    "en": "To support your musical progress, please read these practical terms before booking. We confirm your lesson format, schedule and payment arrangements in writing.",
+    "cz": "Pro dobrou spolupráci a váš hudební rozvoj si před rezervací přečtěte tyto praktické podmínky. Formu výuky, harmonogram a platební podmínky si písemně potvrdíme."
   },
-  "terms_privacy_sentence_w2uxe": {
-    "en": "For information about personal data, email correspondence and external services, see the Privacy Policy.",
-    "cz": "Informace o osobních údajích, e-mailové komunikaci a externích službách najdete v zásadách ochrany osobních údajů."
+  "terms_reference_student_t5r8b": {
+    "en": "Your part in the lessons",
+    "cz": "Vaše role ve výuce"
+  },
+  "terms_reference_teacher_j7n3m": {
+    "en": "My responsibilities as your teacher",
+    "cz": "Moje povinnosti jako učitelky"
+  },
+  "terms_reference_student1_a4r8m": {
+    "en": "Arrive or connect on time and follow our agreed lesson schedule.",
+    "cz": "Přicházejte nebo se připojujte včas a dodržujte domluvený harmonogram."
+  },
+  "terms_reference_student2_a4r8m": {
+    "en": "Prepare the instrument and materials, practice regularly and tell me about any difficulties.",
+    "cz": "Připravujte si nástroj a materiály, pravidelně cvičte a sdělujte mi případné obtíže."
+  },
+  "terms_reference_teacher1_a4r8m": {
+    "en": "Prepare lessons, repertoire and appropriate materials for your level, interests and goals.",
+    "cz": "Připravovat lekce, repertoár a vhodné materiály podle vaší úrovně, zájmů a cílů."
+  },
+  "terms_reference_teacher2_a4r8m": {
+    "en": "Teach with care and respect, help you develop independent practice and communicate schedule changes promptly.",
+    "cz": "Vyučovat pečlivě a s respektem, pomáhat vám rozvíjet samostatné cvičení a včas oznamovat změny termínů."
+  },
+  "terms_reference_progress_p3k8r": {
+    "en": "Progress depends on participation, practice and individual circumstances; no particular examination or performance result is guaranteed.",
+    "cz": "Pokrok závisí na zapojení, cvičení a individuálních okolnostech; konkrétní výsledek zkoušky ani výkon nelze zaručit."
+  },
+  "terms_reference_planning_c7m2p": {
+    "en": "Packages support regular attendance and steady progress. Please review your calendar and agree on lesson dates with me in advance, taking account of our mutual availability.",
+    "cz": "Balíčky podporují pravidelnou docházku a soustavný pokrok. Projděte si prosím svůj kalendář a termíny lekcí se mnou domluvte předem podle našich vzájemných možností."
   }
 });

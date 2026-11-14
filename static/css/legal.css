@@ -1,0 +1,15 @@
+/* Shared layout for the two legal documents. */
+body .legal-page { max-width: 960px; }
+body .legal-page section { margin-block: 32px; padding-top: 20px; border-top: 1px solid color-mix(in srgb,var(--palette-brown) 25%,transparent); }
+body .legal-page p { max-width: 78ch; line-height: 1.8; }
+.legal-table-wrap { overflow-x: auto; margin-block: 24px; }
+.legal-page table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.legal-page caption { text-align: left; font-weight: 600; margin-bottom: 12px; }
+.legal-page th,.legal-page td { text-align: left; padding: 12px; border-bottom: 1px solid color-mix(in srgb,var(--palette-brown) 20%,transparent); }
+.legal-page thead { background: color-mix(in srgb,var(--blue) 10%,transparent); }
+.legal-provider-links { padding-left: 20px; line-height: 2; }
+@media(max-width:600px) { .legal-page th,.legal-page td { padding: 10px 6px; } .legal-page table { font-size: .8rem; } body .legal-page h1 { font-size: clamp(25px,7vw,36px); } }
+
+.legal-page .legal-checklist { padding-left: 22px; max-width: 78ch; line-height: 1.8; }
+.legal-page .legal-checklist li { margin-block: 8px; }
+.legal-page h3 { font: 600 1rem/1.5 var(--sans); margin: 24px 0 12px; }

@@ -3,80 +3,80 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "en": "Privacy Policy | Rozalie The Pianist",
     "cz": "Ochrana osobních údajů | Rozalie The Pianist"
   },
-  "privacy_this_notice_explains_the_current_website_and_jl7ii": {
-    "en": "This notice explains the current website and how to contact Rozálie about personal information. Last updated: November 6, 2026.",
-    "cz": "Toto oznámení popisuje současný web a možnosti kontaktu ohledně osobních údajů. Aktualizováno: 6. listopadu 2026."
+  "privacy_legal_01_p8m4r": {
+    "en": "Privacy Policy",
+    "cz": "Ochrana osobních údajů"
   },
-  "privacy_who_to_contact_43rat": {
-    "en": "Who to contact",
-    "cz": "Koho kontaktovat"
+  "privacy_legal_02_p8m4r": {
+    "en": "Private piano teaching · Updated November 14, 2026",
+    "cz": "Soukromá výuka klavíru · Aktualizováno 14. listopadu 2026"
   },
-  "privacy_pianist_piano_teacher_and_dutch_study_adviser_yc20d": {
-    "en": "Rozálie Stoklasová, pianist, piano teacher and Dutch study adviser based in the Netherlands, is the contact for inquiries sent directly to her. Email",
-    "cz": "Rozálie Stoklasová, klavíristka, učitelka klavíru a poradkyně ke studiu v Nizozemsku, je kontaktní osobou pro dotazy zaslané přímo jí. Napište na"
+  "privacy_legal_03_p8m4r": {
+    "en": "Controller and contact",
+    "cz": "Správce a kontakt"
   },
-  "privacy_about_this_notice_or_your_personal_information_l0nbj": {
-    "en": "about this notice or your personal information.",
-    "cz": "s dotazy k tomuto oznámení nebo svým osobním údajům."
+  "privacy_legal_04_p8m4r": {
+    "en": "Rozálie Stoklasová is the controller of personal data used to answer inquiries and organize private piano teaching in Maastricht and online. Contact: rozalie.stoklasova@gmail.com. A parent or legal guardian should communicate on behalf of a minor; please send only information needed for the lessons.",
+    "cz": "Rozálie Stoklasová je správcem osobních údajů používaných k vyřizování dotazů a organizaci soukromé výuky klavíru v Maastrichtu a online. Kontakt: rozalie.stoklasova@gmail.com. Za nezletilého má komunikovat rodič nebo zákonný zástupce; zasílejte pouze údaje potřebné k výuce."
   },
-  "privacy_browsing_this_website_skuug": {
-    "en": "Browsing this website",
-    "cz": "Prohlížení webu"
+  "privacy_legal_05_p8m4r": {
+    "en": "Data, purposes and legal grounds",
+    "cz": "Údaje, účely a právní základy"
   },
-  "privacy_the_website_serves_static_pages_images_and_vnclr": {
-    "en": "The website serves static pages, images and locally hosted fonts. Its own code does not add analytics, advertising trackers or browser storage for marketing. The hosting service may process technical information such as your IP address, requested pages, device information and access times to deliver and secure the site. Host-managed authentication, security logs and cookies are separate from the website code.",
-    "cz": "Web poskytuje statické stránky, obrázky a lokálně uložená písma. Jeho vlastní kód nepřidává analytiku, reklamní sledování ani úložiště pro marketing. Poskytovatel hostingu může zpracovávat technické informace, například IP adresu, navštívené stránky, údaje o zařízení a časy přístupu, aby web poskytoval a zabezpečil. Přihlašování, bezpečnostní záznamy a cookies hostingu jsou oddělené od kódu webu."
+  "privacy_legal_06_p8m4r": {
+    "en": "I process contact details, messages and relevant attachments from the Notion form and email, lesson preferences and scheduling information, and necessary payment and accounting records. Avoid sending sensitive information that is not needed.",
+    "cz": "Zpracovávám kontaktní údaje, zprávy a relevantní přílohy z formuláře Notion a e-mailu, preference výuky a údaje o termínech a nezbytné platební a účetní záznamy. Neposílejte citlivé údaje, které nejsou potřeba."
   },
-  "privacy_contact_forms_and_email_xhr2r": {
-    "en": "Contact forms and email",
-    "cz": "Kontaktní formuláře a e-mail"
+  "privacy_legal_07_p8m4r": {
+    "en": "Answering booking requests and providing lessons rely on steps requested before a contract or performance of that contract (GDPR Article 6(1)(b)). Required accounting records rely on legal obligations (Article 6(1)(c)). Necessary general correspondence, security and handling claims rely on legitimate interests in running and protecting the teaching practice, balanced against your rights (Article 6(1)(f)). If an optional use requires consent, it is requested separately and may be withdrawn.",
+    "cz": "Vyřízení žádosti o rezervaci a poskytování lekcí se opírá o kroky na vaši žádost před uzavřením smlouvy nebo plnění smlouvy (čl. 6 odst. 1 písm. b GDPR). Povinná účetní evidence se opírá o právní povinnosti (písm. c). Nezbytná obecná korespondence, zabezpečení a řešení nároků se opírají o oprávněné zájmy na provozu a ochraně výuky, vyvážené vašimi právy (písm. f). Vyžaduje-li nepovinné použití souhlas, je vyžádán samostatně a lze jej odvolat."
   },
-  "privacy_the_displayed_forms_cannot_submit_messages_their_7ctbo": {
-    "en": "The displayed forms cannot submit messages. Their fields remain in the page while you use it; the website code does not transmit or save those entries. Please do not enter sensitive information. Selecting the email link opens your email application. If you choose to email Rozálie, your email address, message and any attachments are processed through the email services used for that correspondence.",
-    "cz": "Zobrazené formuláře zprávy neodesílají. Vyplněné údaje zůstávají ve stránce během jejího používání; kód webu je nepřenáší ani neukládá. Nevkládejte citlivé informace. E-mailový odkaz otevře vaši poštovní aplikaci. Pokud Rozálii napíšete, vaše e-mailová adresa, zpráva a případné přílohy se zpracují prostřednictvím e-mailových služeb použitých pro tuto komunikaci."
+  "privacy_legal_08_p8m4r": {
+    "en": "Providers, access and transfers",
+    "cz": "Poskytovatelé, přístup a předávání"
   },
-  "privacy_purpose_and_legal_grounds_ejeml": {
-    "en": "Purpose and legal grounds",
-    "cz": "Účel a právní základy"
+  "privacy_legal_09_p8m4r": {
+    "en": "The embedded contact form loads automatically from Notion. Notion processes submitted information and technical connection data. Rozálie and other authorized persons may access responses only as needed for administration and teaching. Access should be limited to their role and protected by appropriate account and confidentiality measures.",
+    "cz": "Vložený kontaktní formulář se automaticky načítá z Notion. Notion zpracovává odeslané informace a technické údaje připojení. Rozálie a další oprávněné osoby mohou k odpovědím přistupovat pouze v rozsahu potřebném pro administrativu a výuku. Přístup má odpovídat jejich roli a být chráněn vhodným zabezpečením účtů a důvěrností."
   },
-  "privacy_information_you_send_directly_is_used_to_rr6iy": {
-    "en": "Information you send directly is used to answer your inquiry and, where requested, discuss or arrange lessons, consultations or performances. Processing needed to take steps at your request or provide an agreed service is based on that purpose. Relevant legal obligations may require some service records. Security and necessary correspondence may involve legitimate interests, subject to your rights. Where consent is required for an optional use, it must be requested separately and can be withdrawn for future processing.",
-    "cz": "Přímo zaslané informace se používají k odpovědi na dotaz a na požádání k projednání nebo sjednání lekcí, konzultací či vystoupení. Zpracování nezbytné k provedení kroků na vaši žádost nebo poskytnutí dohodnuté služby se opírá o tento účel. Právní povinnosti mohou vyžadovat uchování některých záznamů o službách. Bezpečnost a nezbytná korespondence mohou zahrnovat oprávněné zájmy s ohledem na vaše práva. Je-li pro nepovinné použití nutný souhlas, musí být vyžádán samostatně a lze jej pro budoucí zpracování odvolat."
+  "privacy_legal_10_p8m4r": {
+    "en": "The site is configured for GitHub Pages; GitHub logs visitor IP addresses for security. Email is handled by email providers. YouTube supplies video metadata, thumbnails and embedded players; some YouTube connections occur as pages load, and playback makes further connections. External social and photo links lead to services with their own privacy practices. There is no website checkout or payment processor.",
+    "cz": "Web je nastaven pro GitHub Pages; GitHub zaznamenává IP adresy návštěvníků pro zabezpečení. E-mail zajišťují poskytovatelé e-mailových služeb. YouTube poskytuje metadata, náhledy a vložené přehrávače; některá spojení s YouTube vznikají již při načtení stránky a další při přehrávání. Externí sociální odkazy a odkazy na fotografie vedou na služby s vlastními pravidly. Web nemá pokladnu ani platební bránu."
   },
-  "privacy_sharing_and_international_services_sl20c": {
-    "en": "Sharing and international services",
-    "cz": "Sdílení a zahraniční služby"
+  "privacy_legal_11_p8m4r": {
+    "en": "These providers may process information outside the EEA. Where required, transfers must be covered by an applicable adequacy decision or appropriate safeguards such as standard contractual clauses. You can request information about the safeguards relevant to your data. Provider details are available in the linked privacy notices.",
+    "cz": "Tito poskytovatelé mohou zpracovávat údaje mimo EHP. Je-li to vyžadováno, musí být předávání podloženo příslušným rozhodnutím o odpovídající ochraně nebo vhodnými zárukami, například standardními smluvními doložkami. Můžete požádat o informace o zárukách vztahujících se na vaše údaje. Podrobnosti poskytovatelů najdete v odkazovaných zásadách."
   },
-  "privacy_hosting_and_email_providers_process_information_as_8tam1": {
-    "en": "Hosting and email providers process information as needed to supply their services. Clicking a social, press-kit or photo-collection link takes you to another service, whose privacy practices apply. Home requests current video titles and preview images from YouTube as the page loads. About uses locally hosted preview images. Selecting a performance opens a privacy-enhanced YouTube player; that connects your browser to YouTube and may involve cookies, device information and processing outside your country. You may instead use the direct YouTube link. This website does not operate an online checkout or payment processor.",
-    "cz": "Poskytovatelé hostingu a e-mailu zpracovávají údaje podle potřeby pro své služby. Sociální odkazy a odkaz na sbírku fotografií vedou na jiné služby s vlastními pravidly ochrany soukromí. Při načtení úvodu web získává aktuální názvy videí a náhledy z YouTube. Stránka O mně používá místní náhledy. Výběr nahrávky otevře přehrávač YouTube v režimu zvýšené ochrany soukromí; prohlížeč se tím spojí s YouTube a může dojít k použití cookies, údajů o zařízení a zpracování mimo vaši zemi. Můžete místo toho použít přímý odkaz na YouTube. Web neprovozuje online pokladnu ani platební systém."
+  "privacy_legal_12_p8m4r": {
+    "en": "Browser storage and embedded content",
+    "cz": "Úložiště prohlížeče a vložený obsah"
   },
-  "privacy_keeping_information_konc0": {
-    "en": "Keeping information",
+  "privacy_legal_13_p8m4r": {
+    "en": "The website stores your language preference in localStorage; EN | CZ changes it, and the lang URL parameter takes priority. Locally hosted fonts do not require an external font service. The site’s own code does not add advertising or analytics trackers.",
+    "cz": "Web ukládá jazykovou volbu do localStorage; změníte ji pomocí EN | CZ a přednost má parametr lang v URL. Lokálně uložená písma nevyžadují externí službu. Vlastní kód webu nepřidává reklamní ani analytické sledování."
+  },
+  "privacy_legal_14_p8m4r": {
+    "en": "Notion’s Cookie Notice describes cookies, pixel tags, local storage and similar technologies. Some serve essential functions; others support analytics or personalization. Its privacy documentation explains how customer data and access permissions are managed. These general notices do not establish which technologies run in this particular embedded form. Automatically loading content is not consent to nonessential tracking. You can contact me directly by email instead of using the form.",
+    "cz": "Oznámení Notion o cookies popisuje cookies, sledovací pixely, místní úložiště a obdobné technologie. Některé zajišťují nezbytné funkce, jiné analytiku či personalizaci. Dokumentace ochrany soukromí vysvětluje správu zákaznických údajů a přístupových oprávnění. Tato obecná oznámení neurčují, které technologie běží v tomto konkrétním vloženém formuláři. Automatické načtení obsahu není souhlasem s nepovinným sledováním. Místo formuláře mě můžete kontaktovat přímo e-mailem."
+  },
+  "privacy_legal_15_p8m4r": {
+    "en": "Retention",
     "cz": "Uchovávání údajů"
   },
-  "privacy_the_website_has_no_database_of_form_y3vuf": {
-    "en": "The website has no database of form submissions. Email correspondence and service records have separate retention needs: responding to your request, providing an agreed service, resolving questions and meeting applicable legal record-keeping requirements. Contact Rozálie to ask which records and retention periods apply to your situation. The supplied website materials do not specify the host’s log retention or an email retention schedule.",
-    "cz": "Web nemá databázi zpráv z formulářů. E-mailová komunikace a záznamy o službách mají samostatné potřeby uchování: odpověď na žádost, poskytnutí dohodnuté služby, řešení dotazů a plnění zákonných archivačních povinností. Kontaktujte Rozálii ohledně konkrétních záznamů a lhůt ve vaší situaci. Dodané podklady neurčují dobu uchování záznamů hostingu ani e-mailů."
+  "privacy_legal_16_p8m4r": {
+    "en": "Contact and lesson correspondence is kept while needed to manage our communication, teaching arrangements, legal obligations or substantiated claims. There is no single fixed retention period for all messages: necessity depends on the purpose, the end of teaching and any unresolved matters. Data is not kept indefinitely solely because no deletion request has been made. You may request deletion at any time; records required by law or necessary for a justified claim may need to be retained. This applies to Notion, email and local copies.",
+    "cz": "Kontaktní a výuková komunikace se uchovává po dobu potřebnou pro naši komunikaci, organizaci výuky, právní povinnosti nebo doložené nároky. Pro všechny zprávy není stanovena jednotná pevná lhůta: potřebnost závisí na účelu, ukončení výuky a případných nevyřešených záležitostech. Údaje se neuchovávají neomezeně jen proto, že nepřišla žádost o výmaz. O odstranění můžete požádat kdykoli; zákonem vyžadované záznamy nebo údaje nezbytné pro oprávněný nárok může být nutné ponechat. Platí to pro Notion, e-mail i místní kopie."
   },
-  "privacy_your_rights_4ybr1": {
-    "en": "Your rights",
-    "cz": "Vaše práva"
+  "privacy_legal_17_p8m4r": {
+    "en": "Accounting records are retained for the legally required period, generally seven years for basic Dutch business records where that obligation applies. Technical records controlled by external providers follow their own retention rules.",
+    "cz": "Účetní záznamy se uchovávají po zákonem požadovanou dobu, u základní nizozemské podnikatelské evidence obecně sedm let, pokud se tato povinnost uplatní. Technické záznamy spravované externími poskytovateli se řídí jejich vlastními lhůtami."
   },
-  "privacy_depending_on_the_circumstances_you_may_request_3s8b2": {
-    "en": "Depending on the circumstances, you may request access, correction, erasure, restriction or portability of your information, object to relevant processing, or withdraw consent. These rights are subject to applicable conditions and legal obligations. Send requests to the email address above; identity may need to be checked before information is disclosed. You can also complain to the competent data protection authority, including the Dutch Autoriteit Persoonsgegevens.",
-    "cz": "Podle okolností můžete požádat o přístup, opravu, výmaz, omezení či přenositelnost údajů, vznést námitku nebo odvolat souhlas. Práva podléhají zákonným podmínkám a povinnostem. Žádosti posílejte na uvedený e-mail; před sdělením údajů může být nutné ověřit totožnost. Můžete také podat stížnost příslušnému dozorovému úřadu, včetně nizozemského Autoriteit Persoonsgegevens."
+  "privacy_legal_18_p8m4r": {
+    "en": "Your rights and updates",
+    "cz": "Vaše práva a změny"
   },
-  "privacy_children_and_changes_c7jc5": {
-    "en": "Children and changes",
-    "cz": "Děti a změny"
-  },
-  "privacy_a_parent_or_guardian_should_handle_arrangements_efaaq": {
-    "en": "A parent or guardian should handle arrangements for a child’s lessons and avoid sending unnecessary information about the child. This notice should be updated if the website introduces working forms, analytics, new service providers or other processing. Provider-specific retention, transfer safeguards and business contact details must be confirmed for the final public hosting setup.",
-    "cz": "Výuku dítěte má sjednávat rodič nebo zákonný zástupce a neposílat zbytečné údaje o dítěti. Oznámení je třeba aktualizovat při zavedení funkčních formulářů, analytiky, nových poskytovatelů nebo jiného zpracování. Dobu uchování u poskytovatelů, záruky při předávání údajů a podnikatelské kontaktní údaje je nutné ověřit pro konečný veřejný hosting."
-  },
-  "privacy_the_website_remembers_your_chosen_language_in_6rnjr": {
-    "en": "The website remembers your chosen language in local browser storage. You can change it using EN | CZ; the lang URL parameter takes priority.",
-    "cz": "Web si zvolený jazyk pamatuje v místním úložišti prohlížeče. Změníte jej pomocí EN | CZ; přednost má parametr lang v URL."
+  "privacy_legal_19_p8m4r": {
+    "en": "You may request access, correction, erasure, restriction and, where applicable, data portability. You may object to processing based on legitimate interests and withdraw consent for consent-based uses without affecting earlier lawful processing. Rights are subject to legal conditions; I may need to verify your identity. Send requests to the email above. I normally respond within one month; a lawful extension will be explained. You also have the right to lodge a complaint with the competent supervisory authority (in the Netherlands, Autoriteit Persoonsgegevens).",
+    "cz": "Můžete požádat o přístup, opravu, výmaz, omezení a případně přenositelnost údajů. Můžete vznést námitku proti zpracování na základě oprávněných zájmů a odvolat souhlas u použití založeného na souhlasu, aniž je dotčena dřívější zákonnost. Práva mají zákonné podmínky; může být nutné ověřit totožnost. Žádosti zasílejte na uvedený e-mail. Obvykle odpovím do jednoho měsíce; případné zákonné prodloužení vysvětlím. Máte také právo podat stížnost příslušnému dozorovému úřadu (v Nizozemsku Autoriteit Persoonsgegevens)."
   }
 });

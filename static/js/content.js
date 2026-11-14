@@ -14,12 +14,12 @@
  const normalize = value => ['cz','cs'].includes(value) ? 'cz' : value === 'en' ? 'en' : null;
  const browser = navigator.languages?.[0] || navigator.language || 'en';
  const lang = normalize(query) || normalize(saved) || (browser.toLowerCase().startsWith('cs') ? 'cz' : 'en');
- const text = id => resolve(id, lang);
+ const text = (id, language = lang) => resolve(id, language);
  const apply = root => {
    if (root.nodeType !== 1 && root.nodeType !== 9) return;
    const elements = [...(root.matches?.('[data-content],[data-content-attrs]') ? [root] : []), ...root.querySelectorAll('[data-content],[data-content-attrs]')];
    for (const element of elements) {
-     if (element.dataset.content) { const value = text(element.dataset.content); if (element.textContent !== value) element.textContent = value; }
+     if (element.dataset.content) { const language = ['en', 'cz'].includes(element.dataset.contentLang) ? element.dataset.contentLang : lang; const value = text(element.dataset.content, language); if (element.textContent !== value) element.textContent = value; }
      if (element.dataset.contentAttrs) for (const [attribute, id] of Object.entries(JSON.parse(element.dataset.contentAttrs))) {
        const value = text(id); if (element.getAttribute(attribute) !== value) element.setAttribute(attribute, value);
      }
