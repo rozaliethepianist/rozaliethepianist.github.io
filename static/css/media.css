@@ -8,6 +8,7 @@ body.page-media .media-hero-copy {
   width: var(--media-hero-copy-width);
   z-index: 2;
   text-align: center;
+  padding: 0 .5rem 0 1.5rem;
 }
 
 body.page-media .about-c4 .about-hero .media-hero-copy h1 {
@@ -116,12 +117,12 @@ body.page-media .about-photos > #photo-credit > a {
   opacity: .25;
 }
 
-body.page-media .about-photos > #photo-credit > a:focus-visible {
+body.page-media .about-photos > #photo-credit > a:focus-visible, body.page-media .media-hero-copy .media-channel-handle a:focus-visible {
   opacity: 1;
 }
 
 @media (any-hover:hover) and (any-pointer:fine) {
-  body.page-media .about-photos > #photo-credit > a:hover {
+  body.page-media .about-photos > #photo-credit > a:hover, body.page-media .media-hero-copy .media-channel-handle a:hover {
     opacity: 1;
   }
 }
