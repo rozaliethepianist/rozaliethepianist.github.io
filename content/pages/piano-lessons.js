@@ -196,8 +196,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Nepotřebujete speciální vybavení — stačí tablet nebo notebook. Výuka obvykle probíhá přes Zoom, Google Meet či Teams s webkamerou a případně sdílením obrazovky s notami, prezentací nebo poznámkami na tabuli."
   },
   "lessons_after_your_inquiry_we_will_arrange_an_iyv6y": {
-    "en": "Request your lesson of any type via the Contact form and I will reach out to arrange all practical matters together",
-    "cz": "Požádejte o jakýkoli typ lekce prostřednictvím kontaktního formuláře a já se vám ozvu, abychom společně domluvili všechny praktické záležitosti"
+    "en": "Request your lesson of any type via the Contact form and I will reach out to arrange all practical matters together.",
+    "cz": "Požádejte o jakýkoli typ lekce prostřednictvím kontaktního formuláře a já se vám ozvu, abychom společně domluvili všechny praktické záležitosti."
   },
   "lessons_online_piano_lessons_for_those_who_value_7and8": {
     "en": "Online piano lessons for those who value flexibility the most!",
