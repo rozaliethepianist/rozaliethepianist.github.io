@@ -289,7 +289,7 @@ body.page-home {
 .home-work-grid {
   display: grid;
   grid-template-columns: repeat(3,minmax(0,1fr)) 235px;
-  align-items: start;
+  align-items: center;
 }
 
 .work-card {
@@ -1665,7 +1665,6 @@ body.page-home {
 .page-home .home-work {
   width: min(calc(100% - 60px), 1130px);
   min-height: 814px;
-  margin: 10px auto 0;
 }
 
 .page-home .home-work > .section-heading {
@@ -1676,7 +1675,7 @@ body.page-home {
 .page-home .home-work-grid {
   grid-template-columns: repeat(3,minmax(0,1fr)) 180px;
   gap: 34px;
-  align-items: start;
+  align-items: center;
 }
 
 .page-home .work-card {
@@ -1749,7 +1748,7 @@ body.page-home {
 }
 
 .page-home .home-bottom .eyebrow {
-  margin-bottom: 35px;
+  margin-bottom: 75px;
 }
 
 .page-home .home-bottom p.intro {
@@ -2529,7 +2528,6 @@ body.page-home {
   .page-home .home-work {
     width: 78.4%;
     min-height: 55.7cqw;
-    margin-top: 10px;
   }
 
   .page-home .home-work > .section-heading {
