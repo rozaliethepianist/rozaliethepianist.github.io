@@ -14,7 +14,7 @@
    const reserved=follow?follow.getBoundingClientRect().height+parseFloat(style.marginTop)+parseFloat(style.marginBottom):0;
    const total=Math.max(0,550-reserved),overflow=list.scrollHeight>total+1;
    button.hidden=!overflow;
-   list.style.maxHeight=expanded?'none':`${Math.max(0,total-(overflow?48:0))}px`;
+   list.style.setProperty('--events-list-height',expanded?'none':`${Math.max(0,total-(overflow?48:0))}px`);
    list.classList.toggle('is-collapsed',overflow&&!expanded);
    button.setAttribute('aria-expanded',String(expanded));
    button.setAttribute('aria-label',labels[expanded?'less':'more'][document.documentElement.lang==='cs'?'cz':'en']);

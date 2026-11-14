@@ -1,32 +1,185 @@
-/* Media reuses the established About sections with its own performance hero. */
-body.page-media .media-hero-copy { position:absolute;left:6%;top:50%;transform:translateY(-50%);width:34%;z-index:2;text-align:center; }
-body.page-media .about-c4 .about-hero .media-hero-copy h1 { position:static;width:100%;max-width:none;padding:0;margin:0;font:400 clamp(23px,2.2cqw,34px)/1.5 var(--serif); }
-body.page-media .media-hero-copy a { text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em; }
-body.page-media .media-channel-handle { font:italic 400 clamp(12px,1cqw,15px)/1.6 var(--sans);opacity:.55;margin:20px 0 0;overflow-wrap:anywhere; }
-body.page-media .about-c4 .about-hero>img { object-position:55% 65%; }
-body.page-media .media-hero-copy a:focus-visible { outline:2px solid var(--blue);outline-offset:5px; }
-@media(any-hover:hover) and (any-pointer:fine) { body.page-media .media-hero-copy a:hover { color:var(--blue); } }
-@media(max-width:1100px) {
- body.page-media .about-c4 .about-hero { display:flex;flex-direction:column;height:auto;min-height:0;padding:0; }
- body.page-media .media-hero-copy { position:relative;inset:auto;transform:none;width:100%;padding:38px 24px 30px; }
- body.page-media .about-c4 .about-hero .media-hero-copy h1 { font-size:clamp(23px,3.8vw,32px);max-width:30ch;margin-inline:auto; }
- body.page-media .about-c4 .about-hero>img { position:relative;inset:auto;width:100%;height:clamp(280px,55vw,520px);object-fit:cover;object-position:55% 65%; }
+body.page-media { --media-hero-copy-width:34%;--media-channel-opacity:.55; }
+/* Media page composition. */
+body.page-media .media-hero-copy {
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--media-hero-copy-width);
+  z-index: 2;
+  text-align: center;
 }
 
-/* Editorial links follow the document-link treatment, with hover-only underline removal. */
-body.page-media :is(a.media-text-link,.media-hero-copy a) { color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;transition:color var(--duration-fast) opacity var(--duration-fast); }
-body.page-media :is(a.media-text-link,.media-hero-copy a):focus-visible { outline:2px solid var(--blue);outline-offset:4px;border-radius:2px; }
+body.page-media .about-c4 .about-hero .media-hero-copy h1 {
+  position: static;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  font: 400 clamp(23px,2.2cqw,34px)/1.5 var(--serif);
+}
+
+body.page-media .media-hero-copy a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+}
+
+body.page-media .media-channel-handle {
+  font: italic 400 clamp(12px,1cqw,15px)/1.6 var(--sans);
+  opacity: var(--media-channel-opacity);
+  margin: 20px 0 0;
+  overflow-wrap: anywhere;
+}
+
+body.page-media .about-c4 .about-hero>img {
+  object-position: 55% 65%;
+}
+
+body.page-media .media-hero-copy a:focus-visible {
+  outline: var(--focus-ring-width) solid var(--blue);
+  outline-offset: 5px;
+}
+
 @media (any-hover:hover) and (any-pointer:fine) {
- body.page-media :is(a.media-text-link,.media-hero-copy a):hover { color:var(--blue);text-decoration:none;opacity:1; }
-
+  body.page-media .media-hero-copy a:hover {
+    color: var(--blue);
+  }
 }
-@media (prefers-reduced-motion:reduce) { body.page-media :is(a.media-text-link,.media-hero-copy a) { transition:none; } }
 
-/* Dim each credit fragment independently so only the link brightens on hover. */
-body.page-media .about-photos > #photo-credit { opacity:1; }
+@media (max-width:1100px) {
+  body.page-media .about-c4 .about-hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+  }
+
+  body.page-media .media-hero-copy {
+    position: relative;
+    inset: auto;
+    transform: none;
+    width: 100%;
+    padding: 38px 24px 30px;
+  }
+
+  body.page-media .about-c4 .about-hero .media-hero-copy h1 {
+    font-size: clamp(23px,3.8vw,32px);
+    max-width: 30ch;
+    margin-inline: auto;
+  }
+
+  body.page-media .about-c4 .about-hero>img {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: clamp(280px,55vw,520px);
+    object-fit: cover;
+    object-position: 55% 65%;
+  }
+}
+
+body.page-media :is(a.media-text-link,.media-hero-copy a) {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+  transition: color var(--duration-fast) opacity var(--duration-fast);
+}
+
+body.page-media :is(a.media-text-link,.media-hero-copy a):focus-visible {
+  outline: var(--focus-ring-width) solid var(--blue);
+  outline-offset: var(--focus-ring-offset);
+  border-radius: 2px;
+}
+
+@media (any-hover:hover) and (any-pointer:fine) {
+  body.page-media :is(a.media-text-link,.media-hero-copy a):hover {
+    color: var(--blue);
+    text-decoration: none;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  body.page-media :is(a.media-text-link,.media-hero-copy a) {
+    transition: none;
+  }
+}
+
+body.page-media .about-photos > #photo-credit {
+  opacity: 1;
+}
+
 body.page-media .about-photos > #photo-credit > span,
-body.page-media .about-photos > #photo-credit > a { opacity:.25; }
-body.page-media .about-photos > #photo-credit > a:focus-visible { opacity:1; }
+body.page-media .about-photos > #photo-credit > a {
+  opacity: .25;
+}
+
+body.page-media .about-photos > #photo-credit > a:focus-visible {
+  opacity: 1;
+}
+
 @media (any-hover:hover) and (any-pointer:fine) {
- body.page-media .about-photos > #photo-credit > a:hover { opacity:1; }
+  body.page-media .about-photos > #photo-credit > a:hover {
+    opacity: 1;
+  }
+}
+
+body.page-media .media-events-list {
+  overflow: hidden;
+}
+
+body.page-media .media-events-list.is-collapsed {
+  mask-image: linear-gradient(to bottom,#000 0,#000 calc(100% - 85px),transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom,#000 0,#000 calc(100% - 85px),transparent 100%);
+}
+
+body.page-media .media-events-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 8%;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+body.page-media .media-events-toggle[hidden] {
+  display: none;
+}
+
+body.page-media .media-events-toggle::before,body.page-media .media-events-toggle::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: currentColor;
+  opacity: .3;
+}
+
+body.page-media .media-events-toggle>span {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font: 300 22px/1 var(--sans);
+}
+
+body.page-media .media-events-toggle:focus-visible {
+  outline: var(--focus-ring-width) solid var(--blue);
+  outline-offset: 3px;
+}
+
+@media (any-hover:hover) and (any-pointer:fine) {
+  body.page-media .media-events-toggle:hover {
+    color: var(--blue);
+  }
 }

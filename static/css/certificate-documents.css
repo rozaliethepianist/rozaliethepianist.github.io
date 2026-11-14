@@ -1,4 +1,0 @@
-/* Inline document links inherit the surrounding editorial typography. */
-.certificate-document-link{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
-.certificate-document-link:focus-visible{outline:2px solid var(--blue,var(--palette-blue));outline-offset:4px;border-radius:2px}
-@media(any-hover:hover) and (any-pointer:fine){.certificate-document-link:hover{color:var(--blue,var(--palette-blue))}}

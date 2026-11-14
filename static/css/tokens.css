@@ -93,3 +93,9 @@
 
 /* Stage pages return to black without changing the warm lesson/contact planes. */
 body:is(.page-home,.page-about,.page-media) { --palette-navy:#000;--palette-navy-raised:#292929;--bg-dark:#000;--surface-card-dark:#292929;--surface-field-dark:#171717;--surface-media:#171717;--surface-iframe:#000;--surface-nav-dark:#292929;--surface-header-contrast:#000; }
+
+:root { --focus-ring-width:2px;--focus-ring-offset:4px;--social-icon-size:20px;--metadata-frame-width:200px;--metadata-frame-height:113px; }
+
+:root { --focus-ring-width:2px;--focus-ring-offset:4px;--social-icon-size:20px;--metadata-frame-width:200px;--metadata-frame-height:113px; }
+
+:root { --color-black:#000;--color-white:#fff;--color-media-dark:#111;--color-control-dark:#171717;--color-panel-dark:#292929;--hover-muted-opacity:.65; }

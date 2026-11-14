@@ -1,5 +1,4 @@
-/* Two linked certificate seals, aligned with the supplied Home/Lessons PDFs.
-   cqw follows the site's existing capped canvas, including ultrawide screens. */
+/* Certificate badges and inline PDF document links. */
 :root {
   --hero-certificate-size: clamp(76px,8.953cqw,129px);
   --hero-certificate-gap: 1.469cqw;
@@ -8,12 +7,14 @@
   --hero-certificate-background: rgb(42 42 42 / 75%);
   --hero-certificate-radius: 1.4cqw;
 }
+
 body:is(.page-home,.page-lessons) .hero-certificates {
   position: absolute;
   inset: 0;
   z-index: 5;
   pointer-events: none;
 }
+
 body:is(.page-home,.page-lessons) .hero-certificates-panel {
   position: absolute;
   top: 28.9558cqw;
@@ -23,10 +24,10 @@ body:is(.page-home,.page-lessons) .hero-certificates-panel {
   align-items: center;
   gap: var(--hero-certificate-gap);
   padding: var(--hero-certificate-padding-block) var(--hero-certificate-padding-inline);
-  background: var(--hero-certificate-background);
   border-radius: var(--hero-certificate-radius) 0 0 var(--hero-certificate-radius);
   pointer-events: auto;
 }
+
 body:is(.page-home,.page-lessons) .hero-certificate-link {
   display: block;
   flex: none;
@@ -37,6 +38,7 @@ body:is(.page-home,.page-lessons) .hero-certificate-link {
   transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
   margin: .5rem;
 }
+
 body:is(.page-home,.page-lessons) .hero-certificate-link > img {
   position: static;
   display: block;
@@ -48,18 +50,25 @@ body:is(.page-home,.page-lessons) .hero-certificate-link > img {
   transform: none;
   object-fit: contain;
 }
+
 body:is(.page-home,.page-lessons) .hero-certificate-link:focus-visible {
   outline: 3px solid var(--blue,var(--palette-blue));
   outline-offset: 3px;
 }
+
 @media (any-hover:hover) and (any-pointer:fine) {
-  body:is(.page-home,.page-lessons) .hero-certificate-link:hover { filter: brightness(1.12); transform:translateY(-5px); box-shadow:0 8px 24px rgb(0 0 0 / 0.65); }
+  body:is(.page-home,.page-lessons) .hero-certificate-link:hover {
+    filter: brightness(1.12);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.65);
+  }
 }
-/* Only the backing fades at the canvas edge; seals stay above the blend. */
+
 body:is(.page-home,.page-lessons) .hero-certificates-panel {
   background: transparent;
   isolation: isolate;
 }
+
 body:is(.page-home,.page-lessons) .hero-certificates-panel::before {
   content: "";
   position: absolute;
@@ -69,16 +78,20 @@ body:is(.page-home,.page-lessons) .hero-certificates-panel::before {
   background: var(--hero-certificate-background);
   pointer-events: none;
 }
+
 body:is(.page-home,.page-lessons) .hero-certificate-link,
 body:is(.page-home,.page-lessons) .hero-certificate-link > img {
   opacity: 1;
 }
+
 body.page-home:not(.canvas-fits-viewport) .hero-certificates-panel::before {
   mask-image: linear-gradient(to right,#000 calc(100% - 11cqw),transparent 100%);
 }
+
 body.page-lessons:not(.canvas-fits-viewport) .hero-certificates-panel::before {
   mask-image: linear-gradient(to right,#000 calc(100% - 5.2063cqw),transparent 100%);
 }
+
 @media (max-width:1100px) {
   body.page-lessons .hero-certificates {
     --hero-certificate-size: 84px;
@@ -87,8 +100,13 @@ body.page-lessons:not(.canvas-fits-viewport) .hero-certificates-panel::before {
     --hero-certificate-padding-inline: 10px;
     --hero-certificate-radius: 16px;
   }
-  body.page-lessons .hero-certificates-panel { top: auto;bottom: 72px; }
+
+  body.page-lessons .hero-certificates-panel {
+    top: auto;
+    bottom: 72px;
+  }
 }
+
 @media (max-width:768px) {
   body:is(.page-home,.page-lessons) .hero-certificates {
     --hero-certificate-size: clamp(68px,16vw,84px);
@@ -97,8 +115,34 @@ body.page-lessons:not(.canvas-fits-viewport) .hero-certificates-panel::before {
     --hero-certificate-padding-inline: 10px;
     --hero-certificate-radius: 14px;
   }
-  body.page-home .hero-certificates-panel { top: auto;bottom: 28px; }
+
+  body.page-home .hero-certificates-panel {
+    top: auto;
+    bottom: 28px;
+  }
 }
+
 @media (prefers-reduced-motion:reduce) {
-  body:is(.page-home,.page-lessons) .hero-certificate-link { transition: none; }
+  body:is(.page-home,.page-lessons) .hero-certificate-link {
+    transition: none;
+  }
+}
+
+.certificate-document-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+
+.certificate-document-link:focus-visible {
+  outline: var(--focus-ring-width) solid var(--blue,var(--palette-blue));
+  outline-offset: var(--focus-ring-offset);
+  border-radius: 2px;
+}
+
+@media (any-hover:hover) and (any-pointer:fine) {
+  .certificate-document-link:hover {
+    color: var(--blue,var(--palette-blue));
+  }
 }

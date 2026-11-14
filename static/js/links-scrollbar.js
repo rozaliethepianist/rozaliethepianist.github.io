@@ -14,8 +14,8 @@
     root.classList.toggle('overlay-scrollbar', fineScroll.matches);
     scrollRail.hidden = !active;
     const height = Math.max(44, root.clientHeight * root.clientHeight / Math.max(root.scrollHeight,1));
-    scrollThumb.style.height = `${height}px`;
-    scrollThumb.style.transform = `translateY(${range > 0 ? window.scrollY / range * (root.clientHeight - height) : 0}px)`;
+    scrollThumb.style.setProperty('--scroll-thumb-height', `${height}px`);
+    scrollThumb.style.setProperty('--scroll-thumb-y', `${range > 0 ? window.scrollY / range * (root.clientHeight - height) : 0}px`);
   };
   const scheduleScroll = () => { if (!scrollFrame) scrollFrame = requestAnimationFrame(paintScroll); };
   window.addEventListener('scroll',scheduleScroll,{passive:true});

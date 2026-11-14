@@ -1,188 +1,1659 @@
-/* Piano Lessons only. Desktop measures follow the current 1024.5 x 3432 PDF.
-   The page canvas scales to 1440px; narrow layouts reflow for readable text.
-   Shared UI and other routes keep their existing owners in site.css. */
-.page-lessons { --bg-light: var(--palette-cream); --bg-dark: var(--brown); background: var(--bg-dark); color: var(--palette-navy); }
-.page-lessons [data-site-header] { height: 0; }
-.page-lessons .lessons-main { width: min(100%,1440px); margin-inline: auto; container-type: inline-size; isolation: isolate; background: var(--bg-dark); }
-/* One continuous plane replaces separately rounded slide polygons. */
-.page-lessons .lessons-main::before { content: ''; position: absolute; inset: 0; z-index: 0; background: var(--bg-light); clip-path: polygon(0 0,65.73% 0,52.67% 56.23cqw,39.61% 112.46cqw,52.23% 168.69cqw,65.58% 224.92cqw,68.77% 239.91cqw,60.31% 281.15cqw,62% 288.72cqw,0 288.72cqw); pointer-events: none; }
-.page-lessons .lessons-main > section { position: relative; z-index: 2; }
-.page-lessons .lessons-hero { height: 56.23cqw; min-height: 0; background: transparent; overflow: visible; }
-.page-lessons .lessons-hero-content { position: absolute; margin: 0; left: 10.3%; top: 10.8cqw; width: 42.4%; padding: 0; text-align: center; }
-.page-lessons .lessons-hero h1 { font: 700 2.38cqw/1.38 var(--serif); margin: 0 0 .55cqw; white-space: nowrap; }
-.page-lessons .lessons-hero h2 { font: 400 1.81cqw/1.38 var(--sans); margin: 0; }
-.page-lessons .lessons-hero h3 { font: 400 1.31cqw/1.73 var(--sans); margin: 1.9cqw 0 0; }
-.page-lessons .lessons-hero ul { font: 400 1.08cqw/2.05 var(--sans); margin: 4.8cqw 0 3.1cqw; padding-left: 1.4cqw; text-align: left; width: 95%; }
-.page-lessons .lessons-hero-content > .button { margin-left: 23.7cqw; width: 22.7cqw; min-height: 4.5cqw; padding: .8cqw 1cqw; font-size: 1.3cqw; font-weight: 400; letter-spacing: .15em; white-space: nowrap; }
-.page-lessons .button { border-radius: 1.4cqw; }
-.page-lessons .lessons-two-tone { background: transparent; }
-.page-lessons .lessons-two-tone::before { display: none; }
-.page-lessons .lessons-teaching { height: 56.23cqw; min-height: 0; display: block; }
-.page-lessons .lessons-teaching-left { position: absolute; inset: 0 auto auto 8.1%; width: 41.65%; padding: 13.6cqw 0 0; display: block; }
-.page-lessons .lessons-teaching-photo { width: 100%; aspect-ratio: 568.758 / 319.926; overflow: hidden; position: relative; }
-.page-lessons .lessons-teaching-photo img { position: absolute; max-width: none; width: 109.07%; height: auto; top: -29.1%; left: 0; }
-.page-lessons .lessons-teaching-left .button { margin: 5.65cqw 0 0 23.6cqw; font-size: 1.05cqw; font-weight: 400; letter-spacing: 0; padding: .85cqw .9cqw; min-height: 3.55cqw; white-space: nowrap; }
-.page-lessons .lessons-teaching-right { position: absolute; left: 52.65%; right: 6.8%; top: 2.2cqw; padding: 0; display: block; }
-.page-lessons .lessons-teaching-right .quote { font: 400 1.3cqw/2 var(--serif); margin: 0 -3.5cqw 5.5cqw 0; text-align: center; }
-.page-lessons .lessons-teaching-right h2 { font: 400 2.88cqw/1.4 var(--sans); margin: 0 0 3.1cqw 1.9cqw; white-space: nowrap; }
-.page-lessons .lessons-teaching-right p:not(.quote):not(.closing) { font: 400 .88cqw/1.67 var(--editorial); letter-spacing: .136em; margin: 0 0 1.4cqw; text-align: justify; }
-.page-lessons .lessons-teaching-right .closing { font: 400 1.3cqw/1.5 var(--serif); margin: 4.8cqw 0 0; text-align: center; }
-.page-lessons .lessons-method { height: 56.23cqw; min-height: 0; display: block; }
-.page-lessons .lessons-method-left { position: absolute; top: 7.2cqw; left: 6.25%; width: 41.9%; padding: 0; }
-.page-lessons .lessons-method-left h2 { font: 400 2.25cqw/1.37 var(--sans); margin: 0 0 3cqw 1.9cqw; letter-spacing: 0; white-space: nowrap; }
-.page-lessons .lessons-method-left p { font: 400 .925cqw/1.342 var(--editorial); letter-spacing: 0; margin: 0 0 1.8cqw; text-align: justify; }
-.page-lessons .lessons-method-left p:last-child { font-size: .98cqw; margin-top: -1.6cqw; }
-.page-lessons .lessons-method-right { position: absolute; top: 1.05cqw; left: 48.05%; width: 48.2%; padding: 0; }
-.page-lessons .lessons-gallery-primary { grid-template-columns: 1fr 1fr; gap: .35cqw; width: 93%; margin-left: 1cqw;}
-.page-lessons .lessons-gallery-primary img,.page-lessons .lessons-gallery-secondary img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
-.page-lessons .lessons-gallery-caption { font: italic 400 .76cqw/1.4 var(--sans); text-align: left; margin: .8cqw 1cqw 1.9cqw; }
-.page-lessons .lessons-gallery-secondary { gap: .65cqw; margin-left: 4cqw; }
-.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption { margin-left: 4cqw; white-space: nowrap; font-size: .75cqw; }
-.page-lessons .lessons-method-right > .button { margin: 1.9cqw 0 0; font-size: .98cqw; font-weight: 400; letter-spacing: 0; min-height: 3.2cqw; padding: .7cqw 1.4cqw; }
-.page-lessons .lessons-rates,.page-lessons .lessons-online { height: 56.23cqw; min-height: 0; display: grid; grid-template-columns: 65% 35%; }
-.page-lessons .rates-left { padding: 4.5cqw 2.45cqw 0 8.1cqw; text-align: center; }
-.page-lessons .rates-left h2 { font: 400 2.25cqw/1.37 var(--sans); margin: 0 0 2.6cqw; letter-spacing: 0; }
-.page-lessons .rates-left h3 { font: 700 1.44cqw/1.5 var(--serif); margin: 0 0 3.3cqw; }
-.page-lessons .rate-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2.6cqw; max-width: none; margin: 0; }
-.page-lessons .rate-card { border-radius: 1.45cqw; }
-.page-lessons .rate-card img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: 50% 50%; }
-.page-lessons .rate-card-body { padding: 1.15cqw .7cqw 1.4cqw; }
-.page-lessons .rate-card h4 { font: 700 1.05cqw/1.38 var(--serif); min-height: 2.9cqw; margin: 0 0 1.55cqw; }
-.page-lessons .rate-price { font: 700 1.27cqw/1.38 var(--serif); margin: 0 0 1.1cqw; }
-.page-lessons .rate-card .button { font: 700 .86cqw/1.4 var(--sans); letter-spacing: .04em; width: 8.7cqw; min-height: 4.75cqw; padding: .8cqw .6cqw; }
-.page-lessons .rates-aside { display: flex; justify-content: flex-start; padding: 5.6cqw 5.3cqw 0 2.7cqw; gap: 5.4cqw; }
-.page-lessons .rates-aside p { font: 400 .98cqw/1.35 var(--editorial); margin: 0; }
-.page-lessons .rates-aside > div:first-child p { font: 400 1.08cqw/1.5 var(--sans); }
-.page-lessons .rates-aside h3 { font: 400 1.44cqw/1.45 var(--sans); margin: 0 0 1.7cqw; }
-.page-lessons .rates-aside .note { font: italic 400 .79cqw/1.4 var(--sans); margin-top: 3.2cqw; }
-.page-lessons .rates-aside .aside-last { font: 400 .9cqw/1.5 var(--sans); letter-spacing: 0; white-space: nowrap; }
-.page-lessons .lessons-online .rates-left { padding-top: 5cqw; padding-left: 8.35cqw; padding-right: 1.5cqw; }
-.page-lessons .lessons-online .rates-left h2 { font: 700 1.8cqw/1.4 var(--serif); margin: 0 0 3.5cqw; }
-.page-lessons .online-description { font: 400 .88cqw/1.35 var(--editorial); letter-spacing: 0; max-width: none; margin: 0 0 3cqw; }
-.page-lessons .lessons-online .rate-grid { margin: 0; gap: 2.8cqw; }
-.page-lessons .lessons-online .rates-aside { padding-top: 6.6cqw; gap: 5.7cqw; }
-.page-lessons .lessons-online .rates-aside .note { margin-top: 2.5cqw; }
-.page-lessons .lessons-reviews { --bg-light: var(--palette-sand); background: transparent; padding: 0; color: var(--palette-navy); }
-.page-lessons .lessons-reviews h2 { height: 7.57cqw; font: 400 2.25cqw/1.4 var(--sans); margin: 0; padding-top: 1.75cqw; }
-.page-lessons .reviews-grid { background: var(--palette-sand); width: 100%; padding: 7.1cqw 8.8cqw 2.5cqw; gap: 8.4cqw; }
-.page-lessons .review { margin: 0; font: italic 400 1.12cqw/1.37 var(--sans); }
-.page-lessons .review p { margin: 0 0 2.5cqw; }
-.page-lessons .review cite { font: italic 400 .79cqw/1.4 var(--sans); }
-.page-lessons .lessons-opinion { min-height: 11.4cqw; background: linear-gradient(77deg,var(--bg-light) 69%,var(--bg-dark) 69%); }
-.page-lessons .lessons-opinion h2 { font: 400 1.8cqw/1.4 var(--sans); }
-.page-lessons .site-footer { width: min(100%,1440px); margin-inline: auto; background: linear-gradient(77deg,var(--bg-light) 71%,var(--bg-dark) 71%); color: var(--palette-brown); }
-/* Narrow layouts preserve every source section while keeping text readable.
-   The desktop diagonal becomes consecutive light/dark panels. */
-@media(max-width:1100px) {
- .page-lessons .lessons-main::before { display: none; }
- .page-lessons .lessons-hero { height: auto; min-height: 920px; background: var(--bg-light); padding: 125px 30px 440px; overflow: hidden; }
- .page-lessons .lessons-hero-content { position: relative; left: auto; top: auto; width: min(100%,620px); margin: auto; }
- .page-lessons .lessons-hero h1 { font-size: clamp(24px,4vw,34px); white-space: normal; }
- .page-lessons .lessons-hero h2 { font-size: 21px; }.page-lessons .lessons-hero h3 { font-size: 16px; margin-top: 18px; }
- .page-lessons .lessons-hero ul { font-size: 14px; line-height: 1.8; margin: 30px 0; padding-left: 22px; width: 100%; }
- .page-lessons .lessons-hero-content > .button { width: auto; min-height: 48px; font-size: 14px; padding: 12px 24px; margin: 0; }
- .page-lessons .button { border-radius: 18px; }
- .page-lessons .lessons-teaching,.page-lessons .lessons-method { height: auto; display: grid; grid-template-columns: 1fr; background: var(--bg-dark); }
- .page-lessons .lessons-teaching-left,.page-lessons .lessons-teaching-right,.page-lessons .lessons-method-left,.page-lessons .lessons-method-right { position: relative; inset: auto; width: 100%; padding: 45px max(24px,6%); }
- .page-lessons .lessons-teaching-left,.page-lessons .lessons-method-left { background: var(--bg-light); }
- .page-lessons .lessons-teaching-photo { max-width: 680px; margin: auto; }
- .page-lessons .lessons-teaching-left .button { font-size: 13px; min-height: 44px; margin: 28px 0 0; padding: 10px 16px; white-space: normal; }
- .page-lessons .lessons-teaching-left { text-align: center; }
- .page-lessons .lessons-teaching-right .quote { font-size: 15px; margin: 0 0 36px; line-height: 1.8; }
- .page-lessons .lessons-teaching-right h2 { font-size: 29px; white-space: normal; margin: 0 0 28px; text-align: center; }
- .page-lessons .lessons-teaching-right p:not(.quote):not(.closing) { font-size: 14px; line-height: 1.8; letter-spacing: .06em; margin-bottom: 20px; text-align: left; }
- .page-lessons .lessons-teaching-right .closing { font-size: 17px; margin-top: 35px; }
- .page-lessons .lessons-method-left h2 { font-size: 28px; white-space: normal; margin: 0 0 30px; text-align: center; }
- .page-lessons .lessons-method-left p,.page-lessons .lessons-method-left p:last-child { font-size: 14px; line-height: 1.6; text-align: left; margin: 0 0 24px; }
- .page-lessons .lessons-gallery-primary { width: 100%; gap: 8px; margin-left: 0;}.page-lessons .lessons-gallery-secondary { gap: 7px; margin: 0; }
- .page-lessons .lessons-gallery-caption,.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption { font-size: 11px; white-space: normal; margin: 12px 0 25px; }
- .page-lessons .lessons-method-right > .button { font-size: 12px; min-height: 44px; padding: 10px 16px; margin-top: 12px; }
- .page-lessons .lessons-rates,.page-lessons .lessons-online { height: auto; display: flex; flex-direction: column; background: var(--bg-dark); }
- .page-lessons .rates-left,.page-lessons .lessons-online .rates-left { padding: 55px 24px; background: var(--bg-light); }
- .page-lessons .rates-left h2 { font-size: 28px; margin-bottom: 24px; }.page-lessons .rates-left h3 { font-size: 18px; margin-bottom: 32px; }
- .page-lessons .rate-grid,.page-lessons .lessons-online .rate-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; margin: 0 auto; max-width: 850px; }
- .page-lessons .rate-card { border-radius: 18px; }.page-lessons .rate-card-body { padding: 17px 10px 20px; }
- .page-lessons .rate-card h4 { font-size: 15px; min-height: 42px; margin-bottom: 18px; }.page-lessons .rate-price { font-size: 19px; margin-bottom: 17px; }
- .page-lessons .rate-card .button { font-size: 12px; min-height: 48px; width: auto; padding: 12px 20px; }
- .page-lessons .rates-aside,.page-lessons .lessons-online .rates-aside { padding: 45px max(28px,12%); gap: 35px; }
- .page-lessons .rates-aside p,.page-lessons .rates-aside > div:first-child p { font-size: 15px; line-height: 1.6; }
- .page-lessons .rates-aside h3 { font-size: 21px; margin-bottom: 18px; }
- .page-lessons .rates-aside .note,.page-lessons .lessons-online .rates-aside .note { font-size: 12px; line-height: 1.6; margin-top: 20px; }
- .page-lessons .rates-aside .aside-last { font-size: 13px; white-space: normal; }
- .page-lessons .lessons-online .rates-left h2 { font-size: 25px; margin-bottom: 30px; }.page-lessons .online-description { font-size: 14px; line-height: 1.6; margin-bottom: 35px; }
- .page-lessons .lessons-reviews { background: var(--palette-sand); }.page-lessons .lessons-reviews h2 { height: auto; font-size: 28px; padding: 40px 20px 0; }
- .page-lessons .reviews-grid { padding: 40px max(26px,7%) 55px; gap: 30px; }.page-lessons .review { font-size: 14px; line-height: 1.5; }.page-lessons .review p { margin-bottom: 22px; }.page-lessons .review cite { font-size: 11px; }
- .page-lessons .lessons-opinion { min-height: 150px; }.page-lessons .lessons-opinion h2 { font-size: 22px; }.page-lessons .site-footer { background: var(--bg-light); }
-}
-@media(max-width:599px) {
- .page-lessons .lessons-hero { padding: 115px 25px 420px; min-height: 1000px; }
- .page-lessons .lessons-hero h2 { font-size: 17px; }.page-lessons .lessons-hero h3 { font-size: 15px; }
- .page-lessons .rate-grid,.page-lessons .lessons-online .rate-grid { grid-template-columns: 1fr; max-width: 290px; gap: 28px; }
- .page-lessons .rate-card h4 { font-size: 17px; }.page-lessons .rate-card .button { min-height: 48px; min-width: 120px; }
- .page-lessons .reviews-grid { grid-template-columns: 1fr; padding: 40px 34px 60px; gap: 45px; }.page-lessons .review { font-size: 15px; }
- .page-lessons .lessons-opinion { justify-content: flex-end; padding-right: 25px; }.page-lessons .lessons-opinion h2 { font-size: 18px; }
-}
-/* Pass 2: isolated photo and decorative treatments. The original JPEG is
-   rotated at render time; no photograph or original artwork is overwritten. */
-.page-lessons .lessons-hero-photo { left: 52.67%; right: 0; top: 0; width: 47.33%; height: 100%; clip-path: polygon(27.6% 0,100% 0,100% 100%,0 100%); z-index: 1; }
-.page-lessons .lessons-hero-photo img { position: absolute; max-width: none; width: 77.07cqw; height: 51.38cqw; left: -12.8cqw; top: 2.07cqw; transform: rotate(90deg); object-fit: fill; }
-.page-lessons .lessons-hero-photo::after { display: none; }
-.page-lessons .lessons-hero-keyboard { position: absolute; left: 26.08cqw; top: 23.63cqw; width: 58cqw; height: 8.28cqw; transform: rotate(103.014deg); background: url('/static/image/decor/canva-keyboard.webp') center/100% 100% no-repeat; opacity: .21; z-index: 0; }
-.page-lessons .lessons-main > .lessons-art-layer { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
-.lessons-art-layer img { position: absolute; max-width: none; height: auto; pointer-events: none; }
-.lessons-art-layer .lessons-art-hero { width: 30.55cqw; left: -5.03cqw; top: 48.1cqw; transform: rotate(3.51508deg); opacity: .25; }
-.lessons-art-layer .lessons-art-method { width: 30.55cqw; left: -13.2cqw; top: 101.7cqw; transform: rotate(83.3358deg); opacity: .3; }
-.lessons-art-layer .lessons-art-rates { width: 26.04cqw; left: -6.8cqw; top: 219.9cqw; transform: rotate(-7.11549deg); opacity: .28; }
-.lessons-art-layer .lessons-art-footer { width: 27.45cqw; left: -3.4cqw; bottom: -.8cqw; transform: rotate(-6.05855deg); opacity: .25; }
-.page-lessons .rate-photo { position: relative; aspect-ratio: 1; overflow: hidden; }
-.page-lessons .rate-photo img { position: absolute; max-width: none; height: auto; width: 149.62%; left: -24.81%; top: 0; aspect-ratio: auto; }
-.page-lessons .lessons-online .rate-photo img { width: 199.15%; left: -28.21%; top: -1.805%; }
-.page-lessons .header-logo img { filter: brightness(0); }
-@media(min-width:1101px) { .page-lessons .footer-right { color: var(--palette-cream); }.page-lessons .footer-right img { filter: brightness(0) invert(1); } }
-@media(max-width:1100px) {
- .page-lessons .lessons-hero-photo { left: auto; right: 0; top: auto; bottom: 0; width: min(100%,760px); height: 400px; clip-path: polygon(15% 0,100% 0,100% 100%,0 100%); }
- .page-lessons .lessons-hero-photo img { width: 900px; height: 600px; left: calc(50% - 450px); top: -90px; transform: rotate(90deg); }
- .page-lessons .lessons-hero-keyboard { display: none; }
- .lessons-art-layer .lessons-art-hero,.lessons-art-layer .lessons-art-method,.lessons-art-layer .lessons-art-rates { display: none; }
- .lessons-art-layer .lessons-art-footer { width: 230px; left: -80px; bottom: -5px; opacity: .2; }
-}
-@media(max-width:599px) { .page-lessons .lessons-hero-photo img { width: 690px; height: 460px; left: calc(50% - 345px); top: 50px; } }
-/* Paragraph widths follow the widening light plane, rather than allowing
-   dark editorial text to cross onto the brown collage background. */
-@media(min-width:1101px) {
- .page-lessons .lessons-method-left p:nth-of-type(1) { width: 82%; }
- .page-lessons .lessons-method-left p:nth-of-type(2) { width: 87%; }
- .page-lessons .lessons-method-left p:nth-of-type(3) { width: 92%; }
- .page-lessons .lessons-method-left p:nth-of-type(4) { width: 97%; }
- .page-lessons .lessons-online .online-description { width: calc(100% + 3.5cqw); }
-}
-/* The long editorial page has intrinsic height; do not grow an empty panel
-   when inspected inside a tall iframe or on a portrait display. */
-.page-lessons .lessons-main { flex: 0 0 auto; }
-@media(max-width:1100px) { .page-lessons .lessons-opinion { background: var(--bg-light); justify-content: center; padding: 0 24px; text-align: center; } }
-@media(max-width:1100px) {
- .page-lessons .header-inner { background: var(--bg-light); }
- .page-lessons .social-rail { display: none; }
- .page-lessons .lessons-hero-photo img { top: 100px; }
-}
-@media(max-width:599px) { .page-lessons .lessons-hero-photo img { top: 50px; } }
-/* Keep editorial copy inset from the beveled light plane. */
-@media(min-width:1101px) {
- .page-lessons .lessons-method-left p { padding-right:18px; }
- .page-lessons .lessons-online .online-description { width:95%; }
+body.page-lessons { --lesson-card-radius:17px; }
+/* Lessons page composition. */
+.lessons-main {
+  background: var(--bg-light);
 }
 
-/* Individual Lessons PDF: retain the native footer rotation and proportions. */
-@media(min-width:1101px){
- .lessons-art-layer .lessons-art-footer{width:25.5495cqw;left:-3.3441cqw}
+.lessons-hero {
+  min-height: 700px;
+  background: var(--bg-light);
+  position: relative;
+  overflow: hidden;
 }
 
-.lesson-photo-rate-1 { filter:saturate(.8); }
-.lesson-photo-rate-2 { filter:url(#lesson-cool-rate) saturate(.9); }
-.lesson-photo-rate-3 { filter:saturate(1.15) hue-rotate(2deg); }
-.lesson-photo-online-1 { filter: saturate(1.1); }
-.lesson-photo-online-2 { filter:url(#lesson-cool-online) saturate(1.35); }
-.lesson-photo-online-3 { filter:saturate(1.75) hue-rotate(7deg); }
+.lessons-hero-photo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 54%;
+  height: 100%;
+  clip-path: polygon(17% 0,100% 0,100% 100%,0 100%);
+}
+
+.lessons-hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 52% 52%;
+}
+
+.lessons-hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 65% 0 0;
+  background: linear-gradient(transparent,var(--bg-dark) 100%);
+}
+
+.lessons-hero-keyboard {
+  position: absolute;
+  top: 0;
+  left: 43%;
+  height: 235px;
+  width: 19%;
+  background: url("/static/image/decor/keyboard-warm.webp") 40% 0/cover;
+  transform: skewX(-15deg);
+  opacity: .3;
+}
+
+.lessons-hero-content {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 0 11%;
+  width: 39%;
+  padding-top: 137px;
+  text-align: center;
+}
+
+.lessons-hero h1 {
+  font: 700 clamp(24px,2.6vw,36px)/1.28 var(--serif);
+  text-transform: uppercase;
+  margin: 0 0 7px;
+}
+
+.lessons-hero h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.lessons-hero h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+.lessons-hero ul {
+  list-style: disc;
+  margin: 65px 0 45px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.85;
+  padding-left: 45px;
+}
+
+.lessons-hero-flower {
+  position: absolute;
+  width: 430px;
+  left: -80px;
+  bottom: -45px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: .9;
+}
+
+.lessons-two-tone {
+  position: relative;
+  background: var(--bg-dark);
+  color: white;
+}
+
+.lessons-two-tone::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: var(--bg-light);
+  clip-path: polygon(0 0,59% 0,43% 100%,0 100%);
+  pointer-events: none;
+}
+
+.lessons-teaching {
+  min-height: 620px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+}
+
+.lessons-teaching-left {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+}
+
+.lessons-teaching-left img {
+  width: 100%;
+  max-width: 550px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.lessons-teaching-left .button {
+  margin-top: 40px;
+}
+
+.lessons-teaching-right {
+  position: relative;
+  z-index: 2;
+  padding: 20px 9% 50px 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lessons-teaching-right .quote {
+  text-align: center;
+  font: 400 16px/1.7 var(--serif);
+  margin: 0 0 38px;
+}
+
+.lessons-teaching-right h2 {
+  font: 400 30px/1.35 var(--sans);
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+.lessons-teaching-right p {
+  font-size: 13px;
+  line-height: 1.85;
+  margin: 0 0 16px;
+  text-align: justify;
+}
+
+.lessons-teaching-right .closing {
+  font: 400 17px/1.5 var(--serif);
+  margin: 28px 0 0;
+  text-align: center;
+}
+
+.lessons-method {
+  min-height: 720px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  align-items: center;
+}
+
+.lessons-method-left {
+  position: relative;
+  z-index: 2;
+  padding: 60px 10% 35px 13%;
+  color: var(--palette-navy);
+  align-self: center;
+}
+
+.lessons-method-left h2 {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+  margin: 0 0 26px;
+}
+
+.lessons-method-left p {
+  font-size: 13px;
+  line-height: 1.75;
+  margin: 0 0 20px;
+  text-align: justify;
+}
+
+.lessons-method-right {
+  position: relative;
+  z-index: 2;
+  padding: 30px 8% 20px 4%;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.lessons-gallery-primary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.lessons-gallery-primary img {
+  width: 100%;
+  aspect-ratio: 1.2;
+  object-fit: cover;
+}
+
+.lessons-gallery-caption {
+  font-size: 10px;
+  line-height: 1.4;
+  margin: 4px 0 12px;
+  color: var(--palette-cream);
+}
+
+.lessons-gallery-secondary {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 7px;
+}
+
+.lessons-gallery-secondary img {
+  width: 100%;
+  aspect-ratio: 1.3;
+  object-fit: cover;
+}
+
+.lessons-method-right>.button {
+  margin-top: 34px;
+}
+
+.lessons-rates {
+  min-height: 740px;
+  display: grid;
+  grid-template-columns: 63% 37%;
+  position: relative;
+}
+
+.lessons-rates::before {
+  clip-path: polygon(0 0,75% 0,92% 100%,0 100%);
+}
+
+.rate-card {
+  border-radius: var(--lesson-card-radius);
+  overflow: hidden;
+  background: var(--surface-rate-1);
+  color: var(--palette-navy);
+}
+
+.rate-card:nth-child(2) {
+  background: var(--surface-rate-2);
+}
+
+.rate-card:nth-child(3) {
+  background: var(--surface-rate-3);
+}
+
+.rate-card img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+
+.rate-card-body {
+  padding: 13px 10px 20px;
+}
+
+.rate-card h4 {
+  font: 700 15px/1.3 var(--serif);
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  min-height: 45px;
+}
+
+.rate-card .button {
+  font-size: 10px;
+  letter-spacing: .08em;
+  padding: 10px 22px;
+}
+
+.lessons-rates .rates-flower {
+  position: absolute;
+  left: -90px;
+  bottom: -40px;
+  width: 380px;
+  opacity: .78;
+  pointer-events: none;
+}
+
+.lessons-online {
+  min-height: 670px;
+  display: grid;
+  grid-template-columns: 64% 36%;
+  position: relative;
+}
+
+.lessons-online::before {
+  clip-path: polygon(0 0,70% 0,79% 100%,0 100%);
+}
+
+.lessons-online .rates-left {
+  padding-top: 30px;
+}
+
+.lessons-online .rates-left h2 {
+  font: 700 22px/1.5 var(--serif);
+}
+
+.lessons-online .rate-card:nth-child(1) {
+  background: var(--surface-online-1);
+}
+
+.lessons-online .rate-card:nth-child(2) {
+  background: var(--surface-online-2);
+}
+
+.lessons-online .rate-card:nth-child(3) {
+  background: var(--surface-online-3);
+}
+
+.lessons-online .rates-aside {
+  padding-top: 20px;
+}
+
+.lessons-reviews {
+  --bg-light: var(--surface-reviews);
+  background: var(--bg-light);
+  color: var(--palette-navy);
+  padding: 40px 0 55px;
+}
+
+.lessons-reviews h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.4;
+  margin: 0 0 50px;
+}
+
+.lessons-opinion {
+  min-height: 170px;
+  background: linear-gradient(105deg,var(--bg-light) 56%,var(--bg-dark) 56%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--palette-navy);
+}
+
+.lessons-opinion h2 {
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.lessons-opinion img {
+  position: absolute;
+  width: 350px;
+  left: -50px;
+  bottom: -15px;
+  opacity: .8;
+}
+
+@media (max-width:1100px) {
+  .lessons-hero-content {
+    margin-left: 10%;
+    width: 42%;
+  }
+
+  .lessons-teaching-right {
+    padding: 15px 7%;
+  }
+
+  .lessons-method-left {
+    padding: 40px 8%;
+  }
+}
+
+@media (max-width:760px) {
+  .lessons-hero {
+    min-height: 850px;
+    padding-top: 76px;
+  }
+
+  .lessons-hero-content {
+    margin: 0;
+    width: 100%;
+    padding: 45px 25px 0;
+    text-align: center;
+  }
+
+  .lessons-hero h1 {
+    font-size: 24px;
+  }
+
+  .lessons-hero h2 {
+    font-size: 16px;
+  }
+
+  .lessons-hero ul {
+    margin: 22px 0 25px;
+    padding-left: 25px;
+    font-size: 13px;
+  }
+
+  .lessons-hero-photo {
+    top: 415px;
+    width: 100%;
+    height: 435px;
+    clip-path: polygon(20% 0,100% 0,100% 100%,0 100%);
+  }
+
+  .lessons-hero-flower {
+    width: 230px;
+    left: -45px;
+    bottom: 5px;
+  }
+
+  .lessons-hero-keyboard {
+    display: none;
+  }
+
+  .lessons-two-tone::before {
+    display: none;
+  }
+
+  .lessons-teaching {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-dark);
+  }
+
+  .lessons-teaching-left {
+    background: var(--bg-light);
+    padding: 45px 20px;
+  }
+
+  .lessons-teaching-left img {
+    height: 250px;
+  }
+
+  .lessons-teaching-left .button {
+    margin-top: 20px;
+  }
+
+  .lessons-teaching-right {
+    padding: 40px 25px 55px;
+  }
+
+  .lessons-teaching-right .quote {
+    font-size: 12px;
+  }
+
+  .lessons-teaching-right h2 {
+    font-size: 25px;
+  }
+
+  .lessons-teaching-right p {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .lessons-method {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-dark);
+  }
+
+  .lessons-method-left {
+    background: var(--bg-light);
+    padding: 55px 24px 35px;
+    width: 100%;
+  }
+
+  .lessons-method-left h2 {
+    font-size: 25px;
+  }
+
+  .lessons-method-left p {
+    text-align: left;
+  }
+
+  .lessons-method-right {
+    padding: 35px 19px 60px;
+    width: 100%;
+  }
+
+  .lessons-rates,.lessons-online {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-dark);
+    min-height: 0;
+  }
+
+  .rate-card img {
+    height: 125px;
+  }
+
+  .rate-card h4 {
+    font-size: 11px;
+    min-height: 45px;
+  }
+
+  .rate-card-body {
+    padding: 12px 4px 15px;
+  }
+
+  .rate-card .button {
+    font-size: 9px;
+    min-width: 0;
+    padding: 9px 8px;
+    width: 92%;
+  }
+
+  .lessons-online .rates-left {
+    padding-top: 55px;
+  }
+
+  .lessons-reviews {
+    padding: 50px 0;
+  }
+
+  .lessons-reviews h2 {
+    margin-bottom: 22px;
+  }
+
+  .lessons-opinion {
+    min-height: 120px;
+  }
+
+  .lessons-opinion h2 {
+    font-size: 19px;
+  }
+
+  .lessons-opinion img {
+    width: 180px;
+    opacity: .4;
+  }
+}
+
+@media (max-width:430px) {
+  .rate-card img {
+    height: 175px;
+  }
+
+  .rate-card h4 {
+    min-height: 0;
+    font-size: 14px;
+  }
+}
+
+@media (min-width:761px) {
+  .lessons-rates::before {
+    clip-path: polygon(0 0,62% 0,64% 100%,0 100%);
+  }
+
+  .lessons-online::before {
+    clip-path: polygon(0 0,63% 0,62% 100%,0 100%);
+  }
+}
+
+.lessons-hero-flower,.lessons-opinion img,.lessons-rates .rates-flower {
+  opacity: .40;
+  filter: saturate(.8);
+}
+
+@media (min-width:761px) {
+  .lessons-hero h1 {
+    font-size: clamp(23px,2.1vw,30px);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width:760px) {
+  .lessons-hero h1 {
+    white-space: normal;
+  }
+}
+
+.page-lessons, .page-contact {
+  background: var(--bg-light);
+}
+
+.lessons-teaching-right p:not(.quote):not(.closing),.lessons-method-left p,.online-description,.about-biography-inner {
+  font-family: var(--editorial);
+  font-weight: 400;
+}
+
+.lessons-teaching-right p:not(.quote):not(.closing),.lessons-method-left p {
+  line-height: 1.5;
+  letter-spacing: .025em;
+}
+
+.lessons-gallery-caption,.about-media-grid figcaption,.review {
+  font-family: var(--sans);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lessons-hero h1 {
+  font-size: clamp(24px,2.36vw,34px);
+  line-height: 1.38;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.lessons-method-left h2,.rates-left h2 {
+  letter-spacing: 0;
+}
+
+@media (min-width:1101px) {
+  .lessons-hero h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.38;
+  }
+
+  .lessons-hero h3 {
+    font-size: 17.6px;
+    line-height: 1.73;
+  }
+}
+
+.page-lessons {
+  --bg-light: var(--palette-cream);
+  --bg-dark: var(--brown);
+  background: var(--bg-dark);
+  color: var(--palette-navy);
+}
+
+.page-lessons [data-site-header] {
+  height: 0;
+}
+
+.page-lessons .lessons-main {
+  width: min(100%,1440px);
+  margin-inline: auto;
+  container-type: inline-size;
+  isolation: isolate;
+  background: var(--bg-dark);
+}
+
+.page-lessons .lessons-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--bg-light);
+  clip-path: polygon(0 0,65.73% 0,52.67% 56.23cqw,39.61% 112.46cqw,52.23% 168.69cqw,65.58% 224.92cqw,68.77% 239.91cqw,60.31% 281.15cqw,62% 288.72cqw,0 288.72cqw);
+  pointer-events: none;
+}
+
+.page-lessons .lessons-main > section {
+  position: relative;
+  z-index: 2;
+}
+
+.page-lessons .lessons-hero {
+  height: 56.23cqw;
+  min-height: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.page-lessons .lessons-hero-content {
+  position: absolute;
+  margin: 0;
+  left: 10.3%;
+  top: 10.8cqw;
+  width: 42.4%;
+  padding: 0;
+  text-align: center;
+}
+
+.page-lessons .lessons-hero h1 {
+  font: 700 2.38cqw/1.38 var(--serif);
+  margin: 0 0 .55cqw;
+  white-space: nowrap;
+}
+
+.page-lessons .lessons-hero h2 {
+  font: 400 1.81cqw/1.38 var(--sans);
+  margin: 0;
+}
+
+.page-lessons .lessons-hero h3 {
+  font: 400 1.31cqw/1.73 var(--sans);
+  margin: 1.9cqw 0 0;
+}
+
+.page-lessons .lessons-hero ul {
+  font: 400 1.08cqw/2.05 var(--sans);
+  margin: 4.8cqw 0 3.1cqw;
+  padding-left: 1.4cqw;
+  text-align: left;
+  width: 95%;
+}
+
+.page-lessons .lessons-hero-content > .button {
+  margin-left: 23.7cqw;
+  width: 22.7cqw;
+  min-height: 4.5cqw;
+  padding: .8cqw 1cqw;
+  font-size: 1.3cqw;
+  font-weight: 400;
+  letter-spacing: .15em;
+  white-space: nowrap;
+}
+
+.page-lessons .button {
+  border-radius: 1.4cqw;
+}
+
+.page-lessons .lessons-two-tone {
+  background: transparent;
+}
+
+.page-lessons .lessons-two-tone::before {
+  display: none;
+}
+
+.page-lessons .lessons-teaching {
+  height: 56.23cqw;
+  min-height: 0;
+  display: block;
+}
+
+.page-lessons .lessons-teaching-left {
+  position: absolute;
+  inset: 0 auto auto 8.1%;
+  width: 41.65%;
+  padding: 13.6cqw 0 0;
+  display: block;
+}
+
+.page-lessons .lessons-teaching-photo {
+  width: 100%;
+  aspect-ratio: 568.758 / 319.926;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-lessons .lessons-teaching-photo img {
+  position: absolute;
+  max-width: none;
+  width: 109.07%;
+  height: auto;
+  top: -29.1%;
+  left: 0;
+}
+
+.page-lessons .lessons-teaching-left .button {
+  margin: 5.65cqw 0 0 23.6cqw;
+  font-size: 1.05cqw;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: .85cqw .9cqw;
+  min-height: 3.55cqw;
+  white-space: nowrap;
+}
+
+.page-lessons .lessons-teaching-right {
+  position: absolute;
+  left: 52.65%;
+  right: 6.8%;
+  top: 2.2cqw;
+  padding: 0;
+  display: block;
+}
+
+.page-lessons .lessons-teaching-right .quote {
+  font: 400 1.3cqw/2 var(--serif);
+  margin: 0 -3.5cqw 5.5cqw 0;
+  text-align: center;
+}
+
+.page-lessons .lessons-teaching-right h2 {
+  font: 400 2.88cqw/1.4 var(--sans);
+  margin: 0 0 3.1cqw 1.9cqw;
+  white-space: nowrap;
+}
+
+.page-lessons .lessons-teaching-right p:not(.quote):not(.closing) {
+  font: 400 .88cqw/1.67 var(--editorial);
+  letter-spacing: .136em;
+  margin: 0 0 1.4cqw;
+  text-align: justify;
+}
+
+.page-lessons .lessons-teaching-right .closing {
+  font: 400 1.3cqw/1.5 var(--serif);
+  margin: 4.8cqw 0 0;
+  text-align: center;
+}
+
+.page-lessons .lessons-method {
+  height: 56.23cqw;
+  min-height: 0;
+  display: block;
+}
+
+.page-lessons .lessons-method-left {
+  position: absolute;
+  top: 7.2cqw;
+  left: 6.25%;
+  width: 41.9%;
+  padding: 0;
+}
+
+.page-lessons .lessons-method-left h2 {
+  font: 400 2.25cqw/1.37 var(--sans);
+  margin: 0 0 3cqw 1.9cqw;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.page-lessons .lessons-method-left p {
+  font: 400 .925cqw/1.342 var(--editorial);
+  letter-spacing: 0;
+  margin: 0 0 1.8cqw;
+  text-align: justify;
+}
+
+.page-lessons .lessons-method-left p:last-child {
+  font-size: .98cqw;
+  margin-top: -1.6cqw;
+}
+
+.page-lessons .lessons-method-right {
+  position: absolute;
+  top: 1.05cqw;
+  left: 48.05%;
+  width: 48.2%;
+  padding: 0;
+}
+
+.page-lessons .lessons-gallery-primary {
+  grid-template-columns: 1fr 1fr;
+  gap: .35cqw;
+  width: 93%;
+  margin-left: 1cqw;
+}
+
+.page-lessons .lessons-gallery-primary img,.page-lessons .lessons-gallery-secondary img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.page-lessons .lessons-gallery-caption {
+  font: italic 400 .76cqw/1.4 var(--sans);
+  text-align: left;
+  margin: .8cqw 1cqw 1.9cqw;
+}
+
+.page-lessons .lessons-gallery-secondary {
+  gap: .65cqw;
+  margin-left: 4cqw;
+}
+
+.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption {
+  margin-left: 4cqw;
+  white-space: nowrap;
+  font-size: .75cqw;
+}
+
+.page-lessons .lessons-method-right > .button {
+  margin: 1.9cqw 0 0;
+  font-size: .98cqw;
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 3.2cqw;
+  padding: .7cqw 1.4cqw;
+}
+
+.page-lessons .lessons-rates,.page-lessons .lessons-online {
+  height: 56.23cqw;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.page-lessons .rates-left {
+  padding: 4.5cqw 2.45cqw 0 8.1cqw;
+  text-align: center;
+}
+
+.page-lessons .rates-left h2 {
+  font: 400 2.25cqw/1.37 var(--sans);
+  margin: 0 0 2.6cqw;
+  letter-spacing: 0;
+}
+
+.page-lessons .rates-left h3 {
+  font: 700 1.44cqw/1.5 var(--serif);
+  margin: 0 0 3.3cqw;
+}
+
+.page-lessons .rate-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 2.6cqw;
+  max-width: none;
+  margin: 0;
+}
+
+.page-lessons .rate-card {
+  border-radius: 1.45cqw;
+}
+
+.page-lessons .rate-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.page-lessons .rate-card-body {
+  padding: 1.15cqw .7cqw 1.4cqw;
+}
+
+.page-lessons .rate-card h4 {
+  font: 700 1.05cqw/1.38 var(--serif);
+  min-height: 2.9cqw;
+  margin: 0 0 1.55cqw;
+}
+
+.page-lessons .rate-price {
+  font: 700 1.27cqw/1.38 var(--serif);
+  margin: 0 0 1.1cqw;
+}
+
+.page-lessons .rate-card .button {
+  font: 700 .86cqw/1.4 var(--sans);
+  letter-spacing: .04em;
+  width: 8.7cqw;
+  min-height: 4.75cqw;
+  padding: .8cqw .6cqw;
+}
+
+.page-lessons .rates-aside {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5.6cqw 5.3cqw 0 2.7cqw;
+  gap: 5.4cqw;
+}
+
+.page-lessons .rates-aside p {
+  font: 400 .98cqw/1.35 var(--editorial);
+  margin: 0;
+}
+
+.page-lessons .rates-aside > div:first-child p {
+  font: 400 1.08cqw/1.5 var(--sans);
+}
+
+.page-lessons .rates-aside h3 {
+  font: 400 1.44cqw/1.45 var(--sans);
+  margin: 0 0 1.7cqw;
+}
+
+.page-lessons .rates-aside .note {
+  font: italic 400 .79cqw/1.4 var(--sans);
+  margin-top: 3.2cqw;
+}
+
+.page-lessons .rates-aside .aside-last {
+  font: 400 .9cqw/1.5 var(--sans);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.page-lessons .lessons-online .rates-left {
+  padding-top: 5cqw;
+  padding-left: 8.35cqw;
+  padding-right: 1.5cqw;
+}
+
+.page-lessons .lessons-online .rates-left h2 {
+  font: 700 1.8cqw/1.4 var(--serif);
+  margin: 0 0 3.5cqw;
+}
+
+.page-lessons .online-description {
+  font: 400 .88cqw/1.35 var(--editorial);
+  letter-spacing: 0;
+  max-width: none;
+  margin: 0 0 3cqw;
+}
+
+.page-lessons .lessons-online .rate-grid {
+  margin: 0;
+  gap: 2.8cqw;
+}
+
+.page-lessons .lessons-online .rates-aside {
+  padding-top: 6.6cqw;
+  gap: 5.7cqw;
+}
+
+.page-lessons .lessons-online .rates-aside .note {
+  margin-top: 2.5cqw;
+}
+
+.page-lessons .lessons-reviews {
+  --bg-light: var(--palette-sand);
+  background: transparent;
+  padding: 0;
+  color: var(--palette-navy);
+}
+
+.page-lessons .lessons-reviews h2 {
+  font: 400 2.25cqw/1.4 var(--sans);
+  margin: 0;
+}
+
+.page-lessons .reviews-grid {
+  background: var(--palette-sand);
+  width: 100%;
+  padding: 7.1cqw 8.8cqw 2.5cqw;
+  gap: 8.4cqw;
+}
+
+.page-lessons .review {
+  margin: 0;
+  font: italic 400 1.12cqw/1.37 var(--sans);
+}
+
+.page-lessons .review p {
+  margin: 0 0 2.5cqw;
+}
+
+.page-lessons .review cite {
+  font: italic 400 .79cqw/1.4 var(--sans);
+}
+
+.page-lessons .lessons-opinion {
+  min-height: 11.4cqw;
+  background: linear-gradient(77deg,var(--bg-light) 69%,var(--bg-dark) 69%);
+}
+
+.page-lessons .lessons-opinion h2 {
+  font: 400 1.8cqw/1.4 var(--sans);
+}
+
+.page-lessons .site-footer {
+  width: min(100%,1440px);
+  margin-inline: auto;
+  background: linear-gradient(77deg,var(--bg-light) 71%,var(--bg-dark) 71%);
+  color: var(--palette-brown);
+}
+
+@media (max-width:1100px) {
+  .page-lessons .lessons-main::before {
+    display: none;
+  }
+
+  .page-lessons .lessons-hero {
+    height: auto;
+    min-height: 920px;
+    background: var(--bg-light);
+    padding: 125px 30px 440px;
+    overflow: hidden;
+  }
+
+  .page-lessons .lessons-hero-content {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: min(100%,620px);
+    margin: auto;
+  }
+
+  .page-lessons .lessons-hero h1 {
+    font-size: clamp(24px,4vw,34px);
+    white-space: normal;
+  }
+
+  .page-lessons .lessons-hero h2 {
+    font-size: 21px;
+  }
+
+  .page-lessons .lessons-hero h3 {
+    font-size: 16px;
+    margin-top: 18px;
+  }
+
+  .page-lessons .lessons-hero ul {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 30px 0;
+    padding-left: 22px;
+    width: 100%;
+  }
+
+  .page-lessons .lessons-hero-content > .button {
+    width: auto;
+    min-height: 48px;
+    font-size: 14px;
+    padding: 12px 24px;
+    margin: 0;
+  }
+
+  .page-lessons .button {
+    border-radius: 18px;
+  }
+
+  .page-lessons .lessons-teaching,.page-lessons .lessons-method {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: var(--bg-dark);
+  }
+
+  .page-lessons .lessons-teaching-left,.page-lessons .lessons-teaching-right,.page-lessons .lessons-method-left,.page-lessons .lessons-method-right {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    padding: 45px max(24px,6%);
+  }
+
+  .page-lessons .lessons-teaching-left,.page-lessons .lessons-method-left {
+    background: var(--bg-light);
+  }
+
+  .page-lessons .lessons-teaching-photo {
+    max-width: 680px;
+    margin: auto;
+  }
+
+  .page-lessons .lessons-teaching-left .button {
+    font-size: 13px;
+    min-height: 44px;
+    margin: 28px 0 0;
+    padding: 10px 16px;
+    white-space: normal;
+  }
+
+  .page-lessons .lessons-teaching-left {
+    text-align: center;
+  }
+
+  .page-lessons .lessons-teaching-right .quote {
+    font-size: 15px;
+    margin: 0 0 36px;
+    line-height: 1.8;
+  }
+
+  .page-lessons .lessons-teaching-right h2 {
+    font-size: 29px;
+    white-space: normal;
+    margin: 0 0 28px;
+    text-align: center;
+  }
+
+  .page-lessons .lessons-teaching-right p:not(.quote):not(.closing) {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: .06em;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .page-lessons .lessons-teaching-right .closing {
+    font-size: 17px;
+    margin-top: 35px;
+  }
+
+  .page-lessons .lessons-method-left h2 {
+    font-size: 28px;
+    white-space: normal;
+    margin: 0 0 30px;
+    text-align: center;
+  }
+
+  .page-lessons .lessons-method-left p,.page-lessons .lessons-method-left p:last-child {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 0 24px;
+  }
+
+  .page-lessons .lessons-gallery-primary {
+    width: 100%;
+    gap: 8px;
+    margin-left: 0;
+  }
+
+  .page-lessons .lessons-gallery-secondary {
+    gap: 7px;
+    margin: 0;
+  }
+
+  .page-lessons .lessons-gallery-caption,.page-lessons .lessons-gallery-secondary + .lessons-gallery-caption {
+    font-size: 11px;
+    white-space: normal;
+    margin: 12px 0 25px;
+  }
+
+  .page-lessons .lessons-method-right > .button {
+    font-size: 12px;
+    min-height: 44px;
+    padding: 10px 16px;
+    margin-top: 12px;
+  }
+
+  .page-lessons .lessons-rates,.page-lessons .lessons-online {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-dark);
+  }
+
+  .page-lessons .rates-left,.page-lessons .lessons-online .rates-left {
+    padding: 55px 24px;
+    background: var(--bg-light);
+  }
+
+  .page-lessons .rates-left h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .page-lessons .rates-left h3 {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .page-lessons .rate-grid,.page-lessons .lessons-online .rate-grid {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 18px;
+    margin: 0 auto;
+    max-width: 850px;
+  }
+
+  .page-lessons .rate-card {
+    border-radius: 18px;
+  }
+
+  .page-lessons .rate-card-body {
+    padding: 17px 10px 20px;
+  }
+
+  .page-lessons .rate-card h4 {
+    font-size: 15px;
+    min-height: 42px;
+    margin-bottom: 18px;
+  }
+
+  .page-lessons .rate-price {
+    font-size: 19px;
+    margin-bottom: 17px;
+  }
+
+  .page-lessons .rate-card .button {
+    font-size: 12px;
+    min-height: 48px;
+    width: auto;
+    padding: 12px 20px;
+  }
+
+  .page-lessons .rates-aside,.page-lessons .lessons-online .rates-aside {
+    padding: 45px max(28px,12%);
+    gap: 35px;
+  }
+
+  .page-lessons .rates-aside p,.page-lessons .rates-aside > div:first-child p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .page-lessons .rates-aside h3 {
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
+
+  .page-lessons .rates-aside .note,.page-lessons .lessons-online .rates-aside .note {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+
+  .page-lessons .rates-aside .aside-last {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  .page-lessons .lessons-online .rates-left h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .page-lessons .online-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+
+  .page-lessons .lessons-reviews {
+    background: var(--palette-sand);
+  }
+
+  .page-lessons .lessons-reviews h2 {
+    height: auto;
+    font-size: 28px;
+    padding: 40px 20px 0;
+  }
+
+  .page-lessons .reviews-grid {
+    padding: 40px max(26px,7%) 55px;
+    gap: 30px;
+  }
+
+  .page-lessons .review {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .page-lessons .review p {
+    margin-bottom: 22px;
+  }
+
+  .page-lessons .review cite {
+    font-size: 11px;
+  }
+
+  .page-lessons .lessons-opinion {
+    min-height: 150px;
+  }
+
+  .page-lessons .lessons-opinion h2 {
+    font-size: 22px;
+  }
+
+  .page-lessons .site-footer {
+    background: var(--bg-light);
+  }
+}
+
+@media (max-width:599px) {
+  .page-lessons .lessons-hero {
+    padding: 115px 25px 420px;
+    min-height: 1000px;
+  }
+
+  .page-lessons .lessons-hero h2 {
+    font-size: 17px;
+  }
+
+  .page-lessons .lessons-hero h3 {
+    font-size: 15px;
+  }
+
+  .page-lessons .rate-grid,.page-lessons .lessons-online .rate-grid {
+    grid-template-columns: 1fr;
+    max-width: 290px;
+    gap: 28px;
+  }
+
+  .page-lessons .rate-card h4 {
+    font-size: 17px;
+  }
+
+  .page-lessons .rate-card .button {
+    min-height: 48px;
+    min-width: 120px;
+  }
+
+  .page-lessons .reviews-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 34px 60px;
+    gap: 45px;
+  }
+
+  .page-lessons .review {
+    font-size: 15px;
+  }
+
+  .page-lessons .lessons-opinion {
+    justify-content: flex-end;
+    padding-right: 25px;
+  }
+
+  .page-lessons .lessons-opinion h2 {
+    font-size: 18px;
+  }
+}
+
+.page-lessons .lessons-hero-photo {
+  left: 52.67%;
+  right: 0;
+  top: 0;
+  width: 47.33%;
+  height: 100%;
+  clip-path: polygon(27.6% 0,100% 0,100% 100%,0 100%);
+  z-index: 1;
+}
+
+.page-lessons .lessons-hero-photo img {
+  position: absolute;
+  max-width: none;
+  width: 77.07cqw;
+  height: 51.38cqw;
+  left: -12.8cqw;
+  top: 2.07cqw;
+  transform: rotate(90deg);
+  object-fit: fill;
+}
+
+.page-lessons .lessons-hero-photo::after {
+  display: none;
+}
+
+.page-lessons .lessons-hero-keyboard {
+  position: absolute;
+  left: 26.08cqw;
+  top: 23.63cqw;
+  width: 58cqw;
+  height: 8.28cqw;
+  transform: rotate(103.014deg);
+  background: url("/static/image/decor/canva-keyboard.webp") center/100% 100% no-repeat;
+  opacity: .21;
+  z-index: 0;
+}
+
+.page-lessons .lessons-main > .lessons-art-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.lessons-art-layer img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+  pointer-events: none;
+}
+
+.lessons-art-layer .lessons-art-hero {
+  width: 30.55cqw;
+  left: -5.03cqw;
+  top: 48.1cqw;
+  transform: rotate(3.51508deg);
+  opacity: .25;
+}
+
+.lessons-art-layer .lessons-art-method {
+  width: 30.55cqw;
+  left: -13.2cqw;
+  top: 101.7cqw;
+  transform: rotate(83.3358deg);
+  opacity: .3;
+}
+
+.lessons-art-layer .lessons-art-rates {
+  width: 26.04cqw;
+  left: -6.8cqw;
+  top: 219.9cqw;
+  transform: rotate(-7.11549deg);
+  opacity: .28;
+}
+
+.lessons-art-layer .lessons-art-footer {
+  width: 27.45cqw;
+  left: -3.4cqw;
+  bottom: -.8cqw;
+  transform: rotate(-6.05855deg);
+  opacity: .25;
+}
+
+.page-lessons .rate-photo {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.page-lessons .rate-photo img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+  width: 149.62%;
+  left: -24.81%;
+  top: 0;
+  aspect-ratio: auto;
+}
+
+.page-lessons .lessons-online .rate-photo img {
+  width: 199.15%;
+  left: -28.21%;
+  top: -1.805%;
+}
+
+.page-lessons .header-logo img {
+  filter: brightness(0);
+}
+
+@media (min-width:1101px) {
+  .page-lessons .footer-right {
+    color: var(--palette-cream);
+  }
+
+  .page-lessons .footer-right img {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (max-width:1100px) {
+  .page-lessons .lessons-hero-photo {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: min(100%,760px);
+    height: 400px;
+    clip-path: polygon(15% 0,100% 0,100% 100%,0 100%);
+  }
+
+  .page-lessons .lessons-hero-photo img {
+    width: 900px;
+    height: 600px;
+    left: calc(50% - 450px);
+    transform: rotate(90deg);
+  }
+
+  .page-lessons .lessons-hero-keyboard {
+    display: none;
+  }
+
+  .lessons-art-layer .lessons-art-hero,.lessons-art-layer .lessons-art-method,.lessons-art-layer .lessons-art-rates {
+    display: none;
+  }
+
+  .lessons-art-layer .lessons-art-footer {
+    width: 230px;
+    left: -80px;
+    bottom: -5px;
+    opacity: .2;
+  }
+}
+
+@media (max-width:599px) {
+  .page-lessons .lessons-hero-photo img {
+    width: 690px;
+    height: 460px;
+    left: calc(50% - 345px);
+  }
+}
+
+@media (min-width:1101px) {
+  .page-lessons .lessons-method-left p:nth-of-type(1) {
+    width: 82%;
+  }
+
+  .page-lessons .lessons-method-left p:nth-of-type(2) {
+    width: 87%;
+  }
+
+  .page-lessons .lessons-method-left p:nth-of-type(3) {
+    width: 92%;
+  }
+
+  .page-lessons .lessons-method-left p:nth-of-type(4) {
+    width: 97%;
+  }
+}
+
+.page-lessons .lessons-main {
+  flex: 0 0 auto;
+}
+
+@media (max-width:1100px) {
+  .page-lessons .lessons-opinion {
+    background: var(--bg-light);
+    justify-content: center;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .page-lessons .header-inner {
+    background: var(--bg-light);
+  }
+
+  .page-lessons .social-rail {
+    display: none;
+  }
+
+  .page-lessons .lessons-hero-photo img {
+    top: 100px;
+  }
+}
+
+@media (max-width:599px) {
+  .page-lessons .lessons-hero-photo img {
+    top: 50px;
+  }
+}
+
+@media (min-width:1101px) {
+  .page-lessons .lessons-method-left p {
+    padding-right: 18px;
+  }
+
+  .page-lessons .lessons-online .online-description {
+    width: 95%;
+  }
+
+  .lessons-art-layer .lessons-art-footer {
+    width: 25.5495cqw;
+    left: -3.3441cqw;
+  }
+}
+
+.lesson-photo-rate-1 {
+  filter: saturate(.8);
+}
+
+.lesson-photo-rate-2 {
+  filter: url(#lesson-cool-rate) saturate(.9);
+}
+
+.lesson-photo-rate-3 {
+  filter: saturate(1.15) hue-rotate(2deg);
+}
+
+.lesson-photo-online-1 {
+  filter: saturate(1.1);
+}
+
+.lesson-photo-online-2 {
+  filter: url(#lesson-cool-online) saturate(1.35);
+}
+
+.lesson-photo-online-3 {
+  filter: saturate(1.75) hue-rotate(7deg);
+}
+
 @media (any-hover: hover) and (any-pointer: fine) {
   .page-lessons .rate-card {
     transition: transform .22s ease, box-shadow .22s ease;
@@ -203,18 +1674,68 @@
     transform: none;
   }
 }
-/* Short, always-visible answers keep the teaching information accessible. */
-.page-lessons .lessons-faq{background:var(--bg-light,var(--palette-cream));color:var(--palette-navy);padding:clamp(18px,2.5cqw,28px) clamp(24px,7cqw,100px) clamp(20px,4cqw,42px)}
-.page-lessons .lessons-faq>h2{text-align:center;font:400 2.25cqw/1.4 var(--sans);margin:0 0 36px}
-.page-lessons .lessons-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px;max-width:1100px;margin-inline:auto}
-.page-lessons .lessons-faq-item{border-top:1px solid color-mix(in srgb,var(--palette-blue) 25%,transparent);padding-top:20px;min-width:0}
-.page-lessons .lessons-faq-item h3{font:600 1.12cqw/1.5 var(--sans);margin:0 0 10px;text-transform:none;letter-spacing:normal}
-.page-lessons .lessons-faq-item p{font:italic 400 1.12cqw/1.37 var(--sans);margin:0;overflow-wrap:anywhere}
-@media(max-width:768px){.page-lessons .lessons-faq-grid{grid-template-columns:1fr;gap:24px}}
 
-/* Match the review section typography at the same responsive breakpoints. */
-@media(max-width:1100px){.page-lessons .lessons-faq>h2{font-size:28px}.page-lessons .lessons-faq-item h3,.page-lessons .lessons-faq-item p{font-size:14px;line-height:1.5}}
-@media(max-width:768px){.page-lessons .lessons-faq-item h3,.page-lessons .lessons-faq-item p{font-size:15px}}
+.page-lessons .lessons-faq {
+  color: var(--palette-navy);
+  padding: clamp(18px,2.5cqw,28px) clamp(24px,7cqw,100px) clamp(20px,4cqw,42px);
+}
+
+.page-lessons .lessons-faq>h2 {
+  text-align: center;
+  font: 400 2.25cqw/1.4 var(--sans);
+  margin: 0 0 36px;
+}
+
+.page-lessons .lessons-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 28px 48px;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.page-lessons .lessons-faq-item {
+  border-top: 1px solid color-mix(in srgb,var(--palette-blue) 25%,transparent);
+  padding-top: 20px;
+  min-width: 0;
+}
+
+.page-lessons .lessons-faq-item h3 {
+  font: 600 1.12cqw/1.5 var(--sans);
+  margin: 0 0 10px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.page-lessons .lessons-faq-item p {
+  font: italic 400 1.12cqw/1.37 var(--sans);
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width:768px) {
+  .page-lessons .lessons-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width:1100px) {
+  .page-lessons .lessons-faq>h2 {
+    font-size: 28px;
+  }
+
+  .page-lessons .lessons-faq-item h3,.page-lessons .lessons-faq-item p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width:768px) {
+  .page-lessons .lessons-faq-item h3,.page-lessons .lessons-faq-item p {
+    font-size: 15px;
+  }
+}
 
 .page-lessons .lessons-reviews h2 {
   padding-top: calc(1.75cqw + 25px);
@@ -223,7 +1744,7 @@
 
 @media (max-width: 1100px) {
   .page-lessons .lessons-reviews h2 {
-    padding-top: 65px; /* Original 40px + 25px */
+    padding-top: 65px;
     height: auto;
   }
 }
@@ -231,13 +1752,106 @@
 .page-lessons .lessons-faq {
   background: var(--palette-sand);
 }
+
 @media (max-width: 1100px) {
   .page-lessons .lessons-faq {
     background: var(--bg-light);
   }
 }
 
-.lesson-quote-mark { position: relative; font:400 44px/0 var(--serif); color:var(--palette-gold); pointer-events:none; box-sizing: border-box; top: .75rem;}
-@media(max-width:768px) { .lesson-quote-mark {font-size:30px; top: .15rem;} }
+.lesson-quote-mark {
+  position: relative;
+  font: 400 44px/0 var(--serif);
+  color: var(--palette-gold);
+  pointer-events: none;
+  box-sizing: border-box;
+  top: .75rem;
+}
 
-.lessons-hero-subtitle { font-family: var(--serif-decor) }
+@media (max-width:768px) {
+  .lesson-quote-mark {
+    font-size: 30px;
+    top: .15rem;
+  }
+}
+
+.lessons-hero-subtitle {
+  font-family: var(--serif-decor);
+}
+
+body.page-lessons .lessons-hero-keyboard {
+  transform: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  opacity: 1;
+  mask-image: linear-gradient(to bottom,#000 0%,#000 62%,transparent 100%);
+}
+
+body.page-lessons .lessons-hero-keyboard::before {
+  content: "";
+  position: absolute;
+  left: 26.08cqw;
+  top: 23.63cqw;
+  width: 58cqw;
+  height: 8.28cqw;
+  transform: rotate(103.014deg);
+  background: url("/static/image/decor/canva-keyboard.webp") center/100% 100% no-repeat;
+  opacity: .21;
+}
+
+body.page-lessons .footer-inner {
+  position: relative;
+  z-index: 2;
+  border-top-color: var(--palette-gold);
+}
+
+body .lessons-teaching-photo > .photo-enlarge {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+body.page-lessons .reviews-grid {
+  position: relative;
+  z-index: 2;
+  margin-block: -1px;
+}
+
+@media (max-width:768px) {
+  body.page-lessons .lessons-hero-photo img {
+    width: 150vw;
+    height: 100vw;
+    left: -25vw;
+    top: calc(200px - 50vw);
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width:1100px) {
+  body.page-lessons .lessons-hero-photo {
+    width: 100%;
+    max-width: none;
+    height: 400px;
+  }
+
+  body.page-lessons .lessons-hero-photo img {
+    width: 150cqw;
+    height: 100cqw;
+    left: -25cqw;
+    top: 25cqw;
+    transform: rotate(90deg);
+    object-fit: fill;
+  }
+}
+
+body.page-lessons .lessons-online .rates-aside > div:nth-child(2) > p {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.lesson-filter-definitions {
+  position: absolute;
+}

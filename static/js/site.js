@@ -33,7 +33,7 @@
   const socialLabels = { youtube: 'YouTube', instagram: 'Instagram', facebook: 'Facebook', linkedin: 'LinkedIn', links: 'Links' };
   const socialIcon = (kind) => {
     const href = settings.socialLinks[kind];
-    const inner = `<span class="footer-social-glyph" style="--footer-glyph:url('${asset('image/icons/' + kind + '.svg')}')" aria-hidden="true"></span>`;
+    const inner = `<span class="footer-social-glyph" data-social-kind="${kind}" aria-hidden="true"></span>`;
     const label = socialLabels[kind];
     return href
       ? `<a class="social-icon" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="${label} (opens in a new tab)">${inner}</a>`
@@ -64,14 +64,14 @@
     const setOpen = (open) => {
       if (open && menuScroll === null) {
         menuScroll = window.scrollY;
-        document.body.style.width = `${document.documentElement.clientWidth}px`;
-        document.body.style.position = 'fixed';
-        document.body.style.top = `${-menuScroll}px`;
+        document.body.style.setProperty('--menu-lock-width', `${document.documentElement.clientWidth}px`);
+
+        document.body.style.setProperty('--menu-lock-top', `${-menuScroll}px`);
       } else if (!open && menuScroll !== null) {
         const restoreY = menuScroll; menuScroll = null;
-        document.body.style.removeProperty('width');
-        document.body.style.removeProperty('position');
-        document.body.style.removeProperty('top');
+        document.body.style.removeProperty('--menu-lock-width');
+
+        document.body.style.removeProperty('--menu-lock-top');
         window.scrollTo({top:restoreY,behavior:'instant'});
       }
       toggle.setAttribute('aria-expanded', String(open));
@@ -131,9 +131,9 @@
           </div>
           <div class="footer-right"><div class="footer-contact-row"><a class="footer-contact-link" href="/contact/">Contact</a><a class="footer-email" href="mailto:${settings.email}">${settings.email}</a></div>
             <div class="footer-social">${['youtube', 'instagram', 'facebook', 'linkedin', 'links'].map(s => socialIcon(s)).join('')}
-              <button class="social-icon" type="button" data-share-page aria-label="Share" title="Share" style="color:inherit;cursor:pointer">
+              <button class="social-icon" type="button" data-share-page aria-label="Share" title="Share" >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg>
-                <span data-share-status role="status" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap"></span>
+                <span data-share-status role="status" class="visually-hidden"></span>
               </button>
             </div>
           </div>
@@ -364,18 +364,18 @@
       const body = document.body.getBoundingClientRect(), main = document.querySelector('main').getBoundingClientRect(), unit = main.width / 100;
       pieces.forEach(piece => {
         const image = piece.image;
-        image.style.left = `${main.left - body.left + piece.x * unit}px`;
-        image.style.width = `${piece.width * unit}px`;
-        image.style.transform = `rotate(${piece.angle}deg)`;
-        image.style.clipPath = piece.anchor === '#story' ? 'inset(0 0 33.333% 0)' : 'none';
-        image.style.opacity = innerWidth <= 1100 ? '.16' : piece.opacity;
-        if (piece.anchor) image.style.top = `${document.querySelector(piece.anchor).getBoundingClientRect().top - body.top + piece.y * unit}px`;
-        else image.style.bottom = `${piece.bottom * unit}px`;
+        image.style.setProperty('--adviser-art-x', `${main.left - body.left + piece.x * unit}px`);
+        image.style.setProperty('--adviser-art-width', `${piece.width * unit}px`);
+        image.style.setProperty('--adviser-art-transform', `rotate(${piece.angle}deg)`);
+        image.style.setProperty('--adviser-art-clip', piece.anchor === '#story' ? 'inset(0 0 33.333% 0)' : 'none');
+        image.style.setProperty('--adviser-art-opacity', innerWidth <= 1100 ? '.16' : piece.opacity);
+        if (piece.anchor) image.style.setProperty('--adviser-art-top', `${document.querySelector(piece.anchor).getBoundingClientRect().top - body.top + piece.y * unit}px`);
+        else image.style.setProperty('--adviser-art-bottom', `${piece.bottom * unit}px`);
       });
       const photoRects = [...document.querySelectorAll('.adviser-hero-photo,.adviser-tulips,.adviser-story-crop')].map(photo => { const r = photo.getBoundingClientRect();return `<rect x="${r.left-body.left}" y="${r.top-body.top}" width="${r.width}" height="${r.height}" fill="black"/>`; }).join('');
       const edge = document.body.classList.contains('canvas-fits-viewport') ? '' : `<defs><linearGradient id="edge"><stop stop-color="white" stop-opacity="0"/><stop offset="${44/body.width}" stop-color="white"/><stop offset="${1-44/body.width}" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs>`;
       const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${body.width}" height="${body.height}">${edge}<rect width="100%" height="100%" fill="${edge ? 'url(#edge)' : 'white'}"/>${photoRects}</svg>`;
-      layer.style.maskImage = `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
+      layer.style.setProperty('--adviser-art-mask', `url("data:image/svg+xml,${encodeURIComponent(svg)}")`);
     };
     new ResizeObserver(update).observe(document.body);document.fonts.ready.then(update);update();
   }
@@ -393,7 +393,7 @@
   rootPaint.setProperty('--scroll-accent', pagePaint.getPropertyValue('--blue').trim());
   // Resolve the track color before choosing a contrasting hover tone.
   const probe = document.createElement('span');
-  probe.style.color = scrollTrack;
+  probe.className='color-probe';probe.style.setProperty('--probe-color',scrollTrack);
   document.body.append(probe);
   const rgb = getComputedStyle(probe).color.match(/[\d.]+/g)?.slice(0,3).map(Number) || [0,0,0];
   probe.remove();
@@ -412,8 +412,8 @@
     root.classList.toggle('overlay-scrollbar', fineScroll.matches);
     scrollRail.hidden = !active;
     const height = Math.max(44, root.clientHeight * root.clientHeight / Math.max(root.scrollHeight,1));
-    scrollThumb.style.height = `${height}px`;
-    scrollThumb.style.transform = `translateY(${range > 0 ? window.scrollY / range * (root.clientHeight - height) : 0}px)`;
+    scrollThumb.style.setProperty('--scroll-thumb-height', `${height}px`);
+    scrollThumb.style.setProperty('--scroll-thumb-y', `${range > 0 ? window.scrollY / range * (root.clientHeight - height) : 0}px`);
   };
   const scheduleScroll = () => { if (!scrollFrame) scrollFrame = requestAnimationFrame(paintScroll); };
   window.addEventListener('scroll',scheduleScroll,{passive:true});
@@ -581,7 +581,7 @@
     iframe.className = 'youtube-metadata-resolver';
     iframe.title = 'YouTube upload metadata resolver';
     iframe.setAttribute('aria-hidden', 'true'); iframe.tabIndex = -1;
-    iframe.style.cssText = 'position:absolute;top:0;left:-10000px;width:200px;height:113px;border:0;pointer-events:none';
+
     iframe.src = configuredVideo ? `https://www.youtube-nocookie.com/embed/${configuredVideo}?rel=0` : `https://www.youtube-nocookie.com/embed/videoseries?list=${uploads}&rel=0`;
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
     document.body.append(iframe);
