@@ -16,7 +16,7 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Děti, dospívající i dospělí jsou vítáni!"
   },
   "common_don_t_stress_out_nail_it_ohktm": {
-    "en": "Enjoy Piano music that comes alive!",
+    "en": "Enjoy piano music that comes alive!",
     "cz": "Užijte si klavírní hudbu, která ožívá!"
   },
   "common_i_look_forward_to_working_with_you_m3qfq": {

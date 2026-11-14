@@ -28,8 +28,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Nahrávky, videa, fotografie a další"
   },
   "home_for_students_who_want_to_study_in_133i6": {
-    "en": "For those who want to see behind the curtain",
-    "cz": "Pro ty, kteří chtějí nahlédnout do zákulisí"
+    "en": "For those who want to see behind the curtain.",
+    "cz": "Pro ty, kteří chtějí nahlédnout do zákulisí."
   },
   "home_i_want_to_study_in_the_netherlands_383w2": {
     "en": "Explore my music",

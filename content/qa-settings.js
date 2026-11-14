@@ -1,8 +1,8 @@
 
 window.ROZALIE_QA = {
   "title": {
-    "en": "Q&A",
-    "cz": "Otázky a odpovědi"
+    "en": "FAQ",
+    "cz": "Časté dotazy"
   },
   "items": [
     {

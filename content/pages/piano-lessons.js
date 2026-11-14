@@ -40,8 +40,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Vedení, které probouzí fantazii"
   },
   "lessons_ask_about_lessons_ractp": {
-    "en": "Ask for a lesson",
-    "cz": "Zeptat se na lekci"
+    "en": "Book a lesson",
+    "cz": "Rezervovat lekci"
   },
   "lessons_check_my_hourly_rates_0cmtb": {
     "en": "Check my hourly rates",
@@ -100,20 +100,20 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Motivace a metoda"
   },
   "lessons_i_have_always_been_interested_in_teaching_rpeef": {
-    "en": "I have always been interested in teaching, as I admired the art of giving a well-structured, inspiring piano lesson. During my studies, I successfully completed specialized training in “Advanced teaching skills,” obtaining a ",
-    "cz": "Vždy mě přitahovala promyšlená a inspirativní výuka klavíru. Během studia jsem absolvovala specializovaný kurz Advanced Teaching Skills, získala "
+    "en": "I have always been interested in teaching, as I admired the art of giving a well-structured, inspiring piano lesson. During my studies, I successfully completed ",
+    "cz": "Vždy mě přitahovala promyšlená a inspirativní výuka klavíru. Během studia jsem absolvovala "
   },
   "lessons_by_adjusting_my_lessons_to_the_individual_py3jf": {
-    "en": "By adjusting my lessons to the individual needs of each student, I create a safe space where music comes alive. The core value of my lesson is not only to develop the technique but also to build a unique connection between music and fantasy.",
-    "cz": "Přizpůsobováním výuky potřebám jednotlivých studentů vytvářím bezpečný prostor, v němž hudba ožívá. Smyslem lekcí není jen rozvoj techniky, ale také budování jedinečného propojení hudby a fantazie."
+    "en": "By adjusting my lessons to the individual needs of each student, I create a ",
+    "cz": "Přizpůsobováním výuky potřebám jednotlivých studentů vytvářím "
   },
   "lessons_as_a_pianist_i_gained_a_wide_8i0t9": {
     "en": "As a pianist, I gained a wide range of professional experiences that are an appropriate source of my pedagogical know-how.",
     "cz": "Jako klavíristka jsem získala mnoho profesních zkušeností, které jsou základem mého pedagogického přístupu."
   },
   "lessons_my_method_is_partly_inspired_by_a_nh3wy": {
-    "en": "My method is partly inspired by a British educationalist, Paul Harris, and his concept of “Simultaneous Learning.” This way of learning encourages the development of musical insight by making connections between all aspects of musicianship, e.g., aural and memory work, sight-reading, mental practice, or harmony awareness.",
-    "cz": "Moje metoda je částečně inspirována britským pedagogem Paulem Harrisem a jeho konceptem Simultaneous Learning. Rozvíjí hudební porozumění propojováním různých oblastí hudebnosti, například sluchové a paměťové práce, čtení z listu, mentálního cvičení či harmonického povědomí."
+    "en": "My method is partly inspired by a British educationalist, ",
+    "cz": "Moje metoda je částečně inspirována britským pedagogem "
   },
   "lessons_i_am_very_supportive_towards_all_issues_c3s81": {
     "en": "I am very supportive towards all issues that might appear on the journey of playing piano.",
@@ -144,8 +144,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "45 minut"
   },
   "lessons_inquire_y7pm5": {
-    "en": "Inquire",
-    "cz": "Napsat dotaz"
+    "en": "Book",
+    "cz": "Rezervovat"
   },
   "lessons_60_minute_ul2g9": {
     "en": "60 minute",
@@ -184,8 +184,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Získejte slevu 10 %"
   },
   "lessons_to_request_the_10_discount_email_your_k5bc9": {
-    "en": "To request the 10% discount, email your Statement of Enrollment using the email link on the contact page. Please send attachments directly to the email address.",
-    "cz": "Pro uplatnění 10% slevy pošlete potvrzení o studiu e-mailem přes odkaz na kontaktní stránce. Přílohy posílejte přímo na emailovou adresu."
+    "en": "Upload your Statement of Enrollment via the Contact Form and get the 10% Student Discount:)",
+    "cz": "Nahrajte potvrzení o studiu prostřednictvím kontaktního formuláře a získejte studentskou slevu 10 %:)"
   },
   "lessons_my_lessons_are_taught_in_english_or_6lofz": {
     "en": "My lessons are taught in English or Czech",
@@ -196,8 +196,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Nepotřebujete speciální vybavení — stačí tablet nebo notebook. Výuka obvykle probíhá přes Zoom, Google Meet či Teams s webkamerou a případně sdílením obrazovky s notami, prezentací nebo poznámkami na tabuli."
   },
   "lessons_after_your_inquiry_we_will_arrange_an_iyv6y": {
-    "en": "After your inquiry, we will arrange an exact lesson time.",
-    "cz": "Po vašem dotazu se domluvíme na přesném čase lekce."
+    "en": "Request your lesson of any type via the Contact form and I will reach out to arrange all practical matters together",
+    "cz": "Požádejte o jakýkoli typ lekce prostřednictvím kontaktního formuláře a já se vám ozvu, abychom společně domluvili všechny praktické záležitosti"
   },
   "lessons_online_piano_lessons_for_those_who_value_7and8": {
     "en": "Online piano lessons for those who value flexibility the most!",
@@ -299,8 +299,28 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "en": " and demonstrating knowledge from psychology, didactics, and piano pedagogy. I work with private students of all levels and ages, from children to adults and beginners to advanced players. Outside the private sphere, I also teach at the Junior Department of the Conservatorium Maastricht, guiding a class of young, classically trained musicians.",
     "cz": " a prokázala znalosti psychologie, didaktiky a klavírní pedagogiky. Pracuji se soukromými studenty všech úrovní a věků, od dětí po dospělé a od začátečníků po pokročilé. Mimo soukromou výuku učím také na Junior Department of the Conservatorium Maastricht, kde vedu třídu mladých hudebníků studujícich klasickou hudbu."
   },
-  "lessons_explore_rozalie_pcuna": {
-    "en": "I want to explore more about Rozálie",
-    "cz": "Chci se dozvědět více o Rozálii"
+  "lessons_method_training_emphasis_p4n8b": {
+    "en": "specialized training in “Advanced teaching skills,” obtaining a ",
+    "cz": "specializovaný kurz Advanced Teaching Skills, získala "
+  },
+  "lessons_by_adjusting_my_lessons_to_the_individual_part1_r7m2a": {
+    "en": "safe space where music comes alive.",
+    "cz": "bezpečný prostor, v němž hudba ožívá."
+  },
+  "lessons_by_adjusting_my_lessons_to_the_individual_part2_r7m2a": {
+    "en": " The core value of my lesson is not only to develop the technique but also to build a unique connection between music and fantasy.",
+    "cz": " Smyslem lekcí není jen rozvoj techniky, ale také budování jedinečného propojení hudby a fantazie."
+  },
+  "lessons_my_method_is_partly_inspired_by_a_part1_r7m2a": {
+    "en": "Paul Harris, and his concept of “Simultaneous Learning.”",
+    "cz": "Paulem Harrisem a jeho konceptem Simultaneous Learning."
+  },
+  "lessons_my_method_is_partly_inspired_by_a_part2_r7m2a": {
+    "en": " This way of learning encourages the development of musical insight by making connections between all aspects of musicianship, e.g., ",
+    "cz": " Rozvíjí hudební porozumění propojováním různých oblastí hudebnosti, například "
+  },
+  "lessons_my_method_is_partly_inspired_by_a_part3_r7m2a": {
+    "en": "aural and memory work, sight-reading, mental practice, or harmony awareness.",
+    "cz": "sluchové a paměťové práce, čtení z listu, mentálního cvičení či harmonického povědomí."
   }
 });

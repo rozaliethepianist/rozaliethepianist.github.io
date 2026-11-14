@@ -2,6 +2,9 @@
 body.page-home {
   --home-intro-heading-size: clamp(23px,2.1vw,30px);
   --home-intro-heading-gap: 24px;
+  --home-intro-body-size: 13.5px;
+  --home-intro-button-gap: 16px;
+  --home-intro-photo-width: 43cqw;
 }
 
 .home-main {
@@ -2111,7 +2114,7 @@ body.page-home {
   }
 
   .page-home .home-about-text p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.7;
     text-align: left;
   }
@@ -2313,14 +2316,14 @@ body.page-home {
 }
 
 .page-home .home-about-text p {
-  font-size: 12.5px;
+  font-size: var(--home-intro-body-size);
   line-height: 1.66;
   max-width: 602px;
 }
 
 @media (max-width:1100px) {
   .page-home .home-about-text p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.7;
   }
 }
@@ -2500,7 +2503,7 @@ body.page-home {
   }
 
   .page-home .home-about-photo {
-    width: 40cqw;
+    width: var(--home-intro-photo-width);
     max-width: none;
     margin-left: 1cqw;
     transform: translateY(-7.74cqw);
@@ -3512,4 +3515,9 @@ body.page-home .home-about-text .home-quote {
   body.page-home .home-hero-title {
     font-size: 24px;
   }
+}
+
+/* Give the introduction CTA more breathing room at every width. */
+body.page-home .home-about-text > .button {
+  margin-top: var(--home-intro-button-gap);
 }
