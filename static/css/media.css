@@ -31,11 +31,6 @@ body.page-media .media-channel-handle {
   overflow-wrap: anywhere;
 }
 
-body.page-media .media-hero-copy .media-channel-handle a {
-  opacity: var(--media-channel-opacity);
-  text-decoration: none;
-}
-
 body.page-media .about-c4 .about-hero>img {
   object-position: 55% 65%;
 }
@@ -201,4 +196,9 @@ body.page-media .media-hero-quote cite {
   margin-top: 14px;
   font: italic 400 clamp(12px,.95cqw,14px)/1.5 var(--sans);
   opacity: .75;
+}
+
+body.page-media .media-hero-copy .media-channel-handle a {
+  opacity: var(--media-channel-opacity);
+  text-decoration: none;
 }
