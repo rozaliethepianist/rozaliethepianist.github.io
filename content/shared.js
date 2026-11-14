@@ -262,5 +262,9 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
   "lessons_online_piano_lessons_9alcb": {
     "en": "Online Piano Lessons",
     "cz": "Online výuka klavíru"
+  },
+  "common_youtube_handle_t4m8n": {
+    "en": "@RozalieThePianist",
+    "cz": "@RozalieThePianist"
   }
 });

@@ -969,3 +969,30 @@ body.page-about .about-hero>img {
 body.page-about:not(.page-media) {
   --about-copy-width: 1100px;
 }
+
+/* YouTube handle below the About hero heading. */
+body.page-about:not(.page-media) .about-channel-handle {
+  display: block;
+  margin-top: 20px;
+  font: italic 400 clamp(12px,1cqw,15px)/1.6 var(--sans);
+}
+body.page-about:not(.page-media) .about-channel-handle a {
+  color: inherit;
+  opacity: .55;
+  text-decoration: none;
+  transition: color var(--duration-fast), opacity var(--duration-fast);
+}
+body.page-about:not(.page-media) .about-channel-handle a:focus-visible {
+  outline: var(--focus-ring-width) solid var(--blue);
+  outline-offset: var(--focus-ring-offset);
+  opacity: 1;
+}
+@media (any-hover:hover) and (any-pointer:fine) {
+  body.page-about:not(.page-media) .about-channel-handle a:hover {
+    color: var(--blue);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  body.page-about:not(.page-media) .about-channel-handle a { transition: none; }
+}

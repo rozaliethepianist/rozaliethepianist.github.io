@@ -1,4 +1,4 @@
-body.page-media { --media-hero-copy-width:34%;--media-channel-opacity:.55; }
+body.page-media { --media-hero-copy-width:34%;--media-channel-opacity:.55;--media-hero-title-size:clamp(21px,1.8cqw,28px);--media-quote-gap:36px; }
 /* Media page composition. */
 body.page-media .media-hero-copy {
   position: absolute;
@@ -16,7 +16,7 @@ body.page-media .about-c4 .about-hero .media-hero-copy h1 {
   max-width: none;
   padding: 0;
   margin: 0;
-  font: 400 clamp(23px,2.2cqw,34px)/1.5 var(--serif);
+  font: 400 var(--media-hero-title-size)/1.5 var(--serif);
 }
 
 body.page-media .media-hero-copy a {
@@ -65,7 +65,7 @@ body.page-media .media-hero-copy a:focus-visible {
   }
 
   body.page-media .about-c4 .about-hero .media-hero-copy h1 {
-    font-size: clamp(23px,3.8vw,32px);
+    font-size: clamp(21px,3.4vw,28px);
     max-width: 30ch;
     margin-inline: auto;
   }
@@ -182,4 +182,19 @@ body.page-media .media-events-toggle:focus-visible {
   body.page-media .media-events-toggle:hover {
     color: var(--blue);
   }
+}
+
+/* The testimonial leads into the smaller YouTube invitation. */
+body.page-media .media-hero-quote {
+  margin: 0 0 var(--media-quote-gap);
+  padding: 0;
+  border: 0;
+  font: 400 clamp(14px,1.25cqw,19px)/1.6 var(--sans);
+}
+body.page-media .media-hero-quote p { margin: 0; }
+body.page-media .media-hero-quote cite {
+  display: block;
+  margin-top: 14px;
+  font: italic 400 clamp(12px,.95cqw,14px)/1.5 var(--sans);
+  opacity: .75;
 }

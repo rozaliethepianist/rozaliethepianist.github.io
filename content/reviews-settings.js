@@ -1,7 +1,7 @@
 window.ROZALIE_REVIEWS = {
   "lessons": [
     {
-      "author": "Inge Römgens",
+      "author": "Sarah Mount",
       "text": {
         "en": "Rozálie has been working with my son for two years now, and he definitely made an improvement. He is usually very excited about playing piano and enjoys the creative approach of the lessons.",
         "cz": "Rozálie pracuje s mým synem už dva roky a rozhodně se zlepšil. Na hraní se obvykle velmi těší a má rád tvořivý přístup během lekcí."

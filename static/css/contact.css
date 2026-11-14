@@ -372,3 +372,16 @@ body:not(.canvas-fits-viewport) .contact-photo-c5 {
   mask-image: linear-gradient(to right,#000 89%,transparent),linear-gradient(to bottom,#000 66%,transparent);
   mask-composite: intersect;
 }
+
+.page-contact .contact-faq-link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+.page-contact .contact-faq-link:focus-visible {
+  outline: var(--focus-ring-width) solid var(--blue);
+  outline-offset: var(--focus-ring-offset);
+}
+@media (any-hover:hover) and (any-pointer:fine) {
+  .page-contact .contact-faq-link:hover { text-decoration: none; }
+}
