@@ -996,3 +996,21 @@ body.page-about:not(.page-media) .about-channel-handle a:focus-visible {
 @media (prefers-reduced-motion:reduce) {
   body.page-about:not(.page-media) .about-channel-handle a { transition: none; }
 }
+
+body.page-about .about-c4 .about-press-cta .press-link {
+  transition: color var(--duration-fast), background-color var(--duration-fast), border-color var(--duration-fast);
+}
+@media (any-hover:hover) and (any-pointer:fine) {
+  body.page-about .about-c4 .about-press-cta .press-link:hover {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--color-white);
+  }
+}
+body.page-about .about-c4 .about-press-cta .press-link:focus-visible {
+  outline: var(--focus-ring-width) solid var(--blue);
+  outline-offset: var(--focus-ring-offset);
+}
+@media (prefers-reduced-motion:reduce) {
+  body.page-about .about-c4 .about-press-cta .press-link { transition: none; }
+}
