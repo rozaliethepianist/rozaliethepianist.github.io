@@ -1,5 +1,6 @@
 
-window.ROZALIE_LINKS = {  "name": "Rozálie Stoklasová",
+window.ROZALIE_LINKS = {
+  "name": "Rozálie Stoklasová",
   "portrait": "/static/image/optimized/about-gallery-1-native-55df75eb98e3.webp",
   "copy": {
     "subtitle": {
@@ -81,7 +82,7 @@ window.ROZALIE_LINKS = {  "name": "Rozálie Stoklasová",
     {
       "id": "instagram",
       "group": "connect",
-      "url": "https://www.instagram.com/rozalie.the.pianist",
+      "url": "/instagram/",
       "icon": "instagram",
       "title": {
         "en": "Instagram",
@@ -96,7 +97,7 @@ window.ROZALIE_LINKS = {  "name": "Rozálie Stoklasová",
     {
       "id": "youtube",
       "group": "connect",
-      "url": "https://www.youtube.com/@RozalieThePianist?sub_confirmation=1",
+      "url": "/youtube/",
       "icon": "youtube",
       "title": {
         "en": "YouTube",
@@ -112,7 +113,7 @@ window.ROZALIE_LINKS = {  "name": "Rozálie Stoklasová",
     {
       "id": "facebook",
       "group": "connect",
-      "url": "https://www.facebook.com/rozalie.stoklasova",
+      "url": "/facebook/",
       "icon": "facebook",
       "title": {
         "en": "Facebook",
@@ -127,7 +128,7 @@ window.ROZALIE_LINKS = {  "name": "Rozálie Stoklasová",
     {
       "id": "linkedin",
       "group": "connect",
-      "url": "https://www.linkedin.com/in/roz%C3%A1lie-stoklasov%C3%A1-4a620a34b",
+      "url": "/linkedin/",
       "icon": "linkedin",
       "title": {
         "en": "LinkedIn",

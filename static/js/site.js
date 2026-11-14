@@ -14,10 +14,10 @@
     email: 'rozalie.stoklasova@gmail.com',
     // Authoritative profile links supplied by the site owner.
     socialLinks: {
-      youtube: 'https://www.youtube.com/@RozalieThePianist?sub_confirmation=1',
-      instagram: 'https://www.instagram.com/rozalie.the.pianist',
-      facebook: 'https://www.facebook.com/rozalie.stoklasova',
-      linkedin: 'https://www.linkedin.com/in/roz%C3%A1lie-stoklasov%C3%A1-4a620a34b',
+      youtube: '/youtube/',
+      instagram: '/instagram/',
+      facebook: '/facebook/',
+      linkedin: '/linkedin/',
       links: '/links/',
     },
     pressKitUrl: '/documents/rozalie-stoklasova-press-kit.pdf',
