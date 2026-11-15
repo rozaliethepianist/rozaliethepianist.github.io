@@ -1647,6 +1647,14 @@ body.page-lessons .lessons-art-footer {
   transform: rotate(-6.059deg);
   opacity: .32;
 }
+@media (min-width: 1441px) {
+  /* Fade decoration into the outer gutter only when the canvas is narrower
+   * than the viewport. Do not fade at internal section boundaries. */
+  body.page-lessons:not(.canvas-fits-viewport) .lesson-floral-window {
+    mask-image: linear-gradient(to right, transparent, #000 44px, #000 calc(100% - 44px), transparent);
+    mask-clip: no-clip;
+  }
+}
 @media (max-width: 1100px) {
   /* Dense hero/photo layouts keep their desktop decorations hidden. */
   body.page-lessons .lesson-floral-window { display: none; }

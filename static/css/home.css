@@ -118,6 +118,10 @@ body.page-home [data-site-header] {
     position: relative;
     z-index: 15;
   }
+  /* The body paints the continuous diagonal, including the footer. */
+  body.page-home .site-footer.footer-dark {
+    background: transparent;
+  }
 }
 
 body.page-home .footer-inner {
