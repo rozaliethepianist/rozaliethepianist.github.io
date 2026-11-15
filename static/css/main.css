@@ -3116,6 +3116,7 @@ body .header-inner > .language-switch a:focus-visible {
     flex-direction: column;
     gap: 0;
     padding: 14px 24px;
+    border: 1px solid color-mix(in srgb, var(--palette-navy) 16%, transparent);
     background: var(--bg-light);
     color: var(--palette-navy);
   }
