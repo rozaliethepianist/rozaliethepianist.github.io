@@ -50,7 +50,11 @@ body.page-lessons .lessons-main {
   flex: 0 0 auto;
 }
 
-body.page-lessons .lessons-main > section {
+body.page-lessons .lessons-main > section,
+body.page-lessons .lessons-intro-surface,
+body.page-lessons .lessons-intro-surface > section,
+body.page-lessons .lessons-booking-surface,
+body.page-lessons .lessons-booking-surface > section {
   position: relative;
   z-index: 2;
 }
@@ -69,18 +73,15 @@ body.page-lessons .lesson-filter-definitions {
   position: absolute;
 }
 
-/* The desktop diagonal follows each section instead of page-wide offsets.
- * The transparent trial section continues the same page surface between
- * Method and Rates; only its card has an opaque background.
+/* Method, free trial and rates share one continuous diagonal. Its geometry
+ * follows their combined height, including translated or wrapped trial text.
+ * Only the trial card has an opaque sand surface.
  */
 @media (min-width: 1101px) {
-  body.page-lessons .lessons-hero { --lesson-surface-start: 65.73%; --lesson-surface-end: 52.67%; }
-  body.page-lessons .lessons-teaching { --lesson-surface-start: 52.67%; --lesson-surface-end: 39.61%; }
-  body.page-lessons .lessons-method { --lesson-surface-start: 39.61%; --lesson-surface-end: 52.23%; }
-  body.page-lessons .lessons-trial { --lesson-surface-start: 52.23%; --lesson-surface-end: 52.23%; }
-  body.page-lessons .lessons-rates { --lesson-surface-start: 52.23%; --lesson-surface-end: 65.58%; }
+  body.page-lessons .lessons-intro-surface { --lesson-surface-start: 65.73%; --lesson-surface-end: 39.61%; }
+  body.page-lessons .lessons-booking-surface { --lesson-surface-start: 39.61%; --lesson-surface-end: 65.58%; }
   body.page-lessons .lessons-online { --lesson-surface-start: 65.58%; --lesson-surface-end: 60.31%; }
-  body.page-lessons :is(.lessons-hero, .lessons-teaching, .lessons-method, .lessons-trial, .lessons-rates, .lessons-online)::after {
+  body.page-lessons :is(.lessons-intro-surface, .lessons-booking-surface, .lessons-online)::after {
     content: "";
     position: absolute;
     inset: -1px 0;
@@ -180,7 +181,7 @@ body.page-lessons .lessons-hero-photo {
   top: 0px;
   width: 47.33%;
   height: 100%;
-  clip-path: polygon(27.6% 0px, 100% 0px, 100% 100%, 0px 100%);
+  clip-path: polygon(calc((var(--lesson-surface-start) - 52.67%) / .4733) 0, 100% 0, 100% 100%, 0 100%);
   z-index: 1;
 }
 
@@ -1597,17 +1598,19 @@ body.page-lessons .review cite {
 
 /* 10. Section-bound floral decoration -----------------------------------------
  * Decorations follow their own section rather than a page-wide top offset.
- * The main canvas clips the outer edge. No decorative layer covers controls.
+ * Only the main canvas clips the outer edge, never the section boundary.
+ * Motifs can cross sections as in the Canva reference. No layer covers controls.
  * At the stacked layout breakpoint there is insufficient empty margin: hide it.
  */
 body.page-lessons .lesson-floral-window {
   position: absolute;
   inset: 0;
-  overflow: clip;
+  overflow: visible;
   z-index: 0;
   pointer-events: none;
 }
 body.page-lessons .lessons-hero > .lesson-floral-window { bottom: -13cqw; }
+body.page-lessons .lessons-main { overflow: clip; }
 body.page-lessons .lesson-floral {
   position: absolute;
   z-index: 0;
@@ -1621,28 +1624,28 @@ body.page-lessons .lessons-art-hero {
   left: -5.03cqw;
   bottom: 1cqw;
   transform: rotate(3.515deg);
-  opacity: .22;
+  opacity: .32;
 }
 body.page-lessons .lessons-art-method {
   width: 30.55cqw;
-  left: -23cqw;
+  left: -16cqw;
   top: -9cqw;
   transform: rotate(83.336deg);
-  opacity: .22;
+  opacity: .32;
 }
 body.page-lessons .lessons-art-rates {
   width: 26.04cqw;
-  left: -20cqw;
-  top: 0;
+  left: -7cqw;
+  top: -6cqw;
   transform: rotate(-7.115deg);
-  opacity: .20;
+  opacity: .30;
 }
 body.page-lessons .lessons-art-footer {
   width: 25.55cqw;
   left: -3.34cqw;
-  bottom: -0.8cqw;
+  bottom: 2cqw;
   transform: rotate(-6.059deg);
-  opacity: .22;
+  opacity: .32;
 }
 @media (max-width: 1100px) {
   body.page-lessons .lesson-floral-window { display: none; }
@@ -1661,7 +1664,7 @@ body.page-lessons .lessons-trial-card {
   padding: clamp(24px, 3cqw, 40px);
   border: 1px solid color-mix(in srgb, var(--palette-gold) 45%, transparent);
   border-radius: var(--lesson-card-radius);
-  background: var(--bg-light);
+  background: var(--palette-sand);
   color: var(--palette-navy);
 }
 body.page-lessons .lessons-trial-copy { min-width: 0; max-width: 680px; }

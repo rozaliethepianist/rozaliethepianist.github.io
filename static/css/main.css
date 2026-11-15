@@ -3117,8 +3117,13 @@ body .header-inner > .language-switch a:focus-visible {
     gap: 0;
     padding: 14px 24px;
     border: 1px solid color-mix(in srgb, var(--palette-navy) 16%, transparent);
+    border-radius: 12px;
     background: var(--bg-light);
     color: var(--palette-navy);
+  }
+
+  body .site-header .primary-nav > :last-child {
+    border-bottom: 0;
   }
 
   body .nav-open .site-header .primary-nav {
