@@ -1600,7 +1600,7 @@ body.page-lessons .review cite {
  * Decorations follow their own section rather than a page-wide top offset.
  * Only the main canvas clips the outer edge, never the section boundary.
  * Motifs can cross sections as in the Canva reference. No layer covers controls.
- * At the stacked layout breakpoint there is insufficient empty margin: hide it.
+ * Stacked layouts use small motifs in reserved light bands, away from text.
  */
 body.page-lessons .lesson-floral-window {
   position: absolute;
@@ -1648,7 +1648,59 @@ body.page-lessons .lessons-art-footer {
   opacity: .32;
 }
 @media (max-width: 1100px) {
+  /* Dense hero/photo layouts keep their desktop decorations hidden. */
   body.page-lessons .lesson-floral-window { display: none; }
+
+  /* Reserve a shallow light band above the heading rather than placing
+   * decoration behind text. The containing block follows content height. */
+  body.page-lessons .lessons-method-left,
+  body.page-lessons .lessons-online .rates-left {
+    position: relative;
+    padding-top: clamp(112px, 15vw, 150px);
+  }
+  body.page-lessons .lessons-method-left::before,
+  body.page-lessons .lessons-online .rates-left::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -12px;
+    width: clamp(150px, 20vw, 200px);
+    height: clamp(90px, 12vw, 120px);
+    background: url("/static/image/decor/canva-flower-spray.webp") left center / contain no-repeat;
+    opacity: .28;
+    pointer-events: none;
+  }
+  body.page-lessons .lessons-online .rates-left::before {
+    background-image: url("/static/image/optimized/lessons-flower-wide-native-be5a7fcaec0c.webp");
+  }
+
+  /* A separate decorative row keeps even long translated headings clear. */
+  body.page-lessons .lessons-opinion {
+    min-height: 200px;
+    padding: 110px 24px 28px;
+  }
+  body.page-lessons .lessons-opinion > .lesson-floral-window {
+    display: block;
+  }
+  body.page-lessons .lessons-art-footer {
+    width: 145px;
+    left: -12px;
+    top: 0;
+    bottom: auto;
+    transform: none;
+    opacity: .28;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px) {
+  /* On tablets there is enough room to put the heading beside the motif. */
+  body.page-lessons .lessons-opinion {
+    min-height: 190px;
+    padding: 40px 24px 40px clamp(210px, 30vw, 280px);
+  }
+  body.page-lessons .lessons-art-footer {
+    width: clamp(180px, 23vw, 230px);
+    top: 8px;
+  }
 }
 /* 11. Free trial: compact, content-sized, with no reserved photo height. */
 body.page-lessons .lessons-trial {
