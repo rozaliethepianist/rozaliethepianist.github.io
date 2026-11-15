@@ -145,6 +145,65 @@
   // URL comes from Notion's "Embed this page" dialog (not the response database).
   const NOTION_FORM_URL = 'https://honorable-hose-085.notion.site/ebd/415ebc93c4a28025bd11e066249bb4cf';
 
+  // An iframe load event is not proof that a cross-origin form rendered.
+  // Keep a direct link available even after the loading overlay disappears.
+  function watchNotionForm(iframe, frameContainer, fallback, link) {
+    const status = document.createElement('div');
+    status.className = 'notion-contact-loading';
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
+    const spinner = document.createElement('span');
+    spinner.className = 'notion-contact-spinner';
+    spinner.setAttribute('aria-hidden', 'true');
+    const label = document.createElement('span');
+    label.dataset.content = 'common_form_loading_crjbc';
+    status.append(spinner, label);
+    frameContainer.append(status);
+    frameContainer.setAttribute('aria-busy', 'true');
+    let timer;
+    let observer;
+    let settled = false;
+    let started = false;
+    const finish = () => {
+      settled = true;
+      clearTimeout(timer);
+      observer?.disconnect();
+      status.hidden = true;
+      frameContainer.setAttribute('aria-busy', 'false');
+      // A late load also restores the compact fallback after a timeout.
+      fallback.classList.remove('notion-contact-fallback--slow');
+      fallback.querySelector('.notion-contact-delay')?.remove();
+      link.dataset.content = 'common_form_fallback_qlg30';
+      window.rozalieContentApply?.(fallback);
+    };
+    iframe.addEventListener('load', finish);
+    const start = () => {
+      if (settled || started) return;
+      started = true;
+      observer?.disconnect();
+      timer = setTimeout(() => {
+        if (!iframe.isConnected) return;
+        status.hidden = true;
+        frameContainer.setAttribute('aria-busy', 'false');
+        const message = document.createElement('span');
+        message.className = 'notion-contact-delay';
+        message.dataset.content = 'common_form_slow_lhubm';
+        fallback.prepend(message);
+        fallback.classList.add('notion-contact-fallback--slow');
+        link.dataset.content = 'common_form_open_mekl2';
+        window.rozalieContentApply?.(fallback);
+      }, 12000);
+    };
+    // Do not count time while a lazy frame is still far below the viewport.
+    if ('IntersectionObserver' in window) {
+      observer = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) start();
+      }, {rootMargin: '300px'});
+      observer.observe(iframe);
+    } else start();
+    window.rozalieContentApply?.(status);
+  }
+
   function renderForms() {
     const interestLabels = {
       'piano-lessons': 'Piano lessons in Maastricht',
@@ -181,7 +240,7 @@
       frameContainer.className = 'notion-contact-frame-wrap';
       const iframe = document.createElement('iframe');
       iframe.className = 'notion-contact-iframe';
-      iframe.src = NOTION_FORM_URL;
+
       iframe.title = 'Contact Rozalie The Pianist — Notion form';
       iframe.loading = 'lazy';
       iframe.referrerPolicy = 'strict-origin-when-cross-origin';
@@ -195,9 +254,12 @@
       link.href = NOTION_FORM_URL;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
+      link.dataset.content = 'common_form_fallback_qlg30';
       link.textContent = 'Form not displaying? Open it in a new tab';
       fallback.appendChild(link);
       form.appendChild(fallback);
+      watchNotionForm(iframe, frameContainer, fallback, link);
+      iframe.src = NOTION_FORM_URL;
       el.replaceChildren(form);
     });
   }

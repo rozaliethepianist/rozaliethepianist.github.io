@@ -270,5 +270,9 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
   "common_youtube_handle_t4m8n": {
     "en": "@RozalieThePianist",
     "cz": "@RozalieThePianist"
-  }
+  },
+  "common_form_loading_crjbc": {"en": "Loading the form…", "cz": "Načítání formuláře…"},
+  "common_form_slow_lhubm": {"en": "The form is taking longer than usual. You can open it directly in a new tab.", "cz": "Načítání formuláře trvá déle než obvykle. Můžete ho otevřít přímo v nové kartě."},
+  "common_form_open_mekl2": {"en": "Open form directly ↗", "cz": "Otevřít formulář přímo ↗"},
+  "common_form_fallback_qlg30": {"en": "Form not displaying? Open it in a new tab", "cz": "Formulář se nezobrazuje? Otevřít v nové kartě"}
 });
