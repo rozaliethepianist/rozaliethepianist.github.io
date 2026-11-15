@@ -191,6 +191,10 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "en": "Rozalie The Pianist",
     "cz": "Rozalie The Pianist"
   },
+  "unavailable_work_in_progress_66opd": {
+    "en": "The content is unavailable",
+    "cz": "Obsah je nedostupný"
+  },
   "in_progress_work_in_progress_pdv58": {
     "en": "Work in progress",
     "cz": "Připravujeme"
