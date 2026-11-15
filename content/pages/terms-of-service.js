@@ -12,8 +12,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Podmínky výuky"
   },
   "terms_legal_02_p8m4r": {
-    "en": "Private piano teaching · Updated November 14, 2026",
-    "cz": "Soukromá výuka klavíru · Aktualizováno 14. listopadu 2026"
+    "en": "Private piano teaching · Updated November 15, 2026",
+    "cz": "Soukromá výuka klavíru · Aktualizováno 15. listopadu 2026"
   },
   "terms_legal_03_p8m4r": {
     "en": "Lessons, prices and booking",
@@ -166,5 +166,18 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
   "terms_reference_planning_c7m2p": {
     "en": "Packages support regular attendance and steady progress. Please review your calendar and agree on lesson dates with me in advance, taking account of our mutual availability.",
     "cz": "Balíčky podporují pravidelnou docházku a soustavný pokrok. Projděte si prosím svůj kalendář a termíny lekcí se mnou domluvte předem podle našich vzájemných možností."
+  },
+
+  "terms_trial_heading_hycbc": {
+    "en": "Free 25-minute trial lesson",
+    "cz": "Zkušební lekce zdarma – 25 minut"
+  },
+  "terms_trial_description_0gvg5": {
+    "en": "Your first trial lesson lasts 25 minutes and is free of charge. We use this introductory session to discuss your musical goals and try my approach to teaching. There is no obligation to book or pay for further lessons; any subsequent lessons are arranged separately.",
+    "cz": "První zkušební lekce trvá 25 minut a je zdarma. Během tohoto úvodního setkání probereme vaše hudební cíle a vyzkoušíte si můj způsob výuky. Nevzniká tím povinnost objednat ani zaplatit další lekce; případnou navazující výuku sjednáme samostatně."
+  },
+  "terms_trial_booking_iiyjo": {
+    "en": "Request your trial lesson through the contact form or by email. We confirm the time and practical arrangements in writing. If you need to cancel or reschedule, please let me know as soon as possible. The payment and percentage-based cancellation charges for paid lessons below do not apply to this free trial lesson.",
+    "cz": "O zkušební lekci požádejte kontaktním formulářem nebo e-mailem. Termín a praktické podrobnosti si potvrdíme písemně. Pokud potřebujete lekci zrušit nebo přesunout, dejte mi prosím vědět co nejdříve. Níže uvedené platební podmínky a procentní storno poplatky za placené lekce se na tuto bezplatnou zkušební lekci nevztahují."
   }
 });
