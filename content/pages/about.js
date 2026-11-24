@@ -111,6 +111,10 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "en": "Pavel Rychnovský",
     "cz": "Pavel Rychnovský"
   },
+  "about_read_biography_w6j3p": {
+    "en": "Read my biography",
+    "cz": "Přečtěte si můj životopis"
+  },
   "about_open_cv_9xi43": {
     "en": "Open Biography",
     "cz": "Otevřít životopis"

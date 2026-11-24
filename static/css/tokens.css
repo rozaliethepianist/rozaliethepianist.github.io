@@ -3,9 +3,11 @@
    editorial geometry, imagery, masks and local dark/light plane choices. */
 :root {
   /* Brand primitives: do not use decorative gold as small body text. */
-  --palette-cream: #F5ECDE;       /* principal warm paper */
-  --palette-sand: #EAE5DB;        /* secondary paper from press kit */
-  --palette-ivory: #FCF8F1;       /* foreground cards, forms */
+  --palette-light-blue: #f8fafc;  /* light backgrounds */
+  --surface-light-accent: #eaf1f8;
+  --palette-cream: var(--palette-light-blue);
+  --palette-sand: var(--palette-light-blue);
+  --palette-ivory: var(--palette-light-blue);
   --palette-linen: #DECFBD;       /* section accents */
   --palette-navy: #0D1926;       /* ink and midnight stage */
   --palette-navy-raised: #1C2B3B;
@@ -44,7 +46,7 @@
   --surface-media: var(--palette-navy-raised);
   --surface-iframe: var(--palette-navy);
   --surface-reviews: var(--palette-sand);
-  --surface-rate-1: #fff4e6;
+  --surface-rate-1: var(--palette-light-blue);
   --surface-rate-2: #f0cabf;
   --surface-rate-3: #db9380;
   --surface-online-1: #e6efff;

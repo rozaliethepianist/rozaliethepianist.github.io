@@ -152,7 +152,8 @@ window.ROZALIE_LINKS = {
       "description": {
         "en": "Let’s start a conversation",
         "cz": "Ozvěte se mi"
-      }
+      },
+      "account": "rozalie.stoklasova@gmail.com"
     }
   ]
 };

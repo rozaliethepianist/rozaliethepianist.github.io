@@ -790,7 +790,7 @@ body.page-home .offer-wrap {
 }
 
 body.page-home .offer-card {
-  background: var(--surface-card-light);
+  background: var(--surface-light-accent);
   color: var(--palette-navy);
   text-align: center;
   min-height: 500px;
@@ -1575,7 +1575,7 @@ body.page-home .home-work-grid {
 
 body.page-home .work-card {
   overflow: hidden;
-  background: var(--surface-card-light);
+  background: var(--surface-light-accent);
   color: var(--palette-navy);
   min-height: 535px;
   border-radius: var(--home-radius);
@@ -1745,7 +1745,7 @@ body.page-home .work-side {
 }
 
 body.page-home .work-promo {
-  background: var(--surface-card-light);
+  background: var(--surface-light-accent);
   color: var(--palette-navy);
   text-align: center;
   display: flex;

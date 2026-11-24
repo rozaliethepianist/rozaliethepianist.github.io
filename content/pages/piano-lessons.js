@@ -51,10 +51,6 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "en": "Piano Lessons that capture your heart",
     "cz": "Výuka klavíru, která vás chytí za srdce"
   },
-  "lessons_guidance_that_captivates_your_fantasy_z4qz9": {
-    "en": "Guidance that captivates your fantasy",
-    "cz": "Vedení, které zaujme vaši fantazii"
-  },
   "lessons_the_art_of_teaching_d4ixs": {
     "en": "The Art of Teaching",
     "cz": "Umění učit"
@@ -96,8 +92,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Tvoří hudbu, která má skutečný smysl."
   },
   "lessons_motivation_method_wrs8m": {
-    "en": "Motivation & Method",
-    "cz": "Motivace a metoda"
+    "en": "Vision & Method",
+    "cz": "Vize a metoda"
   },
   "lessons_i_have_always_been_interested_in_teaching_rpeef": {
     "en": "I have always been interested in teaching, as I admired the art of giving a well-structured, inspiring piano lesson. During my studies, I successfully completed ",
@@ -324,11 +320,11 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "sluchové a paměťové práce, čtení z listu, mentálního cvičení či harmonického povědomí."
   },
 
-  "lessons_trial_label_crgb4": {"en": "Let's meet at the piano · 25 minutes", "cz": "Pojďme se potkat u klavíru · 25 minut"},
-  "lessons_trial_heading_vhiaa": {"en": "Your first trial lesson is free", "cz": "První zkušební lekce zdarma"},
+  "lessons_trial_label_crgb4": {"en": "Let’s meet and try things out! · 25 minutes-long session", "cz": "Pojďme se potkat a něco si vyzkoušet! · 25minutová lekce"},
+  "lessons_trial_heading_vhiaa": {"en": "Get a free trial lesson", "cz": "Domluvte si zkušební lekci zdarma"},
   "lessons_trial_description_nuvk1": {
-    "en": "Let's explore your musical goals and try my approach before planning your next lessons.",
-    "cz": "Probereme vaše hudební cíle a vyzkoušíte si můj způsob výuky, než společně naplánujeme další lekce."
+    "en": "During the trial lesson, we will also discuss your experiences and desired goals and adjust the lesson plan to them.",
+    "cz": "Na zkušební lekci si také promluvíme o vašich zkušenostech a cílech a podle nich upravíme plán výuky."
   },
   "lessons_trial_cta_xatd1": {"en": "Arrange a free trial", "cz": "Domluvit lekci zdarma"}
 });

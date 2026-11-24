@@ -51,7 +51,7 @@ body.page-about .about-hero {
   }
 }
 
-body.page-about .about-hero h1 {
+body.page-about .about-hero-copy {
   align-self: center;
   justify-self: center;
   text-transform: none;
@@ -68,25 +68,25 @@ body.page-about .about-hero h1 {
 }
 
 @media (max-width: 760px) {
-  body.page-about .about-hero h1 {
+  body.page-about .about-hero-copy {
     text-shadow: rgb(0, 0, 0) 0px 2px 10px;
     max-width: 17ch;
   }
 }
 
 @media (max-width: 1100px) {
-  body.page-about .about-hero h1 {
+  body.page-about .about-hero-copy {
     position: relative;
     inset: auto;
     width: 100%;
     padding: 0px 25px;
+    margin-inline: auto;
     font-size: 29px;
-    margin-inline: 0px;
   }
 }
 
 @media (min-width: 1101px) {
-  body.page-about .about-hero h1 {
+  body.page-about .about-hero-copy {
     top: 13cqw;
   }
 }
@@ -361,4 +361,18 @@ body.page-about .about-press-cta::before {
 body.page-about .about-press-cta .press-link:focus-visible {
   outline: var(--focus-ring-width) solid var(--blue);
   outline-offset: var(--focus-ring-offset);
+}
+
+body.page-about .about-hero-copy h1 {
+  font: inherit;
+  margin: 0;
+}
+
+body.page-about .about-hero-copy .about-hero-biography {
+  margin-top: 24px;
+  border: 1px solid currentColor;
+  border-radius: 16px;
+  color: var(--palette-cream);
+  font-size: clamp(14px, 1.35cqw, 19px);
+  text-shadow: none;
 }

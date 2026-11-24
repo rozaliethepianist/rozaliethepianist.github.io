@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(ellipse at 25% 0,color-mix(in srgb,var(--palette-linen) 75%,var(--palette-cream)),transparent 65%),linear-gradient(145deg,var(--palette-sand),var(--palette-cream) 55%,color-mix(in srgb,var(--palette-blue) 14%,var(--palette-cream)));
+  background: radial-gradient(ellipse at 25% 0,color-mix(in srgb,var(--palette-blue-tint) 45%,var(--palette-cream)),transparent 65%),linear-gradient(145deg,var(--palette-sand),var(--palette-cream) 55%,color-mix(in srgb,var(--palette-blue) 14%,var(--palette-cream)));
   color: var(--palette-navy);
   font: 14px/1.5 Montserrat,Arial,sans-serif;
   padding: 28px 16px;
@@ -181,11 +181,45 @@ section>h2 {
   transition: transform .2s,box-shadow .2s,background .2s;
 }
 
+/* Typed stops allow the gradient colors to interpolate on hover. */
+@property --featured-blue-start {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #34759a;
+}
+
+@property --featured-blue-end {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #559ac3;
+}
+
 .link-row.featured {
-  background: var(--palette-brown-rich);
-  border-color: var(--palette-brown-rich);
+  --featured-blue-start: #34759a;
+  --featured-blue-end: #559ac3;
+  background: linear-gradient(100deg, var(--featured-blue-start) 38%, var(--featured-blue-end));
+  transition: transform .2s, box-shadow .2s, --featured-blue-start .2s, --featured-blue-end .2s;
+  border-color: transparent;
   color: var(--palette-white);
-  box-shadow: 0 6px 18px color-mix(in srgb,var(--palette-brown-rich) 23%,transparent);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--palette-blue) 20%, transparent);
+}
+
+.link-row.featured .link-icon {
+  background: rgb(255 255 255 / 31%);
+}
+
+.link-row.featured .card-text small {
+  color: inherit;
+  opacity: 1;
+}
+
+.link-row.featured :is(.external, .qr-button) {
+  color: inherit;
+  opacity: .85;
+}
+
+.link-row.featured .qr-button {
+  border-color: rgb(255 255 255 / 65%);
 }
 
 .card-link {
@@ -366,12 +400,12 @@ dialog .close {
 @media (any-hover:hover) and (any-pointer:fine) {
   .link-row:hover {
     transform: translateY(-3px);
-    background: var(--palette-ivory);
     box-shadow: 0 9px 20px #48322212;
   }
 
   .link-row.featured:hover {
-    background: var(--palette-brown-deep);
+    --featured-blue-start: #2b6384;
+    --featured-blue-end: #417da2;
   }
 
   .qr-button:hover,.languages a:hover {
@@ -717,7 +751,7 @@ dialog::-webkit-scrollbar-thumb {
   }
 
   dialog .close:hover {
-    background: var(--palette-linen);
+    background: var(--palette-light-blue);
     color: var(--palette-blue-hover);
   }
 

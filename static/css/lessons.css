@@ -1299,7 +1299,7 @@ body.page-lessons .lesson-booking-description {
 @media (min-width: 1101px) {
   body.page-lessons .lessons-rates .rates-left {
     padding-top: 3.5cqw;
-    padding-left: 7.1cqw;
+    padding-inline: 4.775cqw;
   }
 }
 
@@ -1332,7 +1332,7 @@ body.page-lessons .lesson-booking-description {
 body.page-lessons .lessons-faq {
   color: var(--palette-navy);
   padding: clamp(18px, 2.5cqw, 28px) clamp(24px, 7cqw, 100px) clamp(20px, 4cqw, 42px);
-  background: var(--palette-sand);
+  background: var(--surface-light-accent);
 }
 
 @media (max-width: 1100px) {
@@ -1473,7 +1473,7 @@ body.page-lessons .lessons-opinion h2 {
 }
 
 body.page-lessons .lessons-reviews {
-  --bg-light: var(--palette-sand);
+  --bg-light: var(--surface-light-accent);
   background: transparent;
   padding: 0px;
   color: var(--palette-navy);
@@ -1481,12 +1481,12 @@ body.page-lessons .lessons-reviews {
 
 @media (max-width: 1100px) {
   body.page-lessons .lessons-reviews {
-    background: var(--palette-sand);
+    background: var(--surface-light-accent);
   }
 }
 
 body.page-lessons .reviews-grid {
-  background: var(--palette-sand);
+  background: var(--surface-light-accent);
   width: 100%;
   padding: 7.1cqw 8.8cqw 2.5cqw;
   gap: 8.4cqw;
@@ -1724,7 +1724,7 @@ body.page-lessons .lessons-trial-card {
   padding: clamp(24px, 3cqw, 40px);
   border: 1px solid color-mix(in srgb, var(--palette-gold) 45%, transparent);
   border-radius: var(--lesson-card-radius);
-  background: var(--palette-sand);
+  background: var(--surface-light-accent);
   color: var(--palette-navy);
 }
 body.page-lessons .lessons-trial-copy { min-width: 0; max-width: 680px; }
