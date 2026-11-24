@@ -92,8 +92,8 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "cz": "Tvoří hudbu, která má skutečný smysl."
   },
   "lessons_motivation_method_wrs8m": {
-    "en": "Vision & Method",
-    "cz": "Vize a metoda"
+    "en": "Motivation & Method",
+    "cz": "Motivace a metoda"
   },
   "lessons_i_have_always_been_interested_in_teaching_rpeef": {
     "en": "I have always been interested in teaching, as I admired the art of giving a well-structured, inspiring piano lesson. During my studies, I successfully completed ",

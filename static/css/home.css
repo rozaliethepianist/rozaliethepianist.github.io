@@ -124,6 +124,10 @@ body.page-home [data-site-header] {
   }
 }
 
+body.page-home .site-footer.footer-dark {
+  color: var(--color-white);
+}
+
 body.page-home .footer-inner {
   width: 88.8%;
 }

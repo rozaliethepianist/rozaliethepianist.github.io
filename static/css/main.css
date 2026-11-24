@@ -340,7 +340,7 @@ main {
 
 .site-footer.footer-dark {
   background: var(--bg-dark);
-  color: var(--palette-linen);
+  color: var(--palette-cream);
 }
 
 .footer-inner {
@@ -3052,8 +3052,7 @@ body .header-inner > .language-switch a:focus-visible {
 
 @media (min-width:786px) and (max-width:1100px) {
   body .site-header .header-inner {
-    /* Reserve space for EN/CZ and clearance after the last header item. */
-    padding-right: 104px;
+    padding-right: 92px;
     gap: 12px;
   }
 
@@ -3066,7 +3065,7 @@ body .header-inner > .language-switch a:focus-visible {
   }
 
   body .site-header .primary-nav {
-    gap: 12px;
+    gap: 22px;
   }
 
   body .site-header .nav-link {
@@ -3113,7 +3112,7 @@ body .header-inner > .language-switch a:focus-visible {
     position: absolute;
     left: 12px;
     right: 12px;
-    top: calc(100% + 10px);
+    top: 100%;
     width: auto;
     flex-direction: column;
     gap: 0;
@@ -3422,34 +3421,4 @@ body.nav-open-body {
 }
 @media (prefers-reduced-motion: reduce) {
   .notion-contact-spinner { animation: none; }
-}
-
-/* Distribute desktop links across the space between the logo and hero edge. */
-@media (min-width: 786px) {
-  body .site-header .primary-nav {
-    justify-content: space-between;
-  }
-
-  body[data-page="other"] .site-header .header-inner {
-    padding-right: 112px;
-  }
-}
-
-@media (min-width: 1101px) {
-  body:is(.page-home,.page-lessons,.page-contact) .site-header .primary-nav {
-    flex: 0 1 auto;
-    width: calc(var(--nav-hero-edge) - 235px);
-    gap: 12px;
-  }
-
-  body.page-home { --nav-hero-edge: 62%; }
-  body.page-lessons { --nav-hero-edge: 66%; }
-  body.page-contact { --nav-hero-edge: 65%; }
-}
-
-/* Keep the Press Kit button distinct from the desktop navigation links. */
-@media (min-width: 786px) {
-  body.page-about .site-header .header-inner > .press-link {
-    margin-inline-start: clamp(8px, 1.5vw, 24px);
-  }
 }
