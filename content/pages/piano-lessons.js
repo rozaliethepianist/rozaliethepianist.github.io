@@ -271,9 +271,9 @@ Object.assign(window.ROZALIE_CONTENT || (window.ROZALIE_CONTENT = {}), {
     "en": "Rozálie smiling over the strings inside a grand piano",
     "cz": "Rozálie se usmívá nad strunami klavírního křídla"
   },
-  "lessons_teaching_two_students_at_a_piano_lv8f5": {
-    "en": "Rozálie teaching two students at a piano",
-    "cz": "Rozálie učí dva studenty u klavíru"
+  "lessons_teaching_one_student_at_a_piano_lv8f5": {
+    "en": "Rozálie teaching one student at a piano",
+    "cz": "Rozálie učí jednoho studenta u klavíru"
   },
   "lessons_small_group_piano_session_vrgiv": {
     "en": "Small group piano session",
