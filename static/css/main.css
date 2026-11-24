@@ -3240,6 +3240,17 @@ body .header-inner > .language-switch:focus-within > span {
   }
 }
 
+@media (any-hover: hover) and (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
+  body:is(.page-home,.page-lessons) .header-inner > .language-switch.is-positioned {
+    transition: opacity .18s ease, background-color .18s ease, border-color .18s ease,
+                backdrop-filter .18s ease, color .18s ease;
+  }
+
+  body:is(.page-home,.page-lessons) .header-inner > .language-switch.is-positioned > :is(a,span) {
+    transition: color .18s ease, filter .18s ease;
+  }
+}
+
 body .header-inner > .language-switch:not(.is-positioned) {
   visibility: hidden;
   transition: none;
