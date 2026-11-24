@@ -67,7 +67,10 @@
  const updateHeroOverlap = () => {
    if (!headerLanguage) return;
    const r = headerLanguage.getBoundingClientRect();
-   const photo = document.querySelector('.home-hero-photo,.lessons-hero-photo,.adviser-hero-photo,.contact-photo-c5');
+   const useLightHomeSwitch = document.body.classList.contains('page-home') &&
+     window.matchMedia('(max-width: 1100px)').matches;
+   const photo = useLightHomeSwitch ? null :
+     document.querySelector('.home-hero-photo,.lessons-hero-photo,.adviser-hero-photo,.contact-photo-c5');
    const p = photo?.getBoundingClientRect();
    headerLanguage.classList.toggle('is-over-hero', !!p && r.left < p.right && r.right > p.left && r.top < p.bottom && r.bottom > p.top);
    requestAnimationFrame(() => {
