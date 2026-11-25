@@ -834,7 +834,7 @@ body.page-lessons .lessons-method-right > .button {
 
 body.page-lessons .rate-card {
   overflow: hidden;
-  background: var(--surface-rate-1);
+  background: var(--surface-light-accent);
   color: var(--palette-navy);
   border-radius: 1.45cqw;
 }
@@ -1333,12 +1333,6 @@ body.page-lessons .lessons-faq {
   color: var(--palette-navy);
   padding: clamp(18px, 2.5cqw, 28px) clamp(24px, 7cqw, 100px) clamp(20px, 4cqw, 42px);
   background: var(--surface-light-accent);
-}
-
-@media (max-width: 1100px) {
-  body.page-lessons .lessons-faq {
-    background: var(--bg-light);
-  }
 }
 
 body.page-lessons .lessons-faq > h2 {

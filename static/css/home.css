@@ -1916,6 +1916,7 @@ body.page-home .work-promo.article {
 }
 
 body.page-home .work-promo .youtube-mark {
+  translate: 0 6px;
   margin: 0px;
   line-height: 0;
 }

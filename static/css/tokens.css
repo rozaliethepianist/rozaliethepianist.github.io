@@ -4,7 +4,7 @@
 :root {
   /* Brand primitives: do not use decorative gold as small body text. */
   --palette-light-blue: #f8fafc;  /* light backgrounds */
-  --surface-light-accent: #eaf1f8;
+  --surface-light-accent: #f9f1df;
   --palette-cream: var(--palette-light-blue);
   --palette-sand: var(--palette-light-blue);
   --palette-ivory: var(--palette-light-blue);
